@@ -16,10 +16,6 @@
 .env.development.local
 .env.test.local
 .env.production.local
-./tvm1/git
-./tvm2/git
-./tvm3/git
-./tvm4/git
 /z-extra-files
 /tvm-1-2-original.pdf
 /tvm-3-4-original.pdf
