@@ -2,6 +2,9 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #292929;
 }
+li {
+    margin-bottom: 10px;
+}
 
 /* Media breakpoints */
 /* Small devices (small phone screens) */
@@ -173,7 +176,7 @@ body {
         padding: 0;
     }   
     .math {
-        height: 25px;
+        /* height: 25px; */
         margin: 10px 10px 25px 10px;
     }
     .question {

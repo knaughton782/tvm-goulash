@@ -100,23 +100,25 @@ $(document).ready(function () {
 // future value calculation is FV = PV(1 + i)^time
 
 /* ****************** for first exercise slide midway through lecture1 ******************* */
+
+
 // exercise 1 - this exercise is in lecture1.html
-function FV(principal, interest, time) {
-  if (principal == 100 && interest == .10 && time == 10) {
-    var answer = principal * Math.pow((1 + interest), time);
-    return "The future value is $" + answer.toFixed(2) + ". Good job!";
-  } else {
-    return answer = "Please check your variables and try again."
-  }
+function FV(PV, i, n) {
+  console.log(`pv ${PV}, i ${i}, n ${n}`);
+let FV = PV * (Math.pow((1 + i), n));
+  FV = FV.toFixed(2);
+console.log(`fv ${FV}`)
+return `The future value (FV) is $${FV}`;
 }
 
 function calc_FV() {
-  var principal = parseFloat(document.getElementById('pvalue').value);
-  principal.toFixed(2);
-  var interest = parseFloat(document.getElementById('int').value);
-  interest.toFixed(2);
-  var time = document.getElementById('yrs').value;
-  var ans = FV(principal, interest, time);
+  let PV = parseFloat(document.getElementById('PV').value);
+  PV.toFixed(2);
+  console.log(`pv in first function ${PV}`)
+  let i = parseFloat(document.getElementById('i').value);
+  i.toFixed(2);
+  let n = parseInt(document.getElementById('n').value);
+  let ans = FV(PV, i, n);
 
   document.getElementById('answer').innerHTML = ans;
 }

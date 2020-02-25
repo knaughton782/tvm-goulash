@@ -183,11 +183,11 @@
                         <div class="content">
                             <p>What factors would you consider in determining how much Future Value (FV) the customer should pay at a later date? Let's attach some variable names to these factors to understand them better.</p>
 
-                            <div id="PV">
+                            <div id="PresentValue">
                                 <h4>Present Value (PV)</h4>
                                 <p>How much is being borrowed? Present Value (PV) is the value in today's terms. This is sometimes called the principal or principal investment.</p>
                             </div>
-                            <div id="FV">
+                            <div id="FutureValue">
                                 <h4>Future Value (FV)</h4>
                                 <p>How much will you have in the future? Future Value (FV) is the value you will have in the future given a certain interest rate and/or time period.</p>
                             </div>
@@ -292,8 +292,10 @@
                                 </li>
                                 <li>You can do this in one equation like this:
                                     <div>
-                                        <img class="math" src="../images/int-y1-combined.svg" alt="$100 + $10 = $110">
+                                        <img class="math" src="../images/int-y1-combined.svg" alt="">
                                     </div>
+                                    <p>Or like this:</p>
+                                    <div><img class="math" src="../images/alternate-format-y1.svg" alt=""></div>
                                 </li>
                             </ul>
 
@@ -411,6 +413,8 @@
                                     <li>
                                         Here is the complete equation:
                                         <div><img class="math" src="../images/int-y2-combined.svg"></div>
+                                        <p>Or:</p>
+                                        <div><img class="math" src="../images/alternate-format-y2.svg" alt=""></div>
                                     </li>
                                 </ul>
                             </p>
@@ -444,9 +448,19 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="content">
-                            <p class="question">How much money would you have in another year if you rolled over the $110 earned in the first year?</p>
+                            <p class="question">How much money would you have in after the second year if you rolled over the $110 earned in the first year?</p>
                             <p class="answer">The answer is $121.</p>
-                            <p>If you answered correctly, click Continue. If you answered incorrectly, click Help to learn how to calculate the answer.</p>
+                            <hr>
+                            <h4>Let's review:</h4>
+                            <p>
+                                <ul>
+                                    <li>We calculated the 1st year of interest earned by multiplying the interest rate times the 1st year starting principal. Then we added the 1st year interest to the principal.
+                                    </li>
+                                    <li>Next, we calculated the 2nd year of interest by finding 10% of the new principal amount. Then, we added the 2nd year interest to the new principal amount.
+                                    </li>
+                                </ul>
+                            </p>
+                            <p>In other words, we calculated the interest earned in each individual year and added all the interest payments back to the principal to find the Future Value (FV).</p>
                         </div>
                     </div>
                 </div>
@@ -466,7 +480,7 @@
 
 
             <!---------------- SLIDE 10 - CONTENT -->
-            <div id="slide10" class="slide stop">
+            <!-- <div id="slide10" class="slide stop">
                 <div class="row slide-title">
                     <div class="col-12">
                         <h2 class="primary-title">TVM: The Basics</h2>
@@ -476,26 +490,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="content">
-                            <p>To review:
-                                <ul>
-                                    <li>We calculated the 1st year of interest earned by multiplying the interest rate, 10%, times the 1st year starting principal of $100.
-                                        <div><img class="math" src="../images/int-example.svg"></div>
-                                    </li>
-                                    <li>Then we added the 1st year interest to the principal of $100.
-                                        <div><img class="math" src="../images/fv-example.svg"></div>
-                                    </li>
-                                    <li>Next, we calculated the 2nd year of interest by finding 10% of the new principal amount of $110.
-                                        <div><img class="math" src="../images/int-yr2-example.svg"></div>
-                                    </li>
-                                    <li>Then, we added the 2nd year interest to the principal of $110.
-                                        <div><img class="math" src="../images/fv-yr2-example.svg"></div>
-                                    </li>
-                                    <li>If we consolidated the equations into one, it would look like this:
-                                        <div><img class="math" src="../images/2yr-combined-example.svg"></div>
-                                    </li>
-                                </ul>
-                            </p>
-                            <p>In other words, we calculated the interest earned in each individual year and added all the interest payments back to the principal to find the Future Value (FV)</span>.</p>
+                            
                         </div>
                     </div>
                 </div>
@@ -510,7 +505,7 @@
                         <div class="page-number">10</div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
 
 
@@ -525,28 +520,17 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="content">
-                            <p>Although calculating the interest for each individual year and adding it to the principal does produce the correct answer, what would you do if asked for the future value after 100 years?</p>
-                            <p>You could create a spreadsheet of formulas with 100 interest payment calculations. However, its time consuming and fortunately, unncessary. Instead, we'll derive a general equation that will allow you to solve for Future Value (FV)</span>, Present Value (PV)</span>, Interest rate (i)</span>, or number of years (n)</span>.</p>
-                            <p>Let's look back at our previous calculations:
-                                <ol>
-                                    <li>Figure out the 1st year of interest by finding 10% of $100.
-                                        <div class="math">(100</span> * 0.10</span>) = 10</span></div>
-                                    </li>
-                                    <li>Figure out the 2nd year of interest by finding 10% of $110.
-                                        <div class="math">(110</span> * 0.10</span>) = 11</span></div>
-                                    </li>
-                                    <li>Add the 1st and 2nd year interest to the principal of 100.
-                                        <div class="math">100</span> + 10</span> + 11</span> = $121</span></div>
-                                    </li>
-                                    <li>Now look at these steps as one equation.</li>
-                                    <div class="bottom-space"><img src="./images/derive1.png" alt="interest calculation" class="img-fluid img-math"></div>
+                            <p>Although calculating the interest for each individual year and adding it to the principal does produce the correct answer, this would time consuming if you were calculating the future value after 10 years.</p>
+                            <p>We can derive a general equation that will allow you to solve for any of the variables: Future Value (FV), Present Value (PV), Interest rate (i), or number of years (n).</p>
+                            <p>If we combine our previous equations into one equation it looks like this:</p>
+                            <div><img class="math" src="../images/derive1.svg" alt=""></div>
+                            <p>We can simplify the equation to this: </p>
+                            <div><img class="math" src="../images/derive2.svg" alt=""></div>
 
-                                    <li>Let's replace the numbers with variables to make it easier to manipulate the equation. </li>
-                                    <div class="bottom-space"><img src="images/derive2.png" alt="interest calculation" class="img-fluid img-math"></div>
+                            <p>Let's replace the numbers with variables so we can use the equation with any numbers. </p>
+                            <div><img class="math" src="../images/derive2-variables.svg" alt=""></div>
 
-                                </ol>
-                            </p>
-                            <p>Click Help to review some math principals and properties that you need to know to follow along with the derivation of the equation. If you don't require math assistance, click Continue.</p>
+                            <p>Click Help to review math principals that you need to know to follow along with the derivation of the equation. If you don't require math assistance, click Continue.</p>
                         </div>
                     </div>
                 </div>
@@ -641,7 +625,7 @@
 
 
             <!---------------- SLIDE 12 - CONTENT -->
-            <div id="slide12" class="slide">
+            <!-- <div id="slide12" class="slide">
                 <div class="row slide-title">
                     <div class="col-12">
                         <h2 class="primary-title">TVM: The Basics</h2>
@@ -747,14 +731,14 @@
                         <div class="page-number">12</div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
 
 
 
 
             <!---------------- SLIDE 13 - CONTENT -->
-            <div id="slide13" class="slide stop">
+            <!-- <div id="slide13" class="slide stop">
                 <div class="row slide-title">
                     <div class="col-12">
                         <h2 class="primary-title">TVM: The Basics</h2>
@@ -785,7 +769,7 @@
                         <div class="page-number">13</div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
 
 
@@ -800,30 +784,22 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="content">
-                            <h4>Exercise 1: Identify the Variables</h4>
+                            <h4>Exercise 1</h4>
                             <p class="question">What would the $100 investment be worth in 10 years at 10% interest?</p>
-                            <p>Here are some tips for identifying the variables.</p>
-                            <ul>
-                                <li>i</span> is a rate. Look for a percentage or decimal.</li>
-                                <li>n</span> is an expression of time or number of years.</li>
-                                <li>To distinguish between PV</span> and FV</span>, ask yourself whether the dollar amount is money you have now or in the future. Since the $100 is today's investment, it must be PV</span>. The question asks what it <i>will be</i> worth, indicating we want to find FV</span>.</li>
-                            </ul>
-                            <p>Test yourself! <span class="note">Note: Use a decimal for the interest box. Leave the unknown variable box empty.</span></p>
+                            <p>Instructions: Identify the variables in the question. Use a decimal for the interest variable. </p>
+
                             <div class="container">
                                 <div class="">
                                     <form action="" class="indent">
 
                                         <label>PV</span> </label>
-                                        <input id="pvalue" type="number" placeholder="0"><br>
-
-                                        <label>FV</span> </label>
-                                        <input id="FV" type="number" placeholder="0"><br>
+                                        <input id="PV" type="number" placeholder="0"><br>
 
                                         <label>&nbsp;&nbsp;&nbsp;i </span></label>
-                                        <input id="int" type="number" placeholder=".00"><br>
+                                        <input id="i" type="number" placeholder=".00"><br>
 
                                         <label>&nbsp;&nbsp;n</span> </label>
-                                        <input id="yrs" type="number" placeholder="0"><br>
+                                        <input id="n" type="number" placeholder="0"><br>
 
                                     </form>
                                     <button onclick="calc_FV()" type="button" class="btn calculate-btn">Calculate</button>
@@ -860,44 +836,26 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="content">
-                            <h3>Exercise 1: Solution</h3>
-                            <p>Let's work through the problem.</p>
+                            <h4>Exercise 1: Solution</h4>
                             <p class="question">What would the $100 investment be worth in 10 years at 10%?</p>
+                            <p>Let's work through the problem.</p>
                             <p>First, identify the variables:</p>
-                            <div class="math">
-                                PV = 100</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                FV = ?</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                i = 10% or 0.10</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                n = 10</span>
+                            <div> <img class="math" src="../images/variables.svg">
                             </div>
                             <p>Once you've identified the variables, plug the numbers into the equation: </p>
-                            <div class="math">FV</span> =
-                                PV</span>(1 +
-                                i</span>)<sup>
-                                    n</span></sup>
+                            <div><img class="math" src="../images/plug-in-numbers.svg">
                             </div>
-                            <ol>
-                                <li>Starting with the parentheses, add the numbers in place of the variables and do the addition.
-                                    <div class="math">
-                                        FV</span> =
-                                        100</span>(1 +
-                                        0.10</span>)
-                                        <sup>10</sup></span>
-                                        <b>&nbsp;&xrarr;&nbsp;</b>
-                                        FV</span> =
-                                        100</span>(1.10)
-                                        <sup>10</sup></span>
-                                    </div>
-                                </li><br>
-                                <li>Next, apply the exponent. Be careful about rounding.<br>
-                                    <div class="math">
-                                        FV</span> =
-                                        100</span>(2.5937424601)</div>
-                                </li>
-                                <br>
-                                <li>Finally, do the multiplication.<br>
-                                    <div class="math">FV</span> = $259.37</div>
-                                </li>
+                            <p>Starting with the parentheses, add the numbers in place of the variables and do the addition.</p>
+                            <div><img class="math" src="../images/add-numbers.svg">
+                            </div>
+
+                            <p>Next, apply the exponent. Be careful about rounding.</p>
+                            <div><img class="math" src="../images/apply-exponent.svg"></div>
+
+
+                            <p>Finally, do the multiplication.</p>
+                            <div><img class="math" src="../images/fv-answer.svg"></div>
+                            </li>
                             </ol>
                         </div>
                     </div>
@@ -933,18 +891,7 @@
                             <div class="bottom-space">
                                 <img src="./images/fv_factor_table_example_10_years.png" class="border img-fluid img-math ">
                             </div>
-                            <div class="bottom-space">
-                                <img src="./images/era_equation_example_10_years.png" alt="" class="img-fluid img-math">
-                            </div>
-                            <div class="math">
-                                <p>
-                                    FV</span> =
-                                    PV</span>(Future Value Factor)
-                                </p>
-                                <p>FV</span> = (100 * 2.5937)
-                                </p>
-                                <p>FV</span> = $259.37
-                                </p>
+                            <div><img class="math" src="../images/future-value-factor.svg">
                             </div>
                         </div>
                     </div>
@@ -975,7 +922,8 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="content">
-                            <p>So far we have calculated FV</span> with the TVM equation and the Future Value Factor. A third way to calculate TVM is with a financial calculator. If you have a financial calculator, now would be a good time to make sure you know how to use it.</p>
+                            <p>So far we have calculated FV</span> with the TVM equation and the Future Value Factor.</p>
+                            <p>A third way to calculate TVM is with a financial calculator. If you have a financial calculator, now would be a good time to make sure you know how to use it.</p>
                             <p>Plug in the numbers to verify that the equation and calculator find the same FV</span> using the math question you are familiar with.</p>
                             <p class="alert">Note: Your calculator must be on End mode -- this is the most common mistake made on tests. Also, notice that PV and FV are opposite signs (+/-).</p>
                             <p class="question">How much would $100 grow in 10 years at 10%?</p>
