@@ -92,11 +92,12 @@ li {
     /* image styles **************************/
     .img-fluid {
         margin: 10px;
-    }
-    .img-math {
-        /* max-width: 250px; */
         max-height: 230px;
     }
+    /* .img-math {
+        max-height: 230px;
+    } */
+    
     /* end image styles **************************/
 
     /* form styles **************************/
@@ -155,9 +156,6 @@ li {
     .bottom-space {
         margin-bottom: 30px;
     }
-    /* .space {
-        
-    } */
     .indent {
         margin-left: 25px;
     }
