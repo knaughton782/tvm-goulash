@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../tvm-styles.css">
+
+    <title>Time Value of Money - Part 1</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="allSlides">
+
+            <!---------------- SLIDE 6 - content ******************* -->
+            <div id="slide6" class="slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: The Basics</h2>
+                        <h3 class="secondary-title">TVM Equation</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <nav class="slide">
+                        <li><a href="./lecture1.html">Home</a></li>
+                        <li><a href="../tvm1/help/help-index.html">Math Help</a></li>
+                        <li><a href="./tvm1-exercises.html">Exercises</a></li>
+                        <li><a href="">Financial Calculator</a></li>
+                    </nav>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+                            <p>Now we know what variables factor in, but we'll need to derive the equation to understand how they relate to each other. Let's see this in action with a simple example.</p>
+                            <p class="question">How much money would you have in 1 year if you invested $100 at a rate of 10%?</p>
+                            <p class="answer">The answer is $110.</p>
+                            <p>Did you get the right answer? Click Help to learn how to calculate the answer.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="back help btn">Help</button>
+                        <button type="button" class="continue btn pgUp">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number"></div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- to help 2 -->
+            <!---------------- SLIDE 7 - content ******************* -->
+            <div id="slide7" class="slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: The Basics</h2>
+                        <h3 class="secondary-title">TVM Equation</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+
+                            <p>Now apply the same process to roll over the loan for a second year. Some find this a little more complicated, but the steps are the same.</p>
+                            <p class="question">How much money would you have in another year if you rolled over the $110 earned in the first year?</p>
+                            <p>If you have the answer, click Continue. If you don't know how to calculate the answer, click Help.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="back help btn">Help</button>
+                        <button type="button" class="continue btn pgUp">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number">7</div>
+                    </div>
+                </div>
+            </div>
+            <!-- to help 2 -->
+
+
+
+
+
+
+
+
+            <!---------------- SLIDE 9 - CONTENT *********** -->
+            <div id="slide9" class="slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: The Basics</h2>
+                        <h3 class="secondary-title">TVM Equation</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+                            <p class="question">How much money would you have in after the second year if you rolled over the $110 earned in the first year?</p>
+                            <p class="answer">The answer is $121.</p>
+                            <hr>
+                            <h4>Let's review:</h4>
+                            <p>
+                                <ul>
+                                    <li>We calculated the 1st year of interest earned by multiplying the interest rate times the 1st year starting principal. Then we added the 1st year interest to the principal.
+                                    </li>
+                                    <li>Next, we calculated the 2nd year of interest by finding 10% of the new principal amount. Then, we added the 2nd year interest to the new principal amount.
+                                    </li>
+                                </ul>
+                            </p>
+                            <p>In other words, we calculated the interest earned in each individual year and added all the interest payments back to the principal to find the Future Value (FV).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="back help btn">Help</button>
+                        <button type="button" class="continue btn pgUp">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number">9</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!---------------- SLIDE 11 - CONTENT --->
+            <div id="slide11" class="slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: The Basics</h2>
+                        <h3 class="secondary-title">TVM Equation</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+                            <p>Although calculating the interest for each individual year and adding it to the principal does produce the correct answer, this would be time consuming if you were calculating the future value after 10 years.</p>
+                            <p>We can derive a general equation that will allow you to solve for any of the variables: Future Value (FV), Present Value (PV), Interest rate (i), or number of years (n).</p>
+                            <p>If we combine our previous equations into one equation it looks like this:</p>
+                            <div><img class="math" src="../images/derive1.svg" alt=""></div>
+                            <p>We can simplify the equation to this: </p>
+                            <div><img class="math" src="../images/derive2.svg" alt=""></div>
+
+                            <p>Let's replace the numbers with variables so we can use the equation with any numbers. </p>
+                            <div><img class="math" src="../images/derive2-variables.svg" alt=""></div>
+
+                            <p>Click Help to review math principals that you need to know to follow along with the derivation of the equation. If you don't require math assistance, click Continue.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- to math refresher -->
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="continue help btn">Help</button>
+                        <button type="button" class="skip btn pgUp">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number">11</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+            <!---------------- SLIDE 14 - CONTENT -->
+            <div id="slide14" class="slide exercise-slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: The Basics</h2>
+                        <h3 class="secondary-title">TVM Equation</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+                            <h4>Example Exercise</h4>
+                            <p class="question">What would the $100 investment be worth in 10 years at 10% interest?</p>
+                            <p>Instructions: Identify the variables in the question and input them into the blanks provided. Use a decimal for the interest variable.</p>
+
+                            <div class="container">
+                                <div class="">
+                                    <form action="" class="indent">
+
+                                        <label>PV </label>
+                                        <input id="PV" type="number" placeholder="0"><br>
+
+                                        <label>&nbsp;&nbsp;&nbsp;i </label>
+                                        <input id="i" type="number" placeholder=".00"><br>
+
+                                        <label>&nbsp;&nbsp;n </label>
+                                        <input id="n" type="number" placeholder="0"><br>
+
+                                    </form>
+                                    <button onclick="calc_FV()" type="button" class="btn calculate-btn">Calculate</button>
+                                </div>
+                                <div class="answer" id="answer"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn pgUp">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number">14</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!---------------- SLIDE 15 - CONTENT -->
+            <div id="slide15" class="slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: The Basics</h2>
+                        <h3 class="secondary-title">TVM Equation</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+                            <h4>Exercise 1: Solution</h4>
+                            <p class="question">What would the $100 investment be worth in 10 years at 10%?</p>
+                            <p>Let's work through the problem.</p>
+                            <ul>
+                                <li>First, identify the variables:</li>
+                                <div><img class="math" src="../images/variables.svg">
+                                </div>
+                                <li>Once you've identified the variables, plug the numbers into the equation: </li>
+                                <div><img class="math" src="../images/plug-in-numbers.svg">
+                                </div>
+                                <li>Starting with the parentheses, add the numbers in place of the variables and do the addition.</li>
+                                <div><img class="math" src="../images/add-numbers.svg">
+                                </div>
+
+                                <li>Next, apply the exponent. Be careful about rounding.</li>
+                                <div><img class="math" src="../images/apply-exponent.svg"></div>
+
+
+                                <li>Finally, do the multiplication.</li>
+                                <div><img class="math" src="../images/fv-answer.svg"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn pgUp">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number">15</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!---------------- SLIDE 16  - CONTENT -->
+            <div id="slide16" class="slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: The Basics</h2>
+                        <h3 class="secondary-title">TVM Equation</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+                            <p>In the problem we just solved, the number in parentheses is called the Future Value Factor. In the ‘good old days’ before calculators, people used tables of pre-calculated Future Value Factors to solve the TVM equation.</p>
+                            <p>First, find the intersection of the number of periods (years) on the left and the interest rate at the top to find the Future Value Factor. Then multiply PV times the Future Value Factor to calculate FV.</p>
+                            <div class="bottom-space">
+                                <img src="../images/fv_factor_table_example_10_years.png" class="border img-fluid">
+                            </div>
+                            <div><img class="math" src="../images/future-value-factor.svg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn pgUp">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number">16</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!---------------- SLIDE 17  - CONTENT -->
+            <div id="slide17" class="slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: The Basics</h2>
+                        <h3 class="secondary-title">TVM Equation</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+                            <p>So far we have calculated FV with the TVM equation and the Future Value Factor.</p>
+                            <p>A third way to calculate TVM is with a financial calculator. If you have a financial calculator, now would be a good time to make sure you know how to use it.</p>
+                            <p>Plug in the numbers to verify that the equation and calculator find the same FV using the math question you are familiar with.</p>
+                            <p class="alert">Note: Your calculator must be on End mode -- this is the most common mistake made on tests. Also, keep in mind that PV is entered as a negative number and interest is entered as a whole number.</p>
+                            <p class="question">How much would $100 grow in 10 years at 10%?</p>
+                            <p class="text-center">
+                                <img src="../images/tvm1_calculator_check_example.png" class="img-fluid">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn pgUp">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number">17</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!---------------- SLIDE 18  - CONTENT -->
+            <div id="slide18" class="slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: The Basics</h2>
+                        <h3 class="secondary-title">TVM Equation</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+                            <p>Many textbooks will present you with four different TVM equations; one solving for each variable: FV, PV, i, and n. As a result you have to memorize four equations instead of one. There's an easier route!</p>
+                            <p>If you know the general TVM equation and have some basic math skills, you can solve for any of the four variables. We've already solved for Future Value (FV). Now we'll try 3 more example problems, solving for the other 3 variables. <span class="alert">For all these questions, solve without using the TVM buttons on your financial calculator.</span></p>
+                            <p class="question">How much would you pay today for a promise of $259.37 in 10 years at a discount rate of 10%?</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <!-- needs a help button  -->
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn pgUp">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number">18</div>
+                    </div>
+                </div>
+            </div>
+            <!-- to help 3 -->
+
+
+
+
+
+
+
+
+
+            <!---------------- SLIDE 20  - CONTENT -->
+            <div id="slide20" class="slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: The Basics</h2>
+                        <h3 class="secondary-title">Sample Problems</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+                            <p class="question">How much would you pay today for a promise of $259.37 in 10 years at a discount rate of 10%?</p>
+                            <p class="answer">The answer is $100.</p>
+                            <p> If you answered correctly, click Continue. If you answered incorrectly, click Help to calculate the answer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="back help btn">Help</button>
+                        <button type="button" class="continue btn pgUp">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number">20</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!---------------- SLIDE 21  -->
+            <div id="slide21" class="slide stop">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: The Basics</h2>
+                        <h3 class="secondary-title">Sample Problems</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+                            <p>In the problem we just solved, the number in parentheses is called the Present Value Factor. </p>
+                            <p>When there are no lump sums or payments, the Present Value Factor is just the reciprocal of the Future Value Factor. </p>
+                            <p>Multiply the Future Value (FV) times the Present Value Factor to calculate Present Value (PV)</span class>.</p>
+                            <div><img class="math" src="../images/exponent-step.svg"></div>
+                            <div class="bottom-space"><img src="./images/pv_factors_table.png" class="img-fluid " alt=""></div>
+                            <div class="bottom-space"><img src="./images/tvm_basic_pv_factor_example.png" class="img-fluid " alt=""></div>
+                            <div class="bottom-space"><img src="./images/pv_factor_numbers.png" class="img-fluid " alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn pgUp">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number">21</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!---------------- SLIDE 22 -->
+            <div id="slide22" class="slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: The Basics</h2>
+                        <h3 class="secondary-title">Sample Problems</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+                            <p>Answer this question:</p>
+                            <p class="question">If you need to triple your investment in 10 years, what interest rate will you need?</p>
+                            <p>When you think you have the answer, click Continue. If you don’t know how to calculate the answer, click Help.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="continue help btn">Help</button>
+                        <button type="button" class="skip btn pgUp">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number">22</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+            <!---------------- SLIDE 23   - CONTENT -->
+            <div id="slide23" class="slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: The Basics</h2>
+                        <h3 class="secondary-title">Sample Problems</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+                            <p class="question">If you need to triple your investment in 10 years, what interest rate will you need?</p>
+                            <p class="answer">The answer is 11.612%.</p>
+                            <p>If you answered correctly, click Continue. If you answered incorrectly, click the Help button to calculate the answer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="back help btn">Help</button>
+                        <button type="button" class="continue btn pgUp">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number">23</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!---------------- SLIDE 24 - CONTENT -->
+            <div id="slide24" class="slide stop">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: The Basics</h2>
+                        <h3 class="secondary-title">Sample Problems</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+                            <p>Answer this question:</p>
+                            <p class="question">How many years will it take for you to earn $500 on your $1000 investment if you are guaranteed a 9% rate of return?</p>
+
+                            <p>Follow the pattern we have used in the previous sample problems. If you don’t know how to calculate the answer, click Help.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="continue help btn">Help</button>
+                        <button type="button" class="skip btn pgUp">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number">24</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+            <!---------------- SLIDE 25 - CONTENT -->
+            <div id="slide25" class="slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: The Basics</h2>
+                        <h3 class="secondary-title">Sample Problems</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+                            <p class="question">How many years will it take for you to earn $500 on your $1000 investment if you are guaranteed a 9% rate of return?</p>
+                            <p class="answer">The answer is 4.7 years.</p>
+                            <p>Did you get the right answer? If you answered incorrectly, click Help to calculate the answer.</p>
+                            <hr>
+                            <p>You have now solved a TVM equation for each of the 4 variables: Present Value, Future Value, Interest, and Time.</p>
+                            <p>This proves that you can solve for any of the four variables if you know the general TVM equation and have some basic math skills. You will have more opportunities to practice manipulating the equation in the Exercises section.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="back help btn">Help</button>
+                        <button type="button" class="continue btn pgUp">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number">25</div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div> <!-- End of allSlides div -->
+    </div> <!--  end of container -->
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="tvm1-script.js"></script>
+</body>
+
+</html>

@@ -1,10 +1,38 @@
+:root {
+    --header-color: #466365;
+    --main-text-color: #292929;
+}
 body {
     font-family: 'Open Sans', sans-serif;
-    color: #292929;
+    color: var(--main-text-color);
 }
 li {
     margin-bottom: 10px;
 }
+hr {
+    margin-bottom: 25px;
+}
+nav {
+    list-style-type: none;
+    margin: 0 0 15px 0;
+    padding: 10px 0;
+    background-color: #cfcece;
+}
+
+nav div a,  nav div a:visited {
+    color: #ffffff;
+    color: var(--main-text-color);
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 15px;
+}
+nav div a:hover, nav div a:active {
+    color: #585858;
+    text-decoration: none;
+    font-size: 1.21em;
+}
+
+
 
 /* Media breakpoints */
 /* Small devices (small phone screens) */
@@ -29,7 +57,7 @@ li {
     } 
     /* slide headline title area */
     .slide-title {
-        background-color: #466365;
+        background-color: var(--header-color);
         color: #ffffff;
     }
     .primary-title {
@@ -51,6 +79,23 @@ li {
     }
     /* end slide set up **************************/
 
+/* a:link {
+    color: red;
+} */
+
+/* a:visited {
+    color: #cccccc;
+} */
+
+/* a:hover {
+    color: hotpink;
+} */
+
+/* a:active {
+    color: #cccccc;
+    text-decoration: none;
+} */
+
     /* button styles **************************/
     button {
         text-decoration: none;
@@ -63,13 +108,17 @@ li {
     button:active, button:focus, .btn:active, .btn:focus {
         color: #fff;
     }
+    button a:active, button a:link, button a:hover, button a:visited {
+        color: #fff;
+        text-decoration: none;
+    }
     button.start {
         box-shadow: 5px 10px 18px #242424;
         margin-top: 450px;
         margin-bottom: 25px;
     }
     .btn {
-        background-color: #466365;
+        background-color: var(--header-color);
         color: #fff;
         margin: 5px;
     }
@@ -97,7 +146,7 @@ li {
     /* .img-math {
         max-height: 230px;
     } */
-    
+
     /* end image styles **************************/
 
     /* form styles **************************/
@@ -178,14 +227,14 @@ li {
         margin: 10px 10px 25px 10px;
     }
     .question {
-        color: #292929;
+        color:var(--main-text-color);
         font-style: italic;
         font-size: 1.08em;
     }
     .answer {
         font-size: 1.08em;
         font-weight: 600;
-        color: #292929;
+        color: var(--main-text-color);
         margin-left: 25px;
     }
     /* end text styling **************************/
