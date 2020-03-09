@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../tvm-styles.css">
+    <link rel="stylesheet" href="../tvm-styles.css">
 
     <title>Time Value of Money - Part 1</title>
 </head>
@@ -288,7 +288,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="content">
-                            <p class="question">How much money would you have in after the second year if you rolled over the $110 earned in the first year?</p>
+                            <p class="question">How much money would you have after the second year if you rolled over the $110 earned in the first year?</p>
                             <p class="answer">The answer is $121.</p>
                             <hr>
                             <h4>Let's review:</h4>
@@ -296,11 +296,11 @@
                                 <ul>
                                     <li>We calculated the 1st year of interest earned by multiplying the interest rate times the 1st year starting principal. Then we added the 1st year interest to the principal.
                                     </li>
-                                    <li>Next, we calculated the 2nd year of interest by finding 10% of the new principal amount. Then, we added the 2nd year interest to the new principal amount.
+                                    <li>Next, we calculated the 2nd year of interest by multiplying the interest rate times the new principal amount. Then, we added the 2nd year interest to the new principal amount.
                                     </li>
                                 </ul>
                             </p>
-                            <p>In other words, we calculated the interest earned in each individual year and added all the interest payments back to the principal to find the Future Value (FV).</p>
+                            <p>In other words, we calculated the interest earned in each individual year and added both the interest payments back to the principal to find the Future Value (FV).</p>
                         </div>
                     </div>
                 </div>
@@ -331,7 +331,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="content">
-                            <p>Although calculating the interest for each individual year and adding it to the principal does produce the correct answer, this would be time consuming if you were calculating the future value after 10 years.</p>
+                            <p>Although calculating the interest for each individual year and adding it to the principal does produce the correct answer, this would be time consuming if you were calculating the future value after many years.</p>
                             <p>We can derive a general equation that will allow you to solve for any of the variables: Future Value (FV), Present Value (PV), Interest rate (i), or number of years (n).</p>
                             <p>If we combine our previous equations into one equation it looks like this:</p>
                             <div><img class="math" src="../images/derive1.svg" alt=""></div>
@@ -518,7 +518,7 @@
                             <p>So far we have calculated FV with the TVM equation and the Future Value Factor.</p>
                             <p>A third way to calculate TVM is with a financial calculator. If you have a financial calculator, now would be a good time to make sure you know how to use it.</p>
                             <p>Plug in the numbers to verify that the equation and calculator find the same FV using the math question you are familiar with.</p>
-                            <p class="alert">Note: Your calculator must be on End mode -- this is the most common mistake made on tests. Also, keep in mind that PV is entered as a negative number and interest is entered as a whole number.</p>
+                            <p class="alert">Note: Your calculator must be on End mode -- this is the most common mistake made on tests. Also, financial calculators require that PV is entered as a negative number and interest is entered as a whole number.</p>
                             <p class="question">How much would $100 grow in 10 years at 10%?</p>
                             <p class="text-center">
                                 <img src="../images/tvm1_calculator_check_example.png" class="img-fluid">
@@ -552,7 +552,7 @@
                     <div class="col-12">
                         <div class="content">
                             <p>Many textbooks will present you with four different TVM equations; one solving for each variable: FV, PV, i, and n. As a result you have to memorize four equations instead of one. There's an easier route!</p>
-                            <p>If you know the general TVM equation and have some basic math skills, you can solve for any of the four variables. We've already solved for Future Value (FV). Now we'll try 3 more example problems, solving for the other 3 variables. <span class="alert">For all these questions, solve without using the TVM buttons on your financial calculator.</span></p>
+                            <p>If you know the general TVM equation and have some basic math skills, you can solve for any of the four variables. We've already solved for Future Value (FV). Now we'll try 3 more example problems, solving for the other 3 variables.</p>
                             <p class="question">How much would you pay today for a promise of $259.37 in 10 years at a discount rate of 10%?</p>
 
                         </div>
@@ -594,7 +594,16 @@
                         <div class="content">
                             <p class="question">How much would you pay today for a promise of $259.37 in 10 years at a discount rate of 10%?</p>
                             <p class="answer">The answer is $100.</p>
-                            <p> If you answered correctly, click Continue. If you answered incorrectly, click Help to calculate the answer.</p>
+                            
+                            <hr/>
+                            <p>In this problem, the number in parentheses is called the Present Value Factor. When there are no lump sums or payments, the Present Value Factor is just the reciprocal of the Future Value. </p>
+                            <p>Multiply the Future Value (FV) times the Present Value Factor to calculate Present Value (PV)</span class>.</p>
+                            <div><img class="math" src="../images/exponent-step.svg"></div>
+                            <div class="bottom-space"><img src="./images/pv_factors_table.png" class="img-fluid " alt=""></div>
+                            <div class="bottom-space"><img src="./images/tvm_basic_pv_factor_example.png" class="img-fluid " alt=""></div>
+                            <div class="bottom-space"><img src="./images/pv_factor_numbers.png" class="img-fluid " alt="">
+                            </div>
+                            <p>If you need more information on calculating this answer,click the Help button.</p>
                         </div>
                     </div>
                 </div>
@@ -613,7 +622,7 @@
 
 
             <!---------------- SLIDE 21  -->
-            <div id="slide21" class="slide stop">
+            <!-- <div id="slide21" class="slide stop">
                 <div class="row slide-title">
                     <div class="col-12">
                         <h2 class="primary-title">TVM: The Basics</h2>
@@ -623,14 +632,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="content">
-                            <p>In the problem we just solved, the number in parentheses is called the Present Value Factor. </p>
-                            <p>When there are no lump sums or payments, the Present Value Factor is just the reciprocal of the Future Value Factor. </p>
-                            <p>Multiply the Future Value (FV) times the Present Value Factor to calculate Present Value (PV)</span class>.</p>
-                            <div><img class="math" src="../images/exponent-step.svg"></div>
-                            <div class="bottom-space"><img src="./images/pv_factors_table.png" class="img-fluid " alt=""></div>
-                            <div class="bottom-space"><img src="./images/tvm_basic_pv_factor_example.png" class="img-fluid " alt=""></div>
-                            <div class="bottom-space"><img src="./images/pv_factor_numbers.png" class="img-fluid " alt="">
-                            </div>
+                           
                         </div>
                     </div>
                 </div>
@@ -645,7 +647,7 @@
                         <div class="page-number">21</div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
 
 
@@ -804,7 +806,7 @@
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <script src="tvm1-script.js"></script>
+    <script src="./tvm1-script.js"></script>
 </body>
 
 </html>

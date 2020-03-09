@@ -129,7 +129,7 @@ function calc_FV() {
 /* ************************************* */
 /* ****************** for EXERCISES PAGE ******************* */
 /* ******** for exercise 2 *********** */
-function ex_2(principal, interest, time) {
+function ex_2(principal, fvalue, interest, time) {
   if (principal == 2000 && interest == 0.08 && time == 15) {
     var answer = principal * Math.pow((1 + interest), time);
     return `Your variables are correct!`;
@@ -140,10 +140,12 @@ function ex_2(principal, interest, time) {
 function exercise_2() {
   var principal = parseFloat(document.getElementById('pvalue-ex2').value);
   principal.toFixed(2);
+  var fvalue = parseFloat(document.getElementById('fvalue-ex2').value);
+  fvalue.toFixed(2);
   var interest = parseFloat(document.getElementById('int-ex2').value);
   interest.toFixed(2);
   var time = document.getElementById('yrs-ex2').value;
-  var ans = ex_2(principal, interest, time);
+  var ans = ex_2(principal, fvalue, interest, time);
 
   document.getElementById('answer-ex2').innerHTML = ans;
 }
