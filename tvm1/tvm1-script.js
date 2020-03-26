@@ -11,89 +11,89 @@ $(document).ready(function () {
   // });
 
   // for each click on the continue button, hide the current slide and show the next one
-  $('.continue').click(function () {
-    if ($('.allSlides .slide:visible').next().length != 0) {
-      $('.allSlides .slide:visible')
-        .next()
-        .show()
-        .prev()
-        .hide();
-    } else {
-      $('.allSlides .slide:visible').hide();
-      $('.allSlides .slide:first').show(); //wraps around and shows first slide again
-    }
-    return false;
-  });
+//   $('.continue').click(function () {
+//     if ($('.allSlides .slide:visible').next().length != 0) {
+//       $('.allSlides .slide:visible')
+//         .next()
+//         .show()
+//         .prev()
+//         .hide();
+//     } else {
+//       $('.allSlides .slide:visible').hide();
+//       $('.allSlides .slide:first').show(); //wraps around and shows first slide again
+//     }
+//     return false;
+//   });
 
-  // for each click on the back button, hide the current slide and show the previous one
-  $('.back').click(function () {
-    if ($('.allSlides .slide:visible').prev().length != 0) {
+//   // for each click on the back button, hide the current slide and show the previous one
+//   $('.back').click(function () {
+//     if ($('.allSlides .slide:visible').prev().length != 0) {
 
-      $('.allSlides .slide:visible')
-        .prev()
-        .show()
-        .next()
-        .hide();
-    } else {
-      $('.allSlides .slide:visible').hide();
-      $('.allSlides .slide:last').show();
-    }
-    return false;
-  });
-  /** END Back / Continue Button Functionality ****************/
+//       $('.allSlides .slide:visible')
+//         .prev()
+//         .show()
+//         .next()
+//         .hide();
+//     } else {
+//       $('.allSlides .slide:visible').hide();
+//       $('.allSlides .slide:last').show();
+//     }
+//     return false;
+//   });
+//   /** END Back / Continue Button Functionality ****************/
 
-  // for each click on the skip button, hide the current slide and show the next one with the land class
-  $('.skip').click(function () {
-    // console.log('skip clicked');
-    if ($('.allSlides .slide:visible').next().length != 0) {
-      // console.log('did this one go?');
-      $('.allSlides .slide:visible')
-        .nextUntil('div.stop')
-        .show()
-        .prev()
-        .hide();
-      console.log('skip to stop triggered');
-    } else {
-      $('.allSlides .slide:visible').hide();
-      $('.allSlides .slide:first').show(); //wraps around and shows first slide again
-    }
-    return false;
-  });
-
-
-  // for each click on the skipback button, hide the current slide and show the previous one with the landback class
-  $('.skipBack').click(function () {
-    // console.log('skip clicked');
-    if ($('.allSlides .slide:visible').next().length != 0) {
-      // console.log('did this one go?');
-      $('.allSlides .slide:visible')
-        .prevUntil('div.stopBack')
-        .show()
-        .next()
-        .hide();
-      console.log('skip to stop triggered');
-    } else {
-      $('.allSlides .slide:visible').hide();
-      $('.allSlides .slide:first').show(); //wraps around and shows first slide again
-    }
-    return false;
-  });
-
-  // $('.pgUp').click(function () {
-  //   $('.page-number').html(function (i, val) {
-  //     return val * 1 + 1;
-  //   });
-  // });
-
-  // $('.pgDown').click(function () {
-  //   $('.page-number').html(function (i, val) {
-  //     return val * 1 - 1;
-  //   });
-  // });
+//   // for each click on the skip button, hide the current slide and show the next one with the land class
+//   $('.skip').click(function () {
+//     // console.log('skip clicked');
+//     if ($('.allSlides .slide:visible').next().length != 0) {
+//       // console.log('did this one go?');
+//       $('.allSlides .slide:visible')
+//         .nextUntil('div.stop')
+//         .show()
+//         .prev()
+//         .hide();
+//       console.log('skip to stop triggered');
+//     } else {
+//       $('.allSlides .slide:visible').hide();
+//       $('.allSlides .slide:first').show(); //wraps around and shows first slide again
+//     }
+//     return false;
+//   });
 
 
+//   // for each click on the skipback button, hide the current slide and show the previous one with the landback class
+//   $('.skipBack').click(function () {
+//     // console.log('skip clicked');
+//     if ($('.allSlides .slide:visible').next().length != 0) {
+//       // console.log('did this one go?');
+//       $('.allSlides .slide:visible')
+//         .prevUntil('div.stopBack')
+//         .show()
+//         .next()
+//         .hide();
+//       console.log('skip to stop triggered');
+//     } else {
+//       $('.allSlides .slide:visible').hide();
+//       $('.allSlides .slide:first').show(); //wraps around and shows first slide again
+//     }
+//     return false;
+//   });
 
-});
+//   // $('.pgUp').click(function () {
+//   //   $('.page-number').html(function (i, val) {
+//   //     return val * 1 + 1;
+//   //   });
+//   // });
+
+//   // $('.pgDown').click(function () {
+//   //   $('.page-number').html(function (i, val) {
+//   //     return val * 1 - 1;
+//   //   });
+//   // });
+
+
+
+// });
 
 
 
@@ -445,3 +445,4 @@ function exercise_15() {
   document.getElementById('answer-ex15').innerHTML = ans;
 }
 /* ******** end exercise 15 *********** */
+})
