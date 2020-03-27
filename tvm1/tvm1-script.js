@@ -4,13 +4,13 @@ $(document).ready(function () {
   let url = window.location.pathname;
   let filename = url.substring(url.lastIndexOf('/') + 1);
   filename = filename.slice(0, -5);
-  console.log(filename);
+  // console.log(filename);
   $('.slide').attr('id', filename);
+
 
   // generate page number based on filename
   let pageNum = filename.substring(filename.lastIndexOf('-') + 1);
-    // filename.charAt(filename.length - 1);
-  console.log(pageNum);
+  // console.log(pageNum);
   $('.page-number').text(pageNum);
   /* ******************** */
 
@@ -93,51 +93,38 @@ $(document).ready(function () {
   //     }
   //     return false;
   //   });
-
-  //   // $('.pgUp').click(function () {
-  //   //   $('.page-number').html(function (i, val) {
-  //   //     return val * 1 + 1;
-  //   //   });
-  //   // });
-
-  //   // $('.pgDown').click(function () {
-  //   //   $('.page-number').html(function (i, val) {
-  //   //     return val * 1 - 1;
-  //   //   });
-  //   // });
-
   /************ END continue/back BUTTON FUNCTIONALITY  *************************/
 
 
 
-
-
   // future value calculation is FV = PV(1 + i)^time
+  /* ******* for first exercise slide in lecture ********** */
 
-  /* ****************** for first exercise slide midway through lecture1 ******************* */
-
-
-  // exercise 1 - this exercise is in lecture1.html
-  function FV(PV, i, n) {
-    console.log(`pv ${PV}, i ${i}, n ${n}`);
-    let FV = PV * (Math.pow((1 + i), n));
-    FV = FV.toFixed(2);
-    console.log(`fv ${FV}`)
-    return `The future value (FV) is $${FV}`;
-  }
+  document.getElementById('ex1').addEventListener('click', calc_FV);
 
   function calc_FV() {
     let PV = parseFloat(document.getElementById('PV').value);
-    PV.toFixed(2);
-    console.log(`pv in first function ${PV}`)
-    let i = parseFloat(document.getElementById('i').value);
-    i.toFixed(2);
+    let i = parseFloat(document.getElementById('i').value) / 100;
+    // console.log(i)
     let n = parseInt(document.getElementById('n').value);
-    let ans = FV(PV, i, n);
+    let ans = document.getElementById('answer');
 
-    document.getElementById('answer').innerHTML = ans;
+    if (isNaN(PV) || PV <= 0) {
+      ans.innerHTML = `Investment must be a valid number greater than zero.`;
+    }
+    else if (isNaN(i) || i <= 0) {
+      ans.innerHTML = `Annual rate must be a valid number, greater than zero, and a whole number.`;
+    }
+    else if (isNaN(n) || n <= 0) {
+      ans.innerHTML = `Years must be a valid number greater than zero.`;
+    }
+    else {
+      let FV = PV * (Math.pow((1 + i), n));
+      FV = FV.toFixed(2);
+      ans.innerHTML = `The future value (FV) is $${FV}`;
+    }
   }
-  /* ****************** end slide 15 ******************* */
+  /* ****************** end example 1 ******************* */
 
 
 
