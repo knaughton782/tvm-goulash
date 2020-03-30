@@ -109,6 +109,8 @@ $(document).ready(function () {
     let n = parseInt(document.getElementById('n').value);
     let ans = document.getElementById('answer');
 
+  
+
     if (isNaN(PV) || PV <= 0) {
       ans.innerHTML = `Investment must be a valid number greater than zero.`;
     }

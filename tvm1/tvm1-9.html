@@ -17,7 +17,7 @@
 
 
 
-        <div id="" class="slide exercise-slide">
+        <div id="" class="slide">
             <div class="row slide-title">
                 <div class="col-12">
                     <h2 class="primary-title">TVM: The Basics</h2>
@@ -33,28 +33,28 @@
             <div class="row">
                 <div class="col-12">
                     <div class="content">
-                        <h4>Example Exercise</h4>
-                        <p class="question">What would the $100 investment be worth in 10 years at 10% interest?</p>
-                        <p>Instructions: Identify the variables in the question and input them into the blanks provided.</p>
-
-                        <div class="container">
-                            <div class="">
-                                <form action="" class="indent">
-
-                                    <label>PV </label>
-                                    <input id="PV" type="number" placeholder="0"><br>
-
-                                    <label style="padding-left:15px;">i </label>
-                                    <input id="i" type="number" placeholder="0"><br>
-
-                                    <label style="padding-left: 10px;">n </label>
-                                    <input id="n" type="number" step="1" placeholder="0"><br>
-
-                                    <button id="ex1" type="button" class="btn calculate-btn">Calculate</button>
-                                </form>
+                        <h4>Exercise 1: Solution</h4>
+                        <p class="question">What would the $100 investment be worth in 10 years at 10%?</p>
+                        <p>Let's work through the problem.</p>
+                        <ul>
+                            <li>First, identify the variables:</li>
+                            <div><img class="math" src="../images/variables.svg">
                             </div>
-                            <div class="answer" id="answer"></div>
-                        </div>
+                            <li>Once you've identified the variables, plug the numbers into the equation: </li>
+                            <div><img class="math" src="../images/plug-in-numbers.svg">
+                            </div>
+                            <li>Starting with the parentheses, add the numbers in place of the variables and do the addition.</li>
+                            <div><img class="math" src="../images/add-numbers.svg">
+                            </div>
+
+                            <li>Next, apply the exponent. Be careful about rounding.</li>
+                            <div><img class="math" src="../images/apply-exponent.svg"></div>
+
+
+                            <li>Finally, do the multiplication.</li>
+                            <div><img class="math" src="../images/fv-answer.svg"></div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -66,10 +66,12 @@
             </div>
             <div class="row">
                 <div class="col-1">
-                    <div class="page-number">10</div>
+                    <div class="page-number">11</div>
                 </div>
             </div>
         </div>
+
+
 
     </div> <!--  end of container -->
 
@@ -80,7 +82,7 @@
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <script src="./tvm1-script.js"></script>
+    <script src="tvm1-script.js"></script>
 </body>
 
 </html>

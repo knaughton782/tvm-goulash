@@ -16,7 +16,8 @@
     <div class="container-fluid">
 
 
-        <div id="" class="slide">
+
+        <div id="" class="slide exercise-slide">
             <div class="row slide-title">
                 <div class="col-12">
                     <h2 class="primary-title">TVM: The Basics</h2>
@@ -32,20 +33,31 @@
             <div class="row">
                 <div class="col-12">
                     <div class="content">
-                        <p>Although calculating the interest for each individual year and adding it to the principal does produce the correct answer, this would be time consuming if you were calculating the future value after 10 years. We can derive a general equation that will allow you to solve for any of the variables: Future Value (FV), Present Value (PV), Interest rate (i), or number of years (n).</p>
-                        <p>If we combine our previous equations into one equation it looks like this:</p>
-                        <div><img class="math" src="../images/derive1.svg" alt="100(1+.10)(1+.10)=121"></div>
-                        <p>We can simplify the equation to this: </p>
-                        <div><img class="math" src="../images/derive2.svg" alt="100(1+.10)^2=121"></div>
+                        <h4>Example Exercise</h4>
+                        <p class="question">What would the $100 investment be worth in 10 years at 10% interest?</p>
+                        <p>Instructions: Identify the variables in the question and input them into the blanks provided.</p>
 
-                        <p>Let's replace the numbers with variables so we can use the equation with any numbers. </p>
-                        <div><img class="math" src="../images/derive2-variables.svg" alt="FV=PV(1+i)^n"></div>
+                        <div class="container">
+                            <div class="">
+                                <form action="" class="indent">
 
-                        <p>Click Help to review some math principals that you need to know to follow along with the derivation of the equation. If you don't need math help, click Continue.</p>
+                                    <label>PV </label>
+                                    <input id="PV" type="number" placeholder="0"><br>
+
+                                    <label style="padding-left:15px;">i </label>
+                                    <input id="i" type="number" placeholder="0"><br>
+
+                                    <label style="padding-left: 10px;">n </label>
+                                    <input id="n" type="number" step="1" placeholder="0"><br>
+
+                                    <button id="ex1" type="button" class="btn calculate-btn">Calculate</button>
+                                </form>
+                            </div>
+                            <div class="answer" id="answer"></div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- to math refresher -->
             <div class="row">
                 <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
                     <button type="button" class="btn"><a href="tvm1-7.html">Back</a></button>
@@ -54,13 +66,10 @@
             </div>
             <div class="row">
                 <div class="col-1">
-                    <div class="page-number">9</div>
+                    <div class="page-number"></div>
                 </div>
             </div>
         </div>
-
-
-
 
     </div> <!--  end of container -->
 
@@ -71,7 +80,7 @@
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <script src="tvm1-script.js"></script>
+    <script src="./tvm1-script.js"></script>
 </body>
 
 </html>
