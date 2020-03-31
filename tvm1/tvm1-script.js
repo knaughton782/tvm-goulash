@@ -134,7 +134,7 @@ $(document).ready(function () {
   /* ****************** for EXERCISES PAGE ******************* */
   /* ******** for exercise 2 *********** */
   function ex_2(principal, fvalue, interest, time) {
-    if (principal == 2000 && interest == 0.08 && time == 15) {
+    if (principal == 2000 && interest == 8 && time == 15) {
       var answer = principal * Math.pow((1 + interest), time);
       return `Your variables are correct!`;
     } else {
@@ -206,7 +206,7 @@ $(document).ready(function () {
 
   /* ******** for exercise 5 *********** */
   function ex_5(principal) {
-    if (principal = 103.67) {
+    if (principal == 103.67) {
       // FV = principal * Math.pow((1 + interest), time);
       return `Correct! The present value is $103.67.`;
     } else {
@@ -254,7 +254,7 @@ $(document).ready(function () {
 
   /* ******** for exercise 7 *********** */
   function ex_7(interest) {
-    if (interest = 7.177) {
+    if (interest == 7.177) {
       return `Correct! The interest is 7.177%.`;
     } else {
       return answer = "Please check your math and try again."
@@ -301,15 +301,15 @@ $(document).ready(function () {
 
   /* ******** for exercise 9 *********** */
   function ex_9(FV) {
-    if (FV = 6.116) {
+    if (FV == 6.116) {
       return `Correct! It would take 6.116 years to double your investment.`;
     } else {
       return answer = "Please check your math and try again."
     }
   }
   function exercise_9() {
-    var FV = parseFloat(document.getElementById('fvalue-ex8').value);
-    FV.toFixed(2);
+    var FV = parseFloat(document.getElementById('fvalue-ex9').value);
+    // FV.toFixed(2);
     var ans = ex_9(FV);
 
     document.getElementById('answer-ex9').innerHTML = ans;
@@ -321,7 +321,7 @@ $(document).ready(function () {
 
   /* ******** for exercise 10 *********** */
   function ex_10(FV) {
-    if (FV = 1.1255) {
+    if (FV == 1.1255) {
       return `Correct! The intersection of 3% and 4 years is 1.1255.`;
     } else {
       return answer = "Please check the table and try again."
@@ -341,7 +341,7 @@ $(document).ready(function () {
 
   /* ******** for exercise 11 *********** */
   function ex_11(FV) {
-    if (FV = 3376.50) {
+    if (FV == 3376.50) {
       return `Correct! The FV is $3376.50.`;
     } else {
       return answer = "Please check the table and try again."
@@ -362,7 +362,7 @@ $(document).ready(function () {
 
   /* ************  exercise 12 *************** */
   function ex_12(FV, interest, time) {
-    if (FV == 20000 && interest == .07 && time == 18) {
+    if (FV == 20000 && interest == 7 && time == 18) {
       return `Your variables are correct!`;
     } else {
       return `Please check the variables and try again.`;
@@ -387,7 +387,7 @@ $(document).ready(function () {
 
   /* ******** for exercise 13 *********** */
   function ex_13(principal) {
-    if (principal = 5917.28) {
+    if (principal == 5917.28) {
       return `Correct! The present value is $5917.28.`;
     } else {
       return answer = "Please check your math and try again."

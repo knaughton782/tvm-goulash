@@ -36,9 +36,9 @@
                     <div class="col-12">
                         <div class="content">
                             <h3>Exercises</h3>
-                            <p>It’s important that you grasp the basics of TVM before continuing on to the more advanced tutorials. To help you gauge your understanding of the TVM basics, its time to try some exercises on your own.</p>
+                            <p>It’s important that you grasp the basics of TVM before continuing on to more advanced topics. To help you gauge your understanding of the TVM basics, its time to try some exercises on your own.</p>
                             <h5>Instructions:</h5>
-                            <p><b>There are 14 exercises in this section.</b></p>
+                            <!-- <p><b>There are 14 exercises in this section.</b></p> -->
                             <p class="alert">Note: Your answers should include dollars and cents. Do not enter commas (,) or symbols (% or $). For example, a properly formatted answer looks like this: <span class="answer">1150.38</span></p>
                         </div>
                     </div>
@@ -67,10 +67,16 @@
                         <h3 class="secondary-title">Exercises</h3>
                     </div>
                 </div>
+                <nav class="row">
+                    <div class="col-12 col-md-3"><a href="./tvm1-1.html">Home</a></div>
+                    <div class="col-12 col-md-3"><a href="./help/help-index.html">Math Help</a></div>
+                    <div class="col-12 col-md-3"><a href="./tvm1-exercises.html">Exercises</a></div>
+                    <div class="col-12 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
+                </nav>
                 <div class="row">
                     <div class="col-12">
                         <div class="content">
-                            <!-- Exercises -->
+
                             <h4>Exercise 2: Identify the Variables</h4>
                             <p>Enter the value of each variable in the boxes below. Leave the unknown variable blank. Then submit your answer.</p>
                             <p class="question">If I deposit $2,000 in an account that earns an annually compounded rate of 8%, how much will my account be worth in 15 years?</p>
@@ -78,17 +84,17 @@
                                 <div class="">
                                     <form action="" class="indent">
 
-                                        <label>PV</label>
-                                        <input id="pvalue-ex2" type="number" placeholder="0"><br>
+                                        <label>Present Value (PV)</label>
+                                        <input id="Present Value (PV)alue-ex2" type="number"><br>
 
-                                        <label>FV </label>
-                                        <input id="fvalue-ex2" type="number" placeholder="0"><br>
+                                        <label>Future Value (FV) </label>
+                                        <input id="Future Value (FV)alue-ex2" type="number"><br>
 
-                                        <label>&nbsp;&nbsp;&nbsp;i </label>
-                                        <input id="int-ex2" type="number" placeholder=".00"><br>
+                                        <label>Interest (i)</label>
+                                        <input id="int-ex2" type="number"><br>
 
-                                        <label>&nbsp;&nbsp;n </label>
-                                        <input id="yrs-ex2" type="number" placeholder="0"><br>
+                                        <label>Time (n)</label>
+                                        <input id="yrs-ex2" type="number"><br>
 
                                     </form>
                                     <button onclick="exercise_2()" type="button" class="btn calculate-btn">Submit</button>
@@ -123,6 +129,12 @@
                         <h3 class="secondary-title">Exercises</h3>
                     </div>
                 </div>
+                <nav class="row">
+                    <div class="col-12 col-md-3"><a href="./tvm1-1.html">Home</a></div>
+                    <div class="col-12 col-md-3"><a href="./help/help-index.html">Math Help</a></div>
+                    <div class="col-12 col-md-3"><a href="./tvm1-exercises.html">Exercises</a></div>
+                    <div class="col-12 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
+                </nav>
                 <div class="row">
                     <div class="col-12">
                         <div class="content">
@@ -130,10 +142,10 @@
                             <h4>Exercise 2: Solution</h4>
                             <p class="question">If I deposit $2,000 in an account that earns an annually compounded rate of 8%, how much will my account be worth in 15 years?</p>
                             <p>Variables:</p>
-                            <div><img class="math" src="../images/exponent-step.svg"></div>
+                            <!-- <div><img class="math" src="../images/exponent-step.svg"></div> -->
                             <p class="math">
-                                PV = 2000 <br>
-                                FV = ? <br>
+                                Present Value (PV) = 2000 <br>
+                                Future Value (FV) = ? <br>
                                 i = 8% &xrarr; 0.08<br>
                                 n = 15
                             </p>
@@ -164,19 +176,25 @@
                         <h3 class="secondary-title">Exercises</h3>
                     </div>
                 </div>
+                <nav class="row">
+                    <div class="col-12 col-md-3"><a href="./tvm1-1.html">Home</a></div>
+                    <div class="col-12 col-md-3"><a href="./help/help-index.html">Math Help</a></div>
+                    <div class="col-12 col-md-3"><a href="./tvm1-exercises.html">Exercises</a></div>
+                    <div class="col-12 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
+                </nav>
                 <div class="row">
                     <div class="col-12">
                         <div class="content">
-                            <!-- Exercises -->
+
                             <h4>Exercise 3: Calculate the Unknown Variable</h4>
                             <p>Now solve the TVM equation from the last screen and enter the value of the unknown variable.</p>
-                            <p>Hint: The information from the last question shows we are looking for the Future Value (FV).</p>
+                            <p>Hint: The information from the last question shows we are looking for the Future Value (Future Value (FV)).</p>
                             <p class="question">If I deposit $2,000 in an account that earns an annually compounded rate of 8%, how much will my account be worth in 15 years?</p>
                             <div class="container">
                                 <div class="">
                                     <form action="" class="indent">
-                                        <label>FV </label>
-                                        <input id="fvalue-ex3" type="number" placeholder="0"><br>
+                                        <label>Future Value (FV) </label>
+                                        <input id="Future Value (FV)alue-ex3" type="number"><br>
                                     </form>
                                     <button onclick="exercise_3()" type="button" class="btn calculate-btn">Submit</button>
                                 </div>
@@ -210,31 +228,36 @@
                         <h3 class="secondary-title">Exercises</h3>
                     </div>
                 </div>
+                <nav class="row">
+                    <div class="col-12 col-md-3"><a href="./tvm1-1.html">Home</a></div>
+                    <div class="col-12 col-md-3"><a href="./help/help-index.html">Math Help</a></div>
+                    <div class="col-12 col-md-3"><a href="./tvm1-exercises.html">Exercises</a></div>
+                    <div class="col-12 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
+                </nav>
                 <div class="row">
                     <div class="col-12">
                         <div class="content">
-                            <!-- Help -->
                             <h4>Exercise 3: Solution</h4>
                             <p class="question">If I deposit $2,000 in an account that earns an annually compounded rate of 8%, how much will my account be worth in 15 years?</p>
 
                             <p>Variables:</p>
-                            <div><img class="math" src="../images/exponent-step.svg"></div>
-                            <p class="math">PV = 2000<br>
-                                FV = ?<br>
+                            <!-- <div><img class="math" src="../images/exponent-step.svg"></div> -->
+                            <p class="math">Present Value (PV) = 2000<br>
+                                Future Value (FV) = ?<br>
                                 i = 0.08<br>
                                 n = 15</p>
 
                             <p>Plug the numbers into the equation:</p>
-                            <div><img class="math" src="../images/exponent-step.svg"></div>
-                            <p class="math">FV = PV(1 + i)<sup>n</sup> <br>
+                            <!-- <div><img class="math" src="../images/exponent-step.svg"></div> -->
+                            <p class="math">Future Value (FV) = Present Value (PV)(1 + i)<sup>n</sup> <br>
 
-                                FV = 2000(1 + 0.08)<sup>15</sup><br>
+                                Future Value (FV) = 2000(1 + 0.08)<sup>15</sup><br>
 
-                                FV = 2000(1.08)<sup>15</sup> <br>
+                                Future Value (FV) = 2000(1.08)<sup>15</sup> <br>
 
-                                FV = 2000(3.172169)<br>
-                                <b>FV = $6,344.34</b></p>
-                            <div><img class="math" src="../images/exponent-step.svg"></div>
+                                Future Value (FV) = 2000(3.172169)<br>
+                                <b>Future Value (FV) = $6,344.34</b></p>
+                            <!-- <div><img class="math" src="../images/exponent-step.svg"></div> -->
                         </div>
                     </div>
                 </div>
@@ -265,24 +288,30 @@
                         <h3 class="secondary-title">Exercises</h3>
                     </div>
                 </div>
+                <nav class="row">
+                    <div class="col-12 col-md-3"><a href="./tvm1-1.html">Home</a></div>
+                    <div class="col-12 col-md-3"><a href="./help/help-index.html">Math Help</a></div>
+                    <div class="col-12 col-md-3"><a href="./tvm1-exercises.html">Exercises</a></div>
+                    <div class="col-12 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
+                </nav>
                 <div class="row">
                     <div class="col-12">
                         <div class="content">
-                            <!-- Exercises -->
+
                             <h4>Exercise 4: Identify the Variables</h4>
                             <p>Enter the value of each variable in the boxes below. Leave the box for the unknown variable blank.</p>
                             <p class="question">A zero coupon bond pays $1,000 at maturity in 20 years. If the appropriate required return for this level of risky asset is 12%, how much would I be willing to pay for this bond? (assume annual compounding/discounting)</p>
                             <div class="container">
                                 <div class="">
                                     <form action="" class="indent">
-                                        <label>PV </label>
-                                        <input id="pvalue-ex4" type="number" placeholder="0"><br>
-                                        <label>FV </label>
-                                        <input id="fvalue-ex4" type="number" placeholder="0"><br>
-                                        <label>&nbsp;&nbsp;&nbsp;i </label>
-                                        <input id="int-ex4" type="number" placeholder=".00"><br>
-                                        <label>&nbsp;&nbsp;n </label>
-                                        <input id="yrs-ex4" type="number" placeholder="0"><br>
+                                        <label>Present Value (PV) </label>
+                                        <input id="Present Value (PV)alue-ex4" type="number"><br>
+                                        <label>Future Value (FV) </label>
+                                        <input id="Future Value (FV)alue-ex4" type="number"><br>
+                                        <label>Interest (i)</label>
+                                        <input id="int-ex4" type="number"><br>
+                                        <label>Time (n)</label>
+                                        <input id="yrs-ex4" type="number"><br>
                                     </form>
                                     <button onclick="exercise_4()" type="button" class="btn calculate-btn">Submit</button>
                                 </div>
@@ -316,14 +345,20 @@
                         <h3 class="secondary-title">Exercises</h3>
                     </div>
                 </div>
+                <nav class="row">
+                    <div class="col-12 col-md-3"><a href="./tvm1-1.html">Home</a></div>
+                    <div class="col-12 col-md-3"><a href="./help/help-index.html">Math Help</a></div>
+                    <div class="col-12 col-md-3"><a href="./tvm1-exercises.html">Exercises</a></div>
+                    <div class="col-12 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
+                </nav>
                 <div class="row">
                     <div class="col-12">
                         <div class="content">
                             <h4>Exercise 4: Solution</h4>
                             <p class="question">A zero coupon bond pays $1,000 at maturity in 20 years. If the appropriate required return for this level of risky asset is 12%, how much would I be willing to pay for this bond? (assume annual compounding/discounting)</p>
-                            <div><img class="math" src="../images/exponent-step.svg"></div>
-                            <p class="math">PV = ?<br>
-                                FV = 1000<br>
+                            <!-- <div><img class="math" src="../images/exponent-step.svg"></div> -->
+                            <p class="math">Present Value (PV) = ?<br>
+                                Future Value (FV) = 1000<br>
                                 i = 12% or 0.12<br>
                                 n = 20</p>
                         </div>
@@ -352,18 +387,24 @@
                         <h3 class="secondary-title">Exercises</h3>
                     </div>
                 </div>
+                <nav class="row">
+                    <div class="col-12 col-md-3"><a href="./tvm1-1.html">Home</a></div>
+                    <div class="col-12 col-md-3"><a href="./help/help-index.html">Math Help</a></div>
+                    <div class="col-12 col-md-3"><a href="./tvm1-exercises.html">Exercises</a></div>
+                    <div class="col-12 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
+                </nav>
                 <div class="row">
                     <div class="col-12">
                         <div class="content">
-                            <!-- Exercises -->
+
                             <h4>Exercise 5: Calculate the Unknown Variable</h4>
                             <p>Solve the TVM equation and enter the value of the unknown variable from the previous exercise.</p>
                             <p class="question">A zero coupon bond pays $1,000 at maturity in 20 years. If the appropriate required return for this level of risky asset is 12%, how much would I be willing to pay for this bond (assume annual compounding/discounting)</p>
                             <div class="container">
                                 <div class="">
                                     <form action="" class="indent">
-                                        <label>PV </label>
-                                        <input id="pvalue-ex5" type="number" placeholder="0"><br>
+                                        <label>Present Value (PV) </label>
+                                        <input id="Present Value (PV)alue-ex5" type="number"><br>
                                     </form>
                                     <button onclick="exercise_5()" type="button" class="btn calculate-btn">Submit</button>
                                 </div>
@@ -396,27 +437,33 @@
                         <h3 class="secondary-title">Exercises</h3>
                     </div>
                 </div>
+                <nav class="row">
+                    <div class="col-12 col-md-3"><a href="./tvm1-1.html">Home</a></div>
+                    <div class="col-12 col-md-3"><a href="./help/help-index.html">Math Help</a></div>
+                    <div class="col-12 col-md-3"><a href="./tvm1-exercises.html">Exercises</a></div>
+                    <div class="col-12 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
+                </nav>
                 <div class="row">
                     <div class="col-12">
                         <div class="content">
                             <h4>Exercise 5: Solution</h4>
                             <p class="question">A zero coupon bond pays $1,000 at maturity in 20 years. If the appropriate required return for this level of risky asset is 12%, how much would I be willing to pay for this bond? (assume annual compounding/discounting)</p>
                             <p>Variables:</p>
-                            <div><img class="math" src="../images/exponent-step.svg"></div>
-                            <p class="math">PV = ?<br>
-                                FV = 1000<br>
+                            <!-- <div><img class="math" src="../images/exponent-step.svg"></div> -->
+                            <p class="math">Present Value (PV) = ?<br>
+                                Future Value (FV) = 1000<br>
                                 i = 0.12<br>
                                 n = 20</p>
 
                             <p>Plug the numbers into the equation:</p>
-                            <div><img class="math" src="../images/exponent-step.svg"></div>
+                            <!-- <div><img class="math" src="../images/exponent-step.svg"></div> -->
                             <p class="math">
-                                FV = PV(1 + i)<sup>n</sup><br>
-                                1000</span class> = PV(1 + 0.12)<sup>20</sup><br>
-                                1000 = PV(1.12)<sup>20</sup><br>
-                                1000</span clas> = PV(9.64629309)<br>
-                                1000</span clas> / 9.64629309 = PV<br>
-                                <b>PV = $103.67</b>
+                                Future Value (FV) = Present Value (PV)(1 + i)<sup>n</sup><br>
+                                1000</span class> = Present Value (PV)(1 + 0.12)<sup>20</sup><br>
+                                1000 = Present Value (PV)(1.12)<sup>20</sup><br>
+                                1000</span clas> = Present Value (PV)(9.64629309)<br>
+                                1000</span clas> / 9.64629309 = Present Value (PV)<br>
+                                <b>Present Value (PV) = $103.67</b>
                             </p>
                         </div>
                     </div>
@@ -429,7 +476,7 @@
                 </div>
                 <div class="row">
                     <div class="col-1">
-                        <div class="page-number">35</div>
+                        <div class="page-number"></div>
                     </div>
                 </div>
             </div>
@@ -447,24 +494,30 @@
                         <h3 class="secondary-title">Exercises</h3>
                     </div>
                 </div>
+                <nav class="row">
+                    <div class="col-12 col-md-3"><a href="./tvm1-1.html">Home</a></div>
+                    <div class="col-12 col-md-3"><a href="./help/help-index.html">Math Help</a></div>
+                    <div class="col-12 col-md-3"><a href="./tvm1-exercises.html">Exercises</a></div>
+                    <div class="col-12 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
+                </nav>
                 <div class="row">
                     <div class="col-12">
                         <div class="content">
-                            <!-- Exercises -->
+
                             <h4>Exercise 6: Identify the Variables</h4>
                             <p>Enter the value of each variable in the boxes below. Leave the unknown variable blank.</p>
-                            <p class="question">What interest rate (annual basis) is required for a deposit to double in 10 years?</p>
+                            <p class="question">What interest rate is required for a deposit to double in 10 years?</p>
                             <div class="container">
                                 <div class="">
                                     <form action="" class="indent">
-                                        <label>PV </label>
-                                        <input id="pvalue-ex6" type="number" placeholder="0"><br>
-                                        <label>FV </label>
-                                        <input id="fvalue-ex6" type="number" placeholder="0"><br>
-                                        <label>&nbsp;&nbsp;&nbsp;i </label>
-                                        <input id="int-ex6" type="number" placeholder=".00"><br>
-                                        <label>&nbsp;&nbsp;n </label>
-                                        <input id="yrs-ex6" type="number" placeholder="0"><br>
+                                        <label>Present Value (PV) </label>
+                                        <input id="Present Value (PV)alue-ex6" type="number"><br>
+                                        <label>Future Value (FV) </label>
+                                        <input id="Future Value (FV)alue-ex6" type="number"><br>
+                                        <label>Interest (i)</label>
+                                        <input id="int-ex6" type="number"><br>
+                                        <label>Time (n)</label>
+                                        <input id="yrs-ex6" type="number"><br>
                                     </form>
                                     <button onclick="exercise_6()" type="button" class="btn calculate-btn">Submit</button>
                                 </div>
@@ -497,16 +550,22 @@
                         <h3 class="secondary-title">Exercises</h3>
                     </div>
                 </div>
+                <nav class="row">
+                    <div class="col-12 col-md-3"><a href="./tvm1-1.html">Home</a></div>
+                    <div class="col-12 col-md-3"><a href="./help/help-index.html">Math Help</a></div>
+                    <div class="col-12 col-md-3"><a href="./tvm1-exercises.html">Exercises</a></div>
+                    <div class="col-12 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
+                </nav>
                 <div class="row">
                     <div class="col-12">
                         <div class="content">
                             <h4>Exercise 6: Solution</h4>
-                            <p class="question">What interest rate (annual basis) is required for a deposit to double in 10 years?</p>
-                            The problem states that we want to double the investment, which means FV will be twice the amount of PV. You can use any numbers, as long as you maintain as the FV to PV ratio, which is 2:1. However, to cut out the need to simplify the math later, it’s best to start with FV = 2 and PV = 1.
+                            <p class="question">What interest rate is required for a deposit to double in 10 years?</p>
+                            The problem states that we want to double the investment, which means Future Value (FV) will be twice the amount of Present Value (PV). You can use any numbers, as long as you maintain as the Future Value (FV) to Present Value (PV) ratio, which is 2:1. However, to cut out the need to simplify the math later, it’s best to start with Future Value (FV) = 2 and Present Value (PV) = 1.
                             <p>Variables:</p>
-                            <div><img class="math" src="../images/exponent-step.svg"></div>
-                            <p class="math">PV = 1<br>
-                                FV = 2<br>
+                            <!-- <div><img class="math" src="../images/exponent-step.svg"></div> -->
+                            <p class="math">Present Value (PV) = 1<br>
+                                Future Value (FV) = 2<br>
                                 i = ?<br>
                                 n = 10
                             </p>
@@ -538,13 +597,19 @@
                         <h3 class="secondary-title">Exercises</h3>
                     </div>
                 </div>
+                <nav class="row">
+                    <div class="col-12 col-md-3"><a href="./tvm1-1.html">Home</a></div>
+                    <div class="col-12 col-md-3"><a href="./help/help-index.html">Math Help</a></div>
+                    <div class="col-12 col-md-3"><a href="./tvm1-exercises.html">Exercises</a></div>
+                    <div class="col-12 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
+                </nav>
                 <div class="row">
                     <div class="col-12">
                         <div class="content">
-                            <!-- Exercises -->
+
                             <h4>Exercise 7: Calculate the Unknown Variable</h4>
                             <p>Solve the TVM equation and enter the value of the variable in the box provided.</p>
-                            <p class="question">What interest rate (annual basis) is required for a deposit to double in 10 years? <span class="note">Note: Include 3 digits to the right of the decimal.</p>
+                            <p class="question">What interest rate is required for a deposit to double in 10 years? <span class="note">Note: Include 3 digits to the right of the decimal.</p>
                             <div class="container">
                                 <div class="">
                                     <form action="" class="indent">
@@ -583,21 +648,27 @@
                         <h3 class="secondary-title">Exercises</h3>
                     </div>
                 </div>
+                <nav class="row">
+                    <div class="col-12 col-md-3"><a href="./tvm1-1.html">Home</a></div>
+                    <div class="col-12 col-md-3"><a href="./help/help-index.html">Math Help</a></div>
+                    <div class="col-12 col-md-3"><a href="./tvm1-exercises.html">Exercises</a></div>
+                    <div class="col-12 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
+                </nav>
                 <div class="row">
                     <div class="col-12">
                         <div class="content">
                             <h4>Exercise 7: Solution</h4>
-                            <p>What interest rate (annual basis) is required for a deposit to double in 10 years?</p>
-                            <p>Remember to maintain the 2:1 ratio. It makes the math easy to start with FV = 2 and PV = 1.</p>
+                            <p>What interest rate is required for a deposit to double in 10 years?</p>
+                            <p>Remember to maintain the 2:1 ratio. It makes the math easy to start with Future Value (FV) = 2 and Present Value (PV) = 1.</p>
                             <p>Variables:</p>
-                            <div><img class="math" src="../images/exponent-step.svg"></div>
-                            <p class="math">PV = 1<br>
-                                FV = 2<br>
+                            <!-- <div><img class="math" src="../images/exponent-step.svg"></div> -->
+                            <p class="math">Present Value (PV) = 1<br>
+                                Future Value (FV) = 2<br>
                                 i = ?<br>
                                 n = 10
                             </p>
                             <p>Plug the numbers into the equation:</p>
-                            <div><img class="math" src="../images/exponent-step.svg"></div>
+                            <!-- <div><img class="math" src="../images/exponent-step.svg"></div> -->
                             <p class="math">
                                 <img src="./images/tvm1_question3.png" class="img-fluid " alt="">
                             </p>
@@ -628,24 +699,30 @@
                         <h3 class="secondary-title">Exercises</h3>
                     </div>
                 </div>
+                <nav class="row">
+                    <div class="col-12 col-md-3"><a href="./tvm1-1.html">Home</a></div>
+                    <div class="col-12 col-md-3"><a href="./help/help-index.html">Math Help</a></div>
+                    <div class="col-12 col-md-3"><a href="./tvm1-exercises.html">Exercises</a></div>
+                    <div class="col-12 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
+                </nav>
                 <div class="row">
                     <div class="col-12">
                         <div class="content">
-                            <!-- Exercises -->
+
                             <h4>Exercise 8: Identify the Variables</h4>
                             <p>Enter the value of each variable in the boxes below. Leave the unknown variable blank.</p>
                             <p class="question">At a rate of 12% annual interest, how long would it take for an amount to double?</p>
                             <div class="container">
                                 <div class="">
                                     <form action="" class="indent">
-                                        <label>PV </label>
-                                        <input id="pvalue-ex8" type="number" placeholder="0"><br>
-                                        <label>FV </label>
-                                        <input id="fvalue-ex8" type="number" placeholder="0"><br>
-                                        <label>&nbsp;&nbsp;&nbsp;i </label>
-                                        <input id="int-ex8" type="number" placeholder=".00"><br>
-                                        <label>&nbsp;&nbsp;n </label>
-                                        <input id="yrs-ex8" type="number" placeholder="0"><br>
+                                        <label>Present Value (PV) </label>
+                                        <input id="Present Value (PV)alue-ex8" type="number"><br>
+                                        <label>Future Value (FV) </label>
+                                        <input id="Future Value (FV)alue-ex8" type="number"><br>
+                                        <label>Interest (i)</label>
+                                        <input id="int-ex8" type="number"><br>
+                                        <label>Time (n)</label>
+                                        <input id="yrs-ex8" type="number"><br>
                                     </form>
                                     <button onclick="exercise_8()" type="button" class="btn calculate-btn">Submit</button>
                                 </div>
@@ -679,16 +756,22 @@
                         <h3 class="secondary-title">Exercises</h3>
                     </div>
                 </div>
+                <nav class="row">
+                    <div class="col-12 col-md-3"><a href="./tvm1-1.html">Home</a></div>
+                    <div class="col-12 col-md-3"><a href="./help/help-index.html">Math Help</a></div>
+                    <div class="col-12 col-md-3"><a href="./tvm1-exercises.html">Exercises</a></div>
+                    <div class="col-12 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
+                </nav>
                 <div class="row">
                     <div class="col-12">
                         <div class="content">
                             <h4>Exercise 8: Solution</h4>
                             <p>At a rate of 12% annual interest, how long would it take for an amount to double?</p>
-                            <p>LIke one of the previous exercises, the amount invested today will double. In other words, the FV</span c> to PV ratio is 2:1. Use FV = 2 and PV = 1.</p>
-                            <div><img class="math" src="../images/exponent-step.svg"></div>
+                            <p>LIke one of the previous exercises, the amount invested today will double. In other words, the Future Value (FV)</span c> to Present Value (PV) ratio is 2:1. Use Future Value (FV) = 2 and Present Value (PV) = 1.</p>
+                            <!-- <div><img class="math" src="../images/exponent-step.svg"></div> -->
                             <p class="math">
-                                PV = 1<br>
-                                FV = 2<br>
+                                Present Value (PV) = 1<br>
+                                Future Value (FV) = 2<br>
                                 i = 12% &xrarr; .12<br>
                                 n = ?
                             </p>
@@ -719,10 +802,16 @@
                         <h3 class="secondary-title">Exercises</h3>
                     </div>
                 </div>
+                <nav class="row">
+                    <div class="col-12 col-md-3"><a href="./tvm1-1.html">Home</a></div>
+                    <div class="col-12 col-md-3"><a href="./help/help-index.html">Math Help</a></div>
+                    <div class="col-12 col-md-3"><a href="./tvm1-exercises.html">Exercises</a></div>
+                    <div class="col-12 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
+                </nav>
                 <div class="row">
                     <div class="col-12">
                         <div class="content">
-                            <!-- Exercises -->
+
                             <h4>Exercise 9: Calculate the Unknown Variable</h4>
                             <p>Solve the TVM equation and enter the value of the unknown variable.</p>
                             <p class="question">At a rate of 12% annual interest, how long would it take for an amount to double? <span class="note">Note: Please round to 3 places after the decimal point.</p>
@@ -730,7 +819,7 @@
                                 <div class="">
                                     <form action="" class="indent">
                                         <label>n </label>
-                                        <input id="yrs-ex9" type="number" placeholder="0"><br>
+                                        <input id="yrs-ex9" type="number"><br>
                                     </form>
                                     <button onclick="exercise_9()" type="button" class="btn calculate-btn">Submit</button>
                                 </div>
@@ -765,19 +854,25 @@
                         <h3 class="secondary-title">Exercises</h3>
                     </div>
                 </div>
+                <nav class="row">
+                    <div class="col-12 col-md-3"><a href="./tvm1-1.html">Home</a></div>
+                    <div class="col-12 col-md-3"><a href="./help/help-index.html">Math Help</a></div>
+                    <div class="col-12 col-md-3"><a href="./tvm1-exercises.html">Exercises</a></div>
+                    <div class="col-12 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
+                </nav>
                 <div class="row">
                     <div class="col-12">
                         <div class="content">
                             <h4>Exercise 9: Solution</h4>
-                            <p>At a rate of 12% annual interest, how long would it take for an amount to double? Like one of the previous exercises, the amount invested today will double. In other words, the FV to PV ratio is 2:1. Use FV = 2 and PV = 1.</p>
-                            <div><img class="math" src="../images/exponent-step.svg"></div>
-                            <p class="math">PV = 1<br>
-                                FV = 2<br>
+                            <p>At a rate of 12% annual interest, how long would it take for an amount to double? Like one of the previous exercises, the amount invested today will double. In other words, the Future Value (FV) to Present Value (PV) ratio is 2:1. Use Future Value (FV) = 2 and Present Value (PV) = 1.</p>
+                            <!-- <div><img class="math" src="../images/exponent-step.svg"></div> -->
+                            <p class="math">Present Value (PV) = 1<br>
+                                Future Value (FV) = 2<br>
                                 i = 12% &xrarr; .12<br>
                                 n = ?</p>
                             <p>Then plug the numbers into the equation.</p>
                             <p class="math"><img src="./images/tvm1_question4.png" class="img-fluid " alt=""></p>
-                            <div><img class="math" src="../images/exponent-step.svg"></div>
+                            <!-- <div><img class="math" src="../images/exponent-step.svg"></div> -->
                         </div>
                     </div>
                 </div>
@@ -798,7 +893,7 @@
 
             <!-- exercise1-slide18 : problem 10  -->
             <!---------------- SLIDE 44  - EXERCISES -->
-            <div id="exercise1-slide18" class="slide exercise-slide">
+            <!-- <div id="exercise1-slide18" class="slide exercise-slide">
                 <div class="row slide-title">
                     <div class="col-12">
                         <h2 class="primary-title">TVM: The Basics</h2>
@@ -808,7 +903,6 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="content">
-                            <!-- Exercises -->
                             <h4>Exercise 10: Find the Future Value Factor</h4>
                             <p>Given the following problem, find the Future Value Factor from the table provided.</p>
                             <p class="question">How much will $3,000 in a certificate of deposit that pays 3% annual interest be worth in 4 years?</p>
@@ -816,39 +910,39 @@
                                 <div class="">
                                     <form action="" class="indent">
                                         <label>Future Value Factor </label>
-                                        <input id="fvalue-ex10" type="number" placeholder="0.0000"><br>
+                                        <input id="Future Value (FV)alue-ex10" type="number" placeholder="0.0000"><br>
                                     </form>
                                     <button onclick="exercise_10()" type="button" class="btn calculate-btn">Submit</button>
                                 </div>
-                                <div><img class="math" src="../images/exponent-step.svg"></div>
-                                <div class="bottom-space">
-                                    <img src="./images/future_value_factors.jpg" class="img-fluid  border" alt="">
-                                </div>
-                                <br>
-                                <div class="answer" id="answer-ex10"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
-                        <button type="button" class="back btn">Back</button>
-                        <button type="button" class="continue btn pgUp">Continue</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-1">
-                        <div class="page-number">44</div>
-                    </div>
-                </div>
+                                <!-- <div><img class="math" src="../images/exponent-step.svg"></div> -->
+            <div class="bottom-space">
+                <img src="./images/future_value_factors.jpg" class="img-fluid  border" alt="">
             </div>
+            <br>
+            <div class="answer" id="answer-ex10"></div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="row">
+        <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+            <button type="button" class="back btn">Back</button>
+            <button type="button" class="continue btn pgUp">Continue</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-1">
+            <div class="page-number">44</div>
+        </div>
+    </div>
+    </div> -->
 
 
 
 
-            <!-- exercise1-slide19 :   answer problem 10 -->
-            <!---------------- SLIDE 45  - EXERCISES -->
-            <div id="exercise1-slide19" class="slide exercise-slide">
+    <!-- exercise1-slide19 :   answer problem 10 -->
+    <!---------------- SLIDE 45  - EXERCISES -->
+    <!-- <div id="exercise1-slide19" class="slide exercise-slide">
                 <div class="row slide-title">
                     <div class="col-12">
                         <h2 class="primary-title">TVM: The Basics</h2>
@@ -861,32 +955,32 @@
                             <h4>Exercise 10: Solution</h4>
                             <p class="question">How much will $3,000 in a certificate of deposit that pays 3% annual interest be worth in 4 years?</p>
                             <p>The Future Value Factor is the intersection of the number of periods (at left) and the interest rate (at top). In this case, Future Value Factor = 1.1255.</p>
-                            <div><img class="math" src="../images/exponent-step.svg"></div>
-                            <div class="bottom-space">
-                                <img src="./images/future_value_factors.jpg" class="border img-fluid " alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
-                        <button type="button" class="back btn">Back</button>
-                        <button type="button" class="continue btn pgUp">Continue</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-1">
-                        <div class="page-number">45</div>
-                    </div>
-                </div>
-            </div>
+                            <!-- <div><img class="math" src="../images/exponent-step.svg"></div> -->
+    <div class="bottom-space">
+        <img src="./images/future_value_factors.jpg" class="border img-fluid " alt="">
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="row">
+        <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+            <button type="button" class="back btn">Back</button>
+            <button type="button" class="continue btn pgUp">Continue</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-1">
+            <div class="page-number">45</div>
+        </div>
+    </div>
+    </div> -->
 
 
 
 
-            <!-- exercise1-slide20 : problem 11  -->
-            <!---------------- SLIDE 46  - EXERCISES -->
-            <div id="exercise1-slide20" class="slide exercise-slide">
+    <!-- exercise1-slide20 : problem 11  -->
+    <!---------------- SLIDE 46  - EXERCISES -->
+    <!-- <div id="exercise1-slide20" class="slide exercise-slide">
                 <div class="row slide-title">
                     <div class="col-12">
                         <h2 class="primary-title">TVM: The Basics</h2>
@@ -896,8 +990,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="content">
-                            <!-- Exercises -->
-                            <h4>Exercise 11: Use the Future Value factor to calculate FV</h4>
+                            <h4>Exercise 11: Use the Future Value factor to calculate Future Value (FV)</h4>
                             <p>Given the Future Value factor found in the previous question, what is the ?</p>
 
                             <p class="question">How much will $3,000 in a certificate of deposit that pays 3% annual interest be worth in 4 years?</p>
@@ -905,37 +998,37 @@
                                 <div class="">
                                     <form action="" class="indent">
                                         <label> </label>
-                                        <input id="fvalue-ex11" type="number" placeholder="0"><br>
+                                        <input id="Future Value (FV)alue-ex11" type="number" ><br>
                                     </form>
                                     <button onclick="exercise_11()" type="button" class="btn calculate-btn">Submit</button>
                                 </div>
                                 <div class="bottom-space">
                                     <img src="./images/future_value_factors_circled.jpg" class="border img-fluid " alt="">
                                 </div>
-                                <div><img class="math" src="../images/exponent-step.svg"></div>
-                                <br>
-                                <div class="answer" id="answer-ex11"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
-                        <button type="button" class="back btn">Back</button>
-                        <button type="button" class="continue btn pgUp">Continue</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-1">
-                        <div class="page-number">46</div>
-                    </div>
-                </div>
-            </div>
+                                <!-- <div><img class="math" src="../images/exponent-step.svg"></div> -->
+    <br>
+    <div class="answer" id="answer-ex11"></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="row">
+        <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+            <button type="button" class="back btn">Back</button>
+            <button type="button" class="continue btn pgUp">Continue</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-1">
+            <div class="page-number">46</div>
+        </div>
+    </div>
+    </div> -->
 
 
-            <!-- exercise1-slide21 :   answer problem 11 -->
-            <!---------------- SLIDE 47  - EXERCISES -->
-            <div id="exercise1-slide21" class="slide exercise-slide">
+    <!-- exercise1-slide21 :   answer problem 11 -->
+    <!---------------- SLIDE 47  - EXERCISES -->
+    <!-- <div id="exercise1-slide21" class="slide exercise-slide">
                 <div class="row slide-title">
                     <div class="col-12">
                         <h2 class="primary-title">TVM: The Basics</h2>
@@ -947,429 +1040,483 @@
                         <div class="content">
                             <h4>Exercise 11: Solution</h4>
                             <p class="qeustion">How much will $3,000 in a certificate of deposit that pays 3% annual interest be worth in 4 years?</p>
-                            <div><img class="math" src="../images/exponent-step.svg"></div>
-                            <p class="math"> = 3000<br>
-                                = ?<br>
-                                Future Value factor = 1.1255</p>
-                            <p>To find the using the Future Value factor, multiply the Present Value by the Future Value factor:</p>
-                            <div><img class="math" src="../images/exponent-step.svg"></div>
-                            <p class="math"> = (Future Value Factor)<br>
-                                = 3000(1.1255)<br>
-                                <b> = $3,376.50</b></p>
+                            <!-- <div><img class="math" src="../images/exponent-step.svg"></div> -->
+    <p class="math"> = 3000<br>
+        = ?<br>
+        Future Value factor = 1.1255</p>
+    <p>To find the using the Future Value factor, multiply the Present Value by the Future Value factor:</p>
+    <!-- <div><img class="math" src="../images/exponent-step.svg"></div> -->
+    <p class="math"> = (Future Value Factor)<br>
+        = 3000(1.1255)<br>
+        <b> = $3,376.50</b></p>
+    </div>
+    </div>
+    </div>
+    <div class="row">
+        <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+            <button type="button" class="back btn">Back</button>
+            <button type="button" class="continue btn pgUp">Continue</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-1">
+            <div class="page-number">47</div>
+        </div>
+    </div>
+    </div> -->
+
+
+
+
+
+    <!-- exercise1-slide22 : problem 12  -->
+    <!---------------- SLIDE 48  - EXERCISES -->
+    <div id="exercise1-slide22" class="slide exercise-slide">
+        <div class="row slide-title">
+            <div class="col-12">
+                <h2 class="primary-title">TVM: The Basics</h2>
+                <h3 class="secondary-title">Exercises</h3>
+            </div>
+        </div>
+        <nav class="row">
+            <div class="col-12 col-md-3"><a href="./tvm1-1.html">Home</a></div>
+            <div class="col-12 col-md-3"><a href="./help/help-index.html">Math Help</a></div>
+            <div class="col-12 col-md-3"><a href="./tvm1-exercises.html">Exercises</a></div>
+            <div class="col-12 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
+        </nav>
+        <div class="row">
+            <div class="col-12">
+                <div class="content">
+
+                    <h4>Exercise 12: Identify the Variables</h4>
+                    <p>Solve the TVM equation and enter the value of the unknown variable.</p>
+                    <p class="question">If I know that I want to give my child $20,000 for college on his 18th birthday, how much will I need to invest at 7% when the child is born?</p>
+                    <div class="container">
+                        <div class="">
+                            <form action="" class="indent">
+                                <label> </label>
+                                <input id="Present Value (PV)alue-ex12" type="number"><br>
+                                <label> </label>
+                                <input id="Future Value (FV)alue-ex12" type="number"><br>
+                                <label>Interest (i)</label>
+                                <input id="int-ex12" type="number"><br>
+                                <label>&nbsp;&nbsp; </label>
+                                <input id="yrs-ex12" type="number"><br>
+                            </form>
+                            <button onclick="exercise_12()" type="button" class="btn calculate-btn">Submit</button>
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
-                        <button type="button" class="back btn">Back</button>
-                        <button type="button" class="continue btn pgUp">Continue</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-1">
-                        <div class="page-number">47</div>
+                        <br>
+                        <div class="answer" id="answer-ex12"></div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="row">
+            <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                <button type="button" class="back btn">Back</button>
+                <button type="button" class="continue btn pgUp">Continue</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <div class="page-number">48</div>
+            </div>
+        </div>
+    </div>
 
 
 
 
-
-            <!-- exercise1-slide22 : problem 12  -->
-            <!---------------- SLIDE 48  - EXERCISES -->
-            <div id="exercise1-slide22" class="slide exercise-slide">
-                <div class="row slide-title">
-                    <div class="col-12">
-                        <h2 class="primary-title">TVM: The Basics</h2>
-                        <h3 class="secondary-title">Exercises</h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="content">
-                            <!-- Exercises -->
-                            <h4>Exercise 12: Identify the Variables</h4>
-                            <p>Solve the TVM equation and enter the value of the unknown variable.</p>
-                            <p class="question">If I know that I want to give my child $20,000 for college on his 18th birthday, how much will I need to invest at 7% when the child is born?</p>
-                            <div class="container">
-                                <div class="">
-                                    <form action="" class="indent">
-                                        <label> </label>
-                                        <input id="pvalue-ex12" type="number" placeholder="0"><br>
-                                        <label> </label>
-                                        <input id="fvalue-ex12" type="number" placeholder="0"><br>
-                                        <label>&nbsp;&nbsp;&nbsp;i </label>
-                                        <input id="int-ex12" type="number" placeholder=".00"><br>
-                                        <label>&nbsp;&nbsp; </label>
-                                        <input id="yrs-ex12" type="number" placeholder="0"><br>
-                                    </form>
-                                    <button onclick="exercise_12()" type="button" class="btn calculate-btn">Submit</button>
-                                </div>
-                                <br>
-                                <div class="answer" id="answer-ex12"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
-                        <button type="button" class="back btn">Back</button>
-                        <button type="button" class="continue btn pgUp">Continue</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-1">
-                        <div class="page-number">48</div>
+    <!-- exercise1-slide23 :   answer problem 12 -->
+    <!---------------- SLIDE 49  - EXERCISES -->
+    <div id="exercise1-slide23" class="slide exercise-slide">
+        <div class="row slide-title">
+            <div class="col-12">
+                <h2 class="primary-title">TVM: The Basics</h2>
+                <h3 class="secondary-title">Exercises</h3>
+            </div>
+        </div>
+        <nav class="row">
+            <div class="col-12 col-md-3"><a href="./tvm1-1.html">Home</a></div>
+            <div class="col-12 col-md-3"><a href="./help/help-index.html">Math Help</a></div>
+            <div class="col-12 col-md-3"><a href="./tvm1-exercises.html">Exercises</a></div>
+            <div class="col-12 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
+        </nav>
+        <div class="row">
+            <div class="col-12">
+                <div class="content">
+                    <h4>Exercise 12: Solution</h4>
+                    <p class="question">If I know that I want to give my child $20,000 for college on his 18th birthday, how much will I need to invest at 7% when the child is born?</p>
+                    <!-- <div><img class="math" src="../images/exponent-step.svg"></div> -->
+                    <div class="math">
+                        = ?<br>
+                        = 20000<br>
+                        = 7% &xrarr; 0.07<br>
+                        = 18
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="row">
+            <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                <button type="button" class="back btn">Back</button>
+                <button type="button" class="continue btn pgUp">Continue</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <div class="page-number">49</div>
+            </div>
+        </div>
+    </div>
 
 
 
+    <!-- exercise1-slide24 : problem 13  -->
+    <!---------------- SLIDE 50  - EXERCISES -->
+    <div id="exercise1-slide24" class="slide exercise-slide">
+        <div class="row slide-title">
+            <div class="col-12">
+                <h2 class="primary-title">TVM: The Basics</h2>
+                <h3 class="secondary-title">Exercises</h3>
+            </div>
+        </div>
+        <nav class="row">
+            <div class="col-12 col-md-3"><a href="./tvm1-1.html">Home</a></div>
+            <div class="col-12 col-md-3"><a href="./help/help-index.html">Math Help</a></div>
+            <div class="col-12 col-md-3"><a href="./tvm1-exercises.html">Exercises</a></div>
+            <div class="col-12 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
+        </nav>
+        <div class="row">
+            <div class="col-12">
+                <div class="content">
 
-            <!-- exercise1-slide23 :   answer problem 12 -->
-            <!---------------- SLIDE 49  - EXERCISES -->
-            <div id="exercise1-slide23" class="slide exercise-slide">
-                <div class="row slide-title">
-                    <div class="col-12">
-                        <h2 class="primary-title">TVM: The Basics</h2>
-                        <h3 class="secondary-title">Exercises</h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="content">
-                            <h4>Exercise 12: Solution</h4>
-                            <p class="question">If I know that I want to give my child $20,000 for college on his 18th birthday, how much will I need to invest at 7% when the child is born?</p>
-                            <div><img class="math" src="../images/exponent-step.svg"></div>
-                            <div class="math">
-                                = ?<br>
-                                = 20000<br>
-                                = 7% &xrarr; 0.07<br>
-                                = 18
-                            </div>
+                    <h4>Exercise 13: Calculate the Unknown Variable</h4>
+                    <p>Solve the TVM equation and enter the value of the variable in the box provided.</p>
+
+                    <p class="question">If I know that I want to give my child $20,000 for college on his 18th birthday, how much will I need to invest at 7% when the child is born?</p>
+                    <div class="container">
+                        <div class="">
+                            <form action="" class="indent">
+                                <label> </label>
+                                <input id="Present Value (PV)alue-ex13" type="number"><br>
+                            </form>
+                            <button onclick="exercise_13()" type="button" class="btn calculate-btn">Submit</button>
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
-                        <button type="button" class="back btn">Back</button>
-                        <button type="button" class="continue btn pgUp">Continue</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-1">
-                        <div class="page-number">49</div>
+                        <br>
+                        <div class="answer" id="answer-ex13"></div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="row">
+            <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                <button type="button" class="back btn">Back</button>
+                <button type="button" class="continue btn pgUp">Continue</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <div class="page-number">50</div>
+            </div>
+        </div>
+    </div>
 
 
 
-            <!-- exercise1-slide24 : problem 13  -->
-            <!---------------- SLIDE 50  - EXERCISES -->
-            <div id="exercise1-slide24" class="slide exercise-slide">
-                <div class="row slide-title">
-                    <div class="col-12">
-                        <h2 class="primary-title">TVM: The Basics</h2>
-                        <h3 class="secondary-title">Exercises</h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="content">
-                            <!-- Exercises -->
-                            <h4>Exercise 13: Calculate the Unknown Variable</h4>
-                            <p>Solve the TVM equation and enter the value of the variable in the box provided.</p>
-
-                            <p class="question">If I know that I want to give my child $20,000 for college on his 18th birthday, how much will I need to invest at 7% when the child is born?</p>
-                            <div class="container">
-                                <div class="">
-                                    <form action="" class="indent">
-                                        <label> </label>
-                                        <input id="pvalue-ex13" type="number" placeholder="0"><br>
-                                    </form>
-                                    <button onclick="exercise_13()" type="button" class="btn calculate-btn">Submit</button>
-                                </div>
-                                <br>
-                                <div class="answer" id="answer-ex13"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
-                        <button type="button" class="back btn">Back</button>
-                        <button type="button" class="continue btn pgUp">Continue</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-1">
-                        <div class="page-number">50</div>
+    <!-- exercise1-slide25 :   answer problem 13 -->
+    <!---------------- SLIDE 51  - EXERCISES -->
+    <div id="exercise1-slide25" class="slide exercise-slide">
+        <div class="row slide-title">
+            <div class="col-12">
+                <h2 class="primary-title">TVM: The Basics</h2>
+                <h3 class="secondary-title">Exercises</h3>
+            </div>
+        </div>
+        <nav class="row">
+            <div class="col-12 col-md-3"><a href="./tvm1-1.html">Home</a></div>
+            <div class="col-12 col-md-3"><a href="./help/help-index.html">Math Help</a></div>
+            <div class="col-12 col-md-3"><a href="./tvm1-exercises.html">Exercises</a></div>
+            <div class="col-12 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
+        </nav>
+        <div class="row">
+            <div class="col-12">
+                <div class="content">
+                    <h4>Exercise 13: Solution</h4>
+                    <p class="questions">If I know that I want to give my child $20,000 for college on his 18th birthday, how much will I need to invest at 7% when the child is born?</p>
+                    <p>Variables:</p>
+                    <!-- <div><img class="math" src="../images/exponent-step.svg"></div> -->
+                    <p class="math">
+                        = ?<br>
+                        = 20000<br>
+                        = 7% &xrarr; 0.07<br>
+                        = 18</p>
+                    <p>Then plug the numbers into the equation:</p>
+                    <div class="math">
+                        <img src="./images/tvm1_question12.png" class="img-fluid " alt="">
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="row">
+            <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                <button type="button" class="back btn">Back</button>
+                <button type="button" class="continue btn pgUp">Continue</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <div class="page-number">51</div>
+            </div>
+        </div>
+    </div>
 
 
 
-            <!-- exercise1-slide25 :   answer problem 13 -->
-            <!---------------- SLIDE 51  - EXERCISES -->
-            <div id="exercise1-slide25" class="slide exercise-slide">
-                <div class="row slide-title">
-                    <div class="col-12">
-                        <h2 class="primary-title">TVM: The Basics</h2>
-                        <h3 class="secondary-title">Exercises</h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="content">
-                            <h4>Exercise 13: Solution</h4>
-                            <p class="questions">If I know that I want to give my child $20,000 for college on his 18th birthday, how much will I need to invest at 7% when the child is born?</p>
-                            <p>Variables:</p>
-                            <div><img class="math" src="../images/exponent-step.svg"></div>
-                            <p class="math">
-                                = ?<br>
-                                = 20000<br>
-                                = 7% &xrarr; 0.07<br>
-                                = 18</p>
-                            <p>Then plug the numbers into the equation:</p>
-                            <div class="math">
-                                <img src="./images/tvm1_question12.png" class="img-fluid " alt="">
-                            </div>
+    <!-- exercise1-slide26 : problem 14  -->
+    <!---------------- SLIDE 52  - EXERCISES -->
+    <div id="exercise1-slide26" class="slide exercise-slide">
+        <div class="row slide-title">
+            <div class="col-12">
+                <h2 class="primary-title">TVM: The Basics</h2>
+                <h3 class="secondary-title">Exercises</h3>
+            </div>
+        </div>
+        <nav class="row">
+            <div class="col-12 col-md-3"><a href="./tvm1-1.html">Home</a></div>
+            <div class="col-12 col-md-3"><a href="./help/help-index.html">Math Help</a></div>
+            <div class="col-12 col-md-3"><a href="./tvm1-exercises.html">Exercises</a></div>
+            <div class="col-12 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
+        </nav>
+        <div class="row">
+            <div class="col-12">
+                <div class="content">
+
+                    <h4>Exercise 14: Identify the Variables</h4>
+                    <p>Solve the TVM equation and enter the value of the unknown variable.</p>
+                    <p class="question">What would you expect to pay today for a bond that’s face value is $10,000, matures in 10 years, and returns 4% annual interest?</p>
+                    <div class="container">
+                        <div class="">
+                            <form action="" class="indent">
+                                <label> </label>
+                                <input id="Present Value (PV)alue-ex14" type="number"><br>
+                                <label> </label>
+                                <input id="Future Value (FV)alue-ex14" type="number"><br>
+                                <label>Interest (i)</label>
+                                <input id="int-ex14" type="number"><br>
+                                <label>Time (n)</label>
+                                <input id="yrs-ex14" type="number"><br>
+                            </form>
+                            <button onclick="exercise_14()" type="button" class="btn calculate-btn">Submit</button>
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
-                        <button type="button" class="back btn">Back</button>
-                        <button type="button" class="continue btn pgUp">Continue</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-1">
-                        <div class="page-number">51</div>
+                        <br>
+                        <div class="answer" id="answer-ex14"></div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="row">
+            <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                <button type="button" class="back btn">Back</button>
+                <button type="button" class="continue btn pgUp">Continue</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <div class="page-number">52</div>
+            </div>
+        </div>
+    </div>
 
 
-
-            <!-- exercise1-slide26 : problem 14  -->
-            <!---------------- SLIDE 52  - EXERCISES -->
-            <div id="exercise1-slide26" class="slide exercise-slide">
-                <div class="row slide-title">
-                    <div class="col-12">
-                        <h2 class="primary-title">TVM: The Basics</h2>
-                        <h3 class="secondary-title">Exercises</h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="content">
-                            <!-- Exercises -->
-                            <h4>Exercise 14: Identify the Variables</h4>
-                            <p>Solve the TVM equation and enter the value of the unknown variable.</p>
-                            <p class="question">What would you expect to pay today for a bond that’s face value is $10,000, matures in 10 years, and pays returns 4% annual interest?</p>
-                            <div class="container">
-                                <div class="">
-                                    <form action="" class="indent">
-                                        <label> </label>
-                                        <input id="pvalue-ex14" type="number" placeholder="0"><br>
-                                        <label> </label>
-                                        <input id="fvalue-ex14" type="number" placeholder="0"><br>
-                                        <label>&nbsp;&nbsp;&nbsp;i </label>
-                                        <input id="int-ex14" type="number" placeholder=".00"><br>
-                                        <label>&nbsp;&nbsp; </label>
-                                        <input id="yrs-ex14" type="number" placeholder="0"><br>
-                                    </form>
-                                    <button onclick="exercise_14()" type="button" class="btn calculate-btn">Submit</button>
-                                </div>
-                                <br>
-                                <div class="answer" id="answer-ex14"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
-                        <button type="button" class="back btn">Back</button>
-                        <button type="button" class="continue btn pgUp">Continue</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-1">
-                        <div class="page-number">52</div>
+    <!-- exercise1-slide27 :   answer problem 14 -->
+    <!---------------- SLIDE 53  - EXERCISES -->
+    <div id="exercise1-slide27" class="slide exercise-slide">
+        <div class="row slide-title">
+            <div class="col-12">
+                <h2 class="primary-title">TVM: The Basics</h2>
+                <h3 class="secondary-title">Exercises</h3>
+            </div>
+        </div>
+        <nav class="row">
+            <div class="col-12 col-md-3"><a href="./tvm1-1.html">Home</a></div>
+            <div class="col-12 col-md-3"><a href="./help/help-index.html">Math Help</a></div>
+            <div class="col-12 col-md-3"><a href="./tvm1-exercises.html">Exercises</a></div>
+            <div class="col-12 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
+        </nav>
+        <div class="row">
+            <div class="col-12">
+                <div class="content">
+                    <h4>Exercise 14: Solution</h4>
+                    <p class="question">What would you expect to pay today for a bond that’s face value is $10,000, matures in 10 years, and pays returns 4% annual interest?</p>
+                    <!-- <div><img class="math" src="../images/exponent-step.svg"></div> -->
+                    <div class="math">
+                        = ?<br>
+                        = 10000<br>
+                        = 4% &xrarr; .04<br>
+                        = 10
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="row">
+            <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                <button type="button" class="back btn">Back</button>
+                <button type="button" class="continue btn pgUp">Continue</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <div class="page-number">53</div>
+            </div>
+        </div>
+    </div>
 
 
-            <!-- exercise1-slide27 :   answer problem 14 -->
-            <!---------------- SLIDE 53  - EXERCISES -->
-            <div id="exercise1-slide27" class="slide exercise-slide">
-                <div class="row slide-title">
-                    <div class="col-12">
-                        <h2 class="primary-title">TVM: The Basics</h2>
-                        <h3 class="secondary-title">Exercises</h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="content">
-                            <h4>Exercise 14: Solution</h4>
-                            <p class="question">What would you expect to pay today for a bond that’s face value is $10,000, matures in 10 years, and pays returns 4% annual interest?</p>
-                            <div><img class="math" src="../images/exponent-step.svg"></div>
-                            <div class="math">
-                                = ?<br>
-                                = 10000<br>
-                                = 4% &xrarr; .04<br>
-                                = 10
-                            </div>
+
+
+    <!-- exercise1-slide28 : problem 15  -->
+    <!---------------- SLIDE 54  - EXERCISES -->
+    <div id="exercise1-slide28" class="slide exercise-slide">
+        <div class="row slide-title">
+            <div class="col-12">
+                <h2 class="primary-title">TVM: The Basics</h2>
+                <h3 class="secondary-title">Exercises</h3>
+            </div>
+        </div>
+        <nav class="row">
+            <div class="col-12 col-md-3"><a href="./tvm1-1.html">Home</a></div>
+            <div class="col-12 col-md-3"><a href="./help/help-index.html">Math Help</a></div>
+            <div class="col-12 col-md-3"><a href="./tvm1-exercises.html">Exercises</a></div>
+            <div class="col-12 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
+        </nav>
+        <div class="row">
+            <div class="col-12">
+                <div class="content">
+
+
+                    <h4>Exercise 15: Calculate the Unknown Variable</h4>
+                    <p>Solve the TVM equation and enter the value of the variable in the box provided.</p>
+
+                    <p class="question">What would you expect to pay today for a bond that’s face value is $10,000, matures in 10 years, and pays returns 4% annual interest?</p>
+                    <div class="container">
+                        <div class="">
+                            <form action="" class="indent">
+                                <label> </label>
+                                <input id="Present Value (PV)alue-ex15" type="number"><br>
+                            </form>
+                            <button onclick="exercise_15()" type="button" class="btn calculate-btn">Submit</button>
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
-                        <button type="button" class="back btn">Back</button>
-                        <button type="button" class="continue btn pgUp">Continue</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-1">
-                        <div class="page-number">53</div>
+                        <br>
+                        <div class="answer" id="answer-ex15"></div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="row">
+            <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                <button type="button" class="back btn">Back</button>
+                <button type="button" class="continue btn pgUp">Continue</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <div class="page-number">54</div>
+            </div>
+        </div>
+    </div>
 
 
 
-
-            <!-- exercise1-slide28 : problem 15  -->
-            <!---------------- SLIDE 54  - EXERCISES -->
-            <div id="exercise1-slide28" class="slide exercise-slide">
-                <div class="row slide-title">
-                    <div class="col-12">
-                        <h2 class="primary-title">TVM: The Basics</h2>
-                        <h3 class="secondary-title">Exercises</h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="content">
-                            <!-- Exercises -->
-
-                            <h4>Exercise 15: Calculate the Unknown Variable</h4>
-                            <p>Solve the TVM equation and enter the value of the variable in the box provided.</p>
-
-                            <p class="question">What would you expect to pay today for a bond that’s face value is $10,000, matures in 10 years, and pays returns 4% annual interest?</p>
-                            <div class="container">
-                                <div class="">
-                                    <form action="" class="indent">
-                                        <label> </label>
-                                        <input id="pvalue-ex15" type="number" placeholder="0"><br>
-                                    </form>
-                                    <button onclick="exercise_15()" type="button" class="btn calculate-btn">Submit</button>
-                                </div>
-                                <br>
-                                <div class="answer" id="answer-ex15"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
-                        <button type="button" class="back btn">Back</button>
-                        <button type="button" class="continue btn pgUp">Continue</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-1">
-                        <div class="page-number">54</div>
+    <!-- exercise1-slide29 :   answer problem 15 -->
+    <!---------------- SLIDE 55  - EXERCISES -->
+    <div id="exercise1-slide29" class="slide exercise-slide">
+        <div class="row slide-title">
+            <div class="col-12">
+                <h2 class="primary-title">TVM: The Basics</h2>
+                <h3 class="secondary-title">Exercises</h3>
+            </div>
+        </div>
+        <nav class="row">
+            <div class="col-12 col-md-3"><a href="./tvm1-1.html">Home</a></div>
+            <div class="col-12 col-md-3"><a href="./help/help-index.html">Math Help</a></div>
+            <div class="col-12 col-md-3"><a href="./tvm1-exercises.html">Exercises</a></div>
+            <div class="col-12 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
+        </nav>
+        <div class="row">
+            <div class="col-12">
+                <div class="content">
+                    <h4>Exercise 15: Solution</h4>
+                    <p class="question">What would you expect to pay today for a bond that’s face value is $10,000, matures in 10 years, and pays returns 4% annual interest?</p>
+                    <p>Variables:</p>
+                    <!-- <div><img class="math" src="../images/exponent-step.svg"></div> -->
+                    <div class="math">
+                        = ?<br>
+                        = 10000<br>
+                        = 4% &xrarr; 0.04<br>
+                        = 10</div>
+                    <p>Then plug the numbers into the equation:</p>
+                    <div class="math">
+                        <img src="./images/tvm1_question14.png" class="img-fluid " alt="">
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="row">
+            <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                <button type="button" class="back btn">Back</button>
+                <button type="button" class="continue btn pgUp">Continue</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <div class="page-number">55</div>
+            </div>
+        </div>
+    </div>
 
 
 
-            <!-- exercise1-slide29 :   answer problem 15 -->
-            <!---------------- SLIDE 55  - EXERCISES -->
-            <div id="exercise1-slide29" class="slide exercise-slide">
-                <div class="row slide-title">
-                    <div class="col-12">
-                        <h2 class="primary-title">TVM: The Basics</h2>
-                        <h3 class="secondary-title">Exercises</h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="content">
-                            <h4>Exercise 15: Solution</h4>
-                            <p class="question">What would you expect to pay today for a bond that’s face value is $10,000, matures in 10 years, and pays returns 4% annual interest?</p>
-                            <p>Variables:</p>
-                            <div><img class="math" src="../images/exponent-step.svg"></div>
-                            <div class="math">
-                                = ?<br>
-                                = 10000<br>
-                                = 4% &xrarr; 0.04<br>
-                                = 10</div>
-                            <p>Then plug the numbers into the equation:</p>
-                            <div class="math">
-                                <img src="./images/tvm1_question14.png" class="img-fluid " alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
-                        <button type="button" class="back btn">Back</button>
-                        <button type="button" class="continue btn pgUp">Continue</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-1">
-                        <div class="page-number">55</div>
-                    </div>
+
+    <!-- exercise1-slide16  -->
+    <!---------------- SLIDE 56  - EXERCISES -->
+    <div id="exercise1-slide16" class="slide">
+        <div class="row slide-title">
+            <div class="col-12">
+                <h2 class="primary-title">TVM: The Basics</h2>
+                <h3 class="secondary-title">Exercises</h3>
+            </div>
+        </div>
+        <nav class="row">
+            <div class="col-12 col-md-3"><a href="./tvm1-1.html">Home</a></div>
+            <div class="col-12 col-md-3"><a href="./help/help-index.html">Math Help</a></div>
+            <div class="col-12 col-md-3"><a href="./tvm1-exercises.html">Exercises</a></div>
+            <div class="col-12 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
+        </nav>
+        <div class="row">
+            <div class="col-12">
+                <div class="content">
+                    <h3>Congratulations!</h3>
+                    <p>You’ve completed the TVM Basics Tutorial. If you were confident answering the exercise questions and got most of them right, then you have a good grasp of the basics of TVM. If you were not able to answer most of the exercise questions correctly, contact your instructor for additional help. Feel free to go through this tutorial as many times as needed to help you with the concepts.</p>
                 </div>
             </div>
-
-
-
-
-            <!-- exercise1-slide16  -->
-            <!---------------- SLIDE 56  - EXERCISES -->
-            <div id="exercise1-slide16" class="slide">
-                <div class="row slide-title">
-                    <div class="col-12">
-                        <h2 class="primary-title">TVM: The Basics</h2>
-                        <h3 class="secondary-title">Exercises</h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="content">
-                            <h3>Congratulations!</h3>
-                            <p>You’ve completed the Basics section of the TVM Tutorial. If you were confident answering the exercise questions and got most of them right, then you have a good grasp of the basics of TVM. If you were not able to answer most of the exercise questions correctly, contact your instructor for additional help. If you’re completing the full series of TVM tutorials, move on to the second Time Value of Money tutorial, which introduces compound interest.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
-                        <button type="button" class="back btn">Back</button>
-                        <button type="button" class="continue btn pgUp">Continue</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-1">
-                        <div class="page-number">56</div>
-                    </div>
-                </div>
+        </div>
+        <div class="row">
+            <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                <button type="button" class="back btn">Back</button>
+                <button type="button" class="continue btn pgUp">Continue</button>
             </div>
-            <!-- *************************** end exercises *************************** -->
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <div class="page-number"></div>
+            </div>
+        </div>
+    </div>
+    <!-- *************************** end exercises *************************** -->
 
 
-        </div> <!-- End of allSlides div -->
+    </div> <!-- End of allSlides div -->
     </div> <!--  end of container -->
 
 
