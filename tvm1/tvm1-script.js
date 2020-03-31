@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-  // set id to filename
+  // set id to filename ex: tvm1-1.html becomes id="tvm1-1"
   let url = window.location.pathname;
   let filename = url.substring(url.lastIndexOf('/') + 1);
   filename = filename.slice(0, -5);
@@ -8,7 +8,7 @@ $(document).ready(function () {
   $('.slide').attr('id', filename);
 
 
-  // generate page number based on filename
+  // generate page number based on filename ex: tvm1-1 is 1 in the pagenumber div
   let pageNum = filename.substring(filename.lastIndexOf('-') + 1);
   // console.log(pageNum);
   $('.page-number').text(pageNum);
