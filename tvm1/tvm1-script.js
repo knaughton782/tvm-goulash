@@ -14,7 +14,11 @@ $(document).ready(function () {
   $('.page-number').text(pageNum);
   /* ******************** */
 
-
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    }
+  };
 
   /************ continue/back BUTTON FUNCTIONALITY  *************************/
 
