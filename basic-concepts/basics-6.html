@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +7,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../tvm-styles.css">
-
     <title>Time Value of Money - Part 1</title>
 </head>
 
 <body>
     <div class="container-fluid">
-
 
         <div id="" class="slide">
             <div class="row slide-title">
@@ -32,24 +29,25 @@
             <div class="row">
                 <div class="col-12">
                     <div class="content">
+                        <p>Although calculating the interest for each individual year and adding it to the principal does produce the correct answer, this would be time consuming if you were calculating the future value after 10 years. We can derive a general equation that will allow you to solve for any of the variables: Future Value (FV), Present Value (PV), Interest rate (i), or number of years (n). Click Help to review math principles needed to follow along with the derivation of the equation.</p>
 
-                        <p>Now apply the same process to roll over the loan for a second year. Some find this a little more complicated, but the steps are the same. Once you have the answer, click Continue. If you don't know how to calculate the answer, click Help.</p>
-                        <p class="question">How much money would you have in another year if you rolled over the $110 earned in the first year?</p>
-                        <p class="answer">The answer is $121.</p>
-                        <hr>
-                        <h4>Let's review:</h4>
-                        <p>
-                            <ul>
-                                <li>We calculated the 1st year of interest earned by multiplying the interest rate times the 1st year starting principal. Then we added the 1st year interest to the principal.
-                                </li>
-                                <li>Next, we calculated the 2nd year of interest by finding 10% of the new principal amount. Then, we added the 2nd year interest to the new principal amount.
-                                </li>
-                            </ul>
+                        <p>If we combine our previous equations into one equation it looks like this:</p>
+                        <div><span class="math">\(100(1+.10)(1+.10)=121\)</span></div>
+                        <p>We can simplify the equation to this:
+                            <div><span class="math">\(100(1+.10)^2=121\)</span></div>
                         </p>
-                        <p>In other words, we calculated the interest earned in each individual year and added all the interest payments back to the principal to find the Future Value (FV). Click help if you need more help to solve this question.</p>
+
+                        <p>Let's replace the numbers with variables so we can use the equation with any numbers. This is the basic TVM equation.</p>
+                        <div>
+                            <span class="math">\(FV=PV(1+i)^n\)</span>
+                        </div>
+
+
+
                     </div>
                 </div>
             </div>
+            <!-- to math refresher -->
             <div class="row">
                 <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
                     <a type="button" class="btn" href="basics-5.html">Back</a>
@@ -58,7 +56,7 @@
             </div>
             <div class="row">
                 <div class="col-1">
-                    <div class="page-number"></div>
+                    <div class="page-number">9</div>
                 </div>
             </div>
         </div>

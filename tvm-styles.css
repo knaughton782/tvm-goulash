@@ -9,6 +9,7 @@ body {
 li {
     margin-bottom: 10px;
 }
+
 hr {
     margin-bottom: 25px;
 }
@@ -260,7 +261,9 @@ nav div a:hover, nav div a:active {
         padding: 0;
     }   
     .math {
-        /* height: 25px; */
+        font-size: 1.2em;
+        display: inline-block;
+        text-align: left !important;
         margin: 10px 10px 25px 10px;
     }
     .question {
@@ -269,10 +272,10 @@ nav div a:hover, nav div a:active {
         font-size: 1.08em;
     }
     .answer {
-        font-size: 1.08em;
+        color:var(--main-text-color);
+        font-style: italic;
         font-weight: 600;
-        color: var(--main-text-color);
-        margin-left: 25px;
+        font-size: 1.08em;
     }
     /* end text styling **************************/
     

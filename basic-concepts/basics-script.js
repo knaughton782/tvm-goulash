@@ -14,9 +14,11 @@ $(document).ready(function () {
   $('.page-number').text(pageNum);
   /* ******************** */
 
+
+  // to use $$ or \\ to delineate where MathJax identifies equation
   MathJax = {
     tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']]
+      inlineMath: [['$$', '$$'], ['\\(', '\\)']]
     }
   };
 
