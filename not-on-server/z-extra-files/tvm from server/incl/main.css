@@ -1,0 +1,68 @@
+/* primary color is   #003259*/
+
+
+
+body	{
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 15px;
+	font-size: 80%;
+}
+h1 {
+	color: #ffffff;
+	background-color:  #003259;
+	padding: 3px;
+	margin-bottom: 1em;
+	line-height: 1em;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.6em;
+}
+
+h2 {
+	color: #003259;
+	margin-bottom: 0em;
+	margin-top: 1.5em;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #003259;
+	font-weight: bold;
+	font-size: 1.4em;
+	
+}
+
+h3,h4,h5,h6 {
+	color: #000000;
+}
+
+hr 	{
+	color: #003259;
+}
+
+p {
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+
+a {
+	color:#003259;
+}
+
+table{
+	font-family: Arial, Helvetica, sans-serif;
+	border: 1px solid #000000;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 100%;
+}
+
+table.noborder{
+	border: 0px;
+	font-size: 100%;
+}
+
+.white {
+	color: #FFFFFF;
+}
+.finccolor {
+	color: #003259;
+}
