@@ -16,7 +16,8 @@
     <div class="container-fluid">
 
 
-        <div id="" class="slide">
+
+        <div id="" class="slide exercise-slide">
             <div class="row slide-title">
                 <div class="col-12">
                     <h2 class="primary-title">TVM: The Basics</h2>
@@ -26,35 +27,49 @@
             <nav class="row">
                 <div class="col-12 col-md-3"><a href="./tvm1-1.html">Home</a></div>
                 <div class="col-12 col-md-3"><a href="./help/help-index.html">Math Help</a></div>
-                <div class="col-12 col-md-3"><a href="./exercises/exerciseIntro-1.html">Exercises</a></div>
+                <div class="col-12 col-md-3"><a href="./tvm1-exercises.html">Exercises</a></div>
                 <div class="col-12 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
             </nav>
             <div class="row">
                 <div class="col-12">
                     <div class="content">
-                        <p>In the problem we just solved, the number in parentheses is called the Future Value Factor. In the ‘good old days’ before calculators, people used tables of pre-calculated Future Value Factors to solve the TVM equation.</p>
-                        <p>First, find the intersection of the number of periods (years) on the left and the interest rate at the top to find the Future Value Factor. Then multiply PV times the Future Value Factor to calculate FV.</p>
-                        <div class="bottom-space">
-                            <img src="../images/fv_factor_table_example_10_years.png" class="border img-fluid">
+                        <h4>Example Exercise</h4>
+                        <p class="question">What would the $100 investment be worth in 10 years at 10% interest?</p>
+                        <p>Instructions: Identify the variables in the question and input them into the blanks provided.</p>
+
+                        <div class="container">
+                            <div class="">
+                                <form action="" class="indent">
+
+                                    <label>PV </label>
+                                    <input id="PV" type="number" placeholder="0"><br>
+
+                                    <label style="padding-left:15px;">i </label>
+                                    <input id="i" type="number" placeholder="0"><br>
+
+                                    <label style="padding-left: 10px;">n </label>
+                                    <input id="n" type="number" step="1" placeholder="0"><br>
+
+                                    <button id="ex1" type="button" class="btn calculate-btn">Calculate</button>
+                                </form>
+                            </div>
+                            <div class="answer" id="answer"></div>
                         </div>
-                        <div><img class="math" src="../images/future-value-factor.svg"></div>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
-                    <a type="button" class="btn" href="tvm1-9.html">Back</a>
-                    <a type="button" class="btn" href="tvm1-11.html">Continue</a>
+                    <a type="button" class="btn" href="basics-7.html">Back</a>
+                    <a type="button" class="btn" href="basics-9.html">Continue</a>
                 </div>
             </div>
             <div class="row">
                 <div class="col-1">
-                    <div class="page-number">13</div>
+                    <div class="page-number"></div>
                 </div>
             </div>
         </div>
-
-
 
     </div> <!--  end of container -->
 
@@ -64,10 +79,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-    <script src="tvm1-script.js"></script>
+    <script src="./tvm1-script.js"></script>
 </body>
 
 </html>
