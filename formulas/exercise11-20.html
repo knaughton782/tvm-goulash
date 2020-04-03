@@ -15,8 +15,7 @@
 <body>
     <div class="container-fluid">
 
-
-        <!--  problem 9 answer -->
+        <!-- problem 13  -->
         <div id="" class="slide exercise-slide">
             <div class="row slide-title">
                 <div class="col-12">
@@ -25,24 +24,30 @@
                 </div>
             </div>
             <nav class="row">
-                <div class="col-12 col-md-3"><a href="./basics-1.html">Home</a></div>
-                <div class="col-12 col-md-3"><a href="./basics-help.html">Math Help</a></div>
-                <div class="col-12 col-md-3"><a href="./basics-6.html">Exercises</a></div>
-                <div class="col-12 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./basics-1.html">Home</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./basics-help.html">Math Help</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./basics-6.html">Exercises</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
             </nav>
             <div class="row">
                 <div class="col-12">
                     <div class="content">
-                        <h4>Exercise 9: Solution</h4>
-                        <p>At a rate of 12% annual interest, how long would it take for an amount to double? Like one of the previous exercises, the amount invested today will double. In other words, the Future Value (FV) to Present Value (PV) ratio is 2:1. Use Future Value (FV) = 2 and Present Value (PV) = 1.</p>
-                        <!-- <div><img class="math" src="../images/exponent-step.svg"></div> -->
-                        <p class="math">Present Value (PV) = 1<br>
-                            Future Value (FV) = 2<br>
-                            i = 12% &xrarr; .12<br>
-                            n = ?</p>
-                        <p>Then plug the numbers into the equation.</p>
-                        <p class="math"><img src="./images/tvm1_question4.png" class="img-fluid " alt=""></p>
-                        <!-- <div><img class="math" src="../images/exponent-step.svg"></div> -->
+
+                        <h4>Exercise 13: Calculate the Unknown Variable</h4>
+                        <p>Solve the TVM equation and enter the value of the variable in the box provided.</p>
+
+                        <p class="question">If I know that I want to give my child $20,000 for college on his 18th birthday, how much will I need to invest at 7% when the child is born?</p>
+                        <div class="container">
+                            <div class="">
+                                <form action="" class="indent">
+                                    <label> </label>
+                                    <input id="Present Value (PV)alue-ex13" type="number"><br>
+                                </form>
+                                <button onclick="exercise_13()" type="button" class="btn calculate-btn">Submit</button>
+                            </div>
+                            <br>
+                            <div class="answer" id="answer-ex13"></div>
+                        </div>
                     </div>
                 </div>
             </div>

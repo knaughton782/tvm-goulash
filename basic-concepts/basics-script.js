@@ -25,7 +25,7 @@ $(document).ready(function () {
    // future value calculation is FV = PV(1 + i)^time
   /* ******* for first exercise slide in lecture ********** */
 
-  document.getElementById('ex1').addEventListener('click', calc_FV);
+  document.getElementById('exFV').addEventListener('click', calc_FV);
 
   function calc_FV() {
     let PV = parseFloat(document.getElementById('PV').value);
