@@ -16,7 +16,7 @@ hr {
 nav {
     list-style-type: none;
     margin: 0 0 15px 0;
-    padding: 10px 0;
+    padding: 5px 0;
     background-color: #cfcece;
 }
 nav div a,  nav div a:visited {
@@ -24,14 +24,13 @@ nav div a,  nav div a:visited {
     color: var(--main-text-color);
     text-decoration: none;
     font-size: 1.2em;
-    padding: 15px;
+    padding: 5px;
 }
 nav div a:hover, nav div a:active {
     color: #585858;
     text-decoration: none;
     font-size: 1.21em;
 }
-
 
 
 /* Media breakpoints */
@@ -54,6 +53,8 @@ nav div a:hover, nav div a:active {
         background-image: url("./images/tvm-cover.png");
         background-position: center;
         background-size: auto;
+        margin: 0;
+        padding: 0;
     } 
     /* slide headline title area */
     .slide-title {
@@ -79,7 +80,7 @@ nav div a:hover, nav div a:active {
     }
     /* end slide set up **************************/
 
-     .help {
+    .help {
         /* change help button color */
         background-color: #CC444B;
     }  
@@ -266,9 +267,9 @@ nav div a:hover, nav div a:active {
     input[type=submit] {
         width: 25%;
     }
-    .calculate-btn {
-        /* width: 25%; */
-    }
+    /* .calculate-btn {
+        width: 25%;
+    } */
 }
 
 /* Large devices (desktops, 992px and up) */
