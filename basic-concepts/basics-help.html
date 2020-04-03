@@ -19,14 +19,14 @@
             <div class="row slide-title">
                 <div class="col-12">
                     <h2 class="primary-title">TVM: The Basics</h2>
-                    <h3 class="secondary-title">Help - Basic Math Refresher</h3>
+                    <h3 class="secondary-title">Help Me!</h3>
                 </div>
             </div>
             <nav class="row">
-                <div class="col-12 col-md-3"><a href="../basics-1.html">Home</a></div>
-                <div class="col-12 col-md-3"><a href="../help/help-index.html">Math Help</a></div>
-                <div class="col-12 col-md-3"><a href="../basics-exercises.html">Exercises</a></div>
-                <div class="col-12 col-md-3"><a href="../calc.html">Financial Calculator</a></div>
+                <div class="col-12 col-md-3"><a href="./basics-1.html">Home</a></div>
+                <div class="col-12 col-md-3"><a href="./basics-help.html">Math Help</a></div>
+                <div class="col-12 col-md-3"><a href="./basics-6.html">Exercises</a></div>
+                <div class="col-12 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
             </nav>
             <div class="row">
                 <div class="col-12">
@@ -74,6 +74,15 @@
                                 <div class="bottom-space"><img src="../../images/foil_explanation.png" alt="example of using FOIL method" class="img-fluid"></div>
                             </p>
                         </div>
+                        <hr>
+                        <h3>Steps to Solve the Basic Equation for Future Value (FV)</h3>
+                        <p>Basic Equation: <span class="math">\(FV=PV(1+i)^n\)</span></p>
+                        <ul>
+                            <li>First identify the interest (i) rate. Look for a percent or decimal. <span class="alert">Note: If you are using a financial calculator, use the percent, and if you are figuring the calculations on your own, use the decimal format.</span></li>
+                            <li>Identify the principal or present value (PV). To distinguish between Present Value (PV) and Future Value (FV), ask yourself whether the dollar amount is money you have now or in the future. </li>
+                            <li>Multiply the interest rate times the principal amount.</li>
+                            <li>Finally, time (n) is an expression of time, usually months or years. To calculate the amount you'd have in the future, add the interest payment back to the initial investment (principal) for the number of time periods.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -93,13 +102,15 @@
     </div> <!--  end of container -->
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-    <script src="../basics-script.js"></script>
+<script src="basics-script.js"></script>
 </body>
 
 </html>

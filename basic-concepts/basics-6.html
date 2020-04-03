@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../tvm-styles.css">
+    <link rel="stylesheet" href="../tvm-styles.css">
 
     <title>Time Value of Money - Part 1</title>
 </head>
@@ -15,46 +15,52 @@
 <body>
     <div class="container-fluid">
 
-        <!-- problem 13  -->
+
+
         <div id="" class="slide exercise-slide">
             <div class="row slide-title">
                 <div class="col-12">
                     <h2 class="primary-title">TVM: The Basics</h2>
-                    <h3 class="secondary-title">Exercises</h3>
+                    <h3 class="secondary-title">TVM Equation</h3>
                 </div>
             </div>
             <nav class="row">
-                <div class="col-12 col-md-3"><a href="./../basics-1.html">Home</a></div>
-                <div class="col-12 col-md-3"><a href="./help/help-index.html">Math Help</a></div>
-                <div class="col-12 col-md-3"><a href="./exercises/exerciseIntro-1.html">Exercises</a></div>
+                <div class="col-12 col-md-3"><a href="./basics-1.html">Home</a></div>
+                <div class="col-12 col-md-3"><a href="./basics-help.html">Math Help</a></div>
+                <div class="col-12 col-md-3"><a href="./basics-6.html">Exercises</a></div>
                 <div class="col-12 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
             </nav>
             <div class="row">
                 <div class="col-12">
                     <div class="content">
+                        <h4>Exercise 1: Calculate Future Value (FV)</h4>
+                        <p class="question">What would the $100 investment be worth in 10 years at 10% interest?</p>
+                        <p>Instructions: Identify the variables in the question and input them into the blanks provided.</p>
 
-                        <h4>Exercise 13: Calculate the Unknown Variable</h4>
-                        <p>Solve the TVM equation and enter the value of the variable in the box provided.</p>
-
-                        <p class="question">If I know that I want to give my child $20,000 for college on his 18th birthday, how much will I need to invest at 7% when the child is born?</p>
                         <div class="container">
                             <div class="">
-                                <form action="" class="indent">
-                                    <label> </label>
-                                    <input id="Present Value (PV)alue-ex13" type="number"><br>
+                                <form action="">
+                                    <label>Present Value (PV) </label>
+                                    <input id="PV" type="number" placeholder="0"><br>
+
+                                    <label style="margin-left: 58px;">Interest (i) </label>
+                                    <input id="i" type="number" step='1' placeholder="0"><br>
+
+                                    <label style="margin-left: 73px">Time (n) </label>
+                                    <input id="n" type="number" placeholder="0"><br>
+
+                                    <button id="ex1" type="button" class="btn calculate-btn">Calculate</button>
                                 </form>
-                                <button onclick="exercise_13()" type="button" class="btn calculate-btn">Submit</button>
                             </div>
-                            <br>
-                            <div class="answer" id="answer-ex13"></div>
+                            <div class="answer" id="answer"></div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
-                    <a href="" type="button" class="btn">Back</a>
-                    <a href="" type="button" class="btn">Continue</a>
+                    <a type="button" class="btn" href="basics-5.html">Back</a>
+                    <a type="button" class="btn" href="basics-7.html">Continue</a>
                 </div>
             </div>
             <div class="row">
@@ -64,7 +70,6 @@
             </div>
         </div>
 
-
     </div> <!--  end of container -->
 
 
@@ -73,10 +78,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-    <script src="basics-script.js"></script>
+    <script src="./basics-script.js"></script>
 </body>
 
 </html>

@@ -22,95 +22,14 @@ $(document).ready(function () {
     }
   };
 
-  /************ continue/back BUTTON FUNCTIONALITY  *************************/
-
-  /** HIDE ALL SLIDES EXCEPT CURRENT, starts with first slide **/
-  // $('.allSlides .slide').each(function (e) {
-  //   if (e != 0) {
-  //     $(this).hide();
-  //   }
-  // });
-
-  // for each click on the continue button, hide the current slide and show the next one
-  //   $('.continue').click(function () {
-  //     if ($('.allSlides .slide:visible').next().length != 0) {
-  //       $('.allSlides .slide:visible')
-  //         .next()
-  //         .show()
-  //         .prev()
-  //         .hide();
-  //     } else {
-  //       $('.allSlides .slide:visible').hide();
-  //       $('.allSlides .slide:first').show(); //wraps around and shows first slide again
-  //     }
-  //     return false;
-  //   });
-
-  //   // for each click on the back button, hide the current slide and show the previous one
-  //   $('.back').click(function () {
-  //     if ($('.allSlides .slide:visible').prev().length != 0) {
-
-  //       $('.allSlides .slide:visible')
-  //         .prev()
-  //         .show()
-  //         .next()
-  //         .hide();
-  //     } else {
-  //       $('.allSlides .slide:visible').hide();
-  //       $('.allSlides .slide:last').show();
-  //     }
-  //     return false;
-  //   });
-  //   /** END Back / Continue Button Functionality ****************/
-
-  //   // for each click on the skip button, hide the current slide and show the next one with the land class
-  //   $('.skip').click(function () {
-  //     // console.log('skip clicked');
-  //     if ($('.allSlides .slide:visible').next().length != 0) {
-  //       // console.log('did this one go?');
-  //       $('.allSlides .slide:visible')
-  //         .nextUntil('div.stop')
-  //         .show()
-  //         .prev()
-  //         .hide();
-  //       console.log('skip to stop triggered');
-  //     } else {
-  //       $('.allSlides .slide:visible').hide();
-  //       $('.allSlides .slide:first').show(); //wraps around and shows first slide again
-  //     }
-  //     return false;
-  //   });
-
-
-  //   // for each click on the skipback button, hide the current slide and show the previous one with the landback class
-  //   $('.skipBack').click(function () {
-  //     // console.log('skip clicked');
-  //     if ($('.allSlides .slide:visible').next().length != 0) {
-  //       // console.log('did this one go?');
-  //       $('.allSlides .slide:visible')
-  //         .prevUntil('div.stopBack')
-  //         .show()
-  //         .next()
-  //         .hide();
-  //       console.log('skip to stop triggered');
-  //     } else {
-  //       $('.allSlides .slide:visible').hide();
-  //       $('.allSlides .slide:first').show(); //wraps around and shows first slide again
-  //     }
-  //     return false;
-  //   });
-  /************ END continue/back BUTTON FUNCTIONALITY  *************************/
-
-
-
-  // future value calculation is FV = PV(1 + i)^time
+   // future value calculation is FV = PV(1 + i)^time
   /* ******* for first exercise slide in lecture ********** */
 
   document.getElementById('ex1').addEventListener('click', calc_FV);
 
   function calc_FV() {
     let PV = parseFloat(document.getElementById('PV').value);
-    let i = parseFloat(document.getElementById('i').value) / 100;
+    let i = parseInt(document.getElementById('i').value) / 100;
     // console.log(i)
     let n = parseInt(document.getElementById('n').value);
     let ans = document.getElementById('answer');
@@ -152,7 +71,7 @@ $(document).ready(function () {
     principal.toFixed(2);
     var fvalue = parseFloat(document.getElementById('fvalue-ex2').value);
     fvalue.toFixed(2);
-    var interest = parseFloat(document.getElementById('int-ex2').value);
+    var interest = parseInt(document.getElementById('int-ex2').value) / 100;
     interest.toFixed(2);
     var time = document.getElementById('yrs-ex2').value;
     var ans = ex_2(principal, fvalue, interest, time);
@@ -198,7 +117,7 @@ $(document).ready(function () {
     principal.toFixed(2);
     var FV = parseFloat(document.getElementById('fvalue-ex4').value);
     FV.toFixed(2);
-    var interest = parseFloat(document.getElementById('int-ex4').value);
+    var interest = parseInt(document.getElementById('int-ex4').value) / 100;
     interest.toFixed(2);
     var time = document.getElementById('yrs-ex4').value;
     var ans = ex_4(principal, FV, interest, time);
@@ -245,7 +164,7 @@ $(document).ready(function () {
     principal.toFixed(2);
     var FV = parseFloat(document.getElementById('fvalue-ex6').value);
     FV.toFixed(2);
-    // var interest = parseFloat(document.getElementById('int-ex6').value);
+    // var interest = parseInt(document.getElementById('int-ex6').value)/100;
     // interest.toFixed(2);
     var time = document.getElementById('yrs-ex6').value;
     var ans = ex_6(principal, FV, time);
@@ -267,7 +186,7 @@ $(document).ready(function () {
     }
   }
   function exercise_7() {
-    var interest = parseFloat(document.getElementById('int-ex7').value);
+    var interest = parseInt(document.getElementById('int-ex7').value)/100;
     interest.toFixed(2);
     var ans = ex_7(interest);
 
@@ -291,8 +210,7 @@ $(document).ready(function () {
     var principal = parseFloat(document.getElementById('pvalue-ex8').value);
     principal.toFixed(2);
     var FV = parseFloat(document.getElementById('fvalue-ex8').value);
-    FV.toFixed(2);
-    var interest = parseFloat(document.getElementById('int-ex8').value);
+    var interest = parseInt(document.getElementById('int-ex8').value)/100;
     interest.toFixed(2);
     // var time = document.getElementById('yrs-ex8').value;
     var ans = ex_8(principal, FV, interest);
@@ -379,7 +297,7 @@ $(document).ready(function () {
     // principal.toFixed(2);
     var FV = parseFloat(document.getElementById('fvalue-ex12').value);
     FV.toFixed(2);
-    var interest = parseFloat(document.getElementById('int-ex12').value);
+    var interest = parseInt(document.getElementById('int-ex12').value)/100;
     interest.toFixed(2);
     var time = document.getElementById('yrs-ex12').value;
     var ans = ex_12(FV, interest, time);
@@ -426,7 +344,7 @@ $(document).ready(function () {
     // principal.toFixed(2);
     var FV = parseFloat(document.getElementById('fvalue-ex14').value);
     FV.toFixed(2);
-    var interest = parseFloat(document.getElementById('int-ex14').value);
+    var interest = parseInt(document.getElementById('int-ex14').value)/100;
     interest.toFixed(2);
     var time = document.getElementById('yrs-ex14').value;
     var ans = ex_14(FV, interest, time);

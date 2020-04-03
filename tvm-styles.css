@@ -79,64 +79,10 @@ nav div a:hover, nav div a:active {
     }
     /* end slide set up **************************/
 
-/* a:link {
-    color: red;
-} */
-
-/* a:visited {
-    color: #cccccc;
-} */
-
-/* a:hover {
-    color: hotpink;
-} */
-
-/* a:active {
-    color: #cccccc;
-    text-decoration: none;
-} */
-
-    /* button styles **************************/
-    /* button {
-        text-decoration: none;
-        cursor: pointer;
-        font-size: 16px;
-        width: 125px;
-        border-radius: 8px;
-        box-shadow: 5px 10px 18px #b1b1b1;
-    }
-    button:active, button:focus, .btn:active, .btn:focus {
-        color: #fff;
-    }
-    button a:active, button a:link, button a:hover, button a:visited {
-        color: #fff;
-        text-decoration: none;
-    }
-    button.start {
-        box-shadow: 5px 10px 18px #242424;
-        margin-top: 450px;
-        margin-bottom: 25px;
-    }
-    .btn {
-        background-color: var(--header-color);
-        color: #fff;
-        margin: 5px;
-    }
-    .calculate-btn {
-        background-color:  #89002d;
-        width: 50%;
-        color: white;
-        font-size: 14px;
-        margin: 10px 0 10px 25%;
-    }
-    .calculate-btn:active, .calculate-btn:focus {
-        color: white;
-    } */  
-    .help {
+     .help {
         /* change help button color */
         background-color: #CC444B;
     }  
-    /* end button styles **************************/
     /* TESTING TURN LINK INTO BUTTON STYLES */
     a.btn, button.btn {
         text-decoration: none;
@@ -156,7 +102,7 @@ nav div a:hover, nav div a:active {
     }
     a.start {
         box-shadow: 5px 10px 18px #242424;
-        margin-top: 450px;
+        margin-top: 400px;
         margin-bottom: 25px;
     }
     .btn {
@@ -166,7 +112,7 @@ nav div a:hover, nav div a:active {
     }
     .calculate-btn {
         background-color:  #89002d;
-        width: 50%;
+        width: 30% !important;
         color: white;
         font-size: 14px;
         margin: 10px 0 10px 25%;
@@ -181,13 +127,13 @@ nav div a:hover, nav div a:active {
         margin: 10px;
         max-height: 230px;
     }
-    /* .img-math {
-        max-height: 230px;
-    } */
-
-    /* end image styles **************************/
+       /* end image styles **************************/
 
     /* form styles **************************/
+    form {
+        width: 85%;
+        margin: 0 auto;
+    }
     input[type=text], input[type=password], input[type=email], input[type=number], textarea, select {
         width: 70%;
         padding: 10px 10px;
@@ -301,7 +247,7 @@ nav div a:hover, nav div a:active {
     }
     .calculate-btn {
         width: 30%;
-        margin-left: 15%;
+        /* margin-left: 15%; */
     }
     input[type=text], input[type=password], input[type=email], input[type=number], textarea, select {
         width: 40%;
@@ -321,7 +267,7 @@ nav div a:hover, nav div a:active {
         width: 25%;
     }
     .calculate-btn {
-        width: 25%;
+        /* width: 25%; */
     }
 }
 
