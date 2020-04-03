@@ -15,8 +15,7 @@
 <body>
     <div class="container-fluid">
 
-
-        <!-- problem 15 answer -->
+        <!--   problem 5 answer -->
         <div id="" class="slide exercise-slide">
             <div class="row slide-title">
                 <div class="col-12">
@@ -25,27 +24,33 @@
                 </div>
             </div>
             <nav class="row">
-                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./basics-1.html">Home</a></div>
-                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./basics-help.html">Math Help</a></div>
-                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./basics-6.html">Exercises</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./../basics-1.html">Home</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./help/help-index.html">Math Help</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./exercises/exerciseIntro-1.html">Exercises</a></div>
                 <div class="col-xs-6 col-sm-3 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
             </nav>
             <div class="row">
                 <div class="col-12">
                     <div class="content">
-                        <h4>Exercise 15: Solution</h4>
-                        <p class="question">What would you expect to pay today for a bond that’s face value is $10,000, matures in 10 years, and pays returns 4% annual interest?</p>
+                        <h4>Exercise 5: Solution</h4>
+                        <p class="question">A zero coupon bond pays $1,000 at maturity in 20 years. If the appropriate required return for this level of risky asset is 12%, how much would I be willing to pay for this bond? (assume annual compounding/discounting)</p>
                         <p>Variables:</p>
                         <!-- <div><img class="math" src="../images/exponent-step.svg"></div> -->
-                        <div class="math">
-                            = ?<br>
-                            = 10000<br>
-                            = 4% &xrarr; 0.04<br>
-                            = 10</div>
-                        <p>Then plug the numbers into the equation:</p>
-                        <div class="math">
-                            <img src="./images/tvm1_question14.png" class="img-fluid " alt="">
-                        </div>
+                        <p class="math">Present Value (PV) = ?<br>
+                            Future Value (FV) = 1000<br>
+                            i = 0.12<br>
+                            n = 20</p>
+
+                        <p>Plug the numbers into the equation:</p>
+                        <!-- <div><img class="math" src="../images/exponent-step.svg"></div> -->
+                        <p class="math">
+                            Future Value (FV) = Present Value (PV)(1 + i)<sup>n</sup><br>
+                            1000</span class> = Present Value (PV)(1 + 0.12)<sup>20</sup><br>
+                            1000 = Present Value (PV)(1.12)<sup>20</sup><br>
+                            1000</span clas> = Present Value (PV)(9.64629309)<br>
+                            1000</span clas> / 9.64629309 = Present Value (PV)<br>
+                            <b>Present Value (PV) = $103.67</b>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -73,7 +78,7 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-    <script src="basics-script.js"></script>
+    <script src="formulas-script.js"></script>
 </body>
 
 </html>

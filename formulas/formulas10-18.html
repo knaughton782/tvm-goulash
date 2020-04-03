@@ -15,7 +15,8 @@
 <body>
     <div class="container-fluid">
 
-        <!-- problem 14 answer -->
+
+        <!--  problem 10  -->
         <div id="" class="slide exercise-slide">
             <div class="row slide-title">
                 <div class="col-12">
@@ -32,14 +33,26 @@
             <div class="row">
                 <div class="col-12">
                     <div class="content">
-                        <h4>Exercise 14: Solution</h4>
-                        <p class="question">What would you expect to pay today for a bond that’s face value is $10,000, matures in 10 years, and pays returns 4% annual interest?</p>
-                        <!-- <div><img class="math" src="../images/exponent-step.svg"></div> -->
-                        <div class="math">
-                            = ?<br>
-                            = 10000<br>
-                            = 4% &xrarr; .04<br>
-                            = 10
+
+                        <h4>Exercise 12: Identify the Variables</h4>
+                        <p>Solve the TVM equation and enter the value of the unknown variable.</p>
+                        <p class="question">If I know that I want to give my child $20,000 for college on his 18th birthday, how much will I need to invest at 7% when the child is born?</p>
+                        <div class="container">
+                            <div class="">
+                                <form action="" class="indent">
+                                    <label> </label>
+                                    <input id="Present Value (PV)alue-ex12" type="number"><br>
+                                    <label> </label>
+                                    <input id="Future Value (FV)alue-ex12" type="number"><br>
+                                    <label>Interest (i)</label>
+                                    <input id="int-ex12" type="number"><br>
+                                    <label>&nbsp;&nbsp; </label>
+                                    <input id="yrs-ex12" type="number"><br>
+                                </form>
+                                <button onclick="exercise_12()" type="button" class="btn calculate-btn">Submit</button>
+                            </div>
+                            <br>
+                            <div class="answer" id="answer-ex12"></div>
                         </div>
                     </div>
                 </div>
@@ -68,7 +81,7 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-    <script src="basics-script.js"></script>
+    <script src="formulas-script.js"></script>
 </body>
 
 </html>

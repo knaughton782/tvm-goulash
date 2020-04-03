@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../tvm-styles.css">
+    <link rel="stylesheet" href="../tvm-styles.css">
 
     <title>Time Value of Money - Part 1</title>
 </head>
@@ -15,45 +15,29 @@
 <body>
     <div class="container-fluid">
 
-
-        <!--  problem 10  -->
-        <div id="" class="slide exercise-slide">
+        <div id="" class="slide">
             <div class="row slide-title">
                 <div class="col-12">
                     <h2 class="primary-title">TVM: The Basics</h2>
-                    <!-- <h3 class="secondary-title">Exercises</h3> -->
+                    <h3 class="secondary-title">TVM Equation</h3>
                 </div>
             </div>
             <nav class="row">
-                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./basics-1.html">Home</a></div>
-                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./basics-help.html">Math Help</a></div>
-                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./basics-6.html">Exercises</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./tvm1-1.html">Home</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./help/help-index.html">Math Help</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./exercises/exerciseIntro-1.html">Exercises</a></div>
                 <div class="col-xs-6 col-sm-3 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
             </nav>
             <div class="row">
                 <div class="col-12">
                     <div class="content">
-
-                        <h4>Exercise 12: Identify the Variables</h4>
-                        <p>Solve the TVM equation and enter the value of the unknown variable.</p>
-                        <p class="question">If I know that I want to give my child $20,000 for college on his 18th birthday, how much will I need to invest at 7% when the child is born?</p>
-                        <div class="container">
-                            <div class="">
-                                <form action="" class="indent">
-                                    <label> </label>
-                                    <input id="Present Value (PV)alue-ex12" type="number"><br>
-                                    <label> </label>
-                                    <input id="Future Value (FV)alue-ex12" type="number"><br>
-                                    <label>Interest (i)</label>
-                                    <input id="int-ex12" type="number"><br>
-                                    <label>&nbsp;&nbsp; </label>
-                                    <input id="yrs-ex12" type="number"><br>
-                                </form>
-                                <button onclick="exercise_12()" type="button" class="btn calculate-btn">Submit</button>
-                            </div>
-                            <br>
-                            <div class="answer" id="answer-ex12"></div>
-                        </div>
+                        <p>So far we have calculated FV with the TVM equation. Another way to calculate TVM is with a financial calculator. If you have a financial calculator, now would be a good time to make sure you know how to use it. Feel free to click on the Financial Calculator links and test an online calculator.</p>
+                        <p>Plug in the numbers to verify that the equation and calculator find the same FV using the math question you are familiar with.</p>
+                        <p class="alert">Note: Your calculator must be on End mode -- this is the most common mistake made on tests. Also, keep in mind that PV is entered as a negative number and interest is entered as a whole number.</p>
+                        <p class="question">How much would $100 grow in 10 years at 10%?</p>
+                        <p class="text-center">
+                            <img src="../images/tvm1_calculator_check_example.png" class="img-fluid">
+                        </p>
                     </div>
                 </div>
             </div>
@@ -62,12 +46,13 @@
                     <div class="page-number"></div>
                 </div>
                 <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
-                    <a href="" type="button" class="btn">Back</a>
-                    <a href="" type="button" class="btn">Continue</a>
+                    <a type="button" class="btn" href="basics-6.html">Back</a>
+                    <a type="button" class="btn" href="basics-8.html">Continue</a>
                 </div>
             </div>
 
         </div>
+
 
 
     </div> <!--  end of container -->
@@ -81,7 +66,7 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-    <script src="basics-script.js"></script>
+    <script src="formulas-script.js"></script>
 </body>
 
 </html>

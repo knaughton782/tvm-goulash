@@ -15,7 +15,7 @@
 <body>
     <div class="container-fluid">
 
-        <!-- problem 4 answer -->
+        <!-- problem 15  -->
         <div id="" class="slide exercise-slide">
             <div class="row slide-title">
                 <div class="col-12">
@@ -24,21 +24,31 @@
                 </div>
             </div>
             <nav class="row">
-                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./../basics-1.html">Home</a></div>
-                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./help/help-index.html">Math Help</a></div>
-                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./exercises/exerciseIntro-1.html">Exercises</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./basics-1.html">Home</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./basics-help.html">Math Help</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./basics-6.html">Exercises</a></div>
                 <div class="col-xs-6 col-sm-3 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
             </nav>
             <div class="row">
                 <div class="col-12">
                     <div class="content">
-                        <h4>Exercise 4: Solution</h4>
-                        <p class="question">A zero coupon bond pays $1,000 at maturity in 20 years. If the appropriate required return for this level of risky asset is 12%, how much would I be willing to pay for this bond? (assume annual compounding/discounting)</p>
-                        <!-- <div><img class="math" src="../images/exponent-step.svg"></div> -->
-                        <p class="math">Present Value (PV) = ?<br>
-                            Future Value (FV) = 1000<br>
-                            i = 12% or 0.12<br>
-                            n = 20</p>
+
+
+                        <h4>Exercise 15: Calculate the Unknown Variable</h4>
+                        <p>Solve the TVM equation and enter the value of the variable in the box provided.</p>
+
+                        <p class="question">What would you expect to pay today for a bond that’s face value is $10,000, matures in 10 years, and pays returns 4% annual interest?</p>
+                        <div class="container">
+                            <div class="">
+                                <form action="" class="indent">
+                                    <label> </label>
+                                    <input id="Present Value (PV)alue-ex15" type="number"><br>
+                                </form>
+                                <button onclick="exercise_15()" type="button" class="btn calculate-btn">Submit</button>
+                            </div>
+                            <br>
+                            <div class="answer" id="answer-ex15"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -66,7 +76,7 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-    <script src="basics-script.js"></script>
+    <script src="formulas-script.js"></script>
 </body>
 
 </html>
