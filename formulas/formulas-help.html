@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../tvm-styles.css">
+
+    <title>Time Value of Money - Part 1</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <div id="" class="slide help-slide">
+            <div class="row slide-title">
+                <div class="col-12">
+                    <h2 class="primary-title">TVM: The Basics Help</h2>
+                    <!-- <h3 class="secondary-title">Help Me!</h3> -->
+                </div>
+            </div>
+            <nav class="row">
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./basics-1.html">Home</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./formulas-help.html">Math Help</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./basics-6.html">Exercises</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
+            </nav>
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+                        <div id="principals">
+                            <h2 class="contentTitle">Basic principals of Algebra</h2>
+                            <h4>Reciprocals</h4>
+                            <ul>
+                                <li>Cancel out variables or numbers by performing the same action to both sides of the equal side. (Multiply, divide, or raise to an exponent)</li>
+                                <li>Find the reciprocal of a number by converting the number to a fraction, then switching the numerator and denominator. A number multiplied by its reciprocal equals 1. This makes reciprocals useful for canceling numbers and exponents.</li>
+                            </ul>
+                            <p>Examples of Reciprocals:</p>
+                            <div class="bottom-space">
+                                <img src="../images/reciprocals.png" alt="examples of reciprocals" class="img-fluid">
+                            </div>
+                            <hr>
+                        </div>
+                        <div id="pemdas">
+                            <h4 class="contentTitle">Order of Operations</h4>
+                            <p>You'll need to know the order of operations to understand the math that follows. Remember <strong>PEMDAS</strong>:
+                                <ul>
+                                    <li><strong>P</strong>arenthesis</li>
+                                    <li><strong>E</strong>xponents</li>
+                                    <li><strong>M</strong>ultiplication and <strong>D</strong>ivision (from left to right)</li>
+                                    <li><strong>A</strong>ddition and <strong>S</strong>ubtraction (from left to right)</li>
+                                </ul>
+                            </p>
+                            <p class="bottom-space">You may also have learned this as "<strong>P</strong>lease <strong>E</strong>xcuse <strong>M</strong>y <strong>D</strong>ear <strong>A</strong>unt <strong>S</strong>ally</p>
+                            <hr>
+                        </div>
+                        <div id="dist">
+                            <h4 class="contentTitle">Distributive Property</h4>
+                            <p>We'll use the Distributive Property to distribute a number that is multiplied by a polynomial in parentheses. For instance:<br>
+                                <div class="bottom-space"><img src="../images/distributive_property.png" alt="example of the distributive property" class="img-fluid"></div>
+                            </p>
+                            <p>The Distributive Property is easy enough to understand when real numbers are involved. However, its important to understand how to distribute with variables.<br>
+                                <div class="bottom-space"><img src="../images/distributive_property_with_variables.png" alt="example of the distributive property using variables" class="img-fluid"></div>
+                            </p>
+                            <hr>
+                        </div>
+                        <div id="foil">
+                            <h4 class="contentTitle">FOIL</h4>
+                            <p>The <strong>FOIL</strong> Method is a systematic way to multiply terms inside parentheses. The letters stand for:
+                                <div class="question"><strong>F</strong>irst <strong>O</strong>uter <strong>I</strong>nner <strong>L</strong>ast</div>
+                                <div class="bottom-space"><img src="../images/foil_explanation.png" alt="example of using FOIL method" class="img-fluid"></div>
+                            </p>
+                        </div>
+                        <hr>
+                        <h3>Steps to Solve the Basic Equation for Future Value (FV)</h3>
+                        <p>Basic Equation: <span class="math">\(FV=PV(1+i)^n\)</span></p>
+                        <ul>
+                            <li>First identify the interest (i) rate. Look for a percent or decimal. <span class="alert">Note: If you are using a financial calculator, use the percent, and if you are figuring the calculations on your own, use the decimal format.</span></li>
+                            <li>Identify the principal or present value (PV). To distinguish between Present Value (PV) and Future Value (FV), ask yourself whether the dollar amount is money you have now or in the future. </li>
+                            <li>Multiply the interest rate times the principal amount.</li>
+                            <li>Finally, time (n) is an expression of time, usually months or years. To calculate the amount you'd have in the future, add the interest payment back to the initial investment (principal) for the number of time periods.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="btn">Back</button>
+                        <button type="button" class="btn">Continue</button>
+                    </div>
+                </div> -->
+
+        </div>
+
+    </div> <!--  end of container -->
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <script src="basics-script.js"></script>
+</body>
+
+</html>

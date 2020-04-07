@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../tvm-styles.css">
+    <link rel="stylesheet" href="../../tvm-styles.css">
 
     <title>Time Value of Money - Part 1</title>
 </head>
@@ -15,17 +15,17 @@
 <body>
     <div class="container-fluid">
 
+        <!--  problem 4 -->
 
-
-        <div id="" class="slide">
+        <div id="" class="slide exercise-slide">
             <div class="row slide-title">
                 <div class="col-12">
-                    <h2 class="primary-title">TVM: The Basics</h2>
-                    <h3 class="secondary-title">TVM Equation</h3>
+                    <h2 class="primary-title">TVM: Formulas</h2>
+                    <!-- <h3 class="secondary-title">Exercises</h3> -->
                 </div>
             </div>
             <nav class="row">
-                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./tvm1-1.html">Home</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./../basics-1.html">Home</a></div>
                 <div class="col-xs-6 col-sm-3 col-md-3"><a href="./help/help-index.html">Math Help</a></div>
                 <div class="col-xs-6 col-sm-3 col-md-3"><a href="./exercises/exerciseIntro-1.html">Exercises</a></div>
                 <div class="col-xs-6 col-sm-3 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
@@ -33,7 +33,27 @@
             <div class="row">
                 <div class="col-12">
                     <div class="content">
-                        <p>Many textbooks will present you with four different TVM equations; one solving for each variable: FV, PV, i, and n. As a result you have to memorize four equations instead of one. There's an easier route! If you know the general TVM equation and have some basic math skills, you can solve for any of the four variables. We've already solved for Future Value (FV). Now we'll try 3 more example problems, solving for the other 3 variables.</p>
+
+                        <h4>Exercise 4: Identify the Variables</h4>
+                        <p>Enter the value of each variable in the boxes below. Leave the box for the unknown variable blank.</p>
+                        <p class="question">A zero coupon bond pays $1,000 at maturity in 20 years. If the appropriate required return for this level of risky asset is 12%, how much would I be willing to pay for this bond? (assume annual compounding/discounting)</p>
+                        <div class="container">
+                            <div class="">
+                                <form action="" class="indent">
+                                    <label>Present Value (PV) </label>
+                                    <input id="Present Value (PV)alue-ex4" type="number"><br>
+                                    <label>Future Value (FV) </label>
+                                    <input id="Future Value (FV)alue-ex4" type="number"><br>
+                                    <label>Interest (i)</label>
+                                    <input id="int-ex4" type="number"><br>
+                                    <label>Time (n)</label>
+                                    <input id="yrs-ex4" type="number"><br>
+                                </form>
+                                <button onclick="exercise_4()" type="button" class="btn calculate-btn">Submit</button>
+                            </div>
+                            <br>
+                            <div class="answer" id="answer-ex4"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -42,14 +62,12 @@
                     <div class="page-number"></div>
                 </div>
                 <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
-                    <!-- needs a help button  -->
-                    <a type="button" class="btn" href="basics-7.html">Back</a>
-                    <a type="button" class="btn" href="basics-9.html">Continue</a>
+                    <a href="" type="button" class="btn">Back</a>
+                    <a href="" type="button" class="btn">Continue</a>
                 </div>
             </div>
 
         </div>
-
 
 
     </div> <!--  end of container -->

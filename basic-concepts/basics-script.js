@@ -25,8 +25,10 @@ $(document).ready(function () {
    // future value calculation is FV = PV(1 + i)^time
   /* ******* for first exercise slide in lecture ********** */
 
-  document.getElementById('exFV').addEventListener('click', calc_FV);
+  
 
+  $(document).on('click', '.calculate-btn', calc_FV)
+  
   function calc_FV() {
     let PV = parseFloat(document.getElementById('PV').value);
     let i = parseInt(document.getElementById('i').value) / 100;
@@ -40,7 +42,7 @@ $(document).ready(function () {
       ans.innerHTML = `Investment must be a valid number greater than zero.`;
     }
     else if (isNaN(i) || i <= 0) {
-      ans.innerHTML = `Annual rate must be a valid number, greater than zero, and a whole number.`;
+      ans.innerHTML = `Annual rate must be a valid number greater than zero.`;
     }
     else if (isNaN(n) || n <= 0) {
       ans.innerHTML = `Years must be a valid number greater than zero.`;
