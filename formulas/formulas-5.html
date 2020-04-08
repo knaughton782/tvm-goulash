@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../tvm-styles.css">
 
-    <title>Time Value of Money - Part 1</title>
+    <title>Time Value of Money - Formulas</title>
 </head>
 
 <body>
@@ -25,30 +25,61 @@
             </div>
             <nav class="row">
                 <div class="col-xs-6 col-sm-3 col-md-3"><a href="./formulas-1.html">Home</a></div>
-                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./help/help-index.html">Math Help</a></div>
-                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./exercises/exerciseIntro-1.html">Exercises</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./formulas-help.html">Math Help</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="#">Exercises</a></div>
                 <div class="col-xs-6 col-sm-3 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
             </nav>
             <div class="row">
                 <div class="col-12">
                     <div class="content">
-                        <h3>Solve the Equation for Interest (i)</h3>
+                        <h4>Solve the Equation for Present Value (PV)</h4>
                         <hr>
-                        <p class="question">If you need to triple your investment in 10 years, what interest rate will you need?</p>
-                        <p class="answer">The answer is 11.612%.</p>
+                        <p class="question">How much would you pay today for a promise of $259.37 in 10 years at a discount rate of 10%?</p>
+                        <p class="answer">The answer is $100.</p>
                         <h5>Steps for solving the sample equation.</h5>
-                        <p>Even though not all the numbers are listed in the problem, we can identify the time frame. Identifying FV and PV might be difficult since they aren't explicitly stated, however we know our future value will be 3 times our current value. This means we can use any current value for our calculation. To make it easy, use $1. This means our future value would be $3.</p>
-                        <p>Remember: To find the reciprocal, turn the number into a fraction and then flip it over:
-                            <span class="math" style="font-size: 1.5em;">\(10=\frac{10}{1}\nearrow\frac{1}{10}\)</span>
-                        </p>
+                        <p>Follow the same pattern we used to solve our first problem.</p>
                         <ul>
-                            <li>First, identify the variables in the problem. In essence, this question asks how much interest it will take to turn $1 that you have today into $3 in 10 years.
-                                <div><span class="math">\(PV=1\)<br>\(FV=3\)<br>\(i=?\)<br>\(n=10\)</span></div>
+                            <li>First, identify the variables in the problem.</li>
+                            <ul>
+                                <li>
+                                    This time we’re looking for Present Value (PV), because the question asks how much you would pay today.
+                                    <div><span class="math">\(PV=?\)</span></div>
+                                </li>
+                                <li>
+                                    We know that the $259.37 is the Future Value (FV), because it will be paid in the future.
+                                    <div><span class="math">\(FV=259.37\)</span></div>
+                                </li>
+                                <li>Remember that interest (i) is a percentage or decimal.
+                                    <div><span class="math">\(i=10\%\ or\ 0.10\)</div>
+                                </li>
+                                <li>Time (n) is an expression of time such as years or decades.
+                                    <div><span class="math">\(n=10\)</span></div>
+                                </li>
+                            </ul>
+
+                            <li>
+                                <p>Once you've identified the variables, plug the numbers into the basic equation:
+                                    <div><span class="math">\(FV=PV(1+i)^n\)<br>
+                                            \(259.37=(1+0.10)^{10}\)</span></div>
+                                </p>
                             </li>
-                            <li>Next, plug the numbers into the equation:
-                            <div><span class="math">\(FV=PV(1+i)^n\longrightarrow3=1(1+i)^{10}\)</span></div></li>
-                            <li>Then solve for the unknown variable, which is interest (i) in this problem.</li>
-                            <p>IMPORTANT: The order of operations still applies to this problem. However, we can’t start as we normally would by adding the numbers in the parentheses, because one is an unknown variable. We also have to skip the exponent for now, because of the unknown variable.</p>
+                            <li>Then solve for the unknown variable. Remember to use the order of operations (PEMDAS).
+                                <ul>
+                                    <li>Add the numbers in the parentheses.<div><span class="math">\(FV=100(1.10)^{10}\)</span></div>
+                                    </li>
+                                    <li>Raise the number in the parentheses to the exponent. Leave enough significant digits so that you don’t commit a rounding error.
+                                        <p><span class="math">\(259.37=PV(2.5937)\)</span></p>
+                                    </li>
+                                    <li>Multiple and Divide: Divide both sides by the same number to isolate PV. Remember to cancel out the fraction.
+                                        <div><span class="math" style="font-size: 1.5em;">\(\frac{259.37}{2.5937}=\frac{PV{\cancel{(2.5937)}}}{\cancel{2.5937}}\)</span></div>
+                                    </li>
+                                    <li>Adding and Subtracting is not necessary for this problem. The addition in this specific equation was taken care of in the parentheses.</li>
+                                </ul>
+                            </li>
+                            <li>Finally, simplify the fraction to solve for PV.
+                                <div><span class="math" style='font-size: 1.5em;'>\(PV=\frac{259.37}{2.5937}=100\)</span></div>
+                            </li>
+                            </p>
                         </ul>
 
                     </div>
@@ -79,7 +110,7 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-    <script src="formulas-script.js"></script>
+    <script src="../script.js"></script>
 </body>
 
 </html>

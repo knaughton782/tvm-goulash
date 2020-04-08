@@ -9,16 +9,18 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../tvm-styles.css">
 
-    <title>Time Value of Money - Part 1</title>
+    <title>Time Value of Money - Basics</title>
 </head>
 
 <body>
     <div class="container-fluid">
+
+
         <div id="" class="slide">
             <div class="row slide-title">
                 <div class="col-12">
                     <h2 class="primary-title">TVM: The Basics</h2>
-                    <!-- <h3 class="secondary-title">Introduction</h3> -->
+                    <!-- <h3 class="secondary-title">TVM Equation</h3> -->
                 </div>
             </div>
             <nav class="row">
@@ -30,23 +32,22 @@
             <div class="row">
                 <div class="col-12">
                     <div class="content">
-                        <h2>TVM Equation</h2>
-                        <p>One of the central concepts of finance is that <i>a dollar today is worth more than a dollar in the future</i>. For example, if you make a purchase with a credit card, interest is added to the bill to compensate the credit card company for lending you money. Conversely, if you deposit money in a savings account, the bank pays you interest to compensate you for lending them money.</p>
-                        <p>Time Value of Money (TVM) is the equation we use to convert between today's money and money in the future. Transactions operate on this principal every day.</p>
-                        <!-- <p>Individuals use the TVM equation to plan for retirement savings or to compare the cost of a prospective mortgage or auto loan. Businesses use the equation to compare investments alternatives, to assist decision-makers by converting project opportunities into dollars, or to borrow money from lenders.</p> -->
 
-                        <div class="text-center bottom-space"><img src="../images/concept.png" alt="time value money" class="img-fluid"></div>
-                        <p>For example:</p>
-                        <p class="indent">A business usually collects customer accounts at the end of the month, but one customer requests an extension. If the business foregoes the payment for a while, the business should be compensated for the delay. What factors would be considered in determining how much the customer should pay at a later date?</p>
-                        <p>Most lenders would want to know:
+                        <p>Now apply the same process to roll over the loan for a second year. Some find this a little more complicated, but the steps are the same. Once you have the answer, click Continue.</p>
+                        <p class="question">How much money would you have in another year if you rolled over the $110 earned in the first year?</p>
+                        <p class="answer">The answer is $121.</p>
+                        <hr>
+                        <h4>Let's review:</h4>
+                        <p>
                             <ul>
-                                <li>How much is being borrowed?</li>
-                                <li>How long will it take the customer to repay the loan?</li>
-                                <li>What is the risk that the customer will not be able to pay the account at a later date?</li>
-                                <li>What else could your company do with the money if the customer paid now?</li>
-                                <li>If the loan is long enough, will inflation further erode the value of tomorrow's dollar?</li>
+                                <li>We calculated the 1st year of interest earned by multiplying the interest rate times the 1st year starting principal. Then we added the 1st year interest to the principal.
+                                </li>
+                                <li>Next, we calculated the 2nd year of interest by finding 10% of the new principal amount. Then, we added the 2nd year interest to the new principal amount.
+                                </li>
                             </ul>
                         </p>
+                        <p>In other words, we calculated the interest earned in each individual year and added all the interest payments back to the principal to find the Future Value (FV). Click help if you need more help to solve this question.</p>
+                        <p>It’s important that you grasp the basics of TVM before continuing on to more advanced topics. To help you gauge your understanding of the TVM basics, its time to try some exercises on your own. <span class="alert">Your answers should include dollars and cents. Do not enter commas (,) or symbols (% or $) into the input fields. For example, a properly formatted answer looks like this:</span> <span class="answer">1150.38</span></p>
                     </div>
                 </div>
             </div>
@@ -55,10 +56,11 @@
                     <div class="page-number"></div>
                 </div>
                 <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
-                    <a type="button" class="btn" href="basics-1.html">Back</a>
-                    <a type="button" class="btn" href="basics-3.html">Continue</a>
+                    <a type="button" class="btn" href="basics-4.html">Back</a>
+                    <a type="button" class="btn" href="basics-6.html">To Exercises</a>
                 </div>
             </div>
+
         </div>
 
 
@@ -73,7 +75,7 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-    <script src="basics-script.js"></script>
+    <script src="../script.js"></script>
 </body>
 
 </html>

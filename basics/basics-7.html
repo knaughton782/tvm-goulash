@@ -9,18 +9,17 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../tvm-styles.css">
 
-    <title>Time Value of Money - Part 1</title>
+    <title>Time Value of Money - Basics</title>
 </head>
 
 <body>
     <div class="container-fluid">
 
-
-        <div id="" class="slide">
+        <div id="" class="slide exercise-slide">
             <div class="row slide-title">
                 <div class="col-12">
                     <h2 class="primary-title">TVM: The Basics</h2>
-                    <!-- <h3 class="secondary-title">Introduction - TVM Variables</h3> -->
+                    <!-- <h3 class="secondary-title">Exercises</h3> -->
                 </div>
             </div>
             <nav class="row">
@@ -32,23 +31,25 @@
             <div class="row">
                 <div class="col-12">
                     <div class="content">
-                        <p>What factors would you consider in determining how much Future Value (FV) the customer should pay at a later date? Let's attach some variable names to these factors to understand them better.</p>
+                        <h4>Exercise 2: Calculate Future Value (FV)</h4>
+                        <p class="question">If I deposit $2,000 in an account that earns an annually compounded rate of 8%, how much will my account be worth in 15 years?</p>
+                        <div class="container">
+                            <div class="">
+                                <form action="" class="indent">
+                                    <label>Present Value (PV)</label>
+                                    <input id="PV" type="number" placeholder="0"><br>
 
-                        <div id="PresentValue">
-                            <h4>Present Value (PV)</h4>
-                            <p>How much is being borrowed? Present Value (PV) is the value in today's terms. This is sometimes called the principal or principal investment.</p>
-                        </div>
-                        <div id="FutureValue">
-                            <h4>Future Value (FV)</h4>
-                            <p>How much will you have in the future? Future Value (FV) is the value you will have in the future given a certain interest rate and/or time period.</p>
-                        </div>
-                        <div id="time">
-                            <h4>Time (n)</h4>
-                            <p>How long before the customer pays? Time (n) is the measure of time in years.</p>
-                        </div>
-                        <div id="interest">
-                            <h4>Interest (i) or Rate of Return</h4>
-                            <p>What is the risk that the customer will not be able to pay the account at a later date? What else could your company do with the money if the customer paid now? If the loan is long enough, will inflation further erode the value of tomorrow's dollar? Interest (i) is the rate of return, compensating for risk and opportunity cost. In formulas, you may see this indicated by r, i, or k.</p>
+                                    <label style="margin-left: 58px;">Interest (i) </label>
+                                    <input id="i" type="number" placeholder="0">%<br>
+
+                                    <label style="margin-left: 73px">Time (n) </label>
+                                    <input id="n" type="number" placeholder="0"><br>
+
+                                </form>
+                                <button id="FV2" type="button" class="btn calculate-btn">Calculate</button>
+                            </div>
+                            <br>
+                            <div class="answer" id="answer"></div>
                         </div>
                     </div>
                 </div>
@@ -58,13 +59,11 @@
                     <div class="page-number"></div>
                 </div>
                 <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
-                    <a type="button" class="btn" href="basics-2.html">Back</a>
-                    <a type="button" class="btn" href="basics-4.html">Continue</a>
+                    <a href="basics-6.html" type="button" class="btn">Back</a>
+                    <a href="basics-1.html" type="button" style="width: 130px" class="btn">Return Home</a>
                 </div>
             </div>
         </div>
-
-
 
 
     </div> <!--  end of container -->
@@ -78,7 +77,7 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-    <script src="basics-script.js"></script>
+    <script src="../script.js"></script>
 </body>
 
 </html>

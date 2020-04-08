@@ -8,55 +8,35 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../tvm-styles.css">
-    <title>Time Value of Money - Part 1</title>
+
+    <title>Time Value of Money - Formulas</title>
 </head>
 
 <body>
     <div class="container-fluid">
 
-        <div id="" class="slide">
+
+        <!---------------- Title/Cover slide  *************** -->
+        <div id="" class="slide background-image">
             <div class="row slide-title">
                 <div class="col-12">
-                    <h2 class="primary-title">TVM: Formulas</h2>
-                    <!-- <h3 class="secondary-title">TVM Equation</h3> -->
+                    <h1 class="primary-title">Time Value of Money</h1>
+                    <!-- <h2 class="secondary-title">Part 1: The Basics</h2> -->
                 </div>
             </div>
             <nav class="row">
                 <div class="col-xs-6 col-sm-3 col-md-3"><a href="./formulas-1.html">Home</a></div>
                 <div class="col-xs-6 col-sm-3 col-md-3"><a href="./formulas-help.html">Math Help</a></div>
-                <div class="col-xs-6 col-sm-3 col-md-3"><a href="">Exercises</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="#">Exercises</a></div>
                 <div class="col-xs-6 col-sm-3 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
             </nav>
             <div class="row">
-                <div class="col-12">
-                    <div class="content">
-                        <h2>The TVM Equation</h2>
-                        <p>Previously, we found Future Value (FV) for each individual year and added it back to the principal. Although this does work, it would be time consuming if you were calculating the Future Value (FV) for 10 years. We can derive a general equation that will allow you to <em>solve for any of the variables</em>: Future Value (FV), Present Value (PV), Interest rate (i), or number of years (n).</p>
-                        <p>Here are the equations from the previous sample exercises:
-                            <ul>
-                                <li style="list-style: none; margin: -20px -10px; padding: 0;">Year 1:<span class="math">\(100\times0.10=10\)</span></li>
-                                <li style="list-style: none; margin: -20px -10px; padding: 0;">Year 2:<span class="math">\(110\times0.10=11\)</span></li>
-                                <li style="list-style: none; margin: -20px -10px; padding: 0;">Total after 2 years:<span class="math">\(100+10+11=121\)</span></li>
-                            </ul>
-                        </p>
-                        <br>
-                        <p>If we combine our previous equations into one equation it looks like this: <span class="math">\(100(1+.10)(1+.10)=121\)</span></p>
-                        <p>Then simplify the equation to this: <span class="math">\(100(1+.10)^2=121\)</span></p>
-                        <p>Finally, replace the numbers with variables so we can use the equation with any numbers. This is the basic TVM equation.</p>
-                        <div>
-                            <span class="math" style="font-size: 1.5em;">\(FV=PV(1+i)^n\)</span>
-                        </div>
-                    </div>
+                <div class="col-sm-1 offset-sm-1">
+                    <div class="page-number hide">1</div>
                 </div>
-            </div>
-
-            <div class="row">
-                <div class="col-1">
-                    <div class="page-number"></div>
-                </div>
-                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
-                    <a type="button" class="btn hide" href="">Back</a>
-                    <a type="button" class="btn" href="formulas-2.html">Continue</a>
+                <div class="offset-5 col-4 offset-md-6">
+                    <a type="button" class="hide btn"></a>
+                    <a type="button" class="btn start" href="formulas-2.html">Start!</a>
                 </div>
             </div>
         </div>
@@ -73,7 +53,7 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-    <script src="formulas-script.js"></script>
+    <script src="../script.js"></script>
 </body>
 
 </html>

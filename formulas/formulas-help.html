@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../tvm-styles.css">
 
-    <title>Time Value of Money - Part 1</title>
+    <title>Time Value of Money - Formulas</title>
 </head>
 
 <body>
@@ -18,21 +18,35 @@
         <div id="" class="slide help-slide">
             <div class="row slide-title">
                 <div class="col-12">
-                    <h2 class="primary-title">TVM: The Basics Help</h2>
+                    <h2 class="primary-title">TVM: Help</h2>
                     <!-- <h3 class="secondary-title">Help Me!</h3> -->
                 </div>
             </div>
             <nav class="row">
-                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./basics-1.html">Home</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./formulas-1.html">Home</a></div>
                 <div class="col-xs-6 col-sm-3 col-md-3"><a href="./formulas-help.html">Math Help</a></div>
-                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./basics-6.html">Exercises</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="#">Exercises</a></div>
                 <div class="col-xs-6 col-sm-3 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
             </nav>
+            <div style="background-color: white; padding: 10px 0 0 0; margin-top: -15px;">
+                <div class="row" style="padding: 0 15px;">
+                    <div class="col-xs-3">
+                        <p>Help Topics:</p>
+                    </div>
+                    <div class="col-xs-3"><a style="padding: 0 15px;" href="#reciprocals">Reciprocals</a></div>
+                    <div class="col-xs-3"><a style="padding: 0 15px;" href="#pemdas">Order of Operations</a></div>
+                    <div class="col-xs-3"><a style="padding: 0 15px;" href="#dist">Distributive Properties</a></div>
+                    <div class="col-xs-3"><a style="padding: 0 15px;" href="#foil">Foil</a></div>
+                    <div class="col-xs-3"><a style="padding: 0 15px;" href="#solveFV">Solve for FV</a></div>
+                    <div class="col-xs-3"><a style="padding: 0 15px;" href="#solvePV">Solve for PV</a></div>
+                    <div class="col-xs-3"><a style="padding: 0 15px;" href="#solveInt">Solve for Interest</a></div>
+                    <div class="col-xs-3"><a style="padding: 0 15px;" href="#solveTime">Solve for Time</a></div>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-12">
                     <div class="content">
-                        <div id="principals">
-                            <h2 class="contentTitle">Basic principals of Algebra</h2>
+                        <div id="reciprocals">
                             <h4>Reciprocals</h4>
                             <ul>
                                 <li>Cancel out variables or numbers by performing the same action to both sides of the equal side. (Multiply, divide, or raise to an exponent)</li>
@@ -75,7 +89,8 @@
                             </p>
                         </div>
                         <hr>
-                        <h3>Steps to Solve the Basic Equation for Future Value (FV)</h3>
+                        <!-- future value ******************************************  -->
+                        <h3 id="solveFV">Steps to Solve the Basic Equation for Future Value (FV)</h3>
                         <p>Basic Equation: <span class="math">\(FV=PV(1+i)^n\)</span></p>
                         <ul>
                             <li>First identify the interest (i) rate. Look for a percent or decimal. <span class="alert">Note: If you are using a financial calculator, use the percent, and if you are figuring the calculations on your own, use the decimal format.</span></li>
@@ -83,9 +98,42 @@
                             <li>Multiply the interest rate times the principal amount.</li>
                             <li>Finally, time (n) is an expression of time, usually months or years. To calculate the amount you'd have in the future, add the interest payment back to the initial investment (principal) for the number of time periods.</li>
                         </ul>
+                        <hr>
+
+                        <!-- present value *************************************************  -->
+                        <h3 id="solvePV">Steps to Solve the Equation for Present Value (PV)</h3>
+                        <ul>
+                            <li>First, identify the variables in the problem.</li>
+                            <li>Once you've identified the variables, plug the numbers into the basic equation:
+                                <div><span class="math">\(FV=PV(1+i)^n\)</span></div>
+                            </li>
+                            <li>Then solve for the unknown variable. Remember to use the order of operations (PEMDAS).</li>
+                            <li>Finally, simplify the fraction to solve for PV.</li>
+                            </p>
+                        </ul>
+                        <hr>
+                        <!-- interest ***********************************************************************  -->
+                        <h3 id="solveInt">Steps to Solve the Equation for Interest (i)</h3>
+                        <ul>
+                            <li>First, identify the variables in the problem.</li>
+                            <li>Next, plug the numbers into the equation.</li>
+                            <li>Then solve for the unknown variable.</li>
+                        </ul>
+                        <hr>
+                        <!-- time ***********************************************************************  -->
+                        <h3 id="solveTime">Steps to Solve the Equation for Time (n)</h3>
+                        <ul>
+                            <li>First, identify the variables in the problem.</li>
+                            <li>Next, plug the numbers into the equation.</li>
+                            <li>To manipulate an unknown exponent, take the natural log (ln) of each side.</li>
+                            <li>Then solve for the unknown variable.</li>
+                        </ul>
+
+
                     </div>
                 </div>
             </div>
+
             <!-- <div class="row">
                     <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
                         <button type="button" class="btn">Back</button>
@@ -106,7 +154,7 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-    <script src="basics-script.js"></script>
+    <script src="../script.js"></script>
 </body>
 
 </html>

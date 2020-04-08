@@ -31,7 +31,7 @@ $(document).ready(function () {
   
   function calc_FV() {
     let PV = parseFloat(document.getElementById('PV').value);
-    let i = parseInt(document.getElementById('i').value) / 100;
+    let i = parseFloat(document.getElementById('i').value) / 100;
     // console.log(i)
     let n = parseInt(document.getElementById('n').value);
     let ans = document.getElementById('answer');
