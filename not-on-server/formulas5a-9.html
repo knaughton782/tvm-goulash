@@ -9,14 +9,13 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../tvm-styles.css">
 
-    <title>Time Value of Money - Formulas</title>
+    <title>TVM - Formulas</title>
 </head>
 
 <body>
     <div class="container-fluid">
 
-
-        <!-- problem 7  -->
+        <!--   problem 5 answer -->
         <div id="" class="slide exercise-slide">
             <div class="row slide-title">
                 <div class="col-12">
@@ -25,7 +24,7 @@
                 </div>
             </div>
             <nav class="row">
-                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./formulas-1.html">Home</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./../basics-1.html">Home</a></div>
                 <div class="col-xs-6 col-sm-3 col-md-3"><a href="./formulas-help.html">Math Help</a></div>
                 <div class="col-xs-6 col-sm-3 col-md-3"><a href="#">Exercises</a></div>
                 <div class="col-xs-6 col-sm-3 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
@@ -33,21 +32,25 @@
             <div class="row">
                 <div class="col-12">
                     <div class="content">
+                        <h4>Exercise 5: Solution</h4>
+                        <p class="question">A zero coupon bond pays $1,000 at maturity in 20 years. If the appropriate required return for this level of risky asset is 12%, how much would I be willing to pay for this bond? (assume annual compounding/discounting)</p>
+                        <p>Variables:</p>
+                        <!-- <div><img class="math" src="../images/exponent-step.svg"></div> -->
+                        <p class="math">Present Value (PV) = ?<br>
+                            Future Value (FV) = 1000<br>
+                            i = 0.12<br>
+                            n = 20</p>
 
-                        <h4>Exercise 7: Calculate the Unknown Variable</h4>
-                        <p>Solve the TVM equation and enter the value of the variable in the box provided.</p>
-                        <p class="question">What interest rate is required for a deposit to double in 10 years? <span class="note">Note: Include 3 digits to the right of the decimal.</p>
-                        <div class="container">
-                            <div class="">
-                                <form action="" class="indent">
-                                    <label>i </label>
-                                    <input id="int-ex7" type="number" placeholder="0.000"><br>
-                                </form>
-                                <button onclick="exercise_7()" type="button" class="btn calculate-btn">Submit</button>
-                            </div>
-                            <br>
-                            <div class="answer" id="answer-ex7"></div>
-                        </div>
+                        <p>Plug the numbers into the equation:</p>
+                        <!-- <div><img class="math" src="../images/exponent-step.svg"></div> -->
+                        <p class="math">
+                            Future Value (FV) = Present Value (PV)(1 + i)<sup>n</sup><br>
+                            1000</span class> = Present Value (PV)(1 + 0.12)<sup>20</sup><br>
+                            1000 = Present Value (PV)(1.12)<sup>20</sup><br>
+                            1000</span clas> = Present Value (PV)(9.64629309)<br>
+                            1000</span clas> / 9.64629309 = Present Value (PV)<br>
+                            <b>Present Value (PV) = $103.67</b>
+                        </p>
                     </div>
                 </div>
             </div>

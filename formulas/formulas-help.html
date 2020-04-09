@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../tvm-styles.css">
 
-    <title>Time Value of Money - Formulas</title>
+    <title>TVM - Formulas</title>
 </head>
 
 <body>
@@ -25,11 +25,11 @@
             <nav class="row">
                 <div class="col-xs-6 col-sm-3 col-md-3"><a href="./formulas-1.html">Home</a></div>
                 <div class="col-xs-6 col-sm-3 col-md-3"><a href="./formulas-help.html">Math Help</a></div>
-                <div class="col-xs-6 col-sm-3 col-md-3"><a href="#">Exercises</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./formulas-8.html">Exercises</a></div>
                 <div class="col-xs-6 col-sm-3 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
             </nav>
             <div style="background-color: white; padding: 10px 0 0 0; margin-top: -15px;">
-                <div class="row" style="padding: 0 15px;">
+                <!-- <div class="row" style="padding: 0 15px;">
                     <div class="col-xs-3">
                         <p>Help Topics:</p>
                     </div>
@@ -37,15 +37,26 @@
                     <div class="col-xs-3"><a style="padding: 0 15px;" href="#pemdas">Order of Operations</a></div>
                     <div class="col-xs-3"><a style="padding: 0 15px;" href="#dist">Distributive Properties</a></div>
                     <div class="col-xs-3"><a style="padding: 0 15px;" href="#foil">Foil</a></div>
-                    <div class="col-xs-3"><a style="padding: 0 15px;" href="#solveFV">Solve for FV</a></div>
-                    <div class="col-xs-3"><a style="padding: 0 15px;" href="#solvePV">Solve for PV</a></div>
+                    <div class="col-xs-3"><a style="padding: 0 15px;" href="#solveFV">Using the Basic Equation</a></div>
+<div class="col-xs-3"><a style="padding: 0 15px;" href="#solvePV">Solve for PV</a></div>
                     <div class="col-xs-3"><a style="padding: 0 15px;" href="#solveInt">Solve for Interest</a></div>
-                    <div class="col-xs-3"><a style="padding: 0 15px;" href="#solveTime">Solve for Time</a></div>
-                </div>
+                    <div class="col-xs-3"><a style="padding: 0 15px;" href="#solveTime">Solve for Time</a></div> 
+                </div> -->
             </div>
             <div class="row">
                 <div class="col-12">
                     <div class="content">
+                        <h3>Steps to Solve the Basic Equation for each Variable</h3>
+                        <p>Basic Equation: <span class="math">\(FV=PV(1+i)^n\)</span></p>
+                        <p>First identify the variables in the problem.</p>
+                        <ul>
+                            <li>Interest (i) rate. Look for a percent or decimal. <span class="alert">Note: If you are using a financial calculator, use the percent, and if you are figuring the calculations on your own, use the decimal format.</span></li>
+                            <li>To distinguish between Present Value (PV) and Future Value (FV), ask yourself whether the dollar amount is money you have now or in the future.</li>
+                            <li>Finally, time (n) is an expression of time, usually months or years.</li>
+                        </ul>
+                        <p>Once the variables are identified, plug them into your equation and solve for the unknown variable.</p>
+                        <hr>
+                        <h3 class="bottom-space">Math Concepts Review</h3>
                         <div id="reciprocals">
                             <h4>Reciprocals</h4>
                             <ul>
@@ -90,44 +101,37 @@
                         </div>
                         <hr>
                         <!-- future value ******************************************  -->
-                        <h3 id="solveFV">Steps to Solve the Basic Equation for Future Value (FV)</h3>
-                        <p>Basic Equation: <span class="math">\(FV=PV(1+i)^n\)</span></p>
-                        <ul>
-                            <li>First identify the interest (i) rate. Look for a percent or decimal. <span class="alert">Note: If you are using a financial calculator, use the percent, and if you are figuring the calculations on your own, use the decimal format.</span></li>
-                            <li>Identify the principal or present value (PV). To distinguish between Present Value (PV) and Future Value (FV), ask yourself whether the dollar amount is money you have now or in the future. </li>
-                            <li>Multiply the interest rate times the principal amount.</li>
-                            <li>Finally, time (n) is an expression of time, usually months or years. To calculate the amount you'd have in the future, add the interest payment back to the initial investment (principal) for the number of time periods.</li>
-                        </ul>
-                        <hr>
+
 
                         <!-- present value *************************************************  -->
-                        <h3 id="solvePV">Steps to Solve the Equation for Present Value (PV)</h3>
+                        <!-- <h3 id="solvePV">Steps to Solve the Equation for Present Value (PV)</h3>
                         <ul>
                             <li>First, identify the variables in the problem.</li>
-                            <li>Once you've identified the variables, plug the numbers into the basic equation:
-                                <div><span class="math">\(FV=PV(1+i)^n\)</span></div>
+                            <li>Once you've identified the variables, plug the numbers into the basic equation or refactor the equation for PV:
+                                <div>Basic Equation: <span class="math">\(FV=PV(1+i)^n\)</span></div>
                             </li>
                             <li>Then solve for the unknown variable. Remember to use the order of operations (PEMDAS).</li>
                             <li>Finally, simplify the fraction to solve for PV.</li>
                             </p>
                         </ul>
-                        <hr>
+                        <hr> -->
                         <!-- interest ***********************************************************************  -->
-                        <h3 id="solveInt">Steps to Solve the Equation for Interest (i)</h3>
+                        <!-- <h3 id="solveInt">Steps to Solve the Equation for Interest (i)</h3>
                         <ul>
                             <li>First, identify the variables in the problem.</li>
-                            <li>Next, plug the numbers into the equation.</li>
-                            <li>Then solve for the unknown variable.</li>
+                            <li>Once you've identified the variables, plug the numbers into the basic equation:
+                                <div><span class="math">\(i=(\frac{FV}{PV})^{\frac{1}{n}}-1\)</span></div>
+                            </li <li>Then solve for the unknown variable.</li>
                         </ul>
-                        <hr>
+                        <hr> -->
                         <!-- time ***********************************************************************  -->
-                        <h3 id="solveTime">Steps to Solve the Equation for Time (n)</h3>
+                        <!-- <h3 id="solveTime">Steps to Solve the Equation for Time (n)</h3>
                         <ul>
                             <li>First, identify the variables in the problem.</li>
                             <li>Next, plug the numbers into the equation.</li>
                             <li>To manipulate an unknown exponent, take the natural log (ln) of each side.</li>
                             <li>Then solve for the unknown variable.</li>
-                        </ul>
+                        </ul> -->
 
 
                     </div>
