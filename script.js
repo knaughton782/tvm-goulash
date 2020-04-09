@@ -78,7 +78,7 @@ $(document).ready(function () {
     else {
       let PV = FV * (1 / (Math.pow((1 + i), n)));
       PV = PV.toFixed(2);
-      ans.innerHTML = `The interest rate (i) is $${i}`;
+      ans.innerHTML = `The Present Value (PV) is $${PV}`;
     }
   }
   /* ****************** end present value calculation ******************* */
