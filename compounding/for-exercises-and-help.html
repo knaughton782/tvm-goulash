@@ -1,0 +1,1867 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../tvm-styles.css">
+
+    <title>TVM - Part 2: Compound Interest</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="allSlides">
+
+            <!---------------- SLIDE 1, Title/Cover slide  *************** -->
+            <div id="slide1" class="slide background-image">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h1 class="primary-title">Time Value of Money</h1>
+                        <h2 class="secondary-title">Part 2: Compound Interest</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-1 offset-sm-1">
+                        <!-- <div class="page-number">1</div> -->
+                    </div>
+                    <div class="offset-5 col-4 offset-md-6">
+                        <button type="button" class="back btn hide"></button>
+                        <button type="button" class="continue btn start">Start!</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!---------------- SLIDE 2, Content  *************** -->
+            <div id="slide2" class="slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: Compound Interest</h2>
+                        <h3 class="secondary-title">Introduction</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <!-- slide 2, initial state defaults to intro button -->
+                        <div class="content">
+                            <div id="intro2">
+                                <h3>Introduction</h3>
+                                <p>In Part 1 of the Time Value of Money tutorial, you learned about the general format of the TVM equation. To make it easier to grasp the basic concepts, we overlooked one very important factor... something that increases the growth of investments and is very common in the real world.</p>
+                                <p>We ignored compounding!</p>
+                                <p>In TVM Part 2, we'll introduce compound interest into the TVM equation.</p>
+                            </div>
+                            <div id="learningObj2">
+                                <h3>Learning Objectives</h3>
+                                <p>By the end of this tutorial, you will:
+                                    <ul>
+                                        <li>Understand the concept of compounded interest</li>
+                                        <li>Convert stated (nominal) interest to actual interest</li>
+                                        <li>Memorize the general format of the TVM equation with compounding</li>
+                                        <li>Identify the variable in a word problem so you can use them in the TVM equation</li>
+                                        <li>Solve the equation for any unknown variable</li>
+                                    </ul>
+                                </p>
+                            </div>
+                            <div id="requirements2">
+                                <h3>Requirements</h3>
+                                <p>To complete this tutorial, you will need:
+                                    <ul>
+                                        <li>A background in the basics of Time Value of Money or completion of the TVM1 tutorial</li>
+                                        <li>Basic algebra skills</li>
+                                        <li>Scratch paper and pencil or pen</li>
+                                        <li>A calculator <span class="note">(optional: a financial calculator)</span></li>
+                                    </ul>
+                                </p>
+                                <p>TVM may required you to use math skills you haven't used in a while. <b>Please contact your instructor if you need additional help!</b></p>
+                                <p>Once you have everything you need, let’s get started!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number">2</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!---------------- SLIDE 3, Content ********************** -->
+            <div id="slide3" class="slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: Compound Interest</h2>
+                        <h3 class="secondary-title">Review</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+                            <p>The basic form of the Time Value of Money (TVM) equation is:
+                                <div class="math">
+                                    = (1 + )<sup>n</sup>
+                                </div>
+                            </p>
+                            <p>Where:<br>
+                                <div class="math">
+                                    = Future Value<br>
+                                    = Present Value<br>
+                                    = interest rate (%)<br>
+                                    = number of years
+
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number">3</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!---------------- SLIDE 4, content -------------------------->
+            <div id="slide4" class="slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: Compound Interest</h2>
+                        <h3 class="secondary-title">Compound vs. Simple Interest</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+                            <p>In the basic form of the equation, we made an assumption about interest. Use this example for our equation:</p>
+                            <p class="question">"How much money would you have in 1 year if you invested $100 at a rate of 10%?"</p>
+                            <p>This results in $110. After two years, we calculate the investment would grow to $121. The timeline of events looks like this:
+                                <div class="bottom-space">
+                                    <img src="./images/tvm2_annual_interest_timeline.png" alt="" class="img-fluid ">
+                                </div>
+                            </p>
+                            <p>The basic equation assumes that interest is compounded annually. In other words, interest is paid at the end of each rather than as one lump sum at the end of the 2-year term.
+                                <div class="bottom-space">
+                                    <img src="./images/tvm2_annual_interest_timeline_compounding_shown.png" class="img-fluid " alt="">
+                                </div>
+                            </p>
+                            <p>The interest paid at the end of year one then earns interest in year two. That's why the second interest payment ($11) is higher than the first ($10).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number">4</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!---------------- SLIDE 5 - content ------------------->
+            <div id="slide5" class="slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: Compound Interest</h2>
+                        <h3 class="secondary-title">Compound vs. Simple Interest</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+                            <h3>Compound Interest</h3>
+                            <p>To state it simply, compound Interest is when interest earns interest.</p>
+                            <p class>Compounding takes place on some sort of regular schedule. When solving word problems, you'll look for key words that indicate how often interest is compounded:
+                                <ul>
+                                    <li>annually (1 time per year)</li>
+                                    <li>semi-annually (2 times per year)</li>
+                                    <li>quarterly (4 times per year)</li>
+                                    <li>monthly (12 times per year)</li>
+                                    <li>daily (365 times per year or 366 times per year in a leap year)</li>
+                                </ul>
+                                <p>If there is no specifically stated compounding schedule, you should assume interest is compounded annually.</p>
+                            </p><br>
+                            <h3>Simple Interest</h3>
+                            <p>The alternative to compound interest is simple interest, which means that interest is only paid once at the end of the investment.</p>
+                            <p class="math">Simple interest = principal * interest rate * time</p>
+                            <p class="math">Example:<br> 20 = 100 * 10% * 2</p>
+                            <p>The timeline of events looks like this:
+                                <div class="bottom-space">
+                                    <img src="./images/tvm2_simple_interest_timeline.png" class="img-fluid " alt="">
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number">5</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!----------------  SLIDE 6 - Content ****************** -->
+            <div id="slide6" class="slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: Compound Interest</h2>
+                        <h3 class="secondary-title">Compound vs. Simple Interest</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+                            <p>Comparing the results of a 2-year investment with simple or annually compounded interest, you'll note that Future Value is higher ($120 to $121) with compounding.</p>
+                            <div class="bottom-space">
+                                <p>
+                                    <h3>Simple Interest</h3>
+                                    <img src="./images/tvm2_simple_interest_timeline.png" class="img-fluid " alt="">
+                                </p><br>
+                                <h3>Compound Interest</h3>
+                                <p><img src="./images/tvm2_annual_interest_timeline_compounding_shown.png" class="img-fluid " alt=""></p>
+                            </div>
+                            <p>Compound interest grows an investment more quickly and results in a higher Future Value (FV). Moreover, the more frequently interest is compounded, the faster the growth and the higher the FV.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number">6</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!----------------  SLIDE 7 - Content ****************** -->
+            <div id="slide7" class="slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: Compound Interest</h2>
+                        <h3 class="secondary-title">Nominal vs. Actual Interest Rates</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+                            <p>So far, when referring to interest rates, we have used the stated, or nominal rate.
+                                <div>Nominal rate = Stated rate</div>
+                            </p>
+                            <p>Stated rates are usually expressed as an annual percentage, which can be a bit misleading when compounding is involved. The next example shows how nominal and actual interest rates can differ due to compounding.</p>
+                            <p>Let's continue with our original example but assume semi-annual compounding.</p>
+                            <p>The bank pays interest every 6 months. The first interest payment, after 6 months, is calculated based on the original investment PLUS the first interest payment. Every 6 months, the amound of interest paid increases. Visually, semi-annual compounding looks like this:
+                                <div class="bottom-space">
+                                    <img src="./images/tvm2_semi-annual_interest_timeline.png" class="img-fluid " alt="">
+                                </div>
+                            </p>
+                            <p>Since interest is compounded semi-annually, half of 10% (or 5%)would be credited to the account after 6 months and the other half at the end of the year.
+                                <div class="bottom-space">
+                                    <img src="./images/tvm2_semi-annual_interest_timeline_part2.png" class="img-fluid " alt="">
+                                </div>
+                            </p>
+                            <p>Notice that the second interest payment is higher than the first. Interest earned during the first term will earn interest in the second term. By compounding, we earned 0.25% more than the nominal rate (i.e., what we would make with annual compounding). Therefore, actual interest is 10.25%.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-5 col-sm-3">
+                        <div class="page-number">7</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!---------------- SLIDE 8 - content ******************* -->
+            <div id="slide8" class="slide exercise-slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: Compound Interest</h2>
+                        <h3 class="secondary-title">Adding Compounding Interest to the TVM Equation</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+                            <h4>Exercise 1: Figure Compounding Interest</h4>
+                            <p class="question">How much would you have at the end of a year if you invested $100 at 10% compounded semi-annually?</p>
+                            <div>
+                                <form action="">
+
+                                    <div class="bottom-space">
+                                        <label>A. </label>
+                                        <input id="a-timeline" type="radio" name="timeline" value="a">
+                                        <img src="./images/choose_a_timeline_a.png" class="img-fluid " alt=""><br>
+                                    </div>
+
+                                    <div class="bottom-space">
+                                        <label>B. </label>
+                                        <input id="b-timeline" type="radio" name="timeline" value="b">
+                                        <img src="./images/choose_a_timeline_b.png" class="img-fluid " alt=""><br>
+                                    </div>
+
+                                    <div class="bottom-space">
+                                        <label>C. </label>
+                                        <input id="c-timeline" type="radio" name="timeline" value="c">
+                                        <img src="./images/choose_a_timeline_c.png" class="img-fluid " alt=""><br>
+                                    </div>
+
+                                </form>
+                                <button onclick="timeLine()" type="button" class="btn calculate-btn">Submit</button>
+                            </div>
+                            <div class="answer" id="semi-ans"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="back btn">Back</a>
+                            <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number">8</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!---------------- SLIDE 9 - CONTENT *********** -->
+            <div id="slide9" class="slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: Compound Interest</h2>
+                        <h3 class="secondary-title">Adding Compounding Interest to the TVM Equation</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+                            <h4>Exercise 1: Solution</h4>
+                            <p class="question">How much would you have at the end of a year if you invested $100 at 10% compounded semi-annually?</p>
+                            <p class="answer">The answer is C.
+                                <div class="text-">
+                                    <img src="./images/choose_a_timeline_c.png" class="img-fluid " alt="">
+                                </div>
+                            </p>
+                            <p>Notice that half the stated interest is paid each period, but there are twice as many periods because of semi-annual compounding. Mathematically, interest was divided by 2 and the number of terms was multiplied by 2.</p>
+                            <p>Adding up the principal and two Interest payments results in 100 + 5 + 5.25 = $110.25. That's $0.25 more money than with annual compounding.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number">9</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!---------------- SLIDE 10 - CONTENT ********************** -->
+            <div id="slide10" class="slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: Compound Interest</h2>
+                        <h3 class="secondary-title">Adding Compounding Interest to the TVM Equation</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+                            <p>When compounding is involved, we can still use the general form of the TVM equation. We just need to add another variable to the equation:
+                                <div class="bottom-space">
+                                    <img src="./images/tvm_sample_equation_modify_for_compounding.png" class="img-fluid " alt="">
+                                </div>
+                            </p>
+                            <p>With semi-annual interest, half the stated interest is paid at the end of each interest period, but there are twice as many interest periods. Mathematically, interest was divided by 2 and the number of terms was multiplied by 2, as shown below.
+                                <div class="bottom-space">
+                                    <img src="./images/tvm_sample_equation_modify_for_compounding_insert_semiannual.png" class="img-fluid " alt="">
+                                </div>
+                            </p>
+                            <p>This new variable is m, which represents the number of compounding periods per year. In our example, m= 2 because compounding is semi-annual. Let's modify the equation to replace 2's with m's:
+                                <div class="bottom-space">
+                                    <img src="./images/tvm_sample_equation_modify_for_compounding_put_in_m.png" class="img-fluid " alt="">
+                                </div>
+                            </p>
+                            <p>This is <b>not</b> a new equation, but a modification to the basic form you already know. Just remember that when compounding occurs more frequently than once a year, always divide by m and multiply by m.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-5 col-sm-3">
+                        <div class="page-number">10</div>
+                    </div>
+                </div>
+            </div>
+            <!---------------- end SLIDE 10 - CONTENT ********************** -->
+
+
+
+            <!---------------- SLIDE 11 - CONTENT *********** -->
+            <div id="slide11" class="slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: Compound Interest</h2>
+                        <h3 class="secondary-title">Adding Compounding Interest to the TVM Equation</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+                            <p>Let's verify that the equation works by checking it against the example. We calculated that $100 invested at 10% with semi-annual compounding will be worth $110.25 at the end of 1 year. Does the equation agree?</p>
+                            <p>Individual interest calculations:
+                                <div class="bottom-space">
+                                    <img src="./images/tvm2_semi-annual_interest_timeline_part2.png" class="img-fluid " alt="">
+                                </div>
+                            </p>
+                            <p>Using the equation:
+                                <div class="bottom-space">
+                                    <img src="./images/tvm_sample_equation_compounding_verification.png" class="img-fluid " alt="">
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number">11</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!---------------- SLIDE 12 - CONTENT -->
+            <div id="slide12" class="slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: Compound Interest</h2>
+                        <h3 class="secondary-title">Adding Compounding Interest to the TVM Equation</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+                            <p>We've already looked at the same problem with annual, semi-annual, and quarterly compounding. Now that we have an equation, let's take it even further:</p>
+                            <p class="question">How much money would I have after a year if I invested $100 at 10% with daily compounding?</p>
+                            <p>Stay on this screen while you attempt the calculations on your own.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <!-- to help 1 -->
+                        <button type="button" class="continue help btn">Help</button>
+                        <button type="button" class="skip btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number">12</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!---------------- help 1 --------------->
+            <div id="tvm2-help1" class="slide help-slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: Compound Interest</h2>
+                        <h3 class="secondary-title">Help Me!</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+                            <h4>Identify the Basic Variables (, , , , m)</h4>
+                            <p class="question">How much money will I have after a year if I invested $100 at 10% with daily compounding.</p>
+                            <p>Let's break down the question. is the amount we will have in the future. The question asks "How much will I have?", so this must be the unknown variable. This means <span class="FV math"> = ?.</p>
+                            <p> is the measure of time in years. In other problems, you might see n expressed as a number or as a noun like decade or century. This means <span class="time math"> = 1 year.</p>
+                            <p> is the current value of money in today's dollars. I'm investing $100 now, so this must be today's dollar. This means <span class="PV math"> = 100.</p>
+                            <p> is the nominal (or stated) interest rate. The % is an indicator of interest. This means that <span class="interest math">i</span> = 10%. Generally, this number is converted to a decimal for use in equations. 10% is the same as .10.</p>
+                            <p>m is the number of times interest compounds per year. Look for the word "per" (e.g., per year) or adverbs like quarterly or monthly. <span class="compound math">m = 365</p>
+                            <p class="question">How much money will I have after a year if I invested $100at 10%with daily compounding.
+                                <div class="math">
+                                    = 100<br>
+                                    = ?<br>
+                                    = 10% &rarr; .10<br>
+                                    = 1<br>
+                                    m = 365
+                                </div>
+                            </p>
+                            <hr>
+                            <br>
+                            <h4>Plug the Variables into the Equation</h4>
+                            <p>Once you have identified the variables, recall the TVM equation that we modified to include compounding. Then plug the numbers you've identified into the equation.</p>
+                            <div class="bottom-space">
+                                <img src="./images/tvm_sample_equation_modify_for_compounding_put_in_m.png" class="img-fluid " alt="">
+                            </div>
+                            <div class="bottom-space">
+                                <img src="./images/tvm2_daily_compounded_interest_p1.png" class="img-fluid " alt="">
+                            </div>
+                            <hr>
+                            <br>
+                            <h4>Perform the Algebra</h4>
+                            <p>Once you have plugged the variables into the equation, solve using the order of operations.
+                                <div class="bottom-space">
+                                    <img src="./images/tvm2_daily_compounded_interest_p1.png" class="img-fluid " alt="">
+                                </div>
+                            </p>
+                            <p>Remember the acronym <b>PEMDAS</b>.</p>
+                            <ul>
+                                <li><b>P</b>arentheses</li>
+                                <li><b>E</b>xponents</li>
+                                <li><b>M</b>ultiplication and <b>D</b>ivision <span class="note">(left to right)</span></li>
+                                <li><b>A</b>ddition and <b>S</b>ubtraction <span class="note">(left to right)</span></li>
+                            </ul>
+                            <p>Use <b>PEMDAS</b> to solve the equation:</p>
+                            <ul>
+                                <li>P: Calculate the number within the parentheses.
+                                    <div class="bottom-space">
+                                        <img src="./images/fill_in_equation_math_help1.png" class="img-fluid " alt="">
+                                    </div>
+                                </li>
+                                <li>E: Raise the number in the parentheses by the exponent.
+                                    <div class="bottom-space">
+                                        <img src="./images/fill_in_equation_math_help2.png" class="img-fluid " alt="">
+                                    </div>
+                                </li>
+                                <li>MD: Multiply the remaining numbers. (AS: There's nothing left to simplify - division, addition, or subtraction). Round to the nearest cent and your done.
+                                    <div class="bottom-space">
+                                        <img src="./images/fill_in_equation_math_help3.png" class="img-fluid " alt="">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-5 col-sm-3">
+                        <div class="page-number">Help 1</div>
+                    </div>
+                </div>
+            </div>
+            <!---------------- end help 1 --------------->
+
+
+
+
+            <!---------------- SLIDE 13 - CONTENT -->
+            <div id="slide13" class="slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: Compound Interest</h2>
+                        <h3 class="secondary-title">Adding Compounding to the TVM Equation</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+                            <p class="question">How much money would I have after a year if I invested $100 at 10% with daily compounding?</p>
+                            <div class="bottom-space">
+                                <img src="./images/tvm2_daily_compounded_interest.png" class="img-fluid " alt="">
+                            </div>
+                            <p>The answer is $110.52, wich is $0.26 more than semi-annual compounding, and $0.52 more than annual compounding.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <!-- goes back to help 1 -->
+                        <button type="button" class="back help btn">Help</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number">13</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <!---------------- SLIDE 14 - CONTENT -->
+            <div id="slide14" class="slide stop">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: Compound Interest</h2>
+                        <h3 class="secondary-title">Effective Annual Rate</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+                            <p>Now that we have calculated annual, semi-annual, and daily compounding while keeping all other variables the same, it should be clear that the nominal (stated rate) isn't a very accurate way to evaluate a financial option.</p>
+                            <p>All of the problems we have calculated so far have been the same, except for the compounding period, with the following results:
+                                <ul>
+                                    <li>FV with Annual Compounding: $110.00</li>
+                                    <li>FV with Semi-Annual Compounding: $110.25</li>
+                                    <li>FV with Daily Compounding: $110.52</li>
+                                </ul>
+                            </p>
+                            <p>Yet all have a nominal rate of interest of 10%.</p>
+                            <p>If compounding occurs more than once a year, the stated annual interest rate must be adjusted, so that you can compare apples to apples. The adjusted interest rate is known as the Effective Annual Rate (EAR).</p>
+                            <p class="question">The EAR is the equivalent rate of an annually compounded security to that of a security with multiple compounding periods.</p>
+                            <p>Truth in advertising rules have been established to help clear up consumer confusion. Banks must advertise the EAR (also called the annual percentage yield in some texts and advertisements).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number">14</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!---------------- SLIDE 15 - CONTENT -->
+            <div id="slide15" class="slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: Compound Interest</h2>
+                        <h3 class="secondary-title">Effective Annual Rate</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+                            <p>The TVM Equation can be manipulated to find EAR. Let's compare the annual and semi-annual compounding examples.</p>
+                            <ul>
+                                <li>The annual EAR is the nominal rate of 10% by definition.</li>
+                                <li>We'll need to calcualte the semi-annual EAR.</li>
+                            </ul>
+                            <div class="bottom-space">
+                                <img src="./images/tvm_sample_equation_compounding_verification.png" class="img-fluid " alt="">
+                            </div>
+                            <div class="">
+                                <p>FV after 1 year is $110.25. Since EAR is the rate of interest paid in 1 year, the EAR must be 10.25%. That rate can be found at the second to last stage in the working of the equation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number">15</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!---------------- SLIDE 16  - CONTENT -->
+            <div id="slide16" class="slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: Compound Interest</h2>
+                        <h3 class="secondary-title">Effective Annual Rate</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+                            <p>So that you won't have to memorize another equation, notice that you can calculate EAR by using the TVM equation:</p>
+                            <div class="math">
+                                <div class="col-12 col=sm-12">
+                                    <h4>TVM Formula and EAR Formula</h4>
+                                </div>
+                                <img src="./images/tvm2_ear_from_semi-annual.png" class="img-fluid " alt="">
+                            </div>
+                            <p>Or you can memorize the following EAR equation, which is just a manipulation of the TVM equation.
+                                <div class="math">
+                                    <img src="./images/tvm2_ear_example_calculation_p1.png" class="img-fluid " alt="">
+                                </div>
+                            </p>
+                            <p>However, there's no need to memorize this equation, as long as you know the general format of the TVM equation, how to manipulate the variables, and where EAR fits in.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number">16</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!---------------- SLIDE 17  - CONTENT -->
+            <div id="slide17" class="slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: Compound Interest</h2>
+                        <h3 class="secondary-title">Effective Annual Rate</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+                            <p>Let's calculate an EAR problem together.</p>
+                            <p>Answer this question:</p>
+                            <p class="question">You want to open a Fixed Deposit (FD) account. Bank A offers a rate of 3.2% compounded quarterly. Bank B offers a rate of 3.7% compounded annually. Based on EAR, which should you choose?</p>
+                            <p>Stay on this screen while you attempt the calculations on your own.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <!-- to help 2 -->
+                        <button type="button" class="continue help btn">Help</button>
+                        <button type="button" class="skip btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number">17</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- ********** help 2 ************************ -->
+            <div id="tvm2-help2" class="slide help-slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: Compound Interest</h2>
+                        <h3 class="secondary-title">Help Me!</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+                            <div>
+                                <h4>Identify the Basic Variables (EAR, , ,)</h4>
+                                <p class="question">You want to open a Fixed Deposit (FD) account. Bank A offers a rate of 3.2% compounded quarterly. Bank B offers a rate of 3.7% compounded annually. Based on EAR, which should you choose?</p>
+                                <p>The stated interest rate for the Fixed Deposit (FD) at Bank B is already in terms of EAR because it is compounded annually. So we only need to calculate EAR for the Fixed Deposit at Bank A. Using the question, identify the interest rate and the compounding time frame.</p>
+                                <div class="bottom-space">
+                                    <img src="./images/tvm2_ear_formula.png" class="img-fluid " alt="">
+                                </div>
+                                <p>Bank A's rate is 3.2%. This is or the nominal (stated) interest rate. Therefore = 3.2%.</p>
+                                <p>m is the number of times per year that interest is compounded. Quarterly means 4 times per year. This means that = 4.</p>
+                                <hr>
+                                <br>
+                            </div>
+                            <div>
+                                <h4>Calculating EAR</h4>
+                                <h5>Use the EAR equation</h5>
+                                <div class="bottom-space">
+                                    <img src="./images/tvm2_ear_formula.png" class="img-fluid " alt="">
+                                </div>
+                                <p>Plug your numbers into the EAR equation and solve for EAR:
+                                    <ul>
+                                        <li>
+                                            First, calculate the number within the parentheses:
+                                            <div class="bottom-space">
+                                                <img src="./images/calc-ear1.png" class="img-fluid " alt="">
+                                            </div>
+                                        </li>
+                                        <li>Then, raise the number in the parentheses (1.008) by the exponent (4).
+                                            <div class="bottom-space">
+                                                <img src="./images/calc-ear2.png" class="img-fluid " alt="">
+                                            </div>
+                                        </li>
+                                        <li>Finally, subtract the 1 and convert the decimal to a percentage.
+                                            <div class="bottom-space">
+                                                <img src="./images/tvm2_ear_example_calculation_p6.png" class="img-fluid " alt="">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </p>
+                                <h5>Use the TVM equation</h5>
+                                <div class="bottom-space">
+                                    <img src="./images/tvm2_ear_from_tvm_help1.png" class="img-fluid " alt="">
+                                </div>
+                                <p>Use the TVM equation to find EAR with these steps:
+                                    <ul>
+                                        <li>
+                                            First, cancel PV on both sides of the equal sign. Insert the known variables, i and m, into the TVM equation.
+                                            <div class="bottom-space">
+                                                <img src="./images/tvm2_ear_from_tvm_help2.png" class="img-fluid " alt="">
+                                            </div>
+                                        </li>
+                                        <li>Calculate the number in the parentheses.
+                                            <div class="bottom-space">
+                                                <img src="./images/tvm2_ear_from_tvm_help3.png" class="img-fluid " alt="">
+                                            </div>
+                                        </li>
+                                        <li>Then, raise the number in the parentheses (1.008) by the exponent (4).
+                                            <div class="bottom-space">
+                                                <img src="./images/tvm2_ear_from_tvm_help4.png" class="img-fluid " alt="">
+                                            </div>
+                                        </li>
+                                        <li>Finally, subtract the 1 from both sides of the equal sign and convert the decimal to a percentage.
+                                            <div class="bottom-space">
+                                                <img src="./images/tvm2_ear_from_tvm_help5.png" class="img-fluid " alt="">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </p>
+                                <hr>
+                                <br>
+                            </div>
+                            <div>
+                                <h4>Choosing the Right FD Based on your Calculations</h4>
+                                <p>If you've been able to calculate EAR, but aren't sure how to interpret the data, remember:
+                                    <ul>
+                                        <li>For an annually compounded Fixed Deposit (FD), the stated rate is the same as EAR. Therefore, the nominal interest rate for the FD from Bank B is already in terms of EAR.
+                                        </li>
+                                        <li>EAR converts the quarterly compounded interest into annually compounded terms so you can compare the two FD rates.</li>
+                                        <li>Choose the FD with the higher EAR, because it will lead to a higher FV when all other conditions are equal.</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-5 col-sm-3">
+                        <div class="page-number">Help 2</div>
+                    </div>
+                </div>
+            </div>
+            <!-- ********** end help 2 ************************ -->
+
+
+
+            <!---------------- SLIDE 18  - CONTENT -->
+            <div id="slide18" class="slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: Compound Interest</h2>
+                        <h3 class="secondary-title">Effective Annual Rate</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+                            <p class="answer">Open the Fixed Deposit (FD) account at Bank B.</p>
+                            <p>EAR at Bank A = 3.238%<br>
+                                EAR at Bank B = 3.7%</p>
+                            <p>The FD from Bank A has a lower rate of return than the FD at Bank B. Therefore, the Future Value of the FD at Bank B is higher than the FD at Bank A.</p>
+                            <p>From the examples already shown, you can see that when two finance options havae different interest rates and compounding periods, you cannot evaluate them by comparing the stated interest rates.
+                                <ul>
+                                    <li>Given two choices with different interest rates and compounding periods, the option with a higher interest rate does <span class="alert">not</span> always have a higher Future Value.</li>
+                                    <li>Given two choices with different interest rates and compounding periods, the option that compounds more frequently does <span class="alert">not</span> always have a higher Future Value.</li>
+                                </ul>
+                            </p>
+                            <p>The options' nominal interest rates have to be converted to EAR, so that you have similar rates to compare.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number">18</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- ***************** exercises ********************* -->
+            <!-- exercise intro slide, slide 19 -->
+            <div id="exercises2-slide1" class="slide exercise-slide stop">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: Compound Interest</h2>
+                        <!-- <h3 class="secondary-title">Exercises</h3> -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+                            <h3>Exercises</h3>
+                            <p>To help you gauge your understanding of the TVM with compound interest, you will try some exercises on your own.</p>
+                            <p>There are 10 exercises in this tutorial. You have already completed exercise number 1. Each exercise is followed by the solution or an explanation. For these individual exercises, do not use the TVM buttons on your financial calculator.</p>
+                            <p class="note">Include dollars and cents on each answer. Do not include commas or dollar signs. A properly formatted answer looks like: <b>1150.38</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number">19</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!---------------- SLIDE 20  - EXERCISES -->
+            <!-- exercises2 slide 2  : problem 2 -->
+            <div id="exercises2-slide2" class="slide exercise-slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: Compound Interest</h2>
+                        <!-- <h3 class="secondary-title">Exercises</h3> -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+
+                            <h4>Exercise 2: Identify the Variables</h4>
+                            <p>Enter the value of each variable in the boxes below. Leave the unknown variable blank. Then submit your answer.</p>
+                            <p class="question">If I deposit $2,000 in an account that earns a semi-annually compounded rate of 8%, how much will my account be worth in 15 years?</p>
+                            <div class="container">
+                                <div class="">
+                                    <form action="" class="indent">
+
+                                        <label> </label>
+                                        <input id="pvalue-ex2" type="number" placeholder="0"><br>
+
+                                        <label> </label>
+                                        <input id="fvalue-ex2" type="number" placeholder="0"><br>
+
+                                        <label>&nbsp;&nbsp;&nbsp;i </label>
+                                        <input id="int-ex2" type="number" placeholder="0.00"><br>
+
+                                        <label>&nbsp;&nbsp; </label>
+                                        <input id="yrs-ex2" type="number" placeholder="0"><br>
+
+                                        <label>&nbsp;m</label>
+                                        <input id="cmpd-ex2" type="number" placeholder="0"><br>
+
+                                    </form>
+                                    <button onclick="exercise_2()" type="button" class="btn calculate-btn">Submit</button>
+                                </div>
+                                <br>
+                                <div class="answer" id="answer-ex2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number">20</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!---------------- SLIDE 21  - EXERCISES -->
+            <!-- exercises2 slide 3 - problem 2 answer  -->
+            <div id="exercises2-slide3" class="slide exercise-slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: Compound Interest</h2>
+                        <!-- <h3 class="secondary-title">Exercises</h3> -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+                            <!-- Help -->
+                            <h4>Exercise 2: Solution</h4>
+                            <p class="question">If I deposit $2,000 in an account that earns a semi-annually compounded rate of 8%, how much will my account be worth in 15 years?</p>
+                            <p>Variables:</p>
+                            <p class="math">
+                                = 2000 <br>
+                                = ? <br>
+                                = 8% &xrarr; 0.08<br>
+                                = 15<br>
+                                = 2
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number">21</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!---------------- SLIDE 22  - EXERCISES -->
+            <!-- exercises2-slide4 : problem 3 -->
+            <div id="exercises2-slide4" class="slide exercise-slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: Compound Interest</h2>
+                        <!-- <h3 class="secondary-title">Exercises</h3> -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+
+                            <h4>Exercise 3: Calculate the Unknown Variable</h4>
+                            <p class="question">If I deposit $2,000 in an account that earns a semi-annually compounded rate of 8%, how much will my account be worth in 15 years?</p>
+                            <div class="container">
+                                <div class="">
+                                    <form action="" class="indent">
+                                        <label> </label>
+                                        <input id="fvalue-ex3" type="number" placeholder="0"><br>
+                                    </form>
+                                    <button onclick="exercise_3()" type="button" class="btn calculate-btn">Submit</button>
+                                </div>
+                                <br>
+                                <div class="answer" id="answer-ex3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number">22</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!---------------- SLIDE 23  - EXERCISES -->
+            <!-- exercises2-slide5 : answer problem 3 -->
+            <div id="exercises2-slide5" class="slide exercise-slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: Compound Interest</h2>
+                        <!-- <h3 class="secondary-title">Exercises</h3> -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+                            <!-- Help -->
+                            <h4>Exercise 3: Solution</h4>
+                            <p class="question">If I deposit $2,000 in an account that earns a semi-annually compounded rate of 8%, how much will my account be worth in 15 years?</p>
+
+                            <p>Variables:</p>
+                            <p class="math"> = 2000<br>
+                                = ?<br>
+                                = 0.08<br>
+                                = 15<br>
+                                = 2</p>
+
+                            <p>Plug the numbers into the equation:</p>
+                            <p class="text-center">
+                                <img src="./images/tvm2_question1.png" class="img-fluid " alt="">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number">23</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <!---------------- SLIDE 24  - EXERCISES -->
+            <!-- exercises2-slide6 :  problem 4 -->
+            <div id="exercises2-slide6" class="slide exercise-slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: Compound Interest</h2>
+                        <!-- <h3 class="secondary-title">Exercises</h3> -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+
+                            <h4>Exercise 4: Identify the Variables</h4>
+                            <p>Enter the value of each variable in the boxes below. Leave the box for the unknown variable blank.</p>
+                            <p class="question">How much will you have in 1 year if you deposit $500 in a savings account that pays 2% interest compounded quarterly?</p>
+                            <div class="container">
+                                <div class="">
+                                    <form action="" class="indent">
+                                        <label> </label>
+                                        <input id="pvalue-ex4" type="number"><br>
+                                        <label> </label>
+                                        <input id="fvalue-ex4" type="number" placeholder="0"><br>
+                                        <label>&nbsp;&nbsp;&nbsp;i </span></label>
+                                        <input id="int-ex4" type="number" placeholder="00"><br>
+                                        <label>&nbsp;&nbsp; </label>
+                                        <input id="yrs-ex4" type="number" placeholder="0"><br>
+                                        <label>&nbsp;m</span> </label>
+                                        <input id="cmpd-ex4" type="number" placeholder="0"><br>
+                                    </form>
+                                    <button onclick="exercise_4()" type="button" class="btn calculate-btn">Submit</button>
+                                </div>
+                                <br>
+                                <div class="answer" id="answer-ex4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number">24</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!---------------- SLIDE 25  - EXERCISES -->
+            <!-- exercises2-slide7 :  answer problem 4 -->
+            <div id="exercises2-slide7" class="slide exercise-slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: Compound Interest</h2>
+                        <!-- <h3 class="secondary-title">Exercises</h3> -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+                            <h4>Exercise 4: Solution</h4>
+                            <p class="question">How much will you have in 1 year if you deposit $500 in a savings account that pays 2% interest compounded quarterly?</p>
+                            <h5>Variables:</h5>
+                            <p class="math"> = 500<br>
+                                = ?<br>
+                                = 2% or 0.02<br>
+                                = 1<br>
+                                = 4</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number">25</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!---------------- SLIDE 26  - EXERCISES -->
+            <!-- exercises2-slide8 :   problem 5 -->
+            <div id="exercises2-slide8" class="slide exercise-slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: Compound Interest</h2>
+                        <!-- <h3 class="secondary-title">Exercises</h3> -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+
+                            <h4>Exercise 5: Calculate the Unknown Variable</h4>
+                            <p class="question">How much will you have in 1 year if you deposit $500 in a savings account that pays 2% interest compounded quarterly?</p>
+                            <div class="container">
+                                <div class="">
+                                    <form action="" class="indent">
+                                        <label> </label>
+                                        <input id="fvalue-ex5" type="number" placeholder="0.00"><br>
+                                    </form>
+                                    <button onclick="exercise_5()" type="button" class="btn calculate-btn">Submit</button>
+                                </div>
+                                <br>
+                                <div class="answer" id="answer-ex5"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number">26</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!---------------- SLIDE 27  - EXERCISES -->
+            <!-- exercises2-slide9 :   answer problem 5 -->
+            <div id="exercises2-slide9" class="slide exercise-slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: Compound Interest</h2>
+                        <!-- <h3 class="secondary-title">Exercises</h3> -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+                            <h4>Exercise 5: Solution</h4>
+                            <p class="question">How much will you have in 1 year if you deposit $500 in a savings account that pays 2% interest compounded quarterly?</p>
+                            <p>Variables:</p>
+                            <p class="math"> = 500<br>
+                                = ?<br>
+                                = 0.02<br>
+                                = 1<br>
+                                = 4</p>
+
+                            <p>Plug the numbers into the equation:</p>
+                            <p class="text-center">
+                                <img src="./images/tvm2_question2.png" class="img-fluid " alt="">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number">27</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!---------------- SLIDE 28  - EXERCISES -->
+            <!-- exercises2-slide10 : problem 6  -->
+            <div id="exercises2-slide10" class="slide exercise-slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: Compound Interest</h2>
+                        <!-- <h3 class="secondary-title">Exercises</h3> -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+
+                            <h4>Exercise 6: Identify the Variables</h4>
+                            <p>Enter the value of each variable in the boxes below. Leave the unknown variable blank.</p>
+                            <p class="question">What is the Effective Annual Rate (EAR) of an investment that returns 6% interest compounded monthly?</p>
+                            <div class="container">
+                                <div class="">
+                                    <form action="" class="indent">
+                                        <label>i</span>&nbsp;&nbsp;&nbsp; </label>
+                                        <input id="int-ex6" type="number" placeholder="00"><br>
+                                        <label>m</span> </label>
+                                        <input id="cmpd-ex6" type="number" placeholder="00"><br>
+
+                                    </form>
+                                    <button onclick="exercise_6()" type="button" class="btn calculate-btn">Submit</button>
+                                </div>
+                                <br>
+                                <div class="answer" id="answer-ex6"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number">28</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!---------------- SLIDE 29  - EXERCISES -->
+            <!-- exercises2-slide11 :   answer problem 6 -->
+            <div id="exercises2-slide11" class="slide exercise-slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: Compound Interest</h2>
+                        <!-- <h3 class="secondary-title">Exercises</h3> -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+                            <h4>Exercise 6: Solution</h4>
+                            <p class="question">What is the Effective Annual Rate (EAR) of an investment that returns 6% interest compounded monthly?</p>
+                            <p>The variables are:</p>
+                            <p class="math">i</span> &nbsp;&nbsp;= 6% or 0.06<br>
+                                = 12
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number">29</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!---------------- SLIDE 30  - EXERCISES -->
+            <!-- exercises2-slide12 : problem 7  -->
+            <div id="exercises2-slide12" class="slide exercise-slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: Compound Interest</h2>
+                        <!-- <h3 class="secondary-title">Exercises</h3> -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+
+                            <h4>Exercise 7: Identify the Variables</h4>
+                            <p>Enter the value of each variable in the boxes below. Leave the unknown variable blank.</p>
+                            <p class="question">What is the Effective Annual Rate (EAR) of an investment that returns 6% interest compounded monthly? <span class="note">(Enter two digits to the right of the decimal)</span></p>
+                            <div class="container">
+                                <div class="">
+                                    <form action="" class="indent">
+                                        <label><b>EAR</b></label>
+                                        <input id="ear-ex7" type="number" placeholder="0.00">%<br>
+                                    </form>
+                                    <button onclick="exercise_7()" type="button" class="btn calculate-btn">Submit</button>
+                                </div>
+                                <br>
+                                <div class="answer" id="answer-ex7"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number">30</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!---------------- SLIDE 31  - EXERCISES -->
+            <!-- exercises2-slide13 :   answer problem 7 -->
+            <div id="exercises2-slide13" class="slide exercise-slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: Compound Interest</h2>
+                        <!-- <h3 class="secondary-title">Exercises</h3> -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+                            <h4>Exercise 7: Solution</h4>
+                            <p>What is the Effective Annual Rate (EAR) of an investment that returns 6% interest compounded monthly?</p>
+                            <p class="math">i</span> &nbsp;&nbsp;= 6% or 0.06<br>
+                                = 12
+                            </p>
+                            <p class="text-center">
+                                <img src="./images/tvm2_question3.png" class="img-fluid " alt="">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number">31</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!---------------- SLIDE 32  - EXERCISES -->
+            <!-- exercises2-slide14 : problem 8  -->
+            <div id="exercises2-slide14" class="slide exercise-slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: Compound Interest</h2>
+                        <!-- <h3 class="secondary-title">Exercises</h3> -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+
+                            <h4>Exercise 8: Identify the Variables</h4>
+                            <p>Enter the value of each variable in the boxes below. Leave the unknown variable blank.</p>
+                            <p class="question">Would you rather invest with a) 10% compounded daily (non-leap year) or b) 10.25% compounded semi-annually?</p>
+                            <div class="container">
+                                <div class="">
+                                    <p>Option A</p>
+                                    <form action="" class="indent">
+                                        <label>i</span>&nbsp;&nbsp;&nbsp; </label>
+                                        <input id="int-ex8a" type="number" placeholder="00"><br>
+                                        <label>m</span> </label>
+                                        <input id="cmpd-ex8a" type="number" placeholder="0"><br>
+                                    </form>
+                                    <br><br>
+                                    <p>Option B</p>
+                                    <form action="" class="indent">
+                                        <label>i</span>&nbsp;&nbsp;&nbsp; </label>
+                                        <input id="int-ex8b" type="number" placeholder=".0000"><br>
+                                        <label>m</span> </label>
+                                        <input id="cmpd-ex8b" type="number" placeholder="0"><br>
+                                    </form>
+                                    <button onclick="exercise_8()" type="button" class="btn calculate-btn">Submit</button>
+                                </div>
+                                <br>
+                                <div class="answer" id="answer-ex8"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number">32 </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!---------------- SLIDE 33  - EXERCISES -->
+            <!-- exercises2-slide15 :   answer problem 8 -->
+            <div id="exercises2-slide15" class="slide exercise-slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: Compound Interest</h2>
+                        <!-- <h3 class="secondary-title">Exercises</h3> -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+                            <h4>Exercise 8: Solution</h4>
+                            <p class="question">Would you rather invest with a) 10% compounded daily (non-leap year) or b) 10.25% compounded semi-annually?</p>
+                            <p>The variables are as follows:
+                                <div class="math">
+                                    <h5>Option A</h5>
+                                    &nbsp;&nbsp;= 10% or 0.10<br>
+                                    = 2
+                                </div>
+                                <div class="math">
+                                    <h5>Option B</h5>
+                                    &nbsp;&nbsp;= 10.25% or 0.1025<br>
+                                    = 2
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number">33</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!---------------- SLIDE 34  - EXERCISES -->
+            <!-- exercises2-slide16 : problem 9  -->
+            <div id="exercises2-slide16" class="slide exercise-slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: Compound Interest</h2>
+                        <!-- <h3 class="secondary-title">Exercises</h3> -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+
+                            <h4>Exercise 9: Calculate the Unknown Variable</h4>
+                            <p class="question">Would you rather invest with a) 10% compounded daily (non-leap year) or b) 10.25% compounded semi-annually?</p>
+                            <p class="note">Note: Please round to 2 places after the decimal point.</span></p>
+                            <div class="container">
+                                <div class="">
+                                    <form action="" class="indent">
+                                        <label>EAR of Option A:</label>
+                                        <input id="ear-ex9a" type="number" placeholder="00.00">%<br>
+                                        <label>EAR of Option B:</label>
+                                        <input id="ear-ex9b" type="number" placeholder="00.00">%<br>
+                                    </form>
+                                    <button onclick="exercise_9()" type="button" class="btn calculate-btn">Submit</button>
+                                </div>
+                                <br>
+                                <div class="answer" id="answer-ex9"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number">34</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!---------------- SLIDE 35  - EXERCISES -->
+            <!-- exercises2-slide17 :   answer problem 9 -->
+            <div id="exercises2-slide17" class="slide exercise-slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: Compound Interest</h2>
+                        <!-- <h3 class="secondary-title">Exercises</h3> -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+                            <h4>Exercise 9: Solution</h4>
+                            <p class="question">Would you rather invest with a) 10% compounded daily (non-leap year) or b) 10.25% compounded semi-annually?</p>
+                            <p>EAR is calculated as follows:</p>
+                            <div>
+                                <h3>Option A</h3>
+                                <div class="math">
+                                    &nbsp;&nbsp;= 10% or 0.10<br>
+                                    = 365
+                                </div>
+                                <div class="bottom-space">
+                                    <img src="./images/tvm2_question4_optiona.png" class="img-fluid " alt="">
+                                </div>
+                            </div>
+                            <div>
+                                <h3>Option B</h3>
+                                <div class="math">
+                                    &nbsp;&nbsp;= 10.25% or 0.1025<br>
+                                    = 2
+                                </div>
+                                <div class="bottom-space">
+                                    <img src="./images/tvm2_question4_optionb.png" class="img-fluid " alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number">35</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!---------------- SLIDE 36  - EXERCISES -->
+            <!-- exercises2-slide18 : problem 10  -->
+            <div id="exercises2-slide18" class="slide exercise-slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: Compound Interest</h2>
+                        <!-- <h3 class="secondary-title">Exercises</h3> -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+
+                            <h4>Exercise 10: Choose an Option</h4>
+
+                            <p class="question">Would you rather invest with a) 10% compounded daily (non-leap year) or b) 10.25% compounded semi-annually?</p>
+
+                            <div class="container">
+                                <div class="">
+                                    <form action="">
+                                        <label>A.</label>
+                                        <input id="ear-ex10a" name="option" value="optA" type="radio">Option A<br>
+                                        <label>B.</label>
+                                        <input id="ear-ex10b" name="option" value="optB" type="radio">Option B<br>
+                                        <label>C.</label>
+                                        <input id="ear-ex10c" name="option" value="optC" type="radio">Either, the options are similar<br>
+                                    </form>
+                                    <button onclick="exercise_10()" type="button" class="btn calculate-btn">Submit</button>
+                                </div>
+                                <br>
+                                <div class="answer" id="answer-ex10"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number">36</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!---------------- SLIDE 37  - EXERCISES -->
+            <!-- exercises2-slide19 :   answer problem 10 -->
+            <div id="exercises2-slide19" class="slide exercise-slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: Compound Interest</h2>
+                        <!-- <h3 class="secondary-title">Exercises</h3> -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+                            <h4>Exercise 10: Solution</h4>
+                            <p class="question">Would you rather invest with a) 10% compounded daily (non-leap year) or b) 10.25% compounded semi-annually?</p>
+                            <h5>Choose Option A.</h5>
+                            <p>EAR of Option A = 10.52%<br>
+                                EAR of Option B = 10.51%</p>
+                            <p>With a higher EAR, the Future Value of Option A is higher than Option B.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn">Continue</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number">37</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!---------------- SLIDE 38  - EXERCISES -->
+            <!-- exercises2-slide20  -->
+            <div id="exercises2-slide20" class="slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: Compound Interest</h2>
+                        <!-- <h3 class="secondary-title">Exercises</h3> -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+                            <h3>Congratulations!</h3>
+                            <p>You’ve completed the Compounding section of the TVM Tutorial. If you were confident answering the exercise questions and got most of them right, then you have a good grasp of the basics of TVM. If you were not able to answer most of the exercise questions correctly, contact your instructor for additional help. If you’re completing the full series of TVM tutorials, move on to the third Time Value of Money tutorial, which introduces cash flow.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="back btn">Back</button>
+                        <button type="button" class="continue btn">Finish</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <!-- <div class="page-number"></div> -->
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <!-- *************************** end exercises *************************** -->
+
+
+        </div> <!-- End of allSlides div -->
+    </div> <!--  end of container -->
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="tvm2-script.js"></script>
+</body>
+
+</html>
