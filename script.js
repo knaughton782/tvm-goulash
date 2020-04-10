@@ -30,6 +30,7 @@ $(document).ready(function () {
   $(document).on('click', '.interest', calc_i);
   $(document).on('click', '.time', calc_n);
   $(document).on('click', '.timeline', timeLine);
+  $(document).on('click', '.exercise2', exercise2);
 
 
   /* future value calculation ******************* */
@@ -150,7 +151,41 @@ $(document).ready(function () {
     }
   }
 
+  // compounding ************* 
+  function exercise2() {
+    let PV = parseFloat(document.getElementById('pvalue-ex2').value);
+    let i = parseFloat(document.getElementById('int-ex2').value) / 100;
+    let n = parseInt(document.getElementById('yrs-ex2').value);
+    let m = parseInt(document.getElementById('cmpd-ex2').value);
+    let ans = document.getElementById('answer-ex2');
+    console.log(`${PV} ${i} ${n} ${m}`)
+    if (isNaN(PV) || PV <= 0) {
+      ans.innerHTML = `Present value must be a valid number greater than zero.`;
+    }
+    else if (isNaN(i) || i <= 0) {
+      ans.innerHTML = `Annual rate must be a valid number greater than zero.`;
+    }
+    else if (isNaN(n) || n <= 0) {
+      ans.innerHTML = `Years must be a valid number greater than zero.`;
+    }
+    else if (isNaN(m) || m <= 0) {
+      ans.innerHTML = `Compounding number must be a valid number greater than zero.`;
+    }
+    else {
+      let x = i / m;
+      console.log(x)
+      let y = n * m;
+      console.log(y)
+      let num = Math.pow(((1 + x), y));
+      console.log(num)
+      let FV = PV * num;
+      FV = PV * (Math.pow(((1 + (i / m)), (n * m))));
+      console.log(`${PV} ${i} ${n} ${m} / ${x} ${y} ${num} ${FV}`)
+      FV = FV.toFixed(2);
+      ans.innerHTML = `The future value (FV) is $${FV}`;
+    }
 
+  }
 
 
 
