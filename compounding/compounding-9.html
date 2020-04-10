@@ -17,8 +17,9 @@
 <body>
     <div class="container-fluid">
 
-        <!---------------- SLIDE 12 - CONTENT -->
-        <div id="" class="slide">
+
+        <!---------------- SLIDE 8 - content ******************* -->
+        <div id="" class="slide exercise-slide">
             <div class="row slide-title">
                 <div class="col-12">
                     <h2 class="primary-title">TVM: Compound Interest</h2>
@@ -28,15 +29,39 @@
             <nav class="row">
                 <div class="col-xs-6 col-sm-3 col-md-3"><a href="./compounding-1.html">Home</a></div>
                 <div class="col-xs-6 col-sm-3 col-md-3"><a href="./compounding-help.html">Math Help</a></div>
-                <div class="col-xs-6 col-sm-3 col-md-3"><a href="#">Exercises</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./compounding-9.html">Exercises</a></div>
                 <div class="col-xs-6 col-sm-3 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
             </nav>
             <div class="row">
                 <div class="col-12">
                     <div class="content">
-                        <p>We've already looked at the same problem with annual, semi-annual, and quarterly compounding. Now that we have an equation, let's take it even further:</p>
-                        <p class="question">How much money would I have after a year if I invested $100 at 10% with daily compounding?</p>
-                        <p>Stay on this screen while you attempt the calculations on your own.</p>
+                        <h4>Exercise 1: Figure Compounding Interest</h4>
+                        <p class="question">How much would you have at the end of a year if you invested $100 at 10% compounded semi-annually?</p>
+                        <div>
+                            <form action="">
+
+                                <div class="bottom-space">
+                                    <label>A. </label>
+                                    <input id="a-timeline" type="radio" name="timeline" value="a">
+                                    <img src="../images/choose_a_timeline_a.png" class="img-fluid " alt=""><br>
+                                </div>
+
+                                <div class="bottom-space">
+                                    <label>B. </label>
+                                    <input id="b-timeline" type="radio" name="timeline" value="b">
+                                    <img src="../images/choose_a_timeline_b.png" class="img-fluid " alt=""><br>
+                                </div>
+
+                                <div class="bottom-space">
+                                    <label>C. </label>
+                                    <input id="c-timeline" type="radio" name="timeline" value="c">
+                                    <img src="../images/choose_a_timeline_c.png" class="img-fluid " alt=""><br>
+                                </div>
+
+                            </form>
+                            <button type="button" class="btn timeline calculate-btn">Submit</button>
+                        </div>
+                        <div class="answer" id="semi-ans"></div>
                     </div>
                 </div>
             </div>
@@ -46,8 +71,7 @@
                 </div>
                 <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
                     <a type="button" class="btn" href="compounding-8.html">Back</a>
-                    <a type="button" class="btn" href="compounding-10
-                    .html">Restart</a>
+                    <a type="button" class="btn" href="compounding-10.html">Continue</a>
                 </div>
             </div>
         </div>

@@ -17,7 +17,7 @@
 <body>
     <div class="container-fluid">
 
-        <!---------------- SLIDE 11 - CONTENT *********** -->
+        <!---------------- SLIDE 12 - CONTENT -->
         <div id="" class="slide">
             <div class="row slide-title">
                 <div class="col-12">
@@ -28,23 +28,31 @@
             <nav class="row">
                 <div class="col-xs-6 col-sm-3 col-md-3"><a href="./compounding-1.html">Home</a></div>
                 <div class="col-xs-6 col-sm-3 col-md-3"><a href="./compounding-help.html">Math Help</a></div>
-                <div class="col-xs-6 col-sm-3 col-md-3"><a href="#">Exercises</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./compounding-9.html">Exercises</a></div>
                 <div class="col-xs-6 col-sm-3 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
             </nav>
             <div class="row">
                 <div class="col-12">
                     <div class="content">
-                        <p>Let's verify that the equation works by checking it against the example. We calculated that $100 invested at 10% with semi-annual compounding will be worth $110.25 at the end of 1 year. Does the equation agree?</p>
-                        <p>Individual interest calculations:
-                            <div class="bottom-space">
-                                <img src="../images/tvm2_semi-annual_interest_timeline_part2.png" class="img-fluid " alt="">
-                            </div>
-                        </p>
-                        <p>Using the equation:
-                            <div class="bottom-space">
-                                <img src="../images/tvm_sample_equation_compounding_verification.png" class="img-fluid " alt="">
-                            </div>
-                        </p>
+                        <p>Now that we have an equation, let's test an equation with daily compounding.</p>
+                        <p class="question">How much money would I have after a year if I invested $100 at 10% with daily compounding?</p>
+                        <p class="answer">The answer is $110.52, wich is $0.26 more than semi-annual compounding, and $0.52 more than annual compounding.</p>
+                        <hr>
+                        <h4>Steps to Solve the Equation</h4>
+                        <ul>
+                            <li>First, plug the numbers into the equation.
+                                <div>
+                                    <span class="math">\(FV=100(1+\frac{.10}{365})^{1\times365}\)</span>
+                                </div>
+                            </li>
+                            <li>Then solve for the unknown variable.
+                                <div>
+                                    <span class="math">\(FV=100(1.00027397)^{365}\)</span><br>
+                                    <span class="math">\(FV=100\times1.1051557\)</span><br>
+                                    <span class="math">\(FV=$110.52\)</span>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -54,8 +62,7 @@
                 </div>
                 <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
                     <a type="button" class="btn" href="compounding-7.html">Back</a>
-                    <a type="button" class="btn" href="compounding-9
-                    .html">Continue</a>
+                    <a type="button" class="btn" href="compounding-9.html">Continue</a>
                 </div>
             </div>
         </div>

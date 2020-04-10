@@ -29,6 +29,7 @@ $(document).ready(function () {
   $(document).on('click', '.presentvalue', calc_PV);
   $(document).on('click', '.interest', calc_i);
   $(document).on('click', '.time', calc_n);
+  $(document).on('click', '.timeline', timeLine);
 
 
   /* future value calculation ******************* */
@@ -141,7 +142,13 @@ $(document).ready(function () {
   }
   /* ****************** end time calculation ******************* */
 
-
+  function timeLine() {
+    if (document.getElementById('c-timeline').checked) {
+      document.getElementById('semi-ans').innerHTML = "That is correct. Good job!";
+    } else {
+      document.getElementById('semi-ans').innerHTML = "Please check your calculations and try again."
+    }
+  }
 
 
 
