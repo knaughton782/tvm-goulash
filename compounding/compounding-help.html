@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../tvm-styles.css">
+
+    <title>TVM - Compounding</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <!---------------- help 1 --------------->
+        <div id="" class="slide help-slide">
+            <div class="row slide-title">
+                <div class="col-12">
+                    <h2 class="primary-title">TVM: Compound Interest</h2>
+                    <!-- <h3 class="secondary-title">Help Me!</h3> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+                        <h4>Identify the Basic Variables (, , , , m)</h4>
+                        <p class="question">How much money will I have after a year if I invested $100 at 10% with daily compounding.</p>
+                        <p>Let's break down the question. is the amount we will have in the future. The question asks "How much will I have?", so this must be the unknown variable. This means <span class="FV math"> = ?.</p>
+                        <p> is the measure of time in years. In other problems, you might see n expressed as a number or as a noun like decade or century. This means <span class="time math"> = 1 year.</p>
+                        <p> is the current value of money in today's dollars. I'm investing $100 now, so this must be today's dollar. This means <span class="PV math"> = 100.</p>
+                        <p> is the nominal (or stated) interest rate. The % is an indicator of interest. This means that <span class="interest math">i</span> = 10%. Generally, this number is converted to a decimal for use in equations. 10% is the same as .10.</p>
+                        <p>m is the number of times interest compounds per year. Look for the word "per" (e.g., per year) or adverbs like quarterly or monthly. <span class="compound math">m = 365</p>
+                        <p class="question">How much money will I have after a year if I invested $100at 10%with daily compounding.
+                            <div class="math">
+                                = 100<br>
+                                = ?<br>
+                                = 10% &rarr; .10<br>
+                                = 1<br>
+                                m = 365
+                            </div>
+                        </p>
+                        <hr>
+                        <br>
+                        <h4>Plug the Variables into the Equation</h4>
+                        <p>Once you have identified the variables, recall the TVM equation that we modified to include compounding. Then plug the numbers you've identified into the equation.</p>
+                        <div class="bottom-space">
+                            <img src="../images/tvm_sample_equation_modify_for_compounding_put_in_m.png" class="img-fluid " alt="">
+                        </div>
+                        <div class="bottom-space">
+                            <img src="../images/tvm2_daily_compounded_interest_p1.png" class="img-fluid " alt="">
+                        </div>
+                        <hr>
+                        <br>
+                        <h4>Perform the Algebra</h4>
+                        <p>Once you have plugged the variables into the equation, solve using the order of operations.
+                            <div class="bottom-space">
+                                <img src="../images/tvm2_daily_compounded_interest_p1.png" class="img-fluid " alt="">
+                            </div>
+                        </p>
+                        <p>Remember the acronym <b>PEMDAS</b>.</p>
+                        <ul>
+                            <li><b>P</b>arentheses</li>
+                            <li><b>E</b>xponents</li>
+                            <li><b>M</b>ultiplication and <b>D</b>ivision <span class="note">(left to right)</span></li>
+                            <li><b>A</b>ddition and <b>S</b>ubtraction <span class="note">(left to right)</span></li>
+                        </ul>
+                        <p>Use <b>PEMDAS</b> to solve the equation:</p>
+                        <ul>
+                            <li>P: Calculate the number within the parentheses.
+                                <div class="bottom-space">
+                                    <img src="../images/fill_in_equation_math_help1.png" class="img-fluid " alt="">
+                                </div>
+                            </li>
+                            <li>E: Raise the number in the parentheses by the exponent.
+                                <div class="bottom-space">
+                                    <img src="../images/fill_in_equation_math_help2.png" class="img-fluid " alt="">
+                                </div>
+                            </li>
+                            <li>MD: Multiply the remaining numbers. (AS: There's nothing left to simplify - division, addition, or subtraction). Round to the nearest cent and your done.
+                                <div class="bottom-space">
+                                    <img src="../images/fill_in_equation_math_help3.png" class="img-fluid " alt="">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <div class="col-5 col-sm-3">
+                            <div class="page-number"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div> <!--  end of container -->
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

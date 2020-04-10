@@ -17,13 +17,12 @@
 <body>
     <div class="container-fluid">
 
-
-        <!---------------- SLIDE 3, Content ********************** -->
-        <div id="" class="slide">
+        <!---------------- SLIDE 4, content -------------------------->
+        <div id="slide4" class="slide">
             <div class="row slide-title">
                 <div class="col-12">
                     <h2 class="primary-title">TVM: Compound Interest</h2>
-                    <!-- <h3 class="secondary-title">Review</h3> -->
+                    <!-- <h3 class="secondary-title">Compound vs. Simple Interest</h3> -->
                 </div>
             </div>
             <nav class="row">
@@ -35,18 +34,16 @@
             <div class="row">
                 <div class="col-12">
                     <div class="content">
-                        <p>The basic form of the Time Value of Money (TVM) equation is:
-                            <div class="math">
-                                = (1 + )<sup>n</sup>
+                        <p>In the basic form of the equation, we made an assumption about interest. Use this example for our equation:</p>
+                        <p class="question">"How much money would you have in 1 year if you invested $100 at a rate of 10%?"</p>
+                        <p>This results in $110. After two years, we calculate the investment would grow to $121. The timeline of events looks like this:
+                            <div class="bottom-space">
+                                <img src="../images/tvm2_annual_interest_timeline.png" alt="each year is one period" class="img-fluid ">
                             </div>
                         </p>
-                        <p>Where:<br>
-                            <div class="math">
-                                = Future Value<br>
-                                = Present Value<br>
-                                = interest rate (%)<br>
-                                = number of years
-
+                        <p>The basic equation assumes that interest is compounded annually. In other words, interest is paid at the end of each year rather than as one lump sum at the end of the 2-year term. The interest paid at the end of year one then earns interest in year two. That's why the second interest payment ($11) is higher than the first ($10).
+                            <div class="bottom-space">
+                                <img src="../images/tvm2_annual_interest_timeline_compounding_shown.png" class="img-fluid " alt="the second year interest is compounded">
                             </div>
                         </p>
                     </div>
@@ -63,6 +60,7 @@
             </div>
         </div>
 
+
     </div> <!--  end of container -->
 
 
@@ -70,6 +68,7 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
     <script src="../script.js"></script>
 </body>

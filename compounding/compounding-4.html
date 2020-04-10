@@ -17,8 +17,7 @@
 <body>
     <div class="container-fluid">
 
-        <!---------------- SLIDE 4, content -------------------------->
-        <div id="slide4" class="slide">
+        <div id="" class="slide">
             <div class="row slide-title">
                 <div class="col-12">
                     <h2 class="primary-title">TVM: Compound Interest</h2>
@@ -34,19 +33,22 @@
             <div class="row">
                 <div class="col-12">
                     <div class="content">
-                        <p>In the basic form of the equation, we made an assumption about interest. Use this example for our equation:</p>
-                        <p class="question">"How much money would you have in 1 year if you invested $100 at a rate of 10%?"</p>
-                        <p>This results in $110. After two years, we calculate the investment would grow to $121. The timeline of events looks like this:
-                            <div class="bottom-space">
-                                <img src="./images/tvm2_annual_interest_timeline.png" alt="" class="img-fluid ">
-                            </div>
-                        </p>
-                        <p>The basic equation assumes that interest is compounded annually. In other words, interest is paid at the end of each rather than as one lump sum at the end of the 2-year term.
-                            <div class="bottom-space">
-                                <img src="./images/tvm2_annual_interest_timeline_compounding_shown.png" class="img-fluid " alt="">
-                            </div>
-                        </p>
-                        <p>The interest paid at the end of year one then earns interest in year two. That's why the second interest payment ($11) is higher than the first ($10).</p>
+                        <h3>Compound Interest</h3>
+                        <p>To state it simply, compound Interest is when interest earns interest.</p>
+                        <p class>Compounding takes place on some sort of regular schedule. When solving word problems, you'll look for key words that indicate how often interest is compounded:
+                            <ul>
+                                <li>annually (1 time per year)</li>
+                                <li>semi-annually (2 times per year)</li>
+                                <li>quarterly (4 times per year)</li>
+                                <li>monthly (12 times per year)</li>
+                                <li>daily (365 times per year or 366 times per year in a leap year)</li>
+                            </ul>
+                            <p>If there is no specifically stated compounding schedule, you should assume interest is compounded annually.</p>
+                        </p><br>
+                        <h3>Simple Interest</h3>
+                        <p>The alternative to compound interest is simple interest, which means that interest is only paid once at the end of the investment.</p>
+                        <p class="math">Simple interest = principal * interest rate * time<br>
+                            Example:&nbsp;\(20 = 100\times10\%\times2\)</p>
                     </div>
                 </div>
             </div>
@@ -69,6 +71,7 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
     <script src="../script.js"></script>
 </body>
