@@ -11,55 +11,57 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../tvm-styles.css">
 
-    <title>TVM - Part 2: Compound Interest</title>
+    <title>TVM - Compounding</title>
 </head>
-
 <body>
     <div class="container-fluid">
-        
-            <!---------------- SLIDE 10 - CONTENT ********************** -->
-            <div id="slide10" class="slide">
-                <div class="row slide-title">
-                    <div class="col-12">
-                        <h2 class="primary-title">TVM: Compound Interest</h2>
-                        <h3 class="secondary-title">Adding Compounding Interest to the TVM Equation</h3>
-                    </div>
+
+        <!---------------- SLIDE 10 - CONTENT ********************** -->
+        <div id="" class="slide">
+            <div class="row slide-title">
+                <div class="col-12">
+                    <h2 class="primary-title">TVM: Compound Interest</h2>
+                    <!-- <h3 class="secondary-title">Adding Compounding Interest to the TVM Equation</h3> -->
                 </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="content">
-                            <p>When compounding is involved, we can still use the general form of the TVM equation. We just need to add another variable to the equation:
-                                <div class="bottom-space">
-                                    <img src="./images/tvm_sample_equation_modify_for_compounding.png" class="img-fluid " alt="">
-                                </div>
-                            </p>
-                            <p>With semi-annual interest, half the stated interest is paid at the end of each interest period, but there are twice as many interest periods. Mathematically, interest was divided by 2 and the number of terms was multiplied by 2, as shown below.
-                                <div class="bottom-space">
-                                    <img src="./images/tvm_sample_equation_modify_for_compounding_insert_semiannual.png" class="img-fluid " alt="">
-                                </div>
-                            </p>
-                            <p>This new variable is m, which represents the number of compounding periods per year. In our example, m= 2 because compounding is semi-annual. Let's modify the equation to replace 2's with m's:
-                                <div class="bottom-space">
-                                    <img src="./images/tvm_sample_equation_modify_for_compounding_put_in_m.png" class="img-fluid " alt="">
-                                </div>
-                            </p>
-                            <p>This is <b>not</b> a new equation, but a modification to the basic form you already know. Just remember that when compounding occurs more frequently than once a year, always divide by m and multiply by m.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
-                        <button type="button" class="back btn">Back</button>
-                        <button type="button" class="continue btn">Continue</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-5 col-sm-3">
-                        <div class="page-number">10</div>
+            </div>
+            <nav class="row">
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./compounding-1.html">Home</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./compounding-help.html">Math Help</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="#">Exercises</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
+            </nav>
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+                        <p>When compounding is involved, we can still use the general form of the TVM equation. We just need to add another variable to the equation:
+                            <div class="bottom-space">
+                                <img src="./images/tvm_sample_equation_modify_for_compounding.png" class="img-fluid " alt="">
+                            </div>
+                        </p>
+                        <p>With semi-annual interest, half the stated interest is paid at the end of each interest period, but there are twice as many interest periods. Mathematically, interest was divided by 2 and the number of terms was multiplied by 2, as shown below.
+                            <div class="bottom-space">
+                                <img src="./images/tvm_sample_equation_modify_for_compounding_insert_semiannual.png" class="img-fluid " alt="">
+                            </div>
+                        </p>
+                        <p>This new variable is m, which represents the number of compounding periods per year. In our example, m= 2 because compounding is semi-annual. Let's modify the equation to replace 2's with m's:
+                            <div class="bottom-space">
+                                <img src="./images/tvm_sample_equation_modify_for_compounding_put_in_m.png" class="img-fluid " alt="">
+                            </div>
+                        </p>
+                        <p>This is <b>not</b> a new equation, but a modification to the basic form you already know. Just remember that when compounding occurs more frequently than once a year, always divide by m and multiply by m.</p>
                     </div>
                 </div>
             </div>
-            <!---------------- end SLIDE 10 - CONTENT ********************** -->
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number"></div>
+                </div>
+                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                    <a type="button" class="btn" href="compounding-9.html">Back</a>
+                    <a type="button" class="btn" href="compounding-11.html">Continue</a>
+                </div>
+            </div>
+        </div>
 
 
     </div> <!--  end of container -->
@@ -70,7 +72,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <script src="tvm2-script.js"></script>
+    <script src="../script.js"></script>
 </body>
 
 </html>

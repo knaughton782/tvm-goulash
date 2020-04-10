@@ -11,57 +11,59 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../tvm-styles.css">
 
-    <title>TVM - Part 2: Compound Interest</title>
+    <title>TVM - Compounding</title>
 </head>
 
 <body>
     <div class="container-fluid">
-        
-            <!----------------  SLIDE 7 - Content ****************** -->
-            <div id="slide7" class="slide">
-                <div class="row slide-title">
-                    <div class="col-12">
-                        <h2 class="primary-title">TVM: Compound Interest</h2>
-                        <h3 class="secondary-title">Nominal vs. Actual Interest Rates</h3>
-                    </div>
+
+        <!----------------  SLIDE 7 - Content ****************** -->
+        <div id="" class="slide">
+            <div class="row slide-title">
+                <div class="col-12">
+                    <h2 class="primary-title">TVM: Compound Interest</h2>
+                    <!-- <h3 class="secondary-title">Nominal vs. Actual Interest Rates</h3> -->
                 </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="content">
-                            <p>So far, when referring to interest rates, we have used the stated, or nominal rate.
-                                <div>Nominal rate = Stated rate</div>
-                            </p>
-                            <p>Stated rates are usually expressed as an annual percentage, which can be a bit misleading when compounding is involved. The next example shows how nominal and actual interest rates can differ due to compounding.</p>
-                            <p>Let's continue with our original example but assume semi-annual compounding.</p>
-                            <p>The bank pays interest every 6 months. The first interest payment, after 6 months, is calculated based on the original investment PLUS the first interest payment. Every 6 months, the amound of interest paid increases. Visually, semi-annual compounding looks like this:
-                                <div class="bottom-space">
-                                    <img src="./images/tvm2_semi-annual_interest_timeline.png" class="img-fluid " alt="">
-                                </div>
-                            </p>
-                            <p>Since interest is compounded semi-annually, half of 10% (or 5%)would be credited to the account after 6 months and the other half at the end of the year.
-                                <div class="bottom-space">
-                                    <img src="./images/tvm2_semi-annual_interest_timeline_part2.png" class="img-fluid " alt="">
-                                </div>
-                            </p>
-                            <p>Notice that the second interest payment is higher than the first. Interest earned during the first term will earn interest in the second term. By compounding, we earned 0.25% more than the nominal rate (i.e., what we would make with annual compounding). Therefore, actual interest is 10.25%.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
-                        <button type="button" class="back btn">Back</button>
-                        <button type="button" class="continue btn">Continue</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-5 col-sm-3">
-                        <div class="page-number">7</div>
+            </div>
+            <nav class="row">
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./compounding-1.html">Home</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./compounding-help.html">Math Help</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="#">Exercises</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
+            </nav>
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+                        <p>So far, when referring to interest rates, we have used the stated, or nominal rate.
+                            <div>Nominal rate = Stated rate</div>
+                        </p>
+                        <p>Stated rates are usually expressed as an annual percentage, which can be a bit misleading when compounding is involved. The next example shows how nominal and actual interest rates can differ due to compounding.</p>
+                        <p>Let's continue with our original example but assume semi-annual compounding.</p>
+                        <p>The bank pays interest every 6 months. The first interest payment, after 6 months, is calculated based on the original investment PLUS the first interest payment. Every 6 months, the amound of interest paid increases. Visually, semi-annual compounding looks like this:
+                            <div class="bottom-space">
+                                <img src="./images/tvm2_semi-annual_interest_timeline.png" class="img-fluid " alt="">
+                            </div>
+                        </p>
+                        <p>Since interest is compounded semi-annually, half of 10% (or 5%)would be credited to the account after 6 months and the other half at the end of the year.
+                            <div class="bottom-space">
+                                <img src="./images/tvm2_semi-annual_interest_timeline_part2.png" class="img-fluid " alt="">
+                            </div>
+                        </p>
+                        <p>Notice that the second interest payment is higher than the first. Interest earned during the first term will earn interest in the second term. By compounding, we earned 0.25% more than the nominal rate (i.e., what we would make with annual compounding). Therefore, actual interest is 10.25%.</p>
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number"></div>
+                </div>
+                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                    <a type="button" class="btn" href="compounding-6.html">Back</a>
+                    <a type="button" class="btn" href="compounding-8.html">Continue</a>
+                </div>
+            </div>
+        </div>
 
-
-            
     </div> <!--  end of container -->
 
 
@@ -70,7 +72,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <script src="tvm2-script.js"></script>
+    <script src="../script.js"></script>
 </body>
 
 </html>
