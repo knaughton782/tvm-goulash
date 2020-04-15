@@ -31,6 +31,7 @@ $(document).ready(function () {
   $(document).on('click', '.time', calc_n);
   $(document).on('click', '.timeline', timeLine);
   $(document).on('click', '.exercise2', exercise2);
+  $(document).on('click', '.exercise3', exercise3);
 
 
   /* future value calculation ******************* */
@@ -66,7 +67,7 @@ $(document).ready(function () {
     let i = parseFloat(document.getElementById('form1i').value) / 100;
     // console.log(i)
     let n = parseInt(document.getElementById('form1n').value);
-    let ans = document.getElementById('form1-ans');
+    let ans = document.getElementById('form1-ans', 'form3-ans');
 
     if (isNaN(FV) || FV <= 0) {
       ans.innerHTML = `Future value must be a valid number greater than zero.`;
@@ -158,6 +159,34 @@ $(document).ready(function () {
     let n = parseInt(document.getElementById('yrs-ex2').value);
     let m = parseInt(document.getElementById('cmpd-ex2').value);
     let ans = document.getElementById('answer-ex2');
+    console.log(`First here: ${PV} ${i} ${n} ${m}`)
+    if (isNaN(PV) || PV <= 0) {
+      ans.innerHTML = `Present value must be a valid number greater than zero.`;
+    }
+    else if (isNaN(i) || i <= 0) {
+      ans.innerHTML = `Annual rate must be a valid number greater than zero.`;
+    }
+    else if (isNaN(n) || n <= 0) {
+      ans.innerHTML = `Years must be a valid number greater than zero.`;
+    }
+    else if (isNaN(m) || m <= 0) {
+      ans.innerHTML = `Compounding number must be a valid number greater than zero.`;
+    }
+    else {
+      let FV = PV * (Math.pow((1 + (i / m)), (n * m)));
+      console.log(`and finally: ${PV} ${i} ${n} ${m} ${FV}`)
+      FV = FV.toFixed(2);
+      ans.innerHTML = `The future value (FV) is $${FV}`;
+    }
+
+  }
+
+  function exercise3() {
+    let PV = parseFloat(document.getElementById('pvalue-ex3').value);
+    let i = parseFloat(document.getElementById('int-ex3').value) / 100;
+    let n = parseInt(document.getElementById('yrs-ex3').value);
+    let m = parseInt(document.getElementById('cmpd-ex3').value);
+    let ans = document.getElementById('answer-ex3');
     console.log(`${PV} ${i} ${n} ${m}`)
     if (isNaN(PV) || PV <= 0) {
       ans.innerHTML = `Present value must be a valid number greater than zero.`;
@@ -172,19 +201,11 @@ $(document).ready(function () {
       ans.innerHTML = `Compounding number must be a valid number greater than zero.`;
     }
     else {
-      let x = i / m;
-      console.log(x)
-      let y = n * m;
-      console.log(y)
-      let num = Math.pow(((1 + x), y));
-      console.log(num)
-      let FV = PV * num;
-      FV = PV * (Math.pow(((1 + (i / m)), (n * m))));
-      console.log(`${PV} ${i} ${n} ${m} / ${x} ${y} ${num} ${FV}`)
+      let FV = PV * (Math.pow((1 + (i / m)), (n * m)));
+      console.log(`and finally: ${PV} ${i} ${n} ${m} ${FV}`)
       FV = FV.toFixed(2);
       ans.innerHTML = `The future value (FV) is $${FV}`;
     }
-
   }
 
 

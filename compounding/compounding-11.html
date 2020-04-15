@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
@@ -17,12 +17,7 @@
 <body>
     <div class="container-fluid">
 
-
-
-
-        <!---------------- SLIDE 24  - EXERCISES -->
-        <!-- exercises2-slide6 :  problem 4 -->
-        <div id="exercises2-slide6" class="slide exercise-slide">
+        <div id="" class="slide exercise-slide">
             <div class="row slide-title">
                 <div class="col-12">
                     <h2 class="primary-title">TVM: Compound Interest</h2>
@@ -39,92 +34,40 @@
                 <div class="col-12">
                     <div class="content">
 
-                        <h4>Exercise 4: Identify the Variables</h4>
-                        <p>Enter the value of each variable in the boxes below. Leave the box for the unknown variable blank.</p>
+                        <h4>Exercise 3: Calculate the Future Value with Compounding</h4>
+
                         <p class="question">How much will you have in 1 year if you deposit $500 in a savings account that pays 2% interest compounded quarterly?</p>
                         <div class="container">
-                            <div class="">
-                                <form action="" class="indent">
-                                    <label> </label>
-                                    <input id="pvalue-ex4" type="number"><br>
-                                    <label> </label>
-                                    <input id="fvalue-ex4" type="number"><br>
-                                    <label>&nbsp;&nbsp;&nbsp;i </span></label>
-                                    <input id="int-ex4" type="number" placeholder="00"><br>
-                                    <label>&nbsp;&nbsp; </label>
-                                    <input id="yrs-ex4" type="number"><br>
-                                    <label>&nbsp;m</span> </label>
-                                    <input id="cmpd-ex4" type="number"><br>
-                                </form>
-                                <button onclick="exercise_4()" type="button" class="btn calculate-btn">Submit</button>
-                            </div>
-                            <br>
-                            <div class="answer" id="answer-ex4"></div>
+
+                            <form action="" class="indent">
+                                <label>Present Value (PV) </label>
+                                <input id="pvalue-ex3" type="number"><br>
+                                <label style="margin-left: 58px;">Interest (i) </label>
+                                <input id="int-ex3" type="number"><br>
+                                <label style="margin-left: 74px;">Time (n) </label>
+                                <input id="yrs-ex3" type="number"><br>
+                                <label>Compounding (m)</span> </label>
+                                <input id="cmpd-ex3" type="number"><br>
+
+                            </form>
+                            <button type="button" class="btn exercise3 calculate-btn">Calculate</button>
+                            <!-- <button onclick="exercise_5()" type="button" class="btn calculate-btn">Calculate</button> -->
+
                         </div>
+                        <div class="answer" id="answer-ex3"></div>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
-                    <button type="button" class="back btn">Back</button>
-                    <button type="button" class="continue btn">Continue</button>
-                </div>
-            </div>
-            <div class="row">
                 <div class="col-1">
-                    <div class="page-number">24</div>
+                    <div class="page-number"></div>
+                </div>
+                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                    <a type="button" class="btn" href="compounding-10.html">Back</a>
+                    <a type="button" class="btn" href="compounding-1.html">Restart</a>
                 </div>
             </div>
         </div>
-
-
-
-
-
-        <!---------------- SLIDE 26  - EXERCISES -->
-        <!-- exercises2-slide8 :   problem 5 -->
-        <div id="exercises2-slide8" class="slide exercise-slide">
-            <div class="row slide-title">
-                <div class="col-12">
-                    <h2 class="primary-title">TVM: Compound Interest</h2>
-                    <!-- <h3 class="secondary-title">Exercises</h3> -->
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="content">
-
-                        <h4>Exercise 5: Calculate the Unknown Variable</h4>
-                        <p class="question">How much will you have in 1 year if you deposit $500 in a savings account that pays 2% interest compounded quarterly?</p>
-                        <div class="container">
-                            <div class="">
-                                <form action="" class="indent">
-                                    <label> </label>
-                                    <input id="fvalue-ex5" type="number"><br>
-                                </form>
-                                <button onclick="exercise_5()" type="button" class="btn calculate-btn">Submit</button>
-                            </div>
-                            <br>
-                            <div class="answer" id="answer-ex5"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
-                    <button type="button" class="back btn">Back</button>
-                    <button type="button" class="continue btn">Continue</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-1">
-                    <div class="page-number">26</div>
-                </div>
-            </div>
-        </div>
-
-
-
 
 
     </div> <!--  end of container -->
@@ -136,6 +79,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
     </script>
+    
 
     <script src="../script.js"></script>
 </body>
