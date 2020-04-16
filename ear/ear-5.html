@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../tvm-styles.css">
+
+    <title>TVM - Effective Annual Rate</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div id="slide17" class="slide">
+            <div class="row slide-title">
+                <div class="col-12">
+                    <h2 class="primary-title">TVM: Compound Interest</h2>
+                    <!-- <h3 class="secondary-title">Effective Annual Rate</h3> -->
+                </div>
+            </div>
+            <nav class="row">
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./ear-1.html">Home</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./ear-help.html">Math Help</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="#">Exercises</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
+            </nav>
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+                        <p class="question">You want to open a Fixed Deposit (FD) account. Bank A offers a rate of 3.2% compounded quarterly. Bank B offers a rate of 3.7% compounded annually. Based on EAR, which should you choose?</p>
+                        <p class="answer">Open the Fixed Deposit (FD) account at Bank B. <br>EAR at Bank A = 3.238%<br>
+                            EAR at Bank B = 3.7%</p>
+                        <p>The Fixed Deposit (FD) from Bank A has a lower rate of return than the Fixed Deposit (FD) at Bank B, therefore its Future Value will be lower as well.</p>
+                        <hr>
+                        <h4>Steps to Solve the Equation</h4>
+                        <p>First, identify the Variables</p>
+                        <ul>
+                            <li>The stated interest rate for the Fixed Deposit (FD) at Bank B is already in terms of EAR because it is compounded annually. So we only need to calculate EAR for the Fixed Deposit at Bank A. </li>
+                            <li>Bank A's rate is 3.2%. This is or the nominal (stated) interest rate. Therefore i = 3.2%.</li>
+                            <li>m is the number of times per year that interest is compounded. Quarterly means 4 times per year so m = 4.</li>
+                        </ul>
+                        <p>Next, input the variables for Bank A into the equation, work the equation, and compare the result with the EAR at Bank B.
+                            <div><span class="math">\(EAR=(1+\frac{i_{nom}}{m})^m-1\)</span></div>
+                            <ul>
+                                <li class="math">\(EAR=(1+\frac{i_{.032}}{4})^4-1\) &nbsp;&nbsp;&xrarr; &nbsp;&nbsp; \(EAR=(1+.008)^4-1\)</li><br>
+                                <li class="math">\(EAR=(1.03238)-1\)</li><br>
+                                <li class="math">\(EAR=(1.03238)=3.238\%\)</li><br>
+                            </ul>
+                        </p>
+                        <p>From the example shown, you can see that when two finance options have different interest rates and compounding periods, you cannot evaluate them by comparing the stated or nominal interest rates. The options' nominal interest rates have to be converted to EAR, so that you have similar rates to compare.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number"></div>
+                </div>
+                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                    <a type="button" class="btn" href="ear-4.html">Back</a>
+                    <a type="button" class="btn" href="ear-6.html">Continue</a>
+                </div>
+            </div>
+        </div>
+
+    </div> <!--  end of container -->
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

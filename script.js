@@ -32,6 +32,7 @@ $(document).ready(function () {
   $(document).on('click', '.timeline', timeLine);
   $(document).on('click', '.exercise2', exercise2);
   $(document).on('click', '.exercise3', exercise3);
+  $(document).on('click', '.ear', calc_ear);
 
 
   /* future value calculation ******************* */
@@ -208,6 +209,25 @@ $(document).ready(function () {
     }
   }
 
+  // ear ************* 
+  function calc_ear() {
+    let i = parseFloat(document.getElementById('int-ex6').value) / 100;
+    let m = parseInt(document.getElementById('cmpd-ex6').value);
+    let ans = document.getElementById('answer-ex6');
 
+    if (isNaN(i) || i <= 0) {
+      ans.innerHTML = `Annual rate must be a valid number greater than zero.`;
+    }
+    else if (isNaN(m) || m <= 0) {
+      ans.innerHTML = `Compounding number must be a valid number greater than zero.`;
+    }
+    else {
+      let ear = Math.pow(1 + (i / m), m) - 1;
+      ear = ear.toFixed(3);
+      
+      ans.innerHTML = `The EAR is ${ear}%`;
+    }
+
+  }
 
 }); // end jquery document ready function
