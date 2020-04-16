@@ -33,6 +33,7 @@ $(document).ready(function () {
   $(document).on('click', '.exercise2', exercise2);
   $(document).on('click', '.exercise3', exercise3);
   $(document).on('click', '.ear', calc_ear);
+  $(document).on('click', '.ear2', calc_ear2);
 
 
   /* future value calculation ******************* */
@@ -61,7 +62,6 @@ $(document).ready(function () {
   /* ****************** end future value calculation ******************* */
 
 
-
   // present value calculation ********************* 
   function calc_PV() {
     let FV = parseFloat(document.getElementById('form1fv').value);
@@ -88,8 +88,6 @@ $(document).ready(function () {
   /* ****************** end present value calculation ******************* */
 
 
-
-
   // interest calculation ********************* 
   function calc_i() {
     let FV = parseFloat(document.getElementById('form2fv').value);
@@ -113,7 +111,6 @@ $(document).ready(function () {
     }
   }
   /* ****************** end interest calculation ******************* */
-
 
 
 
@@ -223,9 +220,44 @@ $(document).ready(function () {
     }
     else {
       let ear = Math.pow(1 + (i / m), m) - 1;
+      ear = ear * 100;
       ear = ear.toFixed(3);
       
       ans.innerHTML = `The EAR is ${ear}%`;
+    }
+
+  }
+
+  // ear ************* 
+  function calc_ear2() {
+    let i = parseFloat(document.getElementById('inta').value) / 100;
+    let i2 = parseFloat(document.getElementById('intb').value) / 100;
+    let m = parseInt(document.getElementById('cmpda').value);
+    let m2 = parseInt(document.getElementById('cmpdb').value);
+    let ans = document.getElementById('answer-ex8');
+
+    if (isNaN(i) || i <= 0) {
+      ans.innerHTML = `Annual rate must be a valid number greater than zero.`;
+    }
+    else if (isNaN(i2) || i2 <= 0) {
+      ans.innerHTML = `Annual rate must be a valid number greater than zero.`;
+    }
+    else if (isNaN(m) || m <= 0) {
+      ans.innerHTML = `Compounding number must be a valid number greater than zero.`;
+    }
+    else if (isNaN(m2) || m2 <= 0) {
+      ans.innerHTML = `Compounding number must be a valid number greater than zero.`;
+    }
+    else {
+      let ear1 = Math.pow(1 + (i / m), m) - 1;
+      ear1 = ear1 * 100;
+      ear1 = ear1.toFixed(3);
+
+      let ear2 = Math.pow(1 + (i2 / m2), m2) - 1;
+      ear2 = ear2 * 100;
+      ear2 = ear2.toFixed(3);
+
+      ans.innerHTML = `The EAR  of Option A is ${ear1}% and the EAR of Option B is ${ear2}%`;
     }
 
   }

@@ -13,12 +13,10 @@
 
     <title>TVM - Effective Annual Rate</title>
 </head>
+
 <body>
     <div class="container-fluid">
-
-        <!---------------- SLIDE 30  - EXERCISES -->
-        <!-- exercises2-slide12 : problem 7  -->
-        <div id="exercises2-slide12" class="slide exercise-slide">
+        <div id="" class="slide exercise-slide">
             <div class="row slide-title">
                 <div class="col-12">
                     <h2 class="primary-title">TVM: Compound Interest</h2>
@@ -28,51 +26,50 @@
             <nav class="row">
                 <div class="col-xs-6 col-sm-3 col-md-3"><a href="./ear-1.html">Home</a></div>
                 <div class="col-xs-6 col-sm-3 col-md-3"><a href="./ear-help.html">Math Help</a></div>
-                <div class="col-xs-6 col-sm-3 col-md-3"><a href="#">Exercises</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./ear-6.html">Exercises</a></div>
                 <div class="col-xs-6 col-sm-3 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
             </nav>
             <div class="row">
                 <div class="col-12">
                     <div class="content">
-
-                        <h4>Exercise 7: Identify the Variables</h4>
+                        <h4>Exercise 2: Solve for EAR</h4>
                         <p>Enter the value of each variable in the boxes below. </p>
-                        <p class="question">What is the Effective Annual Rate (EAR) of an investment that returns 6% interest compounded monthly?</p>
+                        <p class="question">Would you rather invest with A) 10% compounded daily (non-leap year) or B) 10.25% compounded semi-annually?</p>
                         <div class="container">
                             <div class="">
+                                <p>Option A</p>
                                 <form action="" class="indent">
-                                    <label><b>EAR</b></label>
-                                    <input id="ear-ex7" type="number" placeholder="0.00">%<br>
+                                    <label style="margin-left: 60px;">Interest (i)</label>
+                                    <input id="inta" type="number"><br>
+                                    <label>Compounding (m)</label>
+                                    <input id="cmpda" type="number"><br>
                                 </form>
-                                <button onclick="exercise_7()" type="button" class="btn calculate-btn">Submit</button>
+                                <br><br>
+                                <p>Option B</p>
+                                <form action="" class="indent">
+                                    <label style="margin-left: 60px;">Interest (i)</label>
+                                    <input id="intb" type="number"><br>
+                                    <label>Compounding (m)</label>
+                                    <input id="cmpdb" type="number"><br>
+                                </form>
+                                <button type="button" class="btn ear2 calculate-btn">Calculate</button>
                             </div>
                             <br>
-                            <div class="answer" id="answer-ex7"></div>
+                            <div class="answer" id="answer-ex8"></div>
                         </div>
                     </div>
-                
-                        <h4>Exercise 7: Solution</h4>
-                        <p>What is the Effective Annual Rate (EAR) of an investment that returns 6% interest compounded monthly?</p>
-                        <p class="math">i</span> &nbsp;&nbsp;= 6% or 0.06<br>
-                            = 12
-                        </p>
-                        <p>
-                            <img src="../images/tvm2_question3.png" class="img-fluid " alt="">
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-1">
-                    <div class="page-number"></div>
-                </div>
-                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
-                    <a type="button" class="btn" href="ear-6.html">Back</a>
-                    <a type="button" class="btn" href="ear-8.html">Continue</a>
                 </div>
             </div>
         </div>
-
+        <div class="row">
+            <div class="col-1">
+                <div class="page-number"></div>
+            </div>
+            <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                <a type="button" class="btn" href="./ear-6.html">Back</a>
+                <a type="button" class="btn" href="./ear-1.html">Restart</a>
+            </div>
+        </div>
     </div> <!--  end of container -->
 
 
