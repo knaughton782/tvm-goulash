@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../tvm-styles.css">
+
+    <title>TVM - Cash Flows</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+
+
+        <!---------------- help 1 --------------->
+        <div id="tvm3-help1" class="slide help-slide">
+            <div class="row slide-title">
+                <div class="col-12">
+                    <h2 class="primary-title">TVM: Cash Flows</h2>
+                    <h3 class="secondary-title">Help Me!</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+                        <h3>Calculating the FV of Lump Sums</h3>
+                        <p class="question">If you plan to deposit $100 at the end of each year for 3 years, how much will you have in 3 years?</p>
+                        <h5>Use the general format of the TVM equation to perform the calculations:</h5>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <img src="./images/tvm_basic_equation.png" class="img-fluid " alt="">
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <img src="./images/tvm3_example_1_ordinary_annuity.png" class="img-fluid " alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-4">
+                                <img src="./images/tvm3_example1_lumpsum1.png" class="img-fluid math-img" alt="">
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-4">
+                                <img src="./images/tvm3_example1_lumpsum2.png" class="img-fluid math-img" alt="">
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-4">
+                                <img src="./images/tvm3_example1_lumpsum3.png" class="img-fluid math-img" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                    <a type="button" class="btn" href="cashflow-1.html">Back</a>
+                    <a type="button" class="btn" href="cashflow-3.html">Continue</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5 col-sm-3">
+                    <div class="page-number">Help 1</div>
+                </div>
+            </div>
+        </div>
+        <!---------------- end help 1 --------------->
+
+
+
+
+        <!---------------- help 2 --------------->
+        <div id="tvm3-help2" class="slide help-slide">
+            <div class="row slide-title">
+                <div class="col-12">
+                    <h2 class="primary-title">TVM: Cash Flows</h2>
+                    <h3 class="secondary-title">Help Me!</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+                        <h4>Identify the Basic Variables (FVA</span>, <span class="cf">CF</span>,, )</h4>
+                        <p class="question">How much is an annuity worth at the end of three years if it pays $100 at the end of each year assuming 10% interest?</p>
+                        <p>Let's break down the question. FVA</span> is the future value of the annuity payments. The question asks "how much is the annuity worth at the end", so this must be the unknown variable. This means <span class="FV math"> = ?.</p>
+                        <p> is the measure of time in years. In other problems, you might see n expressed as a number or as a noun like decade or century. This means <span class="yrs math"> = 3.</p>
+                        <p><span class="cf">CF</span> is the value of the regularly scheduled cash flow. This means <span class="CF math">CF</span> = $100.</p>
+                        <p>i</span> is the rate of return. The % is an indicator of interest. This means that <span class="int math">i</span> = 10%. Generally, this number is converted to a decimal for use in equations. 10% is the same as .10.</p>
+                        <p class="question">How much is an annuity worth at the end</span> of three years</span> if it <span class="cf">pays $100</span> at the end of each year assuming 10% Interest?
+                            <div class="math">
+                                = ?<br>
+                                = 3<br>
+                                <span class="cf">CF</span> = 100<br>
+                                = 10% &rarr; .10
+                            </div>
+                        </p>
+                        <hr>
+                        <br>
+                        <h4>Plug the Variables into the Equation</h4>
+                        <p>Once you have identified the variables, plug the numbers you've identified into the equation.</p>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <div class="math">
+                                    = ?<br>
+                                    = 3<br>
+                                    <span class="cf">CF</span> = 100<br>
+                                    = 10% &rarr; .10
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <div class="math">
+                                    <img src="./images/tvm3_fva_example1_help2.png" class="img-fluid " alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                        <hr>
+                        <br>
+                        <h4>Calculating FVA</h4>
+                        <p>Once you have plugged the variables into the equation, solve using the order of operations. Remember the acronym <b>PEMDAS</b>. Start with parentheses and then exponents. Then perform (from left to right) multiplication and division. Finally, add and subtract (from left to right).</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                    <a type="button" class="btn" href="cashflow-1.html">Back</a>
+                    <a type="button" class="btn" href="cashflow-3.html">Continue</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5 col-sm-3">
+                    <div class="page-number">Help 2</div>
+                </div>
+            </div>
+        </div>
+        <!---------------- end help 2 --------------->
+
+
+
+
+
+
+        <!-- ********** help 3 ************************ -->
+        <div id="tvm3-help3" class="slide help-slide">
+            <div class="row slide-title">
+                <div class="col-12">
+                    <h2 class="primary-title">TVM: Cash Flows</h2>
+                    <h3 class="secondary-title">Help Me!</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+                        <div>
+                            <h4>Identify the Basic Variables (FVA</span>, <span class="cf">CF</span>,, ,)</h4>
+
+                            <p class="question">How much is an annuity worth at the end of three years if it pays $10 per month at the end of each month assuming 10% interest?</p>
+
+                            <p>Let's break down the question. FVA</span> is the future value of the annuity payments. The question asks "how much is the annuity worth at the end", so this must be the unknown variable. This means <span class="FV math"> = ?.</p>
+
+                            <p> is the measure of time in years. In other problems, you might see n expressed as a number or as a noun like decade or century. This means <span class="yrs math"> = 3.</p>
+
+                            <p><span class="cf">CF</span> is the value of the regularly scheduled cash flow. This means <span class="CF math">CF</span> = $10.</p>
+
+                            <p>m</span> is the number of times interest is compounded per year. Adverbs like semi-annually, quarterly, monthly, or daily are often clues. In this case, its monthly, which is 12 times per year. = 12.</p>
+
+                            <p>i</span> is the rate of return. The % is an indicator of interest. This means that <span class="int math">i</span> = 10%. Generally, this number is converted to a decimal for use in equations. 10% is the same as .10.</p>
+
+                            <p class="question">How much is an annuity worth at the end</span> of three years</span> if it <span class="cf">pays $10</span> per month</span> at the end of each month assuming 10% Interest?
+                                <div class="math">
+                                    = ?<br>
+                                    = 3<br>
+                                    <span class="cf">CF</span> = 100<br>
+                                    = 10% &rarr; .10
+                                </div>
+                            </p>
+                            <hr>
+                            <br>
+                        </div>
+                        <div>
+                        </div>
+                        <h4>Plug the Variables into the Equation</h4>
+                        <p>Once you have identified the variables, plug the numbers you've identified into the equation.</p>
+                        <div class="bottom-space">
+                            <img src="./images/tvm3_example3.png" class="img-fluid " alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                    <a type="button" class="btn" href="cashflow-1.html">Back</a>
+                    <a type="button" class="btn" href="cashflow-3.html">Continue</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5 col-sm-3">
+                    <div class="page-number">Help 3</div>
+                </div>
+            </div>
+        </div>
+        <!-- ********** end help 3 ************************ -->
+
+
+
+    </div> <!--  end of container -->
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>
