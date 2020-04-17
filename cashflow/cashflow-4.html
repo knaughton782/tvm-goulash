@@ -15,7 +15,6 @@
 
 <body>
     <div class="container-fluid">
-
         <div id="" class="slide">
             <div class="row slide-title">
                 <div class="col-12">
@@ -23,29 +22,29 @@
                     <!-- <h3 class="secondary-title">Perpetuities</h3> -->
                 </div>
             </div>
+            <nav class="row">
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./cashflow-1.html">Home</a></div>
+                <!-- <div class="col-xs-6 col-sm-3 col-md-3"><a href="./cashflow-help.html">Math Help</a></div> -->
+                <!-- <div class="col-xs-6 col-sm-3 col-md-3"><a href="#">Exercises</a></div> -->
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
+            </nav>
             <div class="row">
                 <div class="col-12">
                     <div class="content">
                         <h3>Perpetuities</h3>
                         <hr>
-                        <h5>A perpetuity is a series of equal-sized, regularly-scheduled payments paid indefinitly.</h5>
-                        <p>To break that down:
-                            <ul>
-                                <li><span class="alert">equal-sized:</span> every payment is the same amount</li>
-                                <li><span class="alert">regularly-scheduled:</span> payments are received at regular intevals (e.g., monthly, annually, or bi-weekly)</li>
-                                <li><span class="alert">indefinite:</span> payments will continue to be paid forever</li>
-                            </ul>
-                            Perpetuities are pretty rare. One example is a preferred stock that pays a guaranteed fixed dividend to the shareholder for the life of the company, which is assumed to be infinite. In finance, we are usually concerned with the Present Value (PV) of a perpetuity. For instance:
-                            <ul>
-                                <li>"How much should I pay for that preferred stock with guaranteed fixed dividends?"</li>
-                                <li>"How much should I ask for today, if I promise to pay someone a certain amount regularly and indefinitly?"</li>
-                            </ul>
-                            It's important that you know the term, but perpetuities are rare enough that you need not memorize the formula. Just in case you're curious, the Present Value of a perpetuity is:
-                            <div class="bottom-space">
-                                <img src="./images/tvm3_perpetuity_pv.png" class="img-fluid " alt="">
-                            </div>
-                            where equals the appropriate discounting interest rate, based on the risk associated with the asset.
-                        </p>
+                        <h5>A perpetuity is a series of equal-sized, regularly-scheduled payments paid indefinitely.</h5>
+                        <ul>
+                            <li><span class="alert">equal-sized:</span> every payment is the same amount</li>
+                            <li><span class="alert">regularly-scheduled:</span> payments are received at regular intevals (e.g., monthly, annually, or bi-weekly)</li>
+                            <li><span class="alert">indefinite:</span> payments will continue to be paid forever</li>
+                        </ul>
+                        <p>Perpetuities are pretty rare. One example is a preferred stock that pays a guaranteed fixed dividend to the shareholder for the life of the company, which is assumed to be infinite. In finance, we are usually concerned with the Present Value (PV) of a perpetuity. For instance:</p>
+                        <ul>
+                            <li>"How much should I pay for that preferred stock with guaranteed fixed dividends?"</li>
+                            <li>"How much should I ask for today, if I promise to pay someone a certain amount regularly and indefinitely?"</li>
+                        </ul>
+                        <p>The formula for Present Value of a perpetuity is <span class="math">\(PV_{perp}=\frac{CF}{i}\)</span> where i equals the appropriate discounting interest rate, based on the risk associated with the asset. It's important that you know the term, but perpetuities are rare enough that you need not memorize the formula.</p>
                     </div>
                 </div>
             </div>
@@ -55,7 +54,7 @@
                 </div>
                 <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
                     <a type="button" class="btn" href="cashflow-3.html">Back</a>
-                    <a type="button" class="btn" href="cashflow-5.html">Continue</a>
+                    <a type="button" class="btn" href="cashflow-1.html">Restart</a>
                 </div>
             </div>
 
@@ -70,6 +69,8 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
 
     <script src="../script.js"></script>
 </body>
