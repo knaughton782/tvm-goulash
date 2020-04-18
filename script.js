@@ -34,6 +34,8 @@ $(document).ready(function () {
   $(document).on('click', '.exercise3', exercise3);
   $(document).on('click', '.ear', calc_ear);
   $(document).on('click', '.ear2', calc_ear2);
+  $(document).on('click', '.fva1', calc_fva);
+  $(document).on('click', '.fva2', calc_fva2);
 
 
   /* future value calculation ******************* */
@@ -111,7 +113,6 @@ $(document).ready(function () {
     }
   }
   /* ****************** end interest calculation ******************* */
-
 
 
   // time calculation ********************* 
@@ -222,7 +223,7 @@ $(document).ready(function () {
       let ear = Math.pow(1 + (i / m), m) - 1;
       ear = ear * 100;
       ear = ear.toFixed(3);
-      
+
       ans.innerHTML = `The EAR is ${ear}%`;
     }
 
@@ -261,5 +262,68 @@ $(document).ready(function () {
     }
 
   }
+
+
+  function calc_fva() {
+    let cf = parseInt(document.getElementById('cf1').value);
+    let n = parseInt(document.getElementById('yrs1').value);
+    let i = parseFloat(document.getElementById('int1').value) / 100;
+    let ans = document.getElementById('answer-ex1');
+
+    if (isNaN(i) || i <= 0) {
+      ans.innerHTML = `Annual rate must be a valid number greater than zero.`;
+    }
+    else if (isNaN(n) || n <= 0) {
+      ans.innerHTML = `Length of time must be a valid number greater than zero.`;
+    }
+    else if (isNaN(cf) || cf <= 0) {
+      ans.innerHTML = `Cash flow must be a valid number greater than zero.`;
+    }
+    else {
+      let x = Math.pow((1 + i), n);
+      let fva = cf * ((x - 1) / i);
+      fva = fva.toFixed(2);
+
+      ans.innerHTML = `The FVA is $${fva}`;
+    }
+
+  }
+
+  function calc_fva2() {
+    let cf = parseInt(document.getElementById('cf2').value);
+    let n = parseInt(document.getElementById('yrs2').value);
+    let i = parseFloat(document.getElementById('int2').value) / 100;
+    let m = parseInt(document.getElementById('m2').value);
+    let ans = document.getElementById('answer-ex2');
+
+    if (isNaN(i) || i <= 0) {
+      ans.innerHTML = `Annual rate must be a valid number greater than zero.`;
+    }
+    else if (isNaN(n) || n <= 0) {
+      ans.innerHTML = `Length of time must be a valid number greater than zero.`;
+    }
+    else if (isNaN(cf) || cf <= 0) {
+      ans.innerHTML = `Cash flow must be a valid number greater than zero.`;
+    }
+    else if (isNaN(m) || m <= 0) {
+      ans.innerHTML = `Compounding number must be a valid number greater than zero.`;
+    }
+    else {
+      let a = i / m;
+      let b = n * m;
+      let c = Math.pow((1 + a), b);
+
+      let fva = cf * ((c - 1) / a);
+      console.log((c - 1) / a)
+      fva = fva.toFixed(2);
+      console.log(`a: ${a}, b: ${b}, c: ${c}, cf: ${cf} `)
+
+      ans.innerHTML = `The FVA is $${fva}`;
+    }
+
+  }
+
+
+
 
 }); // end jquery document ready function

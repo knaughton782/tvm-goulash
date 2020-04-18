@@ -5,49 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../tvm-styles.css">
+    <link rel="stylesheet" href="../tvm-styles.css">
 
-    <title>TVM - Formulas</title>
+    <title>TVM - Ordinary Annuities</title>
 </head>
 
 <body>
     <div class="container-fluid">
-
-        <!-- problem 13  -->
         <div id="" class="slide exercise-slide">
             <div class="row slide-title">
                 <div class="col-12">
-                    <h2 class="primary-title">TVM: Formulas</h2>
+                    <h2 class="primary-title">TVM: Ordinary Annuities</h2>
                     <!-- <h3 class="secondary-title">Exercises</h3> -->
                 </div>
             </div>
             <nav class="row">
-                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./formulas-1.html">Home</a></div>
-                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./formulas-help.html">Math Help</a></div>
-                <div class="col-xs-6 col-sm-3 col-md-3"><a href="#">Exercises</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./annuity-1.html">Home</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./annuity-help.html">Math Help</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./annuity-7.html">Exercises</a></div>
                 <div class="col-xs-6 col-sm-3 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
             </nav>
             <div class="row">
                 <div class="col-12">
                     <div class="content">
+                        <h4>Exercise 2: Calculate FVA with Compounding</h4>
+                        <p class="question">If I save $100 per month in an account earning a nominal rate of 8% per year for 20 years, how much should the account be worth?</p>
 
-                        <h4>Exercise 13: Calculate the Unknown Variable</h4>
-                        <p>Solve the TVM equation and enter the value of the variable in the box provided.</p>
-
-                        <p class="question">If I know that I want to give my child $20,000 for college on his 18th birthday, how much will I need to invest at 7% when the child is born?</p>
                         <div class="container">
-                            <div class="">
-                                <form action="" class="indent">
-                                    <label> </label>
-                                    <input id="Present Value (PV)alue-ex13" type="number"><br>
-                                </form>
-                                <button onclick="exercise_13()" type="button" class="btn calculate-btn">Submit</button>
-                            </div>
+                            <form class="indent">
+
+                                <label style="margin-left: 28px;">Cash Flow (CF)</label>
+                                <input id="cf2" type="number"><br>
+
+                                <label style="margin-left: 59px;">Interest (i)</label>
+                                <input id="int2" type="number"><br>
+
+                                <label style="margin-left: 74px;">Time (n)</label>
+                                <input id="yrs2" type="number"><br>
+
+                                <label>Compounding (m)</label>
+                                <input id="m2" type="number">
+
+                            </form>
+
+                            <button type="button" class="btn fva2 calculate-btn">Calculate</button>
+
                             <br>
-                            <div class="answer" id="answer-ex13"></div>
+                            <div class="answer" id="answer-ex2"></div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -56,13 +65,11 @@
                     <div class="page-number"></div>
                 </div>
                 <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
-                    <a href="" type="button" class="btn">Back</a>
-                    <a href="" type="button" class="btn">Continue</a>
+                    <a type="button" class="btn" href="./annuity-7.html">Back</a>
+                    <a type="button" class="btn" href="annuity-1.html">Restart</a>
                 </div>
             </div>
-
         </div>
-
 
     </div> <!--  end of container -->
 
@@ -70,11 +77,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
-    </script>
 
     <script src="../script.js"></script>
 </body>

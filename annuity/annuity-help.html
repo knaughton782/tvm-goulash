@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../tvm-styles.css">
+
+    <title>TVM - Ordinary Annuities</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div id="" class="slide help-slide">
+            <div class="row slide-title">
+                <div class="col-12">
+                    <h2 class="primary-title">TVM: Help</h2>
+                    <!-- <h3 class="secondary-title">Help Me!</h3> -->
+                </div>
+            </div>
+            <nav class="row">
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./annuity-1.html">Home</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./annuity-help.html">Math Help</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./annuity-7.html">Exercises</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
+            </nav>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+                        <h4>Calculating the FV of Lump Sums</h4>
+                        <p class="question">If you plan to deposit $100 at the end of each year for 3 years, how much will you have in 3 years?</p>
+                        <p>Example using the general format of the TVM equation to perform the calculations:</p>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-4">
+                                <img src="../images-not-used/example1_lumpsum1.png" class="img-fluid math-img" alt="">
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-4">
+                                <img src="../images-not-used/example1_lumpsum2.png" class="img-fluid math-img" alt="">
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-4">
+                                <img src="../images-not-used/example1_lumpsum3.png" class="img-fluid math-img" alt="">
+                            </div>
+                        </div>
+                        <hr>
+                        <h4>Identify the Basic Variables</h4>
+                        <p class="question">How much is an annuity worth at the end of three years if it pays $100 at the end of each year assuming 10% interest?</p>
+                        <p>Break down the question. FVA is the future value of the annuity payments. The question asks "how much is the annuity worth at the end", so this must be the unknown variable. This means FVA = ?. n is the measure of time in years. In other problems, you might see n expressed as a number or as a noun like decade or century. This means n = 3. CF is the value of the regularly scheduled cash flow. This means CF = $100. i is the rate of return. The % is an indicator of interest. This means that i = 10%.</p>
+                        <h4>Plug the Variables into the Equation</h4>
+                        <p>Once you have identified the variables, plug the numbers you've identified into the equation. Then solve the equation using the Order of Operations.</p>
+
+                        <div>
+                            <span class="math">\(FVA=CF[\frac{(1+i)^n-1}{i}]\)</span><br>
+                            <span class="math">\(FVA=100[\frac{(1+.10)^3-1}{.10}]\)</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div> <!--  end of container -->
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>
