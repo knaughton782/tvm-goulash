@@ -7,86 +7,74 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../tvm-styles.css">
 
-    <title>TVM - Compounding</title>
+    <title>TVM - Annuity Due</title>
 </head>
 
 <body>
     <div class="container-fluid">
-
         <div id="" class="slide exercise-slide">
             <div class="row slide-title">
                 <div class="col-12">
-                    <h2 class="primary-title">TVM: Compound Interest</h2>
+                    <h2 class="primary-title">TVM: Annuity Due</h2>
                     <!-- <h3 class="secondary-title">Exercises</h3> -->
                 </div>
             </div>
             <nav class="row">
-                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./compounding-1.html">Home</a></div>
-                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./compounding-help.html">Math Help</a></div>
-                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./compounding-9.html">Exercises</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./annuitydue-1.html">Home</a></div>
+                <!-- <div class="col-xs-6 col-sm-3 col-md-3"><a href="./annuitydue-help.html">Math Help</a></div> -->
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./annuitydue-5.html">Exercises</a></div>
                 <div class="col-xs-6 col-sm-3 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
             </nav>
             <div class="row">
                 <div class="col-12">
                     <div class="content">
-
-                        <h4>Exercise 2: Calculate Future Value with Compounding</h4>
-                        <p class="question">If I deposit $2,000 in an account that earns a semi-annually compounded rate of 8%, how much will my account be worth in 15 years?</p>
-
+                        <h4>Exercise 1: Calculate the FV of an Annuity Due</h4>
+                        <p class="question">What if I deposited the $1200 a year at the beginning of the year for 20 years earning 8% interest? How much would the account be worth?<br> <span class="note">(Hint: as an ordinary annuity, it was worth $54,914.36).</span></p>
+                        <p>To convert from an ordinary annuity to an annuity due, every payment receives an extra period of interest. Use the general form of the TVM equation to add 1 year of interest.</p>
+                        <div class="bottom-space">
+                            <img src="../images-not-used/tvm3_exercise3_timeline.png" class="img-fluid" alt="">
+                            
+                        </div>
                         <div class="container">
-                            <div class="">
-                                <form action="">
+                            <form>
+                                <label>Present Value (PV)</label>
+                                <input id="cf4" type="number"><br>
 
-                                    <label>Present Value (PV)</label>
-                                    <input id="pvalue-ex2" type="number"><br>
+                                <label style="margin-left: 74px;">Time (n)</label>
+                                <input id="yrs3" type="number"><br>
 
-                                    <label style="margin-left: 58px;">Interest (i) </label>
-                                    <input id="int-ex2" type="number">%<br>
+                                <label style="margin-left: 60px;">Interest (i)</label>
+                                <input id="int3" type="number"><br>
 
-                                    <label style="margin-left: 74px;">Time (n) </label>
-                                    <input id="yrs-ex2" type="number"><br>
-
-                                    <label>Compounding (m)</label>
-                                    <input id="cmpd-ex2" type="number"><br>
-
-                                </form>
-                                <button type="button" class="btn exercise2 calculate-btn">Calculate</button>
-                            </div>
+                            </form>
+                            <button type="button" class="btn fva3 calculate-btn">Calculate</button>
                             <br>
-                            <div class="answer" id="answer-ex2"></div>
+                            <div class="answer" id="answer-ex3"></div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row">
-
                 <div class="col-1">
                     <div class="page-number"></div>
                 </div>
-
                 <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
-                    <a type="button" class="btn" href="compounding-9.html">Back</a>
-                    <a type="button" class="btn" href="compounding-11.html">Continue</a>
+                    <a type="button" class="btn" href="./annuitydue-4.html">Back</a>
+                    <a type="button" class="btn" href="./annuitydue-1.html">Restart</a>
                 </div>
             </div>
-
         </div>
 
-
-    </div>
-    <!--  end of container -->
+    </div> <!--  end of container -->
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
-    </script>
 
     <script src="../script.js"></script>
 </body>

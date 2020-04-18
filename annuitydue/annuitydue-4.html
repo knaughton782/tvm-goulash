@@ -7,55 +7,46 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../tvm-styles.css">
 
-    <title>TVM - Effective Annual Rate</title>
+    <title>TVM - Annuity Due</title>
 </head>
 
 <body>
     <div class="container-fluid">
-        <div id="" class="slide exercise-slide">
+        <div id="" class="slide">
             <div class="row slide-title">
                 <div class="col-12">
-                    <h2 class="primary-title">TVM: Effective Annual Rate</h2>
-                    <!-- <h3 class="secondary-title">Exercises</h3> -->
+                    <h2 class="primary-title">TVM: Annuity Due</h2>
+                    <!-- <h3 class="secondary-title">Annuity Due</h3> -->
                 </div>
             </div>
             <nav class="row">
-                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./ear-1.html">Home</a></div>
-                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./ear-help.html">Math Help</a></div>
-                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./ear-6.html">Exercises</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./annuitydue-1.html">Home</a></div>
+                <!-- <div class="col-xs-6 col-sm-3 col-md-3"><a href="./annuitydue-help.html">Math Help</a></div> -->
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./annuitydue-5.html">Exercises</a></div>
                 <div class="col-xs-6 col-sm-3 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
             </nav>
             <div class="row">
                 <div class="col-12">
                     <div class="content">
-                        <h4>Exercise 2: Solve for EAR</h4>
-                        <p>Enter the value of each variable in the boxes below. </p>
-                        <p class="question">Would you rather invest with A) 10% compounded daily (non-leap year) or B) 10.25% compounded semi-annually?</p>
-                        <div class="container">
-                            <div class="">
-                                <p>Option A</p>
-                                <form action="">
-                                    <label style="margin-left: 60px;">Interest (i)</label>
-                                    <input id="inta" type="number"><br>
-                                    <label>Compounding (m)</label>
-                                    <input id="cmpda" type="number"><br>
-                                </form>
-                                <br><br>
-                                <p>Option B</p>
-                                <form action="">
-                                    <label style="margin-left: 60px;">Interest (i)</label>
-                                    <input id="intb" type="number"><br>
-                                    <label>Compounding (m)</label>
-                                    <input id="cmpdb" type="number"><br>
-                                </form>
-                                <button type="button" class="btn ear2 calculate-btn">Calculate</button>
+                        <p class="question">How much is an annuity worth at the end of three years if it pays $100 at the beginning of each year assuming 10% interest?</p>
+                        <p>How would the problem we previously solved change if payments were made at the beginning of each term (i.e., an annuity due rather than an ordinary annuity)? Looking at the timeline, you can see that each payment earns an extra year of interest.</p>
+                        <p>We've already calculated that the ordinary annuity's FV is $331.00. Now we'll use the basic TVM equation to add one more year of interest.
+                            <div>
+                                <span class="math">\(FV=PV(1 + i)^n\)</span>
+                                <h5>Annuity Due</h5>
+                                <img src="../images/example2_annuity_due.png" class="img-fluid " alt="timeline marking interest periods at the beginning of each time period">
                             </div>
-                            <br>
-                            <div class="answer" id="answer-ex8"></div>
+                        </p>
+                        <h5>To solve:</h5>
+                        <ul>
+                            <li>First, find the FVA (just as you would for an ordinary annuity). We already know its $331.00, and we'll use this as the PV in year 2.</li>
+                            <li>Then bring the FVA forward another year to reflect the extra period of interest using the TVM equation and solving for FV in year 3.</li>
+                        </ul>
+                        <div>
+                            <span class="math">\(FV=331(1+.10)^1\) &xrarr; \(FV=\$364.10\)</span>
                         </div>
                     </div>
                 </div>
@@ -66,10 +57,12 @@
                 <div class="page-number"></div>
             </div>
             <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
-                <a type="button" class="btn" href="./ear-6.html">Back</a>
-                <a type="button" class="btn" href="./ear-1.html">Restart</a>
+                <a type="button" class="btn" href="./annuitydue-3.html">Back</a>
+                <a type="button" class="btn" href="./annuitydue-5.html">Continue</a>
             </div>
         </div>
+    </div>
+
     </div> <!--  end of container -->
 
 
@@ -77,6 +70,7 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
     <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
     </script>
     <script src="../script.js"></script>

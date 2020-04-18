@@ -36,6 +36,7 @@ $(document).ready(function () {
   $(document).on('click', '.ear2', calc_ear2);
   $(document).on('click', '.fva1', calc_fva);
   $(document).on('click', '.fva2', calc_fva2);
+  $(document).on('click', '.fva3', calc_fva3);
 
 
   /* future value calculation ******************* */
@@ -323,6 +324,30 @@ $(document).ready(function () {
 
   }
 
+
+  function calc_fva3() {
+    let pv = 54914.36;
+    let n = parseInt(document.getElementById('yrs3').value);
+    let i = parseFloat(document.getElementById('int3').value) / 100;
+    let ans = document.getElementById('answer-ex3');
+
+    if (isNaN(i) || i <= 0) {
+      ans.innerHTML = `Annual rate must be a valid number greater than zero.`;
+    }
+    else if (isNaN(n) || n <= 0) {
+      ans.innerHTML = `Length of time must be a valid number greater than zero.`;
+    }
+    else if (isNaN(pv) || pv <= 0) {
+      ans.innerHTML = `Cash flow must be a valid number greater than zero.`;
+    }
+    else {
+      let fv = pv * Math.pow((1 + i), n);
+      fv = fv.toFixed(2);
+
+      ans.innerHTML = `The FV is $${fv}`;
+    }
+
+  }
 
 
 

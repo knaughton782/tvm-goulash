@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../tvm-styles.css">
 
-    <title>TVM - Annuities (Regular)</title>
+    <title>TVM - Annuity Due</title>
 </head>
 
 <body>
@@ -19,353 +19,94 @@
 
 
 
-        <!---------------- SLIDE 9 - CONTENT ********************** -->
-        TWO TYPES OF ANNUITIES ******************************
-        <div id="slide9" class="slide">
+        <!---------------- SLIDE 19  - CONTENT -->
+        <div id="slide19" class="slide">
             <div class="row slide-title">
                 <div class="col-12">
-                    <h2 class="primary-title">TVM: Annuities (Regular)</h2>
-                    <h3 class="secondary-title">Annuities</h3>
+                    <h2 class="primary-title">TVM: Annuity Due</h2>
+                    <h3 class="secondary-title">Annuities with Compound Interest</h3>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12">
                     <div class="content">
-                        <p>There are two types of annuities:
-                            <ul>
-                                <li>Regular Annuity, also known as an Ordinary Annuity</li>
-                                <li>Annuity Due</li>
-                            </ul>
-                        </p>
-                        <p>The difference is in the timing of cash flows.
-                            <ul>
-                                <li>Regular annuity: cash flow arrives at the <span class="alert">end</span> of each period</li>
-                                <li>Annuity due: cash flow arrives at the <span class="alert">beginning</span> of each period</li>
-                            </ul>
-                        </p>
-                        <p>If the problem does not specifiy whether you are dealing with a regular annuity or an annuity due, or if it doesn't state when payments are made, <b>assume that it is a regular annuity</b>.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
-                    <button type="button" class="back btn">Back</button>
-                    <button type="button" class="continue btn">Continue</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-5 col-sm-3">
-                    <div class="page-number">9</div>
-                </div>
-            </div>
-        </div>
-        <!---------------- end SLIDE 9 - CONTENT ********************** -->
-
-
-
-        <!---------------- SLIDE 10 - CONTENT *********** -->
-        HIGHLIGHTS DIFFERENCE BETWEEN TWO ANNUITIES ************************
-        <div id="slide10" class="slide">
-            <div class="row slide-title">
-                <div class="col-12">
-                    <h2 class="primary-title">TVM: Annuities (Regular)</h2>
-                    <h3 class="secondary-title">Annuities</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="content">
-                        <h5>Why does the timing of the cash flows matter? Look at the timelines of a regular annuity or an annuity due:</h5>
-                        <p>
+                        <p>The FVA equation can also be modified to account for compound interest:
                             <div class="bottom-space">
-                                <img src="./images/tvm3_annuity_regular_vs_due.png" class="img-fluid " alt="">
-                            </div>
-                            As you can see, the annuity due pays an extra period of interest on each payment. The extra interest results in a higher Future Value for an annuity due, as compared to an ordinary annuity.
-                        </p><br>
-                        <div class="row">
-                            <div class="col-12">
-                                <h5>Think about annuities in your own life and the timing of the payments.</h5>
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-6">
-                                <p>
-                                    <h6>Examples of Ordinary Annuities</h6>
-                                    <ul>
-                                        <li>Credit Card payments</li>
-                                        <li>Direct Deposits in Retirement Accounts</li>
-                                    </ul>
-                                </p>
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-6">
-                                <p>
-                                    <h6>Examples of Annuities due</h6>
-                                    <ul>
-                                        <li>Property rents/leases are due at the beginning of the month</li>
-                                        <li>Insurance Premiums are due up front</li>
-                                    </ul>
-                                </p>
-                            </div>
-                            <b>Most annuities are ordinary annuities.</b>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
-                    <button type="button" class="back btn">Back</button>
-                    <button type="button" class="continue btn">Continue</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-1">
-                    <div class="page-number">10</div>
-                </div>
-            </div>
-        </div>
-
-
-
-
-        <!---------------- SLIDE 11 - CONTENT -->
-        REGULAR ANNUITY EXAMPLE **********************
-        <div id="slide11" class="slide">
-            <div class="row slide-title">
-                <div class="col-12">
-                    <h2 class="primary-title">TVM: Annuities (Regular)</h2>
-                    <h3 class="secondary-title">Annuities</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="content">
-                        <p>Let's work through a problem together.</p>
-                        <p>Example:</p>
-                        <p class="question">If you plan to deposit $100 at the end of each year for 3 years, how much will you have in 3 years?</p>
-                        <p>First, determine whether its an ordinary annuity or annuity due and draw the timeline.</p>
-                        <p class="indent">The cash flows in the question constitute an ordinary annuity because the payments arrive "at the end of each year". The timeline looks like this:
-                            <div class="bottom-space">
-                                <img src="./images/tvm3_example_1_ordinary_annuity.png" class="img-fluid " alt="">
+                                <img src="./images/tvm3_exercise2_solution_part1.png" class="img-fluid " alt="">
                             </div>
                         </p>
-                        <p>To calculate Future Value, we could just calculate the FV of each lump sum payment using the general format of the TVM equation:
-                            <div class="math">
-                                Payment 1: FV = $121<br>
-                                Payment 2: FV = $110<br>
-                                Payment 3: FV = $100<br>
-                                <br>
-                                FV = 121 + 110 + 100 = $331
-                            </div>
+                        <p>Notice that we simply modified the existing formula. the variable m stands for the number of compounding periods per year.
+                            <ul>
+                                <li>The adjustment made to the FVA equation is the same adjustment we made to the general TVM equation, dividing each by and multiplying by.</li>
+                                <li>As before, the calculation in the brackets can be replaced from a figure taken from the FVA Factor table.</li>
+                            </ul>
+                            Let's modify our example to practice calculating FVA with compound interest.
                         </p>
-                        <p>If you don't understand how FV was calculated, click Help. If you understand the calculation, click Continue.</p>
+                        <p class="question">How much is an annuity worth at the end of three years if it pays $10 a month at the end of each month assuming 10% interest?</p>
+                        <p>This is an ordinary annuity with compounding. Calculate the FVA. Stay on this screen while you solve the problem. If you get stuck, click Help. If you are able to solve the problem, click Continue.</p>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
-                    <!-- to help 1 -->
-                    <button type="button" class="continue help btn">Help</button>
-                    <button type="button" class="skip btn">Continue</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-1">
-                    <div class="page-number">11</div>
-                </div>
-            </div>
-        </div>
-
-
-
-        <!---------------- help 1 --------------->
-        PUT THIS ONE IN REGULAR ANNUITY EXAMPLE SLIDE 11
-        <div id="tvm3-help1" class="slide help-slide">
-            <div class="row slide-title">
-                <div class="col-12">
-                    <h2 class="primary-title">TVM: Annuities (Regular)</h2>
-                    <h3 class="secondary-title">Help Me!</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="content">
-                        <h3>Calculating the FV of Lump Sums</h3>
-                        <p class="question">If you plan to deposit $100 at the end of each year for 3 years, how much will you have in 3 years?</p>
-                        <h5>Use the general format of the TVM equation to perform the calculations:</h5>
-                        <div class="row">
-                            <div class="col-12 col-sm-12 col-md-6">
-                                <img src="./images/tvm_basic_equation.png" class="img-fluid " alt="">
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-6">
-                                <img src="./images/tvm3_example_1_ordinary_annuity.png" class="img-fluid " alt="">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12 col-sm-12 col-md-4">
-                                <img src="./images/tvm3_example1_lumpsum1.png" class="img-fluid math-img" alt="">
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-4">
-                                <img src="./images/tvm3_example1_lumpsum2.png" class="img-fluid math-img" alt="">
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-4">
-                                <img src="./images/tvm3_example1_lumpsum3.png" class="img-fluid math-img" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
-                    <button type="button" class="back btn">Back</button>
-                    <button type="button" class="continue btn">Continue</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-5 col-sm-3">
-                    <div class="page-number">Help 1</div>
-                </div>
-            </div>
-        </div>
-        <!---------------- end help 1 --------------->
-
-
-
-
-        <!---------------- SLIDE 12 - CONTENT -->
-        <div id="slide12" class="slide">
-            <div class="row slide-title">
-                <div class="col-12">
-                    <h2 class="primary-title">TVM: Annuities (Regular)</h2>
-                    <h3 class="secondary-title">Annuities</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="content">
-                        <p>Calculating the FV of each individual payment is fine when there are only a few payments, but isn't recommended for long-term annuities. Therefore, we'll calculate the Future Value of the annuity (FVA) using the following equation:</p>
-                        <div class="bottom-space">
-                            <img src="./images/tvm3_fva_formula.png" class="img-fluid " alt="">
-                        </div>
-                        <div class="math">
-                            FVA</span> = The future value of the annuity<br>
-                            <span class="cf">CF</span> = Dollar amount of the individual cash flows<br>
-                            = number of years<br>
-                            = stated interest rate
-                        </div>
-                        <p>The FVA equation can be derived from the genral format of the TVM equation. The derivation won't be shown here, but you should be aware that there is a relationship between the two equations.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
-                    <button type="button" class="back btn">Back</button>
-                    <button type="button" class="continue btn">Continue</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-1">
-                    <div class="page-number">12</div>
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-        <!---------------- SLIDE 13 - CONTENT -->
-        <div id="slide13" class="slide stop">
-            <div class="row slide-title">
-                <div class="col-12">
-                    <h2 class="primary-title">TVM: Annuities (Regular)</h2>
-                    <h3 class="secondary-title">Annuities</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="content">
-                        <p>Now that we have the timeline and formula, we can use them to identify the variables and solve for FVA.</p>
-                        <p>Example:</p>
-                        <p class="question">How much is an annuity worth at the end of the three years if it pays $100 at the end of each year assuming 10% interest?</p>
-                        <div class="row">
-                            <div class="col-12 col-sm-12 col-md-6">
-                                <div class="bottom-space">
-                                    <img src="./images/tvm3_example_1_ordinary_annuity.png" class="img-fluid " alt="">
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-6">
-                                <div class="bottom-space">
-                                    <img src="./images/tvm3_fva_formula.png" class="img-fluid " alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <p>Stay on this screen while you solve the problem. If you need help solving the problem, click Help. If you have the answer, click Continue.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                    <!-- to help 3 -->
                     <button type="button" class="continue btn help">Help</button>
                     <button type="button" class="skip btn">Continue</button>
                 </div>
             </div>
             <div class="row">
                 <div class="col-1">
-                    <div class="page-number">13</div>
+                    <div class="page-number">19</div>
                 </div>
             </div>
         </div>
 
 
 
-        <!---------------- help 2 --------------->
-        <div id="tvm3-help2" class="slide help-slide">
+        <!-- ********** help 3 ************************ -->
+        <div id="tvm3-help3" class="slide help-slide">
             <div class="row slide-title">
                 <div class="col-12">
-                    <h2 class="primary-title">TVM: Annuities (Regular)</h2>
-                    <h3 class="secondary-title">Help Me!</h3>
+                    <h2 class="primary-title">TVM: Annuity Due</h2>
+                    <!-- <h3 class="secondary-title">Help Me!</h3> -->
                 </div>
             </div>
             <div class="row">
                 <div class="col-12">
                     <div class="content">
-                        <h4>Identify the Basic Variables (FVA</span>, <span class="cf">CF</span>,, )</h4>
-                        <p class="question">How much is an annuity worth at the end of three years if it pays $100 at the end of each year assuming 10% interest?</p>
-                        <p>Let's break down the question. FVA</span> is the future value of the annuity payments. The question asks "how much is the annuity worth at the end", so this must be the unknown variable. This means <span class="FV math"> = ?.</p>
-                        <p> is the measure of time in years. In other problems, you might see n expressed as a number or as a noun like decade or century. This means <span class="yrs math"> = 3.</p>
-                        <p><span class="cf">CF</span> is the value of the regularly scheduled cash flow. This means <span class="CF math">CF</span> = $100.</p>
-                        <p>i</span> is the rate of return. The % is an indicator of interest. This means that <span class="int math">i</span> = 10%. Generally, this number is converted to a decimal for use in equations. 10% is the same as .10.</p>
-                        <p class="question">How much is an annuity worth at the end</span> of three years</span> if it <span class="cf">pays $100</span> at the end of each year assuming 10% Interest?
-                            <div class="math">
-                                = ?<br>
-                                = 3<br>
-                                <span class="cf">CF</span> = 100<br>
-                                = 10% &rarr; .10
-                            </div>
-                        </p>
-                        <hr>
-                        <br>
-                        <h4>Plug the Variables into the Equation</h4>
-                        <p>Once you have identified the variables, plug the numbers you've identified into the equation.</p>
-                        <div class="row">
-                            <div class="col-12 col-sm-12 col-md-6">
+                        <div>
+                            <h4>Identify the Basic Variables (FVA</span>, <span class="cf">CF</span>,, ,)</h4>
+
+                            <p class="question">How much is an annuity worth at the end of three years if it pays $10 per month at the end of each month assuming 10% interest?</p>
+
+                            <p>Let's break down the question. FVA</span> is the future value of the annuity payments. The question asks "how much is the annuity worth at the end", so this must be the unknown variable. This means <span class="FV math"> = ?.</p>
+
+                            <p> is the measure of time in years. In other problems, you might see n expressed as a number or as a noun like decade or century. This means <span class="yrs math"> = 3.</p>
+
+                            <p><span class="cf">CF</span> is the value of the regularly scheduled cash flow. This means <span class="CF math">CF</span> = $10.</p>
+
+                            <p>m</span> is the number of times interest is compounded per year. Adverbs like semi-annually, quarterly, monthly, or daily are often clues. In this case, its monthly, which is 12 times per year. = 12.</p>
+
+                            <p>i</span> is the rate of return. The % is an indicator of interest. This means that <span class="int math">i</span> = 10%. Generally, this number is converted to a decimal for use in equations. 10% is the same as .10.</p>
+
+                            <p class="question">How much is an annuity worth at the end</span> of three years</span> if it <span class="cf">pays $10</span> per month</span> at the end of each month assuming 10% Interest?
                                 <div class="math">
                                     = ?<br>
                                     = 3<br>
                                     <span class="cf">CF</span> = 100<br>
                                     = 10% &rarr; .10
                                 </div>
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-6">
-                                <div class="math">
-                                    <img src="./images/tvm3_fva_example1_help2.png" class="img-fluid " alt="">
-                                </div>
-                            </div>
-
+                            </p>
+                            <hr>
+                            <br>
                         </div>
-                        <hr>
-                        <br>
-                        <h4>Calculating FVA</h4>
-                        <p>Once you have plugged the variables into the equation, solve using the order of operations. Remember the acronym <b>PEMDAS</b>. Start with parentheses and then exponents. Then perform (from left to right) multiplication and division. Finally, add and subtract (from left to right).</p>
+                        <div>
+                        </div>
+                        <h4>Plug the Variables into the Equation</h4>
+                        <p>Once you have identified the variables, plug the numbers you've identified into the equation.</p>
+                        <div class="bottom-space">
+                            <img src="./images/tvm3_example3.png" class="img-fluid " alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -377,64 +118,60 @@
             </div>
             <div class="row">
                 <div class="col-5 col-sm-3">
-                    <div class="page-number">Help 2</div>
+                    <div class="page-number">Help 3</div>
                 </div>
             </div>
         </div>
-        <!---------------- end help 2 --------------->
+        <!-- ********** end help 3 ************************ -->
 
 
 
-        <!---------------- SLIDE 14 - CONTENT -->
-        <div id="slide14" class="slide">
+        <!---------------- SLIDE 20  - CONTENT -->
+        <div id="slide20" class="slide">
             <div class="row slide-title">
                 <div class="col-12">
-                    <h2 class="primary-title">TVM: Annuities (Regular)</h2>
+                    <h2 class="primary-title">TVM: Annuity Due</h2>
                     <h3 class="secondary-title">Ordinary Annuity</h3>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12">
                     <div class="content">
-                        <p class="question">How much is an annuity worth at the end of three years if it pays $100 at the end of each year assuming 10% interest?</p>
-                        <p>FVA = $331, which agrees with our calculation of Future Value for each individual lump sum payment.</p>
-                        <p>If you didn't get the answer correct, click Help to see how to calculate the answer. Click Continue if you got the answer correct.</p>
+                        <p class="question">How much is an annuity worth at the end of three years if it pays $10 per month at the end of each month assuming 10% interest?</p>
+                        <p class="answer">FVA = $417.99</p>
+                        <p>Did you get the answer right? If not, please click on Help to see how to calculate the problem. If you answered correctly, please click Continue.</p>
+
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
-                    <button type="button" class="back btn">Back</button>
+                    <button type="button" class="back help btn">Help</button>
                     <button type="button" class="continue btn">Continue</button>
                 </div>
             </div>
             <div class="row">
                 <div class="col-1">
-                    <div class="page-number">14</div>
+                    <div class="page-number">20</div>
                 </div>
             </div>
         </div>
 
 
 
-        <!---------------- SLIDE 15  - CONTENT -->
-        <div id="slide15" class="slide stop">
+        <!---------------- SLIDE 21  - CONTENT -->
+        <div id="slide21" class="slide stop">
             <div class="row slide-title">
                 <div class="col-12">
-                    <h2 class="primary-title">TVM: Annuities (Regular)</h2>
-                    <h3 class="secondary-title">Ordinary Annuity</h3>
+                    <h2 class="primary-title">TVM: Annuity Due</h2>
+                    <h3 class="secondary-title">Annuities with Compound Interest</h3>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12">
                     <div class="content">
-                        <p>Let's verify the answer a third way: by entering the variables into your financial calculator.</p>
-                        <p class="question">How much is an annuity worth at the end of three years if it pays $100 at the end of each year assuming 10% interest?</p>
-                        <div class="bottom-space">
-                            <img src="./images/tvm3_calculator_check_example.png" class="img-fluid " alt="">
-                        </div>
-                        <p class="alert">Note: Make sure your calculator is on END mode. This is one of the most common erros made during tests.</p>
-                        <p>Again, FVA = $331, which agrees with our two other modes of calculation, the FVA formula and FV of individual lump sum payments.</p>
+                        <p>In general, the FVA of an annuity will be higher if payments are split into smaller pieces and paid more often?</p>
+                        <p>For instance, homeowners sometimes save money by paying half the mortgage payment every two weeks, instead of the full amount on a monthly basis.</p>
 
                     </div>
                 </div>
@@ -447,39 +184,29 @@
             </div>
             <div class="row">
                 <div class="col-1">
-                    <div class="page-number">15</div>
+                    <div class="page-number">21</div>
                 </div>
             </div>
         </div>
 
 
 
-        <!---------------- SLIDE 16  - CONTENT -->
-        <div id="slide16" class="slide">
+
+        <!-- ***************** exercises ********************* -->
+        <!-- exercise intro slide 22 -->
+        <div id="exercises3-slide1" class="slide exercise-slide">
             <div class="row slide-title">
                 <div class="col-12">
-                    <h2 class="primary-title">TVM: Annuities (Regular)</h2>
-                    <h3 class="secondary-title">FVA Factor</h3>
+                    <h2 class="primary-title">TVM: Annuity Due</h2>
+                    <!-- <h3 class="secondary-title">Exercises</h3> -->
                 </div>
             </div>
             <div class="row">
                 <div class="col-12">
                     <div class="content">
-                        <p>A fourth way to calculate FVA is using a table of FVA factors. Mathematically, the FVA Factor represents the calculation within the brackets of the FVA formula.</p>
-                        <div class="bottom-space">
-                            <img src="./images/tvm3_fva_formula_with_fva_factor.png" class="img-fluid " alt="">
-                        </div>
-                        <p>If you know the FVA Factor, you can simply multiply it by CF to find FVA. Let's solve the same problem again using an FVA Factors table.</p>
-                        <p class="question">How much is an annuity worth at the end of three years if it pays $100 at the end of each year assuming 10% interest?
-                            <div class="math">
-                                FVA</span> = <span class="cf">CF</span>[FVA Factor]
-                            </div>
-                            The intersection of = 3 in the left column and = 10% in the top row shows the FVA factor. Then multiply the FVA factor by the <span class="cf">CF</span> = 100.
-                            <div class="bottom-space">
-                                <img src="./images/future_value_annuity.png" class="img-fluid " alt=""><br>
-                                <img src="./images/tvm3_fva_factor.png" class="img-fluid " alt="">
-                            </div>
-                        </p>
+                        <h3>Exercises</h3>
+                        <p>Now you'll have a chance to try some exercises on your own. This tutorial has 6 exercises. Each exercise is followed by the solution or an explanation. For these individual exercises, do not use the TVM buttons on your financial calculator unless instructed to do so.</p>
+                        <p class="note">Include dollars and cents on each answer. Do not include commas or dollar signs. A properly formatted answer looks like: <b>1150.38</b></p>
                     </div>
                 </div>
             </div>
@@ -491,13 +218,10 @@
             </div>
             <div class="row">
                 <div class="col-1">
-                    <div class="page-number">16</div>
+                    <div class="page-number">22</div>
                 </div>
             </div>
         </div>
-
-
-
 
 
         <!---------------- SLIDE 23  - EXERCISES -->
@@ -505,7 +229,7 @@
         <div id="exercises3-slide2" class="slide exercise-slide">
             <div class="row slide-title">
                 <div class="col-12">
-                    <h2 class="primary-title">TVM: Annuities (Regular)</h2>
+                    <h2 class="primary-title">TVM: Annuity Due</h2>
                     <!-- <h3 class="secondary-title">Exercises</h3> -->
                 </div>
             </div>
@@ -518,7 +242,7 @@
                         <p class="question">If I save $1200 per year in an account that earns 8% interest (annually compounded) for 20 years, how much should my account be worth?</p>
                         <div class="container">
                             <div class="">
-                                <form action="" class="indent">
+                                <form action="">
 
                                     <label>FVA</span> </label>
                                     <input id="fv-ex1" type="number" placeholder="0"><br>
@@ -563,7 +287,7 @@
         <div id="exercises3-slide3" class="slide exercise-slide">
             <div class="row slide-title">
                 <div class="col-12">
-                    <h2 class="primary-title">TVM: Annuities (Regular)</h2>
+                    <h2 class="primary-title">TVM: Annuity Due</h2>
                     <!-- <h3 class="secondary-title">Exercises</h3> -->
                 </div>
             </div>
@@ -603,7 +327,7 @@
         <div id="exercises3-slide4" class="slide exercise-slide">
             <div class="row slide-title">
                 <div class="col-12">
-                    <h2 class="primary-title">TVM: Annuities (Regular)</h2>
+                    <h2 class="primary-title">TVM: Annuity Due</h2>
                     <!-- <h3 class="secondary-title">Exercises</h3> -->
                 </div>
             </div>
@@ -615,7 +339,7 @@
                         <p class="question">If I save $1200 per year in an account that earns 8% interest (annually compounded) for 20 years, how much should my account be worth?</p>
                         <div class="container">
                             <div class="">
-                                <form action="" class="indent">
+                                <form action="">
                                     <label>FVA</span> </label>
                                     $<input id="fv-ex2" type="number" placeholder="0.00"><br>
                                 </form>
@@ -647,7 +371,7 @@
         <div id="exercises3-slide5" class="slide exercise-slide">
             <div class="row slide-title">
                 <div class="col-12">
-                    <h2 class="primary-title">TVM: Annuities (Regular)</h2>
+                    <h2 class="primary-title">TVM: Annuity Due</h2>
                     <!-- <h3 class="secondary-title">Exercises</h3> -->
                 </div>
             </div>
@@ -694,7 +418,7 @@
         <div id="exercises3-slide6" class="slide exercise-slide">
             <div class="row slide-title">
                 <div class="col-12">
-                    <h2 class="primary-title">TVM: Annuities (Regular)</h2>
+                    <h2 class="primary-title">TVM: Annuity Due</h2>
                     <!-- <h3 class="secondary-title">Exercises</h3> -->
                 </div>
             </div>
@@ -707,7 +431,7 @@
                         <p class="question">If I save $100 per month in an account earning a nominal rate of 8% per year for 20 years, how much should the account be worth?</p>
                         <div class="container">
                             <div class="">
-                                <form action="" class="indent">
+                                <form action="">
                                     <label>FVA</span> </label>
                                     <input id="fv-ex3" type="number" placeholder="0.00"><br>
                                     <label><span class="cf">CF</span> </label>
@@ -747,7 +471,7 @@
         <div id="exercises3-slide7" class="slide exercise-slide">
             <div class="row slide-title">
                 <div class="col-12">
-                    <h2 class="primary-title">TVM: Annuities (Regular)</h2>
+                    <h2 class="primary-title">TVM: Annuity Due</h2>
                     <!-- <h3 class="secondary-title">Exercises</h3> -->
                 </div>
             </div>
@@ -785,7 +509,7 @@
         <div id="exercises3-slide8" class="slide exercise-slide">
             <div class="row slide-title">
                 <div class="col-12">
-                    <h2 class="primary-title">TVM: Annuities (Regular)</h2>
+                    <h2 class="primary-title">TVM: Annuity Due</h2>
                     <!-- <h3 class="secondary-title">Exercises</h3> -->
                 </div>
             </div>
@@ -797,7 +521,7 @@
                         <p class="question">If I save $100 per month in an account earning a nominal rate of 8% per year for 20 years, how much should the account be worth?</p>
                         <div class="container">
                             <div class="">
-                                <form action="" class="indent">
+                                <form action="">
                                     <label>FVA</span> </label>
                                     $<input id="fv-ex4" type="number" placeholder="0.00"><br>
                                 </form>
@@ -829,7 +553,7 @@
         <div id="exercises3-slide9" class="slide exercise-slide">
             <div class="row slide-title">
                 <div class="col-12">
-                    <h2 class="primary-title">TVM: Annuities (Regular)</h2>
+                    <h2 class="primary-title">TVM: Annuity Due</h2>
                     <!-- <h3 class="secondary-title">Exercises</h3> -->
                 </div>
             </div>
@@ -873,7 +597,7 @@
         <div id="exercises3-slide10" class="slide exercise-slide">
             <div class="row slide-title">
                 <div class="col-12">
-                    <h2 class="primary-title">TVM: Annuities (Regular)</h2>
+                    <h2 class="primary-title">TVM: Annuity Due</h2>
                     <!-- <h3 class="secondary-title">Exercises</h3> -->
                 </div>
             </div>
@@ -886,7 +610,7 @@
                         <p class="question">What if I deposited the $1200 a year at the beginning of the year for 20 years earning 8% interest? How much would the account be worth? <span class="note">(Hint: as an ordinary annuity, it was worth $54,914.36).</span></p>
                         <div class="container">
                             <div class="">
-                                <form action="" class="indent">
+                                <form action="">
                                     <label>FVA</span> </label>
                                     $<input id="fv-ex5" type="number" placeholder="0.00"><br>
                                 </form>
@@ -918,7 +642,7 @@
         <div id="exercises3-slide11" class="slide exercise-slide">
             <div class="row slide-title">
                 <div class="col-12">
-                    <h2 class="primary-title">TVM: Annuities (Regular)</h2>
+                    <h2 class="primary-title">TVM: Annuity Due</h2>
                     <!-- <h3 class="secondary-title">Exercises</h3> -->
                 </div>
             </div>
@@ -969,7 +693,7 @@
         <div id="exercises3-slide12" class="slide exercise-slide">
             <div class="row slide-title">
                 <div class="col-12">
-                    <h2 class="primary-title">TVM: Annuities (Regular)</h2>
+                    <h2 class="primary-title">TVM: Annuity Due</h2>
                     <!-- <h3 class="secondary-title">Exercises</h3> -->
                 </div>
             </div>
@@ -982,7 +706,7 @@
                         <p class="question">How much more would an account be worth if you paid in $500 per quarter instead of $1000 semi-annually at 6% interest for 10 years?</p>
                         <div class="container">
                             <div class="">
-                                <form action="" class="indent">
+                                <form action="">
                                     <label>FVA</span> of the weekly option:</label>
                                     $<input id="fv-ex6a" type="number" placeholder="0.00"><br>
 
@@ -1021,7 +745,7 @@
         <div id="exercises3-slide13" class="slide exercise-slide">
             <div class="row slide-title">
                 <div class="col-12">
-                    <h2 class="primary-title">TVM: Annuities (Regular)</h2>
+                    <h2 class="primary-title">TVM: Annuity Due</h2>
                     <!-- <h3 class="secondary-title">Exercises</h3> -->
                 </div>
             </div>
@@ -1072,7 +796,7 @@
         <div id="exercises3-slide14" class="slide exercise-slide">
             <div class="row slide-title">
                 <div class="col-12">
-                    <h2 class="primary-title">TVM: Annuities (Regular)</h2>
+                    <h2 class="primary-title">TVM: Annuity Due</h2>
                     <!-- <h3 class="secondary-title">Exercises</h3> -->
                 </div>
             </div>
@@ -1123,7 +847,7 @@
         <div id="exercises3-slide15" class="slide exercise-slide">
             <div class="row slide-title">
                 <div class="col-12">
-                    <h2 class="primary-title">TVM: Annuities (Regular)</h2>
+                    <h2 class="primary-title">TVM: Annuity Due</h2>
                     <!-- <h3 class="secondary-title">Exercises</h3> -->
                 </div>
             </div>
@@ -1162,7 +886,7 @@
         <div id="exercises3-slide16" class="slide">
             <div class="row slide-title">
                 <div class="col-12">
-                    <h2 class="primary-title">TVM: Annuities (Regular)</h2>
+                    <h2 class="primary-title">TVM: Annuity Due</h2>
                     <h3 class="secondary-title">Conclusion</h3>
                 </div>
             </div>
@@ -1199,7 +923,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <script src="tvm3-script.js"></script>
+    <script src="../script.js"></script>
 </body>
 
 </html>
