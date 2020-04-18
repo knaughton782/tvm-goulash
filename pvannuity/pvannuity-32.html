@@ -1,0 +1,1786 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../tvm-styles.css">
+
+    <title>TVM - Part 4: Annuities</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <!---------------- SLIDE 24  - EXERCISES -->
+        <!-- exercises4 slide 2  : problem 1 -->
+        <div id="exercises4-slide2" class="slide exercise-slide">
+            <div class="row slide-title">
+                <div class="col-12">
+                    <h2 class="primary-title">TVM: Annuities</h2>
+                    <!-- <h3 class="secondary-title">Exercises</h3> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+
+                        <h4>Exercise 1: Identify the Problem Type/Equation</h4>
+                        <p>Is this question about an annuity, lump sum, or a combination of the two?</p>
+                        <p class="question">What is the present value of an ordinary annuity that pays $100 semi-annually for 10 years at 4% interest?</p>
+                        <div class="container">
+                            <div class="">
+                                <form action="">
+
+                                    <input id="pva-ex1" type="radio" name="option" value="optA">
+                                    <label>A) Annuity (PVA)</label><br>
+
+                                    <input id="pv-ex1" type="radio" name="option" value="optB">
+                                    <label>B) Lump Sum (PV)</label><br>
+
+                                    <input id="combine-ex1" type="radio" name="option" value="optC">
+                                    <label>C) Combination (PVA and PV)</label><br>
+
+                                </form>
+                                <button onclick="exercise_1()" type="button" class="btn calculate-btn">Submit</button>
+                            </div>
+                            <br>
+                            <div class="answer" id="answer-ex1"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number"></div>
+                </div>
+                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                    <button type="button" class="back btn">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number">24</div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!---------------- SLIDE 25  - EXERCISES -->
+        <!-- exercises4 slide 3 - problem 1 answer  -->
+        <div id="exercises4-slide3" class="slide exercise-slide">
+            <div class="row slide-title">
+                <div class="col-12">
+                    <h2 class="primary-title">TVM: Annuities</h2>
+                    <!-- <h3 class="secondary-title">Exercises</h3> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+                        <!-- Help -->
+                        <h4>Exercise 1: Solution</h4>
+                        <p>Is this question about an annuity, lump sum, or a combination of the two?</p>
+                        <p class="question">What is the present value of an ordinary annuity that pays $100 semi-annually for 10 years at 4% interest?</p>
+                        <p class="answer">Answer:<br> A) Annuity (PVA)</p>
+                        <p class="answer">This is an ordinary annuity without any lump sum payments, so we can use the PVA equation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number"></div>
+                </div>
+                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                    <button type="button" class="back btn">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number">25</div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!---------------- SLIDE 26  - EXERCISES -->
+        <!-- exercises4-slide4 : problem 2 -->
+        <div id="exercises4-slide4" class="slide exercise-slide">
+            <div class="row slide-title">
+                <div class="col-12">
+                    <h2 class="primary-title">TVM: Annuities</h2>
+                    <!-- <h3 class="secondary-title">Exercises</h3> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+
+                        <h4>Exercise 2: Identify the Variables</h4>
+                        <p>Enter the value of each variable in the boxes below. Leave the box for the unknown variable blank.</p>
+                        <p class="question">What is the Present Value of an ordinary annuity that pays $100 semi-annually for 10 years at 4% interest?</p>
+                        <div class="container">
+                            <div class="">
+                                <form action="">
+                                    <label>PVA</span> </label>
+                                    <input id="pva-ex2" type="number" placeholder="0"><br>
+
+                                    <label><span class="cf">CF</span>&nbsp;&nbsp;&nbsp; </label>
+                                    <input id="cf-ex2" type="number" placeholder="0"><br>
+
+                                    <label>&nbsp;&nbsp;i </span>&nbsp;&nbsp;&nbsp;</label>
+                                    <input id="int-ex2" type="number" placeholder="00"><br>
+
+                                    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                                    <input id="yrs-ex2" type="number" placeholder="0"><br>
+
+                                    <label>&nbsp;m</span>&nbsp;&nbsp;&nbsp; </label>
+                                    <input id="cmpd-ex2" type="number" placeholder="0"><br>
+
+                                </form>
+                                <button onclick="exercise_2()" type="button" class="btn calculate-btn">Submit</button>
+                            </div>
+                            <br>
+                            <div class="answer" id="answer-ex2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number"></div>
+                </div>
+                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                    <button type="button" class="back btn">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number">26</div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!---------------- SLIDE 27  - EXERCISES -->
+        <!-- exercises4-slide5 : answer problem 2 -->
+        <div id="exercises4-slide5" class="slide exercise-slide">
+            <div class="row slide-title">
+                <div class="col-12">
+                    <h2 class="primary-title">TVM: Annuities</h2>
+                    <!-- <h3 class="secondary-title">Exercises</h3> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+                        <!-- Help -->
+                        <h4>Exercise 2: Solution</h4>
+                        <p class="question">What is the present value of an ordinary annuity that pays $100 semi-annually for 10 years at 4% interest?</p>
+                        <br>
+                        <p>The variables are:</p>
+                        <p class="math">
+                            = ?<br>
+                            <span class="cf">CF</span> = 100<br>
+                            = 0.04<br>
+                            = 10<br>
+                            = 2</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number"></div>
+                </div>
+                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                    <button type="button" class="back btn">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number">27</div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!---------------- SLIDE 28  - EXERCISES -->
+        <!-- exercises4-slide6 :  problem 3 -->
+        <div id="exercises4-slide6" class="slide exercise-slide">
+            <div class="row slide-title">
+                <div class="col-12">
+                    <h2 class="primary-title">TVM: Annuities</h2>
+                    <!-- <h3 class="secondary-title">Exercises</h3> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+
+                        <h4>Exercise 3: Calculate the Unknown Variable</h4>
+                        <p class="question">What is the monthly payment for a 30-year mortgage on a house that costs $200,000 if you put down $10,000 and pay 5% interest?</p>
+                        <div class="container">
+                            <div class="">
+                                <form action="">
+                                    <label>PVA</span> </label>
+                                    $<input id="pva-ex3" type="number" placeholder="0.00"><br>
+                                </form>
+                                <button onclick="exercise_3()" type="button" class="btn calculate-btn">Submit</button>
+                            </div>
+                            <br>
+                            <div class="answer" id="answer-ex3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number"></div>
+                </div>
+                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                    <button type="button" class="back btn">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number">28</div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!---------------- SLIDE 29  - EXERCISES -->
+        <!-- exercises4-slide7 :  answer problem 3 -->
+        <div id="exercises4-slide7" class="slide exercise-slide">
+            <div class="row slide-title">
+                <div class="col-12">
+                    <h2 class="primary-title">TVM: Annuities</h2>
+                    <!-- <h3 class="secondary-title">Exercises</h3> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+                        <h4>Exercise 3: Solution</h4>
+                        <p class="question">What is the monthly payment for a 30-year mortgage on a house that costs $200,000 if you put down $10,000 and pay 5% interest?</p>
+
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <p class="math text-center">
+                                    = ?<br>
+                                    <span class="cf">CF</span> = 100<br>
+                                    = 0.04<br>
+                                    = 10<br>
+                                    = 2</p>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <img src="./images/tvm4_exercise1_solution.png" class="img-fluid " alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number"></div>
+                </div>
+                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                    <button type="button" class="back btn">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number">29</div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!---------------- SLIDE 30  - EXERCISES -->
+        <!-- exercises4-slide8 :   problem 4 -->
+        <div id="exercises4-slide8" class="slide exercise-slide">
+            <div class="row slide-title">
+                <div class="col-12">
+                    <h2 class="primary-title">TVM: Annuities</h2>
+                    <!-- <h3 class="secondary-title">Exercises</h3> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+
+                        <h4>Exercise 4: Identify the Variables</h4>
+                        <p>Enter the value of each variable in the boxes below. </p>
+                        <p class="question">What is the present value of an annuity due that pays $100 semi-annually for 10 years at 4% interest, if you already know that the PVA of an ordinary annuity with the same variables equals $1635.14? Use the general format of the TVM equation.</p>
+                        <div class="container">
+                            <div class="">
+                                <form action="">
+                                    <label> </label>
+                                    <input id="pv-ex4" type="number" placeholder="0.00"><br>
+
+                                    <label>i</span>&nbsp;&nbsp; &nbsp;</label>
+                                    <input id="int-ex4" type="number" placeholder="00"><br>
+
+                                    <label>&nbsp;&nbsp; </label>
+                                    <input id="yrs-ex4" type="number" placeholder="0"><br>
+
+                                    <label>m</span>&nbsp; </label>
+                                    <input id="cmpd-ex4" type="number" placeholder="0"><br>
+                                </form>
+                                <button onclick="exercise_4()" type="button" class="btn calculate-btn">Submit</button>
+                            </div>
+                            <br>
+                            <div class="answer" id="answer-ex4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number"></div>
+                </div>
+                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                    <button type="button" class="back btn">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number">30</div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!---------------- SLIDE 31  - EXERCISES -->
+        <!-- exercises4-slide9 :   answer problem 4 -->
+        <div id="exercises4-slide9" class="slide exercise-slide">
+            <div class="row slide-title">
+                <div class="col-12">
+                    <h2 class="primary-title">TVM: Annuities</h2>
+                    <!-- <h3 class="secondary-title">Exercises</h3> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+                        <h4>Exercise 4: Solution</h4>
+                        <p class="question">What is the present value of an annuity due that pays $100 semi-annually for 10 years at 4% interest, if you already know that the PVA of an ordinary annuity with the same variables equals $1635.14? Use the general format of the TVM equation.</p>
+                        <p>When converting from an ordinary annuity to an annuity due, you simply need to add one period of interest. Therefore, in these questions, n will always equal 1.</p>
+
+                        <p>The variables are as follows:</p>
+                        <p class="math">
+                            = 1635.14<br>
+                            = 0.04<br>
+                            = 1<br>
+                            = 2<br>
+                            = ?<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number"></div>
+                </div>
+                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                    <button type="button" class="back btn">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number">31</div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!---------------- SLIDE 32  - EXERCISES -->
+        <!-- exercises4-slide10 : problem 5  -->
+        <div id="exercises4-slide10" class="slide exercise-slide">
+            <div class="row slide-title">
+                <div class="col-12">
+                    <h2 class="primary-title">TVM: Annuities</h2>
+                    <!-- <h3 class="secondary-title">Exercises</h3> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+
+                        <h4>Exercise 5: Calculate the Unknown Variable</h4>
+                        <p class="question">What is the present value of an annuity due that pays $100 semi-annually for 10 years at 4% interest, if you already know that the PVA of an ordinary annuity with the same variables equals $1635.14? Use the general format of the TVM equation.</p>
+                        <div class="container">
+                            <div class="">
+                                <form action="">
+                                    <label>PVA</span> </label>
+                                    $<input id="pva-ex5" type="number" placeholder="0.00"><br>
+                                </form>
+                                <button onclick="exercise_5()" type="button" class="btn calculate-btn">Submit</button>
+                            </div>
+                            <br>
+                            <div class="answer" id="answer-ex5"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number"></div>
+                </div>
+                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                    <button type="button" class="back btn">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number">32</div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!---------------- SLIDE 33  - EXERCISES -->
+        <!-- exercises4-slide11 :   answer problem 5 -->
+        <div id="exercises4-slide11" class="slide exercise-slide">
+            <div class="row slide-title">
+                <div class="col-12">
+                    <h2 class="primary-title">TVM: Annuities</h2>
+                    <!-- <h3 class="secondary-title">Exercises</h3> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+                        <h4>Exercise 5: Solution</h4>
+                        <p class="question">What is the present value of an annuity due that pays $100 semi-annually for 10 years at 4% interest, if you already know that the PVA of an ordinary annuity with the same variables equals $1635.14? Use the general format of the TVM equation.</p>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <div class="math" style="margin-left: 30px;">
+                                    <br>
+                                    = 1635.14<br>
+                                    = 0.04<br>
+                                    = 1<br>
+                                    = 2<br>
+                                    = ?<br>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <div class="bottom-space">
+                                    <img src="./images/tvm4_exercise2_solution.png" class="img-fluid " alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number"></div>
+                </div>
+                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                    <button type="button" class="back btn">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number">33</div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!---------------- SLIDE 34  - EXERCISES -->
+        <!-- exercises4-slide12 : problem 6  -->
+        <div id="exercises4-slide12" class="slide exercise-slide">
+            <div class="row slide-title">
+                <div class="col-12">
+                    <h2 class="primary-title">TVM: Annuities</h2>
+                    <!-- <h3 class="secondary-title">Exercises</h3> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+
+                        <h4>Exercise 6: Identify the Problem Type/Equation</h4>
+                        <p>Is this question about an annuity, lump sum, or a combination of the two?</p>
+                        <p class="question">What is the Present Value of an annuity that pays $25 quarterly for 20 years at 8% interest?</p>
+                        <div class="container">
+                            <div class="">
+                                <form action="">
+
+                                    <input id="pva-ex6" type="radio" name="option" value="optA">
+                                    <label>A) Annuity (PVA)</label><br>
+
+                                    <input id="pv-ex6" type="radio" name="option" value="optB">
+                                    <label>B) Lump Sum (PV)</label><br>
+
+                                    <input id="combine-ex6" type="radio" name="option" value="optC">
+                                    <label>C) Combination (PVA and PV)</label><br>
+
+                                </form>
+                                <button onclick="exercise_6()" type="button" class="btn calculate-btn">Submit</button>
+                            </div>
+                            <br>
+                            <div class="answer" id="answer-ex6"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number"></div>
+                </div>
+                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                    <button type="button" class="back btn">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number">34</div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!---------------- SLIDE 35  - EXERCISES -->
+        <!-- exercises4-slide13 :   answer problem 6 -->
+        <div id="exercises4-slide13" class="slide exercise-slide">
+            <div class="row slide-title">
+                <div class="col-12">
+                    <h2 class="primary-title">TVM: Annuities</h2>
+                    <!-- <h3 class="secondary-title">Exercises</h3> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+                        <!-- Help -->
+                        <h4>Exercise 6: Solution</h4>
+                        <p>Is this question about an annuity, lump sum, or a combination of the two?</p>
+                        <p class="question">What is the Present Value of an annuity that pays $25 quarterly for 20 years at 8% interest?</p>
+                        <p class="answer">Answer:<br> A) Annuity (PVA)</p>
+                        <p>This is an annuity without any lump sum payments, however, it is an annuity due and will require 2 calculations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number"></div>
+                </div>
+                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                    <button type="button" class="back btn">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number">35</div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!---------------- SLIDE 36  - EXERCISES -->
+        <!-- exercises4-slide14 : problem 7  -->
+        <div id="exercises4-slide14" class="slide exercise-slide">
+            <div class="row slide-title">
+                <div class="col-12">
+                    <h2 class="primary-title">TVM: Annuities</h2>
+                    <!-- <h3 class="secondary-title">Exercises</h3> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+
+                        <h4>Exercise 7: Identify the Variables</h4>
+                        <p>Enter the value of each variable in the boxes below. </p>
+                        <p class="question">What is the Present Value of an annuity due that pays $25 quarterly for 20 years with an 8% rate of return?</p>
+                        <div class="container">
+                            <div class="">
+                                <form action="">
+                                    <label>PVA</span> </label>
+                                    <input id="pva-ex7" type="number" placeholder="0.00"><br>
+
+                                    <label>&nbsp;<span class="cf">CF</span>&nbsp;&nbsp; </label>
+                                    <input id="cf-ex7" type="number" placeholder="0.00"><br>
+
+                                    <label>&nbsp;&nbsp;i</span>&nbsp;&nbsp;&nbsp; </label>
+                                    <input id="int-ex7" type="number" placeholder="00"><br>
+
+                                    <label>&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                                    <input id="yrs-ex7" type="number" placeholder="0"><br>
+
+                                    <label>&nbsp;&nbsp;m</span>&nbsp; </label>
+                                    <input id="cmpd-ex7" type="number" placeholder="0"><br>
+                                </form>
+                                <button onclick="exercise_7()" type="button" class="btn calculate-btn">Submit</button>
+                            </div>
+                            <br>
+                            <div class="answer" id="answer-ex7"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number"></div>
+                </div>
+                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                    <button type="button" class="back btn">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number">36</div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!---------------- SLIDE 37  - EXERCISES -->
+        <!-- exercises4-slide15 :   answer problem 7 -->
+        <div id="exercises4-slide15" class="slide exercise-slide">
+            <div class="row slide-title">
+                <div class="col-12">
+                    <h2 class="primary-title">TVM: Annuities</h2>
+                    <!-- <h3 class="secondary-title">Exercises</h3> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+                        <h4>Exercise 7: Solution</h4>
+                        <p class="question">What is the Present Value of an annuity due that pays $25 quarterly for 20 years with an 8% rate of return?</p>
+                        <p>The variables are:</p>
+                        <div class="math" style="margin-left: 30px;">
+                            <br>
+                            = ?<br>
+                            <span class="cf">CF</span> = 25<br>
+                            = .08<br>
+                            = 20<br>
+                            = 4<br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number"></div>
+                </div>
+                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                    <button type="button" class="back btn">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number">37</div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!---------------- SLIDE 38  - EXERCISES -->
+        <!-- exercises4-slide16 : problem 8  -->
+        <div id="exercises4-slide16" class="slide exercise-slide">
+            <div class="row slide-title">
+                <div class="col-12">
+                    <h2 class="primary-title">TVM: Annuities</h2>
+                    <!-- <h3 class="secondary-title">Exercises</h3> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+
+                        <h4>Exercise 8: Calculate the Unknown Variable</h4>
+                        <p class="question">What is the Present Value of an annuity due that pays $25 quarterly for 20 years wtih an 8% rate of return?</p>
+                        <div class="container">
+                            <div class="">
+                                <form action="">
+                                    <label>PVA</span> </label>
+                                    $<input id="pva-ex8" type="number" placeholder="0.00"><br>
+                                </form>
+                                <button onclick="exercise_8()" type="button" class="btn calculate-btn">Submit</button>
+                            </div>
+                            <br>
+                            <div class="answer" id="answer-ex8"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number"></div>
+                </div>
+                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                    <button type="button" class="back btn">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number">38</div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!---------------- SLIDE 39  - EXERCISES -->
+        <!-- exercises4-slide17 :   answer problem 8 -->
+        <div id="exercises4-slide17" class="slide exercise-slide">
+            <div class="row slide-title">
+                <div class="col-12">
+                    <h2 class="primary-title">TVM: Annuities</h2>
+                    <!-- <h3 class="secondary-title">Exercises</h3> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+                        <h4>Exercise 8: Solution</h4>
+                        <p class="question">What is the Present Value of an annuity due that pays $25 quarterly for 20 years with an 8% rate of return?</p>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <p class="math" style="margin-left: 30px;"><br>
+                                    = ?<br>
+                                    <span class="cf">CF</span> = 25<br>
+                                    = .08<br>
+                                    = 20<br>
+                                    = 4<br>
+                                </p>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <p>
+                                    <img src="./images/tvm4_exercise3_solution.png" class="img-fluid " alt="">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number"></div>
+                </div>
+                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                    <button type="button" class="back btn">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number">39</div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!---------------- SLIDE 40  - EXERCISES -->
+        <!-- exercises4-slide18 : problem 9  -->
+        <div id="exercises4-slide18" class="slide exercise-slide">
+            <div class="row slide-title">
+                <div class="col-12">
+                    <h2 class="primary-title">TVM: Annuities</h2>
+                    <!-- <h3 class="secondary-title">Exercises</h3> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+
+                        <h4>Exercise 9: Identify the Problem Type/Equation</h4>
+                        <p>Is this question about an annuity, lump sum, or a combination of the two?</p>
+                        <p class="question">What is the monthly payment for a 30-year mortgage on a house that costs $200,000 if you put down $10,000 and pay 5% interest?</p>
+                        <div class="container">
+                            <div class="">
+                                <form action="">
+
+                                    <input id="pva-ex9" type="radio" name="option" value="optA">
+                                    <label>A) Annuity (PVA)</label><br>
+
+                                    <input id="pv-ex9" type="radio" name="option" value="optB">
+                                    <label>B) Lump Sum (PV)</label><br>
+
+                                    <input id="combine-ex9" type="radio" name="option" value="optC">
+                                    <label>C) Combination (PVA and PV)</label><br>
+
+                                </form>
+                                <button onclick="exercise_9()" type="button" class="btn calculate-btn">Submit</button>
+                            </div>
+                            <br>
+                            <div class="answer" id="answer-ex9"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number"></div>
+                </div>
+                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                    <button type="button" class="back btn">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number">40</div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!---------------- SLIDE 41  - EXERCISES -->
+        <!-- exercises4-slide19 :   answer problem 9 -->
+        <div id="exercises4-slide19" class="slide exercise-slide">
+            <div class="row slide-title">
+                <div class="col-12">
+                    <h2 class="primary-title">TVM: Annuities</h2>
+                    <!-- <h3 class="secondary-title">Exercises</h3> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+                        <h4>Exercise 9: Solution</h4>
+                        <p>Is this question about an annuity, lump sum, or a combination of the two?</p>
+                        <p class="question">What is the monthly payment for a 30-year mortgage on a house that costs $200,000 if you put down $10,000 and pay 5% interest?</p>
+                        <p class="answer">Answer:<br>
+                            A) Annuity (PVA)</p>
+                        <p>A mortgage is an annuity. Since there are no additional lump sum payments, this is a straightforward annuity problem using the PVA equation.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number"></div>
+                </div>
+                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                    <button type="button" class="back btn">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number">41</div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!---------------- SLIDE 42  - EXERCISES -->
+        <!-- exercises4-slide20 : problem 10  -->
+        <div id="exercises4-slide20" class="slide exercise-slide">
+            <div class="row slide-title">
+                <div class="col-12">
+                    <h2 class="primary-title">TVM: Annuities</h2>
+                    <!-- <h3 class="secondary-title">Exercises</h3> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+
+                        <h4>Exercise 10: Identify the Variables</h4>
+                        <p>Enter the value of each variable in the boxes below. </p>
+                        <p class="question">What is the monthly payment for a 30-year mortgage on a house that costs $200,000 if you put down $10,000 and pay 5% interest?</p>
+                        <div class="container">
+                            <div class="">
+                                <form action="">
+                                    <label>PVA</span> </label>
+                                    <input id="pva-ex10" type="number" placeholder="0.00"><br>
+
+                                    <label>&nbsp;<span class="cf">CF</span>&nbsp; </label>
+                                    <input id="cf-ex10" type="number" placeholder="0.00"><br>
+
+                                    <label>&nbsp;&nbsp;i</span> &nbsp;</label>
+                                    <input id="int-ex10" type="number" placeholder="00"><br>
+
+                                    <label>&nbsp;&nbsp;&nbsp; </label>
+                                    <input id="yrs-ex10" type="number" placeholder="0"><br>
+
+                                    <label>&nbsp;m</span>&nbsp; </label>
+                                    <input id="cmpd-ex10" type="number" placeholder="0"><br>
+                                </form>
+                                <button onclick="exercise_10()" type="button" class="btn calculate-btn">Submit</button>
+                            </div>
+                            <br>
+                            <div class="answer" id="answer-ex10"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number"></div>
+                </div>
+                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                    <button type="button" class="back btn">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number">42</div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!---------------- SLIDE 43  - EXERCISES -->
+        <!-- exercises4-slide21 :   answer problem 10 -->
+        <div id="exercises4-slide21" class="slide exercise-slide">
+            <div class="row slide-title">
+                <div class="col-12">
+                    <h2 class="primary-title">TVM: Annuities</h2>
+                    <!-- <h3 class="secondary-title">Exercises</h3> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+                        <h4>Exercise 10: Solution</h4>
+                        <p class="question">What is the monthly payment for a 30-year mortgage on a house that costs $200,000 if you put down $10,000 and pay 5% interest?</p>
+                        <p>The variables are:</p>
+                        <p class="math" style="margin-left: 30px;"><br>
+                            = 190000 <span class="note">(Cost of the house minutes the down payment)</span> <br>
+                            <span class="cf">CF</span> = ?<br>
+                            = 0.06<br>
+                            = 30<br>
+                            = 12<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number"></div>
+                </div>
+                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                    <button type="button" class="back btn">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number">43</div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!---------------- SLIDE 44  - EXERCISES -->
+        <!-- exercises4-slide22 : problem 11  -->
+        <div id="exercises4-slide22" class="slide exercise-slide">
+            <div class="row slide-title">
+                <div class="col-12">
+                    <h2 class="primary-title">TVM: Annuities</h2>
+                    <!-- <h3 class="secondary-title">Exercises</h3> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+
+                        <h4>Exercise 11: Calculate the unknown variable</h4>
+                        <p>Enter the value of each variable in the boxes below. </p>
+                        <p class="question">What is the monthly payment for a 30-year mortgage on a house that costs $200,000 if you put down $10,000 and pay 5% interest?</p>
+                        <div class="container">
+                            <div class="">
+                                <form action="">
+                                    <label><span class="cf">CF</span> </label>
+                                    $<input id="cf-ex11" type="number" placeholder="0.00"><br>
+
+
+                                </form>
+                                <button onclick="exercise_11()" type="button" class="btn calculate-btn">Submit</button>
+                            </div>
+                            <br>
+                            <div class="answer" id="answer-ex11"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number"></div>
+                </div>
+                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                    <button type="button" class="back btn">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number">44</div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!---------------- SLIDE 45  - EXERCISES -->
+        <!-- exercises4-slide23 :   answer problem 11 -->
+        <div id="exercises4-slide23" class="slide exercise-slide">
+            <div class="row slide-title">
+                <div class="col-12">
+                    <h2 class="primary-title">TVM: Annuities</h2>
+                    <!-- <h3 class="secondary-title">Exercises</h3> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+                        <h4>Exercise 11: Solution</h4>
+                        <p class="question">What is the monthly payment for a 30-year mortgage on a house that costs $200,000 if you put down $10,000 and pay 5% interest?</p>
+
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <p class="math" style="margin-left: 30px;"><br>
+                                    = 190000<br>
+                                    <span class="cf">CF</span> = ?<br>
+                                    = 0.06<br>
+                                    = 30<br>
+                                    = 12<br>
+                                </p>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <p>
+                                    <img src="./images/tvm4_exercise4_solution.png" class="img-fluid " alt="">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number"></div>
+                </div>
+                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                    <button type="button" class="back btn">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number">45</div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!---------------- SLIDE 46  - EXERCISES -->
+        <!-- exercises4-slide24 : problem 12  -->
+        <div id="exercises4-slide24" class="slide exercise-slide">
+            <div class="row slide-title">
+                <div class="col-12">
+                    <h2 class="primary-title">TVM: Annuities</h2>
+                    <!-- <h3 class="secondary-title">Exercises</h3> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+
+                        <h4>Exercise 12: Identify the Problem Type/Equation</h4>
+                        <p>Is this question about an annuity, lump sum, or a combination of the two?</p>
+                        <p class="question">What would you pay for a bond that pays $100 at the end of each year and the $1000 face value at the end of 6 years, if you want to earn a 5% rate of return?</p>
+                        <div class="container">
+                            <div class="">
+                                <form action="">
+
+                                    <input id="pva-ex12" type="radio" name="option" value="optA">
+                                    <label>A) Annuity (PVA)</label><br>
+
+                                    <input id="pv-ex12" type="radio" name="option" value="optB">
+                                    <label>B) Lump Sum (PV)</label><br>
+
+                                    <input id="combine-ex12" type="radio" name="option" value="optC">
+                                    <label>C) Combination (PVA and PV)</label><br>
+
+                                </form>
+                                <button onclick="exercise_12()" type="button" class="btn calculate-btn">Submit</button>
+                            </div>
+                            <br>
+                            <div class="answer" id="answer-ex12"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number"></div>
+                </div>
+                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                    <button type="button" class="back btn">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number">46</div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!---------------- SLIDE 47  - EXERCISES -->
+        <!-- exercises4-slide25 :   answer problem 12 -->
+        <div id="exercises4-slide25" class="slide exercise-slide">
+            <div class="row slide-title">
+                <div class="col-12">
+                    <h2 class="primary-title">TVM: Annuities</h2>
+                    <!-- <h3 class="secondary-title">Exercises</h3> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+                        <h4>Exercise 12: Solution</h4>
+                        <p>Is this question about an annuity, lump sum, or a combination of the two?</p>
+                        <p class="question">What would you pay for a bond that pays $100 at the end of each year and the $1000 face value at the end of 6 years, if you want to earn a 5% rate of return?</p>
+
+                        <p class="answer">Answer:<br>
+                            C) Combination (PVA and PV)</p>
+                        <p>The annual $100 payments are an annuity. The face value paid at the end of 5 years is a lump sum. You must calculate the PV of the annuity and lump sum separately, and then add them together to determine what you should pay today.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number"></div>
+                </div>
+                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                    <button type="button" class="back btn">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number">47</div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!---------------- SLIDE 48  - EXERCISES -->
+        <!-- exercises4-slide26 : problem 13  -->
+        <div id="exercises4-slide26" class="slide exercise-slide">
+            <div class="row slide-title">
+                <div class="col-12">
+                    <h2 class="primary-title">TVM: Annuities</h2>
+                    <!-- <h3 class="secondary-title">Exercises</h3> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+
+                        <h4>Exercise 13: Identify the Variables for PV of the Annuity (PVA)</h4>
+                        <p>Enter the value of each variable in the boxes below. </p>
+                        <p class="question">What would you pay for a bond that pays $100 at the end of each year and the $1000 face value at the end of 6 years, if you want to earn a 5% rate of return?</p>
+                        <div class="container">
+                            <div class="">
+                                <form action="">
+                                    <label>PVA</span> </label>
+                                    <input id="pva-ex13" type="number" placeholder="0.00"><br>
+
+                                    <label>&nbsp;<span class="cf">CF</span>&nbsp;&nbsp; </label>
+                                    <input id="cf-ex13" type="number" placeholder="0.00"><br>
+
+                                    <label>&nbsp;&nbsp;&nbsp;i</span>&nbsp;&nbsp;&nbsp; </label>
+                                    <input id="int-ex13" type="number" placeholder="0.00"><br>
+
+                                    <label>&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                                    <input id="yrs-ex13" type="number" placeholder="0.00"><br>
+
+                                    <label>&nbsp;m</span>&nbsp;&nbsp; </label>
+                                    <input id="cmpd-ex13" type="number" placeholder="0.00"><br>
+                                </form>
+                                <button onclick="exercise_13()" type="button" class="btn calculate-btn">Submit</button>
+                            </div>
+                            <br>
+                            <div class="answer" id="answer-ex13"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number"></div>
+                </div>
+                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                    <button type="button" class="back btn">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number">48></div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!---------------- SLIDE 49  - EXERCISES -->
+        <!-- exercises4-slide27 :   answer problem 13 -->
+        <div id="exercises4-slide27" class="slide exercise-slide">
+            <div class="row slide-title">
+                <div class="col-12">
+                    <h2 class="primary-title">TVM: Annuities</h2>
+                    <!-- <h3 class="secondary-title">Exercises</h3> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+                        <h4>Exercise 13: Solution</h4>
+                        <p class="question">How much more would an account be worth if you paid in $500 per quarter instead of $1000 semi-annually at 6% interest for 10 years?</p>
+
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <p class="math" style="margin-left: 30px;"><br>
+
+                                    = ?<br>
+                                    <span class="cf">CF</span> = 100<br>
+                                    = 0.05<br>
+                                    = 6<br>
+                                    = 1<br>
+                                </p>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <p class="text-center">
+                                    <img src="./images/tvm3_exercise4a_solution.png" class="img-fluid " alt="">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number"></div>
+                </div>
+                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                    <button type="button" class="back btn">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number">49</div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!---------------- SLIDE 50  - EXERCISES -->
+        <!-- exercises4-slide28 : problem 14  -->
+        <div id="exercises4-slide28" class="slide exercise-slide">
+            <div class="row slide-title">
+                <div class="col-12">
+                    <h2 class="primary-title">TVM: Annuities</h2>
+                    <!-- <h3 class="secondary-title">Exercises</h3> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+
+                        <h4>Exercise 14: Calculate PVA</h4>
+                        <p class="question">What would you pay for a bond that pays $100 at the end of each year and the $1000 face value at the end of 6 years, if you want to earn a 5% rate of return?</p>
+                        <div class="container">
+                            <div class="">
+                                <form action="">
+                                    <label>PVA</span> </label>
+                                    $<input id="pva-ex14" type="number" placeholder="0.00"><br>
+
+
+                                </form>
+                                <button onclick="exercise_14()" type="button" class="btn calculate-btn">Submit</button>
+                            </div>
+                            <br>
+                            <div class="answer" id="answer-ex14"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number"></div>
+                </div>
+                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                    <button type="button" class="back btn">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number">50</div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!---------------- SLIDE 51  - EXERCISES -->
+        <!-- exercises4-slide29 :   answer problem 14 -->
+        <div id="exercises4-slide29" class="slide exercise-slide">
+            <div class="row slide-title">
+                <div class="col-12">
+                    <h2 class="primary-title">TVM: Annuities</h2>
+                    <!-- <h3 class="secondary-title">Exercises</h3> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+                        <h4>Exercise 14: Solution</h4>
+                        <p class="question">What would you pay for a bond that pays $100 at the end of each year and the $1000 face value at the end of 6 years, if you want to earn a 5% rate of return?</p>
+
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <p class="math" style="margin-left: 30px;"><br>
+
+                                    = ?<br>
+                                    <span class="cf">CF</span> = 100<br>
+                                    = 0.05<br>
+                                    = 6<br>
+                                    = 1<br>
+                                </p>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <p>
+                                    <img src="./images/tvm4_exercise5a_pvasolution.png" class="img-fluid " alt="">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number"></div>
+                </div>
+                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                    <button type="button" class="back btn">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number">51</div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!---------------- SLIDE 52  - EXERCISES -->
+        <!-- exercises4-slide30 : problem 15  -->
+        <div id="exercises4-slide30" class="slide exercise-slide">
+            <div class="row slide-title">
+                <div class="col-12">
+                    <h2 class="primary-title">TVM: Annuities</h2>
+                    <!-- <h3 class="secondary-title">Exercises</h3> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+
+                        <h4>Exercise 15: Identify the Variables for the Lump Sum</h4>
+                        <p>Enter the value of each variable in the boxes below. </p>
+                        <p class="question">What would you pay for a bond that pays $100 at the end of each year and the $1000 face value at the end of 6 years, if you want to earn a 5% rate of return?</p>
+                        <div class="container">
+                            <div class="">
+                                <form action="">
+                                    <label>PVA</span> </label>
+                                    <input id="pva-ex15" type="number" placeholder="0.00"><br>
+
+                                    <label>&nbsp;&nbsp; </label>
+                                    <input id="fv-ex15" type="number" placeholder="0.00"><br>
+
+                                    <label>&nbsp;&nbsp;i</span>&nbsp;&nbsp;&nbsp; </label>
+                                    <input id="int-ex15" type="number" placeholder="00"><br>
+
+                                    <label>&nbsp; &nbsp;&nbsp;</label>
+                                    <input id="yrs-ex15" type="number" placeholder="0"><br>
+
+                                    <label>&nbsp;m</span>&nbsp; </label>
+                                    <input id="cmpd-ex15" type="number" placeholder="0"><br>
+                                </form>
+                                <button onclick="exercise_15()" type="button" class="btn calculate-btn">Submit</button>
+                            </div>
+                            <br>
+                            <div class="answer" id="answer-ex15"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number"></div>
+                </div>
+                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                    <button type="button" class="back btn">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number">52</div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!---------------- SLIDE 53  - EXERCISES -->
+        <!-- exercises4-slide31 :   answer problem 15 -->
+        <div id="exercises4-slide31" class="slide exercise-slide">
+            <div class="row slide-title">
+                <div class="col-12">
+                    <h2 class="primary-title">TVM: Annuities</h2>
+                    <!-- <h3 class="secondary-title">Exercises</h3> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+                        <h4>Exercise 15: Solution</h4>
+                        <p class="question">What would you pay for a bond that pays $100 at the end of each year and the $1000 face value at the end of 6 years, if you want to earn a 5% rate of return?</p>
+
+                        <p class="math" style="margin-left: 30px;"><br>
+                            The variables are:<br>
+
+                            = ?<br>
+                            = 1000<br>
+                            = 0.05<br>
+                            = 6<br>
+                            = 1<br>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number"></div>
+                </div>
+                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                    <button type="button" class="back btn">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number">53</div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!---------------- SLIDE 54  - EXERCISES -->
+        <!-- exercises4-slide32 : problem 16  -->
+        <div id="exercises4-slide32" class="slide exercise-slide">
+            <div class="row slide-title">
+                <div class="col-12">
+                    <h2 class="primary-title">TVM: Annuities</h2>
+                    <!-- <h3 class="secondary-title">Exercises</h3> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+
+                        <h4>Exercise 16: Calculate PV of the Lump Sum</h4>
+                        <p class="question">What would you pay for a bond that pays $100 at the end of each year and the $1000 face value at the end of 6 years, if you want to earn a 5% rate of return?</p>
+                        <div class="container">
+                            <div class="">
+                                <form action="">
+                                    <label> </label>
+                                    <input id="pv-ex16" type="number" placeholder="0.00"><br>
+
+
+                                </form>
+                                <button onclick="exercise_16()" type="button" class="btn calculate-btn">Submit</button>
+                            </div>
+                            <br>
+                            <div class="answer" id="answer-ex16"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number"></div>
+                </div>
+                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                    <button type="button" class="back btn">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number">54</div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!---------------- SLIDE 55  - EXERCISES -->
+        <!-- exercises4-slide33 :   answer problem 16 -->
+        <div id="exercises4-slide33" class="slide exercise-slide">
+            <div class="row slide-title">
+                <div class="col-12">
+                    <h2 class="primary-title">TVM: Annuities</h2>
+                    <!-- <h3 class="secondary-title">Exercises</h3> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+                        <h4>Exercise 16: Solution</h4>
+                        <p class="question">What would you pay for a bond that pays $100 at the end of each year and the $1000 face value at the end of 6 years, if you want to earn a 5% rate of return?</p>
+
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <p class="math" style="margin-left: 30px;"><br>
+
+                                    = ?<br>
+                                    = 1000<br>
+                                    = 0.05<br>
+                                    = 6<br>
+                                    = 1<br>
+                                </p>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <p>
+                                    <img src="./images/tvm4_exercise5b_pvsolution.png" class="img-fluid " alt="">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number"></div>
+                </div>
+                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                    <button type="button" class="back btn">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number">55</div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!---------------- SLIDE 56  - EXERCISES -->
+        <!-- exercises4-slide34 : problem 17  -->
+        <div id="exercises4-slide34" class="slide exercise-slide">
+            <div class="row slide-title">
+                <div class="col-12">
+                    <h2 class="primary-title">TVM: Annuities</h2>
+                    <!-- <h3 class="secondary-title">Exercises</h3> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+
+                        <h4>Exercise 17: Calculate the PV of the Bond</h4>
+
+                        <p class="question">What would you pay for a bond that pays $100 at the end of each year and the $1000 face value at the end of 6 years, if you want to earn a 5% rate of return?</p>
+                        <div class="container">
+                            <div class="">
+                                <form action="">
+                                    <label>What would you pay?</span></label>
+                                    $<input id="pv-ex17" type="number" placeholder="0.00"><br>
+
+
+                                </form>
+                                <button onclick="exercise_17()" type="button" class="btn calculate-btn">Submit</button>
+                            </div>
+                            <br>
+                            <div class="answer" id="answer-ex17"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number"></div>
+                </div>
+                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                    <button type="button" class="back btn">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number">56</div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!---------------- SLIDE 57  - EXERCISES -->
+        <!-- exercises4-slide35 :   answer problem 17 -->
+        <div id="exercises4-slide35" class="slide exercise-slide">
+            <div class="row slide-title">
+                <div class="col-12">
+                    <h2 class="primary-title">TVM: Annuities</h2>
+                    <!-- <h3 class="secondary-title">Exercises</h3> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+                        <h4>Exercise 17: Solution</h4>
+                        <p class="question">What would you pay for a bond that pays $100 at the end of each year and the $1000 face value at the end of 6 years, if you want to earn a 5% rate of return?</p>
+                        <p>In this combination problem, we calculated the PV of the annuity and the PV of the lump sum separately. To find the PV of the bond, we must add the two figures together.</p>
+                        <div class="math" style="margin-left: 20px;">
+                            = 507.57<br>
+                            = 746.22<br>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6">
+                            <p class="text-center">
+                                <img src="./images/tvm4_exercise5c_solution.png" class="img-fluid " alt="">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number"></div>
+                </div>
+                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                    <button type="button" class="back btn">Back</button>
+                    <button type="button" class="continue btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number">57</div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!---------------- SLIDE 58  - EXERCISES -->
+        <!-- exercises4-slide16  -->
+        <div id="exercises4-slide16" class="slide">
+            <div class="row slide-title">
+                <div class="col-12">
+                    <h2 class="primary-title">TVM: Annuities</h2>
+                    <h3 class="secondary-title">Conclusion</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+                        <h3>Congratulations!</h3>
+                        <p>You’ve completed the Annuity section of the TVM Tutorial. If you were confident answering the exercise questions and got most of them right, then you have a good grasp of the basics of TVM annuities. If you were not able to answer most of the exercise questions correctly, contact your instructor for additional help.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number"></div>
+                </div>
+                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                    <button type="button" class="back btn">Back</button>
+                    <button type="button" class="continue btn">Finish</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <!-- <div class="page-number">58</div> -->
+                    <br>
+                </div>
+            </div>
+        </div>
+        <!-- *************************** end exercises *************************** -->
+
+
+    </div> <!-- End of allSlides div -->
+    </div> <!--  end of container -->
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="tvm4-script.js"></script>
+</body>
+
+</html>

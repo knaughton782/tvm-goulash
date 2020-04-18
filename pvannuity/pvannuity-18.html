@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../tvm-styles.css">
+
+    <title>TVM - Part 4: Annuities</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        
+
+        <!---------------- SLIDE 19  - CONTENT -->
+        <div id="slide19" class="slide">
+            <div class="row slide-title">
+                <div class="col-12">
+                    <h2 class="primary-title">TVM: Annuities</h2>
+                    <h3 class="secondary-title">Present Value of Annuities (PVA)</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+                        <p>Some problems require a combination of forumulas. For instance, you might encounter:
+                            <ul>
+                                <li>Cash flows and interest compounded on different schedules (e.g., monthly (12) payments and semi-annual (2) compounding)</li>
+                                <li>An annuity that also pays a lump sum</li>
+                            </ul>
+                            You must use more than one formula or calculation on a financial calculator to solve combination problems.
+                        </p>
+                        <p class="question">What would you pay for a bond that pays $45 every six months and also pays its maturity value of $1000 at the end of the 10 years, if you require an 8% return on your investment?</p>
+                        <div class="bottom-space">
+                            <img src="./images/tvm4_combo_example3.png" class="img-fluid " alt="">
+                        </div>
+                        <p>This is really a combination problem because it makes regular payments like an annuity, but there is also a lump sum. We'll use two formulas to solve this problem.</p>
+                        <p>1. The PVA equation for the PV of the semi-annual payments:
+                            <div class="bottom-space">
+                                <img src="./images/pva_general_equation_with_compounding.png" class="img-fluid " alt="">
+                            </div>
+                            <div class="bottom-space">
+                                <img src="./images/tvm4_combo_example3_pva_timeline.png" class="img-fluid " alt="">
+                            </div>
+                        </p>
+                        <p>2. The TVM equation for the PV of the lump sum:
+                            <div class="bottom-space">
+                                <img src="./images/tvm_sample_equation_modify_for_compounding_put_in_m.png" class="img-fluid " alt="">
+                            </div>
+                            <div class="bottom-space">
+                                <img src="./images/tvm4_combo_example3_pv_timeline.png" class="img-fluid " alt="">
+                            </div>
+                        </p>
+                        <p>Work through the problem. Click the Help button if you get stuck. Click Continue when you have the answer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number"></div>
+                </div>
+                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                    <!-- to help 3 -->
+                    <button type="button" class="continue help btn">Help</button>
+                    <button type="button" class="skip btn">Continue</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="page-number">19</div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div> <!--  end of container -->
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="tvm4-script.js"></script>
+</body>
+
+</html>
