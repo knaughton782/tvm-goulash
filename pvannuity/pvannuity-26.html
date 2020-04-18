@@ -10,107 +10,101 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../tvm-styles.css">
 
-    <title>TVM - Part 4: Annuities</title>
+    <title>TVM Annuities</title>
 </head>
 
 <body>
     <div class="container-fluid">
 
-        <
-
-        <!---------------- SLIDE 34  - EXERCISES -->
-        <!-- exercises4-slide12 : problem 6  -->
-        <div id="exercises4-slide12" class="slide exercise-slide">
-            <div class="row slide-title">
-                <div class="col-12">
-                    <h2 class="primary-title">TVM: Annuities</h2>
-                    <!-- <h3 class="secondary-title">Exercises</h3> -->
+        < <!---------------- SLIDE 34 - EXERCISES -->
+            <!-- exercises4-slide12 : problem 6  -->
+            <div id="exercises4-slide12" class="slide exercise-slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: Present Value of Annuities</h2>
+                        <!-- <h3 class="secondary-title">Exercises</h3> -->
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="content">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
 
-                        <h4>Exercise 6: Identify the Problem Type/Equation</h4>
-                        <p>Is this question about an annuity, lump sum, or a combination of the two?</p>
-                        <p class="question">What is the Present Value of an annuity that pays $25 quarterly for 20 years at 8% interest?</p>
-                        <div class="container">
-                            <div class="">
-                                <form action="">
+                            <h4>Exercise 6: Identify the Problem Type/Equation</h4>
+                            <p>Is this question about an annuity, lump sum, or a combination of the two?</p>
+                            <p class="question">What is the Present Value of an annuity that pays $25 quarterly for 20 years at 8% interest?</p>
+                            <div class="container">
+                                <div class="">
+                                    <form action="">
 
-                                    <input id="pva-ex6" type="radio" name="option" value="optA">
-                                    <label>A) Annuity (PVA)</label><br>
+                                        <input id="pva-ex6" type="radio" name="option" value="optA">
+                                        <label>A) Annuity (PVA)</label><br>
 
-                                    <input id="pv-ex6" type="radio" name="option" value="optB">
-                                    <label>B) Lump Sum (PV)</label><br>
+                                        <input id="pv-ex6" type="radio" name="option" value="optB">
+                                        <label>B) Lump Sum (PV)</label><br>
 
-                                    <input id="combine-ex6" type="radio" name="option" value="optC">
-                                    <label>C) Combination (PVA and PV)</label><br>
+                                        <input id="combine-ex6" type="radio" name="option" value="optC">
+                                        <label>C) Combination (PVA and PV)</label><br>
 
-                                </form>
-                                <button onclick="exercise_6()" type="button" class="btn calculate-btn">Submit</button>
+                                    </form>
+                                    <button onclick="exercise_6()" type="button" class="btn calculate-btn">Submit</button>
+                                </div>
+                                <br>
+                                <div class="answer" id="answer-ex6"></div>
                             </div>
-                            <br>
-                            <div class="answer" id="answer-ex6"></div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-1">
-                    <div class="page-number"></div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number"></div>
+                    </div>
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="btn">Back</button>
+                        <button type="button" class="btn">Continue</button>
+                    </div>
                 </div>
-                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
-                    <button type="button" class="back btn">Back</button>
-                    <button type="button" class="continue btn">Continue</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-1">
-                    <div class="page-number">34</div>
-                </div>
-            </div>
-        </div>
-
-
-
-        <!---------------- SLIDE 35  - EXERCISES -->
-        <!-- exercises4-slide13 :   answer problem 6 -->
-        <div id="exercises4-slide13" class="slide exercise-slide">
-            <div class="row slide-title">
-                <div class="col-12">
-                    <h2 class="primary-title">TVM: Annuities</h2>
-                    <!-- <h3 class="secondary-title">Exercises</h3> -->
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="content">
-                        <!-- Help -->
-                        <h4>Exercise 6: Solution</h4>
-                        <p>Is this question about an annuity, lump sum, or a combination of the two?</p>
-                        <p class="question">What is the Present Value of an annuity that pays $25 quarterly for 20 years at 8% interest?</p>
-                        <p class="answer">Answer:<br> A) Annuity (PVA)</p>
-                        <p>This is an annuity without any lump sum payments, however, it is an annuity due and will require 2 calculations.
-                        </p>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number">34</div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-1">
-                    <div class="page-number"></div>
+
+
+
+            <!---------------- SLIDE 35  - EXERCISES -->
+            <!-- exercises4-slide13 :   answer problem 6 -->
+            <div id="exercises4-slide13" class="slide exercise-slide">
+                <div class="row slide-title">
+                    <div class="col-12">
+                        <h2 class="primary-title">TVM: Present Value of Annuities</h2>
+                        <!-- <h3 class="secondary-title">Exercises</h3> -->
+                    </div>
                 </div>
-                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
-                    <button type="button" class="back btn">Back</button>
-                    <button type="button" class="continue btn">Continue</button>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+                            <!-- Help -->
+                            <h4>Exercise 6: Solution</h4>
+                            <p>Is this question about an annuity, lump sum, or a combination of the two?</p>
+                            <p class="question">What is the Present Value of an annuity that pays $25 quarterly for 20 years at 8% interest?</p>
+                            <p class="answer">Answer:<br> A) Annuity (PVA)</p>
+                            <p>This is an annuity without any lump sum payments, however, it is an annuity due and will require 2 calculations.
+                            </p>
+                        </div>
+                    </div>
                 </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="page-number"></div>
+                    </div>
+                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                        <button type="button" class="btn">Back</button>
+                        <button type="button" class="btn">Continue</button>
+                    </div>
+                </div>
+                
             </div>
-            <div class="row">
-                <div class="col-1">
-                    <div class="page-number">35</div>
-                </div>
-            </div>
-        </div>
 
 
     </div> <!--  end of container -->
@@ -121,7 +115,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <script src="tvm4-script.js"></script>
+    <script src="../script.js"></script>
 </body>
 
 </html>

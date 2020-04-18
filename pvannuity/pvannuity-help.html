@@ -10,104 +10,104 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../tvm-styles.css">
 
-    <title>TVM - Part 4: Annuities</title>
+    <title>TVM Annuities</title>
 </head>
 
 <body>
     <div class="container-fluid">
-       
 
 
-            <!---------------- help 1 --------------->
-            <div id="tvm4-help1" class="slide help-slide">
-                <div class="row slide-title">
-                    <div class="col-12">
-                        <h2 class="primary-title">TVM: Annuities</h2>
-                        <h3 class="secondary-title">Help Me!</h3>
-                    </div>
+
+        <!---------------- help 1 --------------->
+        <div id="tvm4-help1" class="slide help-slide">
+            <div class="row slide-title">
+                <div class="col-12">
+                    <h2 class="primary-title">TVM: Present Value of Annuities</h2>
+                    <h3 class="secondary-title">Help Me!</h3>
                 </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="content">
-                            <h4>Identify the Basic Variables</h4>
-                            <p class="question">What's the PV of an ordinary annuity that pays $100 per year for 3 years at 10% interest?</p>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+                        <h4>Identify the Basic Variables</h4>
+                        <p class="question">What's the PV of an ordinary annuity that pays $100 per year for 3 years at 10% interest?</p>
 
-                            <p>Let's break down the question. is the value of the annuity in today's dollars. This is the variable we must calculate.</p>
+                        <p>Let's break down the question. is the value of the annuity in today's dollars. This is the variable we must calculate.</p>
 
-                            <p> is the measure of time in years. In other problems, you might see n expressed as a number or as a noun like decade or century. This means <span class="yrs math"> = 3.</p>
+                        <p> is the measure of time in years. In other problems, you might see n expressed as a number or as a noun like decade or century. This means <span class="yrs math"> = 3.</p>
 
-                            <p><span class="cf">CF</span> is the value of the regularly scheduled cash flow or payment. This means <span class="CF math">CF</span> = $100.</p>
+                        <p><span class="cf">CF</span> is the value of the regularly scheduled cash flow or payment. This means <span class="CF math">CF</span> = $100.</p>
 
-                            <p>i</span> is the rate of return. The % is an indicator of interest. This means that <span class="int math">i</span> = 10%. Generally, this number is converted to a decimal for use in equations. 10% is the same as .10.</p>
+                        <p>i</span> is the rate of return. The % is an indicator of interest. This means that <span class="int math">i</span> = 10%. Generally, this number is converted to a decimal for use in equations. 10% is the same as .10.</p>
 
-                            <p class="question">What's the PV of an ordinary annuity</span> that pays <span class="cf">$100 per year</span> for 3 years</span> at 10% Interest?
+                        <p class="question">What's the PV of an ordinary annuity</span> that pays <span class="cf">$100 per year</span> for 3 years</span> at 10% Interest?
+                            <div class="math">
+                                = ?<br>
+                                = 3<br>
+                                <span class="cf">CF</span> = 100<br>
+                                = 10% &rarr; .10
+                            </div>
+                        </p>
+
+                        <hr>
+                        <br>
+                        <h4>Plug the Variables into the Equation</h4>
+                        <p>Once you have identified the variables, plug the numbers you've identified into the equation. Remember to use the equation that we have modified to include compounding.</p>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-6">
                                 <div class="math">
                                     = ?<br>
                                     = 3<br>
                                     <span class="cf">CF</span> = 100<br>
                                     = 10% &rarr; .10
                                 </div>
-                            </p>
-
-                            <hr>
-                            <br>
-                            <h4>Plug the Variables into the Equation</h4>
-                            <p>Once you have identified the variables, plug the numbers you've identified into the equation. Remember to use the equation that we have modified to include compounding.</p>
-                            <div class="row">
-                                <div class="col-12 col-sm-12 col-md-6">
-                                    <div class="math">
-                                        = ?<br>
-                                        = 3<br>
-                                        <span class="cf">CF</span> = 100<br>
-                                        = 10% &rarr; .10
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-12 col-md-6">
-                                    <div class="math">
-                                        <img src="./images/pva_general_equation.png" class="img-fluid " alt="">
-                                    </div>
-                                    <div class="math">
-                                        <img src="./images/tvm4_pva_example1_help_fill_in_variables.png" class="img-fluid " alt="">
-                                    </div>
-                                </div>
-
                             </div>
-                            <hr>
-                            <br>
-                            <h4>Performing the Algebra</h4>
-                            <p>Once you have plugged the variables into the equation, solve using the order of operations. Remember the acronym <b>PEMDAS</b>. Start with parentheses and then exponents. Then perform (from left to right) multiplication and division. Finally, add and subtract (from left to right).</p>
-                            <ul>
-                                <li><b>P</b>: Start with the numbers in parentheses. Since brackets function like parentheses, we will work on all the math inside the brackets before moving outside the brackets.<br>
-                                    <img src="./images/tvm4_pva_example1_help_part1.png" class="img-fluid " alt=""></li>
-                                <li><b>E</b>: Raise the number within the parentheses to the exponent.<br>
-                                    <img src="./images/tvm4_pva_example1_help_part2.png" class="img-fluid " alt=""><br>
-                                    <span class="note">Note: If you are using a calculator, it will be helpful to know that exponents in the denominator can be brought up to the numberator by switching the sign (+/-).</span><br>
-                                    <img class="img-fluid math-fluid" src="./images/tvm4_pva_example1_help_exponent_in_fraction.png" alt=""></li>
-                                <li><b>MD</b>: Simplify the embedded fraction.<br>
-                                    <img src="./images/tvm4_pva_example1_help_part3.png" class="img-fluid " alt=""></li>
-                                <li><b>AS</b>: Subtract.<br>
-                                    <img src="./images/tvm4_pva_example1_help_part4.png" class="img-fluid " alt=""></li>
-                                <li><b>P</b>: As pointed out before, brackets function like parentheses. Therefore, we'll simplify the fraction within the brackets next.<br>
-                                    <img src="./images/tvm4_pva_example1_help_part5.png" class="img-fluid " alt=""></li>
-                                <li><b>MD</b>: Multiply the remaining numbers to find PVA.<br>
-                                    <img src="./images/tvm4_pva_example1_help_part6.png" class="img-fluid " alt=""></li>
-                            </ul>
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <div class="math">
+                                    <img src="./images/pva_general_equation.png" class="img-fluid " alt="">
+                                </div>
+                                <div class="math">
+                                    <img src="./images/tvm4_pva_example1_help_fill_in_variables.png" class="img-fluid " alt="">
+                                </div>
+                            </div>
+
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
-                        <button type="button" class="back btn">Back</button>
-                        <button type="button" class="continue btn">Continue</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-5 col-sm-3">
-                        <div class="page-number">Help 1</div>
+                        <hr>
+                        <br>
+                        <h4>Performing the Algebra</h4>
+                        <p>Once you have plugged the variables into the equation, solve using the order of operations. Remember the acronym <b>PEMDAS</b>. Start with parentheses and then exponents. Then perform (from left to right) multiplication and division. Finally, add and subtract (from left to right).</p>
+                        <ul>
+                            <li><b>P</b>: Start with the numbers in parentheses. Since brackets function like parentheses, we will work on all the math inside the brackets before moving outside the brackets.<br>
+                                <img src="./images/tvm4_pva_example1_help_part1.png" class="img-fluid " alt=""></li>
+                            <li><b>E</b>: Raise the number within the parentheses to the exponent.<br>
+                                <img src="./images/tvm4_pva_example1_help_part2.png" class="img-fluid " alt=""><br>
+                                <span class="note">Note: If you are using a calculator, it will be helpful to know that exponents in the denominator can be brought up to the numberator by switching the sign (+/-).</span><br>
+                                <img class="img-fluid math-fluid" src="./images/tvm4_pva_example1_help_exponent_in_fraction.png" alt=""></li>
+                            <li><b>MD</b>: Simplify the embedded fraction.<br>
+                                <img src="./images/tvm4_pva_example1_help_part3.png" class="img-fluid " alt=""></li>
+                            <li><b>AS</b>: Subtract.<br>
+                                <img src="./images/tvm4_pva_example1_help_part4.png" class="img-fluid " alt=""></li>
+                            <li><b>P</b>: As pointed out before, brackets function like parentheses. Therefore, we'll simplify the fraction within the brackets next.<br>
+                                <img src="./images/tvm4_pva_example1_help_part5.png" class="img-fluid " alt=""></li>
+                            <li><b>MD</b>: Multiply the remaining numbers to find PVA.<br>
+                                <img src="./images/tvm4_pva_example1_help_part6.png" class="img-fluid " alt=""></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <!---------------- end help 1 --------------->
+            <div class="row">
+                <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
+                    <a type="button" class="btn" href="./pvannuity-1.html">Back</a>
+                    <a type="button" class="btn" href="./pvannuity-3.html">Continue</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5 col-sm-3">
+                    <div class="page-number">Help 1</div>
+                </div>
+            </div>
+        </div>
+        <!---------------- end help 1 --------------->
 
 
 
@@ -115,7 +115,7 @@
         <div id="tvm4-help2" class="slide help-slide">
             <div class="row slide-title">
                 <div class="col-12">
-                    <h2 class="primary-title">TVM: Annuities</h2>
+                    <h2 class="primary-title">TVM: Present Value of Annuities</h2>
                     <h3 class="secondary-title">Help Me!</h3>
                 </div>
             </div>
@@ -188,8 +188,8 @@
                     <div class="page-number"></div>
                 </div>
                 <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
-                    <button type="button" class="back btn">Back</button>
-                    <button type="button" class="continue btn">Continue</button>
+                    <a type="button" class="btn" href="./pvannuity-1.html">Back</a>
+                    <a type="button" class="btn" href="./pvannuity-3.html">Continue</a>
                 </div>
             </div>
             <div class="row">
@@ -206,7 +206,7 @@
         <div id="tvm4-help3" class="slide help-slide">
             <div class="row slide-title">
                 <div class="col-12">
-                    <h2 class="primary-title">TVM: Annuities</h2>
+                    <h2 class="primary-title">TVM: Present Value of Annuities</h2>
                     <h3 class="secondary-title">Help Me!</h3>
                 </div>
             </div>
@@ -339,8 +339,8 @@
                     <div class="page-number"></div>
                 </div>
                 <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
-                    <button type="button" class="back btn">Back</button>
-                    <button type="button" class="continue btn">Continue</button>
+                    <a type="button" class="btn" href="./pvannuity-1.html">Back</a>
+                    <a type="button" class="btn" href="./pvannuity-3.html">Continue</a>
                 </div>
             </div>
             <div class="row">
@@ -360,7 +360,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <script src="tvm4-script.js"></script>
+    <script src="../script.js"></script>
 </body>
 
 </html>
