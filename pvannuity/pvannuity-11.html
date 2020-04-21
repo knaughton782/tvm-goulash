@@ -15,49 +15,58 @@
 
 <body>
     <div class="container-fluid">
-
-
-        <!---------------- SLIDE 12 - CONTENT -->
-        <div id="slide12" class="slide">
+        <div id="" class="slide exercise-slide">
             <div class="row slide-title">
                 <div class="col-12">
                     <h2 class="primary-title">TVM: Present Value of Annuities</h2>
-                    <!-- <h3 class="secondary-title">Introduction</h3> -->
+                    <!-- <h3 class="secondary-title">Exercises</h3> -->
                 </div>
             </div>
             <nav class="row">
                 <div class="col-xs-6 col-sm-3 col-md-3"><a href="./pvannuity-1.html">Home</a></div>
                 <div class="col-xs-6 col-sm-3 col-md-3"><a href="./pvannuity-help.html">Math Help</a></div>
-                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./pvannuity-6.html">Exercises</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./pvannuity-10.html">Exercises</a></div>
                 <div class="col-xs-6 col-sm-3 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
             </nav>
             <div class="row">
                 <div class="col-12">
                     <div class="content">
-                        <p>We have now covered four ways to calculate PVA:
-                            <ul>
-                                <li>Summing the PV of individual payments, found by using the basic TVM equation</li>
-                                <li>Use the PVA formula</li>
-                                <li>Find the FVA Factor and multiply it by CF</li>
-                                <li>Use the TVM buttons on your financial calculator</li>
-                            </ul>
-                        </p>
-                        <p>You should practice all methods. The formulas are useful when working with spreadsheets and for applying the TVM concept to other ideas. The financial calculator is extremely useful when solving for i (to avoid more complicated algebra). If you have uneven cash flows, the basic TVM equation is a necessity.</p>
-                        <p>Practice problems using all the methods, both to keep the methods fresh in your mind and to check your work.</p>
+
+                        <h4>Exercise 2: Identify the Problem Type/Equation</h4>
+                        <p>Is this question about an annuity, lump sum, or a combination of the two?</p>
+                        <p class="question">What is the Present Value of an annuity that pays $25 quarterly for 20 years at 8% interest?</p>
+                        <div class="container">
+
+                            <form action="">
+
+                                <input id="pva-ex6" type="radio" name="option" value="optA">
+                                <label>A) Annuity (PVA)</label><br>
+
+                                <input id="pv-ex6" type="radio" name="option" value="optB">
+                                <label>B) Lump Sum (PV)</label><br>
+
+                                <input id="combine-ex6" type="radio" name="option" value="optC">
+                                <label>C) Combination (PVA and PV)</label><br>
+
+                            </form>
+                            <button type="button" class="btn ann2 calculate-btn">Submit</button>
+
+                            <br>
+                            <div class="answer" id="answer-ex6"></div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-1">
-                    <div class="page-number">12</div>
+                    <div class="page-number"></div>
                 </div>
                 <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
-                    <a type="button" class="btn" href="./pvannuity-1.html">Back</a>
-                    <a type="button" class="btn" href="./pvannuity-3.html">Continue</a>
+                    <a type="button" class="btn" href="./pvannuity-10.html">Back</a>
+                    <a type="button" class="btn" href="./pvannuity-1.html">Restart</a>
                 </div>
             </div>
         </div>
-
 
     </div> <!--  end of container -->
 

@@ -15,9 +15,8 @@
 
 <body>
     <div class="container-fluid">
-
-        <!---------------- SLIDE 20  - CONTENT -->
-        <div id="slide20" class="slide">
+->
+        <div id="" class="slide">
             <div class="row slide-title">
                 <div class="col-12">
                     <h2 class="primary-title">TVM: Present Value of Annuities</h2>
@@ -27,17 +26,26 @@
             <nav class="row">
                 <div class="col-xs-6 col-sm-3 col-md-3"><a href="./pvannuity-1.html">Home</a></div>
                 <div class="col-xs-6 col-sm-3 col-md-3"><a href="./pvannuity-help.html">Math Help</a></div>
-                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./pvannuity-6.html">Exercises</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./pvannuity-10.html">Exercises</a></div>
                 <div class="col-xs-6 col-sm-3 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
             </nav>
             <div class="row">
                 <div class="col-12">
                     <div class="content">
-                        <p class="question">What would you pay for a bond that pays $45 every six months and also pays its maturity value of $1000 at the end of the 10 years, if you require an 8% return on your investment?</p>
-                        <p class="answer">The answer is <br>
-                            + = $1067.95</p>
-                        <p>Did you get the answer right? If not, please click on Help to see how to calculate the problem. If you answered correctly, please click Continue.</p>
-
+                        <p>Now let's use the PVA equation with compounding.</p>
+                        <div>
+                            <span class="math">\(PVA=CF[\frac{1-\frac{1}{(1+\frac{i}{m})^{n\cdot m}}}{\frac{i}{m}}]\)</span>
+                        </div>
+                        <p>Answer this question:</p>
+                        <p class="question">A monthly car payment is by definition an ordinary annuity, because you pay equal-sized payments at the end of every month for a specific number of months. If you borrow $20,000 to finance a car purchase at a rate of 9% (stated nominal rate) for a 48-month note, how much will the monthly car payment be?</p>
+                        <p>Remember the steps to solve the equation.
+                            <ul>
+                                <li>Identify the variables</li>
+                                <li>Input the variables into the equation</li>
+                                <li>Solve the equation using the order of operations</li>
+                            </ul>
+                        </p>
+                        <p class="answer">The answer is CF = $497.70</p>
                     </div>
                 </div>
             </div>
@@ -46,14 +54,11 @@
                     <div class="page-number"></div>
                 </div>
                 <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
-                    <button type="button" class="back help btn">Help</button>
-                    <button type="button" class="btn">Continue</button>
+                    <a type="button" class="btn" href="./pvannuity-5.html">Back</a>
+                    <a type="button" class="btn" href="./pvannuity-7.html">Continue</a>
                 </div>
             </div>
-
         </div>
-
-
     </div> <!--  end of container -->
 
 
@@ -61,6 +66,8 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
 
     <script src="../script.js"></script>
 </body>

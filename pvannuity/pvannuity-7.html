@@ -16,9 +16,7 @@
 <body>
     <div class="container-fluid">
 
-
-        <!---------------- SLIDE 19  - CONTENT -->
-        <div id="slide19" class="slide">
+        <div id="" class="slide">
             <div class="row slide-title">
                 <div class="col-12">
                     <h2 class="primary-title">TVM: Present Value of Annuities</h2>
@@ -28,13 +26,13 @@
             <nav class="row">
                 <div class="col-xs-6 col-sm-3 col-md-3"><a href="./pvannuity-1.html">Home</a></div>
                 <div class="col-xs-6 col-sm-3 col-md-3"><a href="./pvannuity-help.html">Math Help</a></div>
-                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./pvannuity-6.html">Exercises</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./pvannuity-10.html">Exercises</a></div>
                 <div class="col-xs-6 col-sm-3 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
             </nav>
             <div class="row">
                 <div class="col-12">
                     <div class="content">
-                        <p>Some problems require a combination of forumulas. For instance, you might encounter:
+                        <p>Some problems require a combination of formulas. For instance, you might encounter:
                             <ul>
                                 <li>Cash flows and interest compounded on different schedules (e.g., monthly (12) payments and semi-annual (2) compounding)</li>
                                 <li>An annuity that also pays a lump sum</li>
@@ -43,26 +41,26 @@
                         </p>
                         <p class="question">What would you pay for a bond that pays $45 every six months and also pays its maturity value of $1000 at the end of the 10 years, if you require an 8% return on your investment?</p>
                         <div class="bottom-space">
-                            <img src="./images/tvm4_combo_example3.png" class="img-fluid " alt="">
+                            <img src="../images/combo_example3.png" class="img-fluid" alt="timeline to show combo equation">
                         </div>
-                        <p>This is really a combination problem because it makes regular payments like an annuity, but there is also a lump sum. We'll use two formulas to solve this problem.</p>
+                        <p>This is a combination problem because it makes regular payments like an annuity, but there is also a lump sum. Two formulas are required to solve this problem.</p>
                         <p>1. The PVA equation for the PV of the semi-annual payments:
-                            <div class="bottom-space">
-                                <img src="./images/pva_general_equation_with_compounding.png" class="img-fluid " alt="">
+                            <div>
+                                <span class="math">\(PVA=CF[\frac{1-\frac{1}{(1+\frac{i}{m})^{n\cdot m}}}{\frac{i}{m}}]\)</span>
                             </div>
-                            <div class="bottom-space">
-                                <img src="./images/tvm4_combo_example3_pva_timeline.png" class="img-fluid " alt="">
+                            <div>
+                                <img src="../images/combo_example3_pva_timeline.png" class="img-fluid" alt="">
                             </div>
                         </p>
                         <p>2. The TVM equation for the PV of the lump sum:
-                            <div class="bottom-space">
-                                <img src="./images/tvm_sample_equation_modify_for_compounding_put_in_m.png" class="img-fluid " alt="">
+                            <div>
+                                <span class="math">\(FV=PV(1+\frac{i}{m})^{n\times m}\)</span>
                             </div>
-                            <div class="bottom-space">
-                                <img src="./images/tvm4_combo_example3_pv_timeline.png" class="img-fluid " alt="">
+                            <div>
+                                <img src="../images/combo_example3_pv_timeline.png" class="img-fluid" alt="">
                             </div>
                         </p>
-                        <p>Work through the problem. Click the Help button if you get stuck. Click Continue when you have the answer.</p>
+
                     </div>
                 </div>
             </div>
@@ -71,15 +69,12 @@
                     <div class="page-number"></div>
                 </div>
                 <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
-                    <!-- to help 3 -->
-                    <button type="button" class="continue help btn">Help</button>
-                    <button type="button" class="skip btn">Continue</button>
+                    <a type="button" class="btn" href="./pvannuity-6.html">Back</a>
+                    <a type="button" class="btn" href="./pvannuity-8.html">Continue</a>
                 </div>
             </div>
 
         </div>
-
-
 
     </div> <!--  end of container -->
 
@@ -88,6 +83,9 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
 
     <script src="../script.js"></script>
 </body>

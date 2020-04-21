@@ -37,6 +37,8 @@ $(document).ready(function () {
   $(document).on('click', '.fva1', calc_fva);
   $(document).on('click', '.fva2', calc_fva2);
   $(document).on('click', '.fva3', calc_fva3);
+  $(document).on('click', '.ann1', annuity1);
+  $(document).on('click', '.ann2', annuity2);
 
 
   /* future value calculation ******************* */
@@ -348,6 +350,56 @@ $(document).ready(function () {
     }
 
   }
+
+  function ex_1(choice) {
+    if (choice == "optA") {
+      return `Correct!`;
+    } else {
+      return `Please check your answer and try again.`;
+    }
+  }
+  function annuity1() {
+    var choice;
+    if (document.getElementById('pva-ex1').checked) {
+      choice = document.getElementById('pva-ex1').value;
+    } else if (document.getElementById('pv-ex1').checked) {
+      choice = document.getElementById('pv-ex1').value;
+    } else if (document.getElementById('combine-ex1').checked) {
+      choice = document.getElementById('combine-ex1').value;
+    }
+
+    var ans = ex_1(choice);
+
+    document.getElementById('answer-ex1').innerHTML = ans;
+  }
+
+  /* ******** for exercise 6 *********** */
+  function ex_6(choice) {
+    if (choice == "optA") {
+      return `Correct!`;
+    } else {
+      return `Please check your answer and try again.`;
+    }
+  }
+  function annuity2() {
+    var choice;
+    if (document.getElementById('pva-ex6').checked) {
+      choice = document.getElementById('pva-ex6').value;
+    } else if (document.getElementById('pv-ex6').checked) {
+      choice = document.getElementById('pv-ex6').value;
+    } else if (document.getElementById('combine-ex6').checked) {
+      choice = document.getElementById('combine-ex6').value;
+    }
+
+    var ans = ex_6(choice);
+
+    document.getElementById('answer-ex6').innerHTML = ans;
+  }
+/* ******** end exercise 6 *********** */
+
+
+
+
 
 
 

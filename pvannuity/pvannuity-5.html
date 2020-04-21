@@ -16,10 +16,7 @@
 <body>
     <div class="container-fluid">
 
-
-
-        <!---------------- SLIDE 8 - CONTENT *********** -->
-        <div id="slide8" class="slide">
+        <div id="" class="slide">
             <div class="row slide-title">
                 <div class="col-12">
                     <h2 class="primary-title">TVM: Present Value of Annuities</h2>
@@ -29,35 +26,50 @@
             <nav class="row">
                 <div class="col-xs-6 col-sm-3 col-md-3"><a href="./pvannuity-1.html">Home</a></div>
                 <div class="col-xs-6 col-sm-3 col-md-3"><a href="./pvannuity-help.html">Math Help</a></div>
-                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./pvannuity-6.html">Exercises</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./pvannuity-10.html">Exercises</a></div>
                 <div class="col-xs-6 col-sm-3 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
             </nav>
             <div class="row">
                 <div class="col-12">
                     <div class="content">
-                        <p>The method of calculating the PV of individual payments and summing them to find the Present Value of an Annuity (PVA) does work.</p>
-                        <p>However, could you imagine calculating the PVA of an annuity with hundreds of payments? The process would be both tedious and present many opportunities to make rounding or calculation errors.</p>
-                        <p>Instead, we'll use a PVA equation (that can be derived from the basic form of the TVM equation):
+                        <p>The PVA we just calculated is for an ordinary annuity. Remember that the difference between ordinary annuities and annuities due is the timing of payments:<br>
                             <div class="bottom-space">
-                                <img src="./images/pva_general_equation.png" class="img-fluid " alt="">
+                                <b>Ordinary Annuity</b> - Payments are made at the end of each period<br>
+                                <b>Annuity Due</b> - Payments are made at the beginning of each period<br>
+
                             </div>
                         </p>
-                        <p>Remember when applying the PVA equation that annuities pay a specific number of equally-sized payments at regularly scheduled intervals. Let's try the same problem again, this time using the PVA equation.
-                        </p>
-                        <p class="question">What's the PV of an ordinary annuity that pays $100 per year for 3 years at 10% interest?</p>
+                        <p>You may remember that finding the value of an ordinary annuity and an annuity due are exactly the same except for one crucial step at the end:</p><br>
+
+                        Ordinary Annuity
+                        <ul>
+                            <li>Calculate the PV using the PVA equation<br>
+                                <span class="math">\(PVA=CF[\frac{1-\frac{1}{(1+i)^n}}{i}]\)</span>
+                            </li>
+                        </ul>
+                        <div>
+                            Annuity Due
+                            <ul>
+                                <li>Calculate the PV using the PVA equation<br>
+                                    <span class="math">\(PVA=CF[\frac{1-\frac{1}{(1+i)^n}}{i}]\)</span></li>
+                                <li>Add an extra period of interest to the PVA amount using the PV equation where PV = PVA.<br>
+
+                                    <span class="math">\(FV=PV(1+i)^n\)</span></li>
+                            </ul>
+                        </div>
+
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-1">
-                    <div class="page-number">8</div>
+                    <div class="page-number"></div>
                 </div>
                 <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
-                    <a type="button" class="btn" href="./pvannuity-2.html">Back</a>
-                    <a type="button" class="btn" href="./pvannuity-4.html">Continue</a>
+                    <a type="button" class="btn" href="./pvannuity-4.html">Back</a>
+                    <a type="button" class="btn" href="./pvannuity-6.html">Continue</a>
                 </div>
             </div>
-
         </div>
 
     </div> <!--  end of container -->
@@ -67,6 +79,8 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
 
     <script src="../script.js"></script>
 </body>

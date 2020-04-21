@@ -16,9 +16,7 @@
 <body>
     <div class="container-fluid">
 
-
-        <!----------------  SLIDE 6 - Content ****************** -->
-        <div id="slide6" class="slide">
+        <div id="" class="slide">
             <div class="row slide-title">
                 <div class="col-12">
                     <h2 class="primary-title">TVM: Present Value of Annuities</h2>
@@ -28,33 +26,48 @@
             <nav class="row">
                 <div class="col-xs-6 col-sm-3 col-md-3"><a href="./pvannuity-1.html">Home</a></div>
                 <div class="col-xs-6 col-sm-3 col-md-3"><a href="./pvannuity-help.html">Math Help</a></div>
-                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./pvannuity-6.html">Exercises</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./pvannuity-10.html">Exercises</a></div>
                 <div class="col-xs-6 col-sm-3 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
             </nav>
             <div class="row">
                 <div class="col-12">
                     <div class="content">
-                        <p>The Present Value of Annuities (PVA) answers the question:
-                            <div class="question">How much would I pay today for a stream of cash flows over a finite period of time at a specific interest rate?</div>
+                        <p class="question">What's the PV of an ordinary annuity that pays $100 per year for 3 years at 10% interest?</p>
+                        <p class="answer">The answer is <span class="math">\(PVA=\$248.69\)</span>
                         </p>
-                        <p>Finding the Present Value is know as discounting, and its the reverse of compounding.</p>
-                        <p>Before finding PVA, you might find it helpful to review how to calculate PV (discount) using the basic TVM formula.</p>
-                        <p class="question">What is the present value an amount that will be worth $100 in 3 years that accrues 10% annual interest.
-                            <div class="bottom-space">
-                                <img src="./images/pv-timeline.png" class="img-fluid " alt="">
+                        <h4>Steps to Solve:</h4>
+                        <ul>
+                            <li>Identify the Basic Variables</li>
+                            <p>First, break down the question. PVA is the value of the annuity in today's dollars. This is the variable we must calculate. n is the measure of time in years. This means n = 3. CF is the value of the regularly scheduled cash flow or payment. This means CF = $100. The % sign is an indicator of interest. This means that i = 10%.</p>
+
+                            <li>Plug the Variables into the Equation</li>
+                            <p>Next, plug the numbers into the equation. Use the equation that we have modified to include compounding.</p>
+
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <div> <span class="math">\(PVA=CF[\frac{1-\frac{1}{(1+i)^n}}{i}]\)</span>
+                                </div>
+                                <div>
+                                    <span class="math">\(PVA=100[\frac{1-\frac{1}{(1+.10)^3}}{.10}]\)</span>
+                                </div>
                             </div>
-                        </p>
-                        <p>Let's use the basic TVM equation to show the math calculation for PV:
-                            <div class="bottom-space">
-                                <img src="./images/tvm4_pv_example.png" class="img-fluid " alt="">
-                            </div>
-                        </p>
-                        <p>Using your financial calculator, you would find:
-                            <div class="bottom-space">
-                                <img src="./images/tvm4_pv_example_finc_calc.png" class="img-fluid " alt="">
-                            </div>
-                            Note that PV and FV are always opposite signs(+/-). In this example, PV is negative because we are paying out money in the present to receive money in the future.
-                        </p>
+                            <li>Perform the Algebra</li>
+                            <p>Solve the equation using the order of operations. Remember PEMDAS.</p>
+                            <ul>
+                                <li>Start with the numbers in parentheses. Since brackets function like parentheses, work on all the math inside the brackets before moving outside the brackets.
+                                    <span class="math">\(PVA=100[\frac{1-\frac{1}{(1+.10)^3}}{.10}]\) &xrarr; \(PVA=100[\frac{1-\frac{1}{(1.10)^3}}{.10}]\)</span></li>
+                                <li>Raise the number within the parentheses to the exponent. Note: If you are using a calculator, it will be helpful to know that exponents in the denominator can be brought up to the numberator by switching the sign (+/-). Example: <span class="math">\(\frac{1}{(1.10)^3}=(1.10)^{-3}\)</span><br><span class="math">\(PVA=100[\frac{1-\frac{1}{(1.10)^3}}{.10}]\) &xrarr; \(PVA=100[\frac{1-\frac{1}{(1.331}}{.10}]\)</span>
+                                </li>
+                                <li>Simplify the embedded fraction.<br>
+                                    <span class="math">\(PVA=100[\frac{1-\frac{1}{(1.331}}{.10}]\) &xrarr; \(PVA=100[\frac{1-0.75131}{.10}]\)</span></li>
+                                <li>Subtract.<br>
+                                    <span class="math">\(PVA=100[\frac{1-0.75131}{.10}]\) &xrarr; \(PVA=100[\frac{0.24860}{.10}]\)</span></li>
+                                <li>As pointed out before, brackets function like parentheses, so simplify the fraction within the brackets next.<br>
+                                    <span class="math">\(PVA=100[\frac{0.24860}{.10}]\) &xrarr; \(PVA=100[2.48685]\)</span>
+                                </li>
+                                <li>Multiply the remaining numbers to find PVA.<br>
+                                    <span class="math">\(PVA=100[2.48685]\) &xrarr; \(PVA=248.69\)</span>
+                                </li>
+                            </ul>
                     </div>
                 </div>
             </div>
@@ -63,13 +76,11 @@
                     <div class="page-number"></div>
                 </div>
                 <div class="offset-3 col-4 offset-sm-4 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-7 col-xl-4">
-                    <a type="button" class="btn" href="./pvannuity-2.html">Back</a>
-                    <a type="button" class="btn" href="./pvannuity-4.html">Continue</a>
+                    <a type="button" class="btn" href="pvannuity-2.html">Back</a>
+                    <a type="button" class="btn" href="pvannuity-4.html">Continue</a>
                 </div>
             </div>
-
         </div>
-
 
     </div> <!--  end of container -->
 
@@ -78,6 +89,9 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
 
     <script src="../script.js"></script>
 </body>

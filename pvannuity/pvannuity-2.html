@@ -16,8 +16,7 @@
 <body>
     <div class="container-fluid">
 
-        <!---------------- SLIDE 15  - CONTENT -->
-        <div id="slide15" class="slide">
+        <div id="" class="slide">
             <div class="row slide-title">
                 <div class="col-12">
                     <h2 class="primary-title">TVM: Present Value of Annuities</h2>
@@ -27,16 +26,20 @@
             <nav class="row">
                 <div class="col-xs-6 col-sm-3 col-md-3"><a href="./pvannuity-1.html">Home</a></div>
                 <div class="col-xs-6 col-sm-3 col-md-3"><a href="./pvannuity-help.html">Math Help</a></div>
-                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./pvannuity-6.html">Exercises</a></div>
+                <div class="col-xs-6 col-sm-3 col-md-3"><a href="./pvannuity-10.html">Exercises</a></div>
                 <div class="col-xs-6 col-sm-3 col-md-3"><a href="./calc.html">Financial Calculator</a></div>
             </nav>
             <div class="row">
                 <div class="col-12">
                     <div class="content">
-                        <p>To use a financial calculator to solve for the PVA of an annuity due, the first step is to change the mode from END to BGN. Then input all the same numbers for the TVM buttons:<br>
-                            <img src="./images/tvm4_pva_example1_annuity_due_finc_calc.png" class="img-fluid " alt=""></p>
-                        <p>Make sure that you switch back to END mode when you are solving ordinary annuity problems or your calculations will be incorrect. Incorrect END/BGN settings are teh most common mistake on exams.</p>
-
+                        <h4>Present Value of Annuities (PVA) answers questions like this:</h4>
+                        <p class="question">How much would I pay today for a stream of cash flows over a finite period of time at a specific interest rate?</p>
+                        <p>Finding the Present Value is know as discounting, and its the reverse of compounding. Before finding PVA, you might find it helpful to review how to calculate PV (discount) using the basic TVM formula.</p>
+                        <p>The method of calculating the PV of individual payments and summing them to find the Present Value of an Annuity (PVA) does work. However, could you imagine calculating the PVA of an annuity with hundreds of payments? The process would be both tedious and present many opportunities to make rounding or calculation errors. Instead, we'll use a PVA equation (that can be derived from the basic form of the TVM equation). </p>
+                        <p>Remember when applying the PVA equation that annuities pay a specific number of equally-sized payments at regularly scheduled intervals.
+                            <div> <span class="math">\(PVA=CF[\frac{1-\frac{1}{(1+i)^n}}{i}]\)</span>
+                            </div>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -60,6 +63,9 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
 
     <script src="../script.js"></script>
 </body>
